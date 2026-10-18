@@ -20,6 +20,10 @@ The original repository license remains byte-for-byte intact, with Git blob SHA 
 
 GitHub Actions is configured to rerun the software/package suite and build the portable instructions on pushes and pull requests. CI is separate from the visual reviews recorded here.
 
+### Hosted CI status
+
+The [first hosted run](https://github.com/MikeyNu/agent-graphic-designer/actions/runs/39126045247) was marked failed by GitHub before any job steps executed. GitHub reported an account-level restriction preventing runner startup. **Hosted test execution: NOT RUN.** This is not evidence of a failing software test, and no hosted pass is claimed. Resolve the account restriction in GitHub, then rerun the workflow. The local 43-test result above remains the executed software validation.
+
 ## Executed design exercises
 
 Two separate agents started with fresh contexts and received the skill path, brief, exact copy, and constraints. They did not receive an expected aesthetic. The flyer agent received the flawed source without an advance defect diagnosis. Both created visible studies, constructed editable SVG artwork, rendered outputs, inspected them, revised observed defects, and recorded remaining limits.

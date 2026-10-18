@@ -1,0 +1,22 @@
+{
+  "fictional": true,
+  "task": "Create a contemporary listening-evening poster using a historical reference purposefully.",
+  "audience": "Independent jazz and experimental record enthusiasts",
+  "format": {
+    "width": 1080,
+    "height": 1350,
+    "unit": "px"
+  },
+  "approved_copy": [
+    "STILL / SOUND",
+    "An evening of deep listening",
+    "Saturday 21 November 2026",
+    "18:30",
+    "Studio Four",
+    "Bring a record. Hear something new."
+  ],
+  "constraints": [
+    "No ticket price, website, logo, or extra factual claims.",
+    "Deliver editable SVG, PNG preview, rationale, and actual QA."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Common Ground: visual review surface validation",
+  "assets": [
+    {
+      "path": "repair-flyer/source-preview.png",
+      "label": "Supplied flyer: observed defects",
+      "alt": "Original Common Ground flyer with faint event details, an incorrect date, and a cropped footer.",
+      "caption": "Source preserved. Numbered notes refer to visible issues identified against the approved brief.",
+      "annotations": [
+        {
+          "number": 1,
+          "x": 36,
+          "y": 64,
+          "text": "Event date conflicts with the approved brief. Correct to Saturday 14 November 2026."
+        },
+        {
+          "number": 2,
+          "x": 50,
+          "y": 71,
+          "text": "Essential time and venue details have low foreground-background contrast and small type."
+        },
+        {
+          "number": 3,
+          "x": 96,
+          "y": 96,
+          "text": "The closing message extends beyond the right edge. Reflow it inside the safe content area."
+        }
+      ]
+    },
+    {
+      "path": "repair-flyer/common-ground-a5-small.png",
+      "label": "Revised A5 design",
+      "alt": "Revised cream and dark green Common Ground repair-day flyer with illustrated tools and clearly grouped date, time, venue, and entry information.",
+      "caption": "Internal visual review found the approved date, a complete footer, stronger information contrast, and clearance around the tool illustration. Physical print and audience review are not represented by this browser check."
+    }
+  ]
+}

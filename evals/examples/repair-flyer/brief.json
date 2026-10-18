@@ -1,0 +1,27 @@
+{
+  "fictional": true,
+  "task": "Inspect and annotate the supplied flyer, then create a corrected welcoming repair-specific A5 design.",
+  "audience": "Neighbours, including older adults",
+  "source": "source-original.svg",
+  "format": {
+    "width": 148,
+    "height": 210,
+    "unit": "mm"
+  },
+  "approved_copy": [
+    "COMMON GROUND",
+    "Repair together.",
+    "A neighbourhood repair day",
+    "Saturday 14 November 2026",
+    "09:00 to 13:00",
+    "Civic Hall",
+    "Free entry",
+    "Bring one small item. Tools provided.",
+    "Everyone welcome"
+  ],
+  "constraints": [
+    "Preserve the original source.",
+    "Use approved facts; no invented claims.",
+    "Deliver annotated review, editable SVG, PNG preview, and actual QA."
+  ]
+}

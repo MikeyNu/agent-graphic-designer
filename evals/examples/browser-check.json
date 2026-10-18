@@ -1,0 +1,75 @@
+{
+  "browser": "155.0.8059.84",
+  "results": [
+    {
+      "width": 1440,
+      "images": [
+        {
+          "loaded": true,
+          "natural": [
+            888,
+            1260
+          ],
+          "rendered": [
+            888,
+            1260
+          ]
+        },
+        {
+          "loaded": true,
+          "natural": [
+            592,
+            840
+          ],
+          "rendered": [
+            592,
+            840
+          ]
+        }
+      ],
+      "annotationTarget": "#asset-1-annotation-1",
+      "scrollable": {
+        "client": 1292,
+        "scroll": 1292
+      },
+      "noPageOverflow": true,
+      "errors": [],
+      "remoteRequests": []
+    },
+    {
+      "width": 390,
+      "images": [
+        {
+          "loaded": true,
+          "natural": [
+            888,
+            1260
+          ],
+          "rendered": [
+            328,
+            465.390625
+          ]
+        },
+        {
+          "loaded": true,
+          "natural": [
+            592,
+            840
+          ],
+          "rendered": [
+            328,
+            465.390625
+          ]
+        }
+      ],
+      "annotationTarget": "#asset-1-annotation-1",
+      "scrollable": {
+        "client": 326,
+        "scroll": 888
+      },
+      "noPageOverflow": true,
+      "errors": [],
+      "remoteRequests": []
+    }
+  ]
+}

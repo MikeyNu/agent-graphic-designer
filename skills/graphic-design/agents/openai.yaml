@@ -1,0 +1,4 @@
+interface:
+  display_name: "Graphic Design"
+  short_description: "Art direction, original graphics, and rigorous visual QA"
+  default_prompt: "Use $graphic-design to develop a purposeful visual concept, create the design, and verify the final artwork."

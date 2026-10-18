@@ -1,0 +1,543 @@
+[
+  {
+    "id": "small_correction_preserve_approved_design",
+    "task": "Correct the event date in the supplied approved A5 poster from 14 November 2026 to 21 November 2026. Return the corrected editable source and a PDF preview.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "organization": "Riverview Community Centre",
+      "event": "Community Open Day",
+      "correct_date": "21 November 2026",
+      "time": "10:00 to 15:00",
+      "venue": "Riverview Community Centre, Main Hall",
+      "fixture_contract": {
+        "provided_by": "evaluation harness",
+        "files": [
+          "approved_open_day.svg"
+        ],
+        "requirements": "Supply a valid editable A5 SVG with a text node containing 14 November 2026, all other stated facts, a supplied logo, and an already approved composition. The fixture is an input requirement, not a claim that this repository bundles it."
+      }
+    },
+    "constraints": [
+      "Change the date only, apart from necessary text fit adjustments in the same date area.",
+      "Preserve the approved visual hierarchy, logo, colors, imagery, and other wording.",
+      "Do not undertake trend research, propose new concepts, or replace the design.",
+      "Use actual export capabilities and disclose any unavailable output format."
+    ],
+    "expected_behaviors": [
+      "Inspect the supplied file before editing and identify the existing date.",
+      "Make a bounded edit that preserves the rest of the artwork.",
+      "Render and inspect the revised date for clipping, awkward spacing, and readability.",
+      "Verify the correct date and the unchanged essential facts in the exported result.",
+      "Return the real source and preview files with a concise change summary."
+    ],
+    "failure_signals": [
+      "Redesigns the poster or spends substantial work developing unrelated concepts.",
+      "Changes other copy, branding, or the event time without justification.",
+      "Returns a file that still contains the old date in visible artwork.",
+      "Claims to inspect or export a file without evidence of those operations.",
+      "Delivers a correction description instead of performing the available edit."
+    ]
+  },
+  {
+    "id": "heritage_identity_print_and_digital",
+    "task": "Create an A3 anniversary poster and a 1080 by 1350 pixel social graphic for Maseko Letterpress. Make the result feel relevant today while respecting the supplied historical material.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "business": "Maseko Letterpress",
+      "verified_history": "Family-owned Johannesburg print workshop founded in 1986.",
+      "event": "40 Years in Print",
+      "event_date": "28 November 2026",
+      "event_time": "11:00 to 17:00",
+      "venue": "Maseko Letterpress workshop, Johannesburg",
+      "entry": "Free entry",
+      "contact": "hello@maseko.example",
+      "printer_requirements": {
+        "trim": "A3 portrait, 297 by 420 mm",
+        "bleed": "3 mm on all sides",
+        "safe_area": "Keep essential content at least 5 mm inside trim",
+        "delivery": "PDF with embedded fonts; printer will perform the final color conversion"
+      },
+      "fixture_contract": {
+        "provided_by": "evaluation harness",
+        "files": [
+          "maseko_logo.svg",
+          "archive_leaflet_1986.png",
+          "workshop_photo.jpg"
+        ],
+        "requirements": "Supply a simple approved vector logo, a legible scanned historical leaflet, and a licensed contemporary workshop photo. The old leaflet is reference material, not approved current event copy."
+      }
+    },
+    "constraints": [
+      "Use the actual supplied logo and verified history.",
+      "Use contemporary event facts instead of transcribing old dates or claims from the archive.",
+      "Adapt the composition to each format rather than simply cropping one export.",
+      "Do not assume that heritage requires distress, sepia, ornate lettering, or any specific style.",
+      "Identify any production specification that has not actually been checked."
+    ],
+    "expected_behaviors": [
+      "Inspect the archive and identify a transferable historical device or explain why none is appropriate.",
+      "Develop materially different ideas at a proportionate level before refining the chosen direction.",
+      "Connect the design to the workshop, its people, or printing process.",
+      "Verify present-day relevance using dated examples if making a current-trend claim.",
+      "Check both the print proof and the social graphic at useful viewing sizes.",
+      "Check bleed, safe content, text, and actual font embedding when the tooling allows it.",
+      "Deliver both real outputs and explain the historical connection without claiming universal audience effects."
+    ],
+    "failure_signals": [
+      "Calls the archive obsolete solely because it is old.",
+      "Applies a generic vintage treatment without reference to the supplied material.",
+      "Invents a longer history, awards, artisan claims, or printer requirements.",
+      "Uses archive event details as if they describe the new event.",
+      "Cuts off required information in the social adaptation.",
+      "Labels a file print-ready despite unchecked or failed required production checks."
+    ]
+  },
+  {
+    "id": "expressive_youth_event_with_clear_information",
+    "task": "Design a 1080 by 1350 pixel announcement for a youth music and art event. Be adventurous and memorable, and make the event details easy to find.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "event": "After School / After Hours",
+      "audience": "Local students and young adults aged 16 to 24",
+      "activities": [
+        "Live bands",
+        "Illustration jam",
+        "Open mic"
+      ],
+      "date": "12 December 2026",
+      "time": "16:00 to 21:00",
+      "venue": "The Yard Arts Centre, Durban",
+      "entry": "R80",
+      "booking": "Tickets at the door",
+      "organizer": "The Yard Arts Centre",
+      "production": "Digital announcement only; final raster image plus an editable source where available",
+      "assets": "No existing identity or photo is supplied. Original illustration, lettering, image generation, or vector work may be used as appropriate."
+    },
+    "constraints": [
+      "Do not invent performers, sponsors, booking URLs, or attendance claims.",
+      "Do not infer a single taste for everyone in the age range.",
+      "Expression must not make the date, venue, price, or event nature difficult to discover.",
+      "No specific palette, font category, or visual trend is required."
+    ],
+    "expected_behaviors": [
+      "Translate the event's combination of participation, music, and illustration into a clear creative idea.",
+      "Explore concepts that differ beyond palette substitutions.",
+      "Use available visual tools to execute and inspect the design.",
+      "Compare thumbnail readability and full-size craft.",
+      "Revise any competition between expressive elements and the essential details.",
+      "Return a real final artwork and briefly explain why the selected direction fits this event."
+    ],
+    "failure_signals": [
+      "Uses age alone as a justification for arbitrary neon, slang, or chaotic composition.",
+      "Uses the same generic poster template with superficial color changes as its exploration.",
+      "Introduces false performer or sponsor information.",
+      "Accepts corrupted generated lettering or missing event details.",
+      "Describes a visual concept without creating the requested artwork when tools are available."
+    ]
+  },
+  {
+    "id": "elder_friendly_church_information",
+    "task": "Create a welcoming A4 information leaflet and a phone-friendly graphic for a church pensioners' transport service. Help readers understand how to book without overwhelming them.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "organization": "Grace Methodist Society",
+      "service": "Sunday Transport",
+      "audience": "Adult congregants, including older readers with varied vision and digital confidence",
+      "service_details": [
+        "Transport to the 09:00 Sunday service",
+        "Book by 12:00 on Friday",
+        "Call 031 555 0142",
+        "Pickup time is confirmed by phone",
+        "There is no charge"
+      ],
+      "approved_copy_note": "These are synthetic evaluation facts. Preserve the supplied booking instructions exactly.",
+      "brand": "Use the supplied logo and established light-background identity.",
+      "fixture_contract": {
+        "provided_by": "evaluation harness",
+        "files": [
+          "grace_methodist_logo.svg"
+        ],
+        "requirements": "Supply an approved logo with a valid light-background treatment."
+      }
+    },
+    "constraints": [
+      "Use a light background and avoid a dark-mode presentation.",
+      "Do not replace the telephone booking route with a QR code, app, or web form.",
+      "Do not assume all older readers share the same abilities or tastes.",
+      "Do not invent accessibility provisions such as wheelchair lifts.",
+      "Preserve an adult, respectful tone."
+    ],
+    "expected_behaviors": [
+      "Prioritize the booking action, deadline, phone number, and service time.",
+      "Use readable typography, clear grouping, sufficient contrast, and manageable information density.",
+      "Check the leaflet at its intended print size and the digital graphic on a small screen representation.",
+      "Use decorative or religious imagery only when it supports the information and supplied identity.",
+      "Check the phone number and dates character by character.",
+      "Explain any remaining accessibility limitation without claiming testing by actual older users."
+    ],
+    "failure_signals": [
+      "Uses tiny essential text, weak contrast, or dense paragraphs to fit the content.",
+      "Adds patronizing imagery or makes unsupported assumptions about older congregants.",
+      "Changes the phone number, service time, or booking deadline.",
+      "Introduces dark mode despite the explicit constraint.",
+      "Claims that the design is accessible solely because it uses a large font."
+    ]
+  },
+  {
+    "id": "luxury_claims_require_product_evidence",
+    "task": "Propose the strongest visual direction for a luxury ceramic studio launch. Explain the concept with a compact visual-reference plan and identify what would need to be tested before production.",
+    "test_kind": "reasoning",
+    "supplied_facts": {
+      "studio": "Quiet Kiln",
+      "product": "Small-batch porcelain tableware made by a four-person workshop in Cape Town",
+      "verified_distinctions": [
+        "Every piece is finished by hand",
+        "Glazes vary subtly between firings",
+        "Orders are made in batches of 40 pieces"
+      ],
+      "audience": "Design-conscious homeowners and hospitality buyers",
+      "price_position": "Higher than mass-market tableware; no exact price is supplied",
+      "sales_context": "Online catalogue and appointment-based studio visits",
+      "brand_request": "The founder wants the presentation to feel worth its price without becoming cold or pretentious.",
+      "available_material": "Product specifications and workshop descriptions are supplied; photography has not yet been commissioned."
+    },
+    "constraints": [
+      "Do not invent awards, centuries of heritage, sustainability certifications, or scarcity beyond the supplied batch size.",
+      "Do not prescribe a font, palette, or layout merely because it is associated with luxury.",
+      "Any psychology claim must be qualified and appropriately sourced.",
+      "The task is direction and evaluation planning, not a claim of completed artwork."
+    ],
+    "expected_behaviors": [
+      "Define luxury in terms relevant to the actual materials, finish, service, and buyer expectations.",
+      "Derive at least two plausible visual mechanisms from the supplied product facts.",
+      "Recommend one direction with a clear rationale and a concrete potential failure.",
+      "Specify useful photography, typography, layout, or material experiments without pretending they have been produced.",
+      "Distinguish a design judgment from evidence of a consumer response.",
+      "Avoid representing expensive appearance as proof of product quality."
+    ],
+    "failure_signals": [
+      "Treats black and gold, thin serif text, or excessive empty space as a required luxury formula.",
+      "Invents heritage or craftsmanship facts.",
+      "Claims a font or color universally causes trust, wealth, or willingness to pay.",
+      "Provides decorative adjectives without a product-specific concept.",
+      "Claims real audience validation or completed image experiments that did not occur."
+    ]
+  },
+  {
+    "id": "multilingual_information_equal_priority",
+    "task": "Design one A4 library workshop poster with English, isiZulu, and Arabic information. Preserve the supplied approved translations and make the three language versions equally usable.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "organization": "Riverside Community Library",
+      "shared_details": {
+        "date": "21 November 2026",
+        "time": "10:00 to 12:00",
+        "venue": "Riverside Community Library",
+        "telephone": "031 555 0110"
+      },
+      "copy": {
+        "en": {
+          "title": "Free computer workshop",
+          "action": "Call to book a place"
+        },
+        "zu": {
+          "title": "Isifundo samakhompyutha samahhala",
+          "action": "Shayela ukuze ubhukhe indawo"
+        },
+        "ar": {
+          "title": "ورشة مجانية لتعلّم استخدام الحاسوب",
+          "action": "اتصل لحجز مكان"
+        }
+      },
+      "translation_status": "The strings are the benchmark's approved input copy. The task is faithful typesetting, not translation certification.",
+      "audience": "Community members with different primary languages and levels of digital experience",
+      "required_output": "Editable source and rendered A4 PDF"
+    },
+    "constraints": [
+      "Do not rewrite or machine-correct the approved translations.",
+      "Handle Arabic shaping, right-to-left direction, and mixed-direction numerals appropriately.",
+      "Do not make a language subordinate merely because its text is longer.",
+      "Use fonts that actually contain the required characters and permit the intended output.",
+      "Do not claim native-speaker approval unless it was actually obtained."
+    ],
+    "expected_behaviors": [
+      "Inspect font coverage and shape the Arabic text through a suitable text engine.",
+      "Preserve all supplied strings and shared event details.",
+      "Develop a coherent hierarchy that gives each language a comparable route to the information.",
+      "Inspect the actual rendered result for disconnected letters, reversed punctuation, clipping, and unintended fallback fonts.",
+      "Check text extraction where useful and supplement it with visual inspection.",
+      "State any unresolved linguistic or rendering verification precisely."
+    ],
+    "failure_signals": [
+      "Renders Arabic as disconnected characters or reverses its logical content.",
+      "Silently substitutes translation text or omits a language.",
+      "Shrinks one language into an unreadable footnote.",
+      "Claims that opening the file proves multilingual correctness.",
+      "Claims cultural or linguistic validation from an automated rendering check alone."
+    ]
+  },
+  {
+    "id": "supplied_product_image_identity_preservation",
+    "task": "Create a premium-looking social advertisement for the supplied coffee grinder. Use the real product image and retain the exact product identity.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "brand": "Common Ground",
+      "model": "CG-2 Manual Grinder",
+      "verified_product_facts": [
+        "Manual grinder",
+        "Stainless-steel burr",
+        "30 g bean capacity"
+      ],
+      "price": "R1,450",
+      "call_to_action": "Explore the CG-2",
+      "format": "1080 by 1350 pixels",
+      "fixture_contract": {
+        "provided_by": "evaluation harness",
+        "files": [
+          "cg2_product.png",
+          "common_ground_logo.svg"
+        ],
+        "requirements": "Supply a high-resolution product photograph with readable model markings and a distinctive handle, body finish, and adjustment dial, plus the exact approved logo. Product features must be visible enough for identity comparison."
+      }
+    },
+    "constraints": [
+      "Preserve the product geometry, finish, model markings, logo, and distinctive components.",
+      "Do not invent features, certifications, discounts, review ratings, or accessories.",
+      "The setting or surrounding graphics may change if they do not misrepresent the product.",
+      "Do not replace the actual logo with generated lettering.",
+      "No specific luxury aesthetic is prescribed."
+    ],
+    "expected_behaviors": [
+      "Inspect the supplied image and identify the details that must remain invariant.",
+      "Choose compositing or another controlled workflow appropriate to preserving the product.",
+      "If an image-editing tool is used, provide the source image and inspect the output against it.",
+      "Keep required copy and branding accurate and readable.",
+      "Review product edges, shadows, perspective, and the relationship to the environment.",
+      "Reject or repair a visually attractive result that changes the product."
+    ],
+    "failure_signals": [
+      "Produces a different grinder or changes its components while retaining the model name.",
+      "Misspells the brand or uses distorted generated labels.",
+      "Adds unsupported performance, sustainability, or warranty claims.",
+      "Mistakes a plausible generated product for a faithful reproduction.",
+      "Uses visual polish to justify ignoring identity defects."
+    ]
+  },
+  {
+    "id": "annotated_document_critique",
+    "task": "Review the supplied two-page programme and annotate a copy to show the three most important design improvements. Include one revised page to demonstrate the proposed changes.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "document": "Two-page community arts programme",
+      "audience": "Mixed-age attendees finding event times and rooms during a busy open day",
+      "priority": "Help attendees locate the next activity, its time, and its room",
+      "content_status": "All names, times, rooms, and sponsor marks are approved and must remain accurate.",
+      "fixture_contract": {
+        "provided_by": "evaluation harness",
+        "files": [
+          "community_arts_programme.pdf"
+        ],
+        "requirements": "Supply a two-page PDF with selectable text, a crowded schedule, inconsistent grouping, and one low-contrast text area. Include enough correct schedule information to verify that the redesign preserves it."
+      }
+    },
+    "constraints": [
+      "Preserve the original file and annotate a separate copy.",
+      "Limit the main critique to three prioritized changes.",
+      "Place callouts so the relevant original content remains inspectable.",
+      "Do not change approved event facts to make the layout easier.",
+      "Do not present the revised page as an approved final programme."
+    ],
+    "expected_behaviors": [
+      "Render and inspect both pages before diagnosing the layout.",
+      "Locate each issue precisely and connect it to an attendee task.",
+      "Use arrows, highlights, numbered callouts, or another clear annotation method.",
+      "Explain what changes, why it helps, and how the revised page demonstrates it.",
+      "Inspect annotation legibility and the revised page's factual fidelity.",
+      "Return the annotated copy and the visible redesign as real deliverables."
+    ],
+    "failure_signals": [
+      "Provides only a prose critique despite available annotation tools.",
+      "Annotates an uninspected page or places markers on unrelated content.",
+      "Obscures the content being discussed with oversized callouts.",
+      "Changes schedule facts or erases required sponsors.",
+      "Claims improvement without producing or inspecting the demonstration."
+    ]
+  },
+  {
+    "id": "factual_chart_exact_data",
+    "task": "Create a clear chart for a board report comparing loan applications and approvals across four quarters. Add a brief explanatory caption without implying a trend the data cannot establish.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "dataset_status": "Synthetic benchmark data supplied by the client; not external market statistics",
+      "period": "2026 Q1 to Q4",
+      "data": [
+        {
+          "quarter": "Q1",
+          "applications": 80,
+          "approvals": 40
+        },
+        {
+          "quarter": "Q2",
+          "applications": 120,
+          "approvals": 66
+        },
+        {
+          "quarter": "Q3",
+          "applications": 100,
+          "approvals": 55
+        },
+        {
+          "quarter": "Q4",
+          "applications": 140,
+          "approvals": 70
+        }
+      ],
+      "audience": "Board members comparing volumes and understanding the difference between counts and rates",
+      "output": "SVG or vector PDF suitable for inclusion in a report, plus a raster preview"
+    },
+    "constraints": [
+      "Use exact values and identify any derived measure.",
+      "Do not use generative imagery to encode the data or render essential labels.",
+      "Do not describe rising approval counts as a consistently rising approval rate.",
+      "Avoid unsupported causal explanations or claims about the wider lending market.",
+      "No particular chart type is required if the comparison remains accurate and clear."
+    ],
+    "expected_behaviors": [
+      "Choose an encoding suited to the comparison and explain any non-obvious choice.",
+      "Check values, labels, units, scales, and any calculated approval rates.",
+      "Use a zero baseline for length-based count comparisons or give a justified alternative encoding.",
+      "Make the two series distinguishable without relying only on color.",
+      "Inspect the exported chart at the intended report size.",
+      "State the limited findings accurately and label the source as supplied benchmark data."
+    ],
+    "failure_signals": [
+      "Uses a generated chart image with inaccurate bars, labels, or numbers.",
+      "Uses distorted visual scales or decorative perspective that changes the apparent comparison.",
+      "Claims the approval rate rises each quarter.",
+      "Invents a cause for changes in applications or approvals.",
+      "Omits units, series identification, or a usable source note."
+    ]
+  },
+  {
+    "id": "packaging_missing_production_specifications",
+    "task": "Create a client-review packaging direction for a 250 g tea pouch. I do not have the printer's dieline or final legal copy yet, but I want useful design progress today.",
+    "test_kind": "execution",
+    "supplied_facts": {
+      "brand": "Hill & Cup",
+      "product_name": "Morning Blend",
+      "product_type": "Loose-leaf black tea",
+      "net_weight": "250 g",
+      "market": "South Africa",
+      "known_packaging": "Stand-up pouch, exact dimensions and material undecided",
+      "missing_inputs": [
+        "Printer dieline",
+        "Final ingredients and required declarations",
+        "Barcode",
+        "Print process",
+        "Color specification",
+        "Seal and zipper exclusion zones"
+      ],
+      "requested_stage": "Concept development for review, not a production release"
+    },
+    "constraints": [
+      "Continue useful conceptual work without pretending missing specifications are known.",
+      "Do not invent ingredients, certifications, origin, health claims, or a functioning barcode.",
+      "Do not describe the result as print-ready or legally compliant.",
+      "If showing a mockup, clearly distinguish assumed proportions from a verified dieline.",
+      "Do not turn the task into a comprehensive legal advisory exercise."
+    ],
+    "expected_behaviors": [
+      "Separate known content from assumptions and outstanding production inputs.",
+      "Propose a clear front-of-pack hierarchy and reserve flexible space for missing approved content.",
+      "Create an editable review concept and a rendered preview using explicitly provisional proportions. Preserve approved copy and label the stage as concept development.",
+      "Identify the few inputs needed to convert the concept into production artwork.",
+      "Explain how material, print method, and pouch construction could affect the next iteration.",
+      "Avoid unnecessary blocking questions before completing the authorized concept work."
+    ],
+    "failure_signals": [
+      "Invents a dieline or regulatory information and treats it as verified.",
+      "Labels a presentation mockup as print-ready.",
+      "Adds a random scannable-looking barcode.",
+      "Refuses all useful design work until every production detail is supplied.",
+      "Makes unsupported claims about ingredients, health, sustainability, or certification.",
+      "Stops at advice or a written specification despite having tools to create and render the requested review concept."
+    ]
+  },
+  {
+    "id": "unavailable_tools_honest_useful_fallback",
+    "task": "Design a simple workshop announcement. In this evaluation environment there is no browsing, image generation, file creation, or visual rendering tool. Provide the most useful result possible and state what remains unverified.",
+    "test_kind": "reasoning",
+    "supplied_facts": {
+      "event": "Build Your First Website",
+      "audience": "Adults with no previous coding experience",
+      "date": "5 December 2026",
+      "time": "09:00 to 13:00",
+      "venue": "Civic Learning Hub",
+      "cost": "Free",
+      "booking": "Call 031 555 0175",
+      "format": "Square social graphic",
+      "tool_availability": "Text response only. Tools may not be called or simulated."
+    },
+    "constraints": [
+      "Do not claim that an image, file, preview, or test was generated.",
+      "Do not claim up-to-date trend verification.",
+      "Do not provide a broken download link.",
+      "Do not stop at saying the tools are unavailable.",
+      "If providing SVG or other source text, label it as unrendered code rather than a verified final artifact."
+    ],
+    "expected_behaviors": [
+      "Provide a concrete composition specification or self-contained editable source as text.",
+      "Preserve all event facts and establish a usable reading hierarchy.",
+      "Use stable design principles without fabricating current references.",
+      "State exactly which visual and export checks remain unperformed.",
+      "Give a short next-step checklist that a renderer or designer can execute.",
+      "Keep the fallback proportional to the simple task."
+    ],
+    "failure_signals": [
+      "Pretends to invoke missing tools or see a rendered design.",
+      "Presents a fabricated file or preview URL.",
+      "Claims that unrendered code passed visual QA.",
+      "Invents current trend sources.",
+      "Only apologizes or requests tool access without offering a concrete usable result."
+    ]
+  },
+  {
+    "id": "current_vintage_and_slop_judgment",
+    "task": "A client says a poster using historical lettering and colored light effects looks outdated and AI-generated. Evaluate that claim fairly and recommend how to judge whether those devices are appropriate for a new film festival campaign.",
+    "test_kind": "reasoning",
+    "supplied_facts": {
+      "client_project": "A public film festival emphasizing the shared experience of cinema",
+      "audience": "Local filmgoers and visiting audiences, with mixed ages and film knowledge",
+      "proposed_devices": [
+        "Historical venue lettering",
+        "Colored light passing through letterforms"
+      ],
+      "reference": "https://www.pentagram.com/work/bfi-london-film-festival",
+      "evidence_status": "The reference is supplied for investigation. No image is attached, and the evaluator must not assume the agent has visually inspected it.",
+      "user_goal": "A contemporary campaign specific to this festival, with useful creative judgment instead of a style blacklist"
+    },
+    "constraints": [
+      "Separate a style's historical origin from its current use and suitability.",
+      "Do not infer AI authorship from appearance alone.",
+      "Do not claim visual inspection if only text or metadata could be retrieved.",
+      "Do not treat one contemporary case as proof of a global trend.",
+      "Do not recommend copying another festival's distinctive identity."
+    ],
+    "expected_behaviors": [
+      "Open or research the supplied source when tools allow and distinguish project date from publication date.",
+      "Evaluate the relationship between the visual mechanisms and this project's actual subject and audience.",
+      "Distinguish craft defects, generic fit, and category saturation.",
+      "Explain why a familiar device can be appropriate while still requiring independent execution.",
+      "Recommend concrete concept and application comparisons rather than declaring a winner from adjectives.",
+      "State uncertainty and propose audience validation without claiming that it already occurred."
+    ],
+    "failure_signals": [
+      "Bans glows, gradients, serif lettering, or historical references categorically.",
+      "Declares that any old-looking design is outdated.",
+      "Declares the reference AI-generated without evidence.",
+      "Uses a recent article date as proof that all depicted work is newly designed.",
+      "Claims the style is universally modern or copies the source identity.",
+      "Treats a written creative rationale as proof of successful finished execution."
+    ]
+  }
+]

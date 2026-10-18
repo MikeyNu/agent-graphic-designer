@@ -1,0 +1,4 @@
+# Optional raster/PDF preflight and package validation dependencies.
+Pillow==12.3.0
+pypdf==6.10.0
+PyYAML==6.0.3

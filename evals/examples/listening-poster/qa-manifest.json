@@ -1,0 +1,115 @@
+{
+  "status": "Final digital artwork for a fictional practice brief",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "copy": [
+    "STILL / SOUND",
+    "An evening of deep listening",
+    "Saturday 21 November 2026",
+    "Studio Four",
+    "18:30",
+    "Bring a record. Hear something new."
+  ],
+  "copy_exact": true,
+  "weekday_check": "Saturday, verified with Python datetime",
+  "all_text_inside_canvas": true,
+  "text_bounds_xywh": {
+    "event-title": [
+      70.976,
+      66.462,
+      746.412,
+      368.552
+    ],
+    "subtitle": [
+      64.68,
+      456.72,
+      496.76,
+      38.0
+    ],
+    "date": [
+      66.16,
+      1116.65,
+      567.18,
+      43.155
+    ],
+    "place": [
+      65.536,
+      1174.43,
+      266.112,
+      36.672
+    ],
+    "time": [
+      896.528,
+      1175.25,
+      117.6,
+      35.856
+    ],
+    "cta": [
+      67.239,
+      1260.11,
+      656.861,
+      38.827
+    ]
+  },
+  "fonts": [
+    {
+      "family": "Nimbus Sans",
+      "style": "Regular",
+      "path": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf",
+      "version": "Version 1.00",
+      "glyphs_missing": []
+    },
+    {
+      "family": "Nimbus Sans",
+      "style": "Bold",
+      "path": "/usr/share/fonts/opentype/urw-base35/NimbusSans-Bold.otf",
+      "version": "Version 1.00",
+      "glyphs_missing": []
+    }
+  ],
+  "live_text_element_count": 6,
+  "portable_text_element_count": 0,
+  "source_and_portable_render_pixel_identical": false,
+  "source_and_portable_render_difference": {
+    "changed_pixels": 3029,
+    "total_pixels": 1458000,
+    "max_channel_delta": 15,
+    "mean_channel_delta": [
+      0.003390946502057613,
+      0.0033161865569272977,
+      0.002965706447187929
+    ],
+    "bounds": [
+      64,
+      69,
+      1015,
+      1290
+    ]
+  },
+  "source_and_portable_visual_correspondence": "PASS: visually inspected; same content and layout, small glyph-edge rasterization differences",
+  "contrast_ratios": {
+    "Text": 14.208640141448065,
+    "Groove artwork": 14.053243918279536
+  },
+  "color_profile": "Embedded sRGB ICC profile in final PNG",
+  "font_files_bundled": false,
+  "reference_images_embedded": false,
+  "render_program": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+  "artifacts": {
+    "still-sound-editable.svg": {
+      "bytes": 4948,
+      "sha256": "e80c26c0ebd81daee874ba6895414e26cd2b4093ecf70404a16d5bcc854e1b07"
+    },
+    "still-sound-outlined.svg": {
+      "bytes": 40864,
+      "sha256": "515e71db6d858d8426583d96b5f8e3284cb2837517b60c5d803e1d7c3303b4d4"
+    },
+    "still-sound.png": {
+      "bytes": 302182,
+      "sha256": "d3862bd23e5ad242f419f58a56622dd10af7477067e1831ae1b5bb34ddc3d1ac"
+    }
+  },
+  "preflight_scope": "Script reports only structural checks. Visual inspection is recorded separately in rationale-and-checks.md."
+}

@@ -1,0 +1,793 @@
+{
+  "version": "common-ground-a5.svg / revision 2",
+  "source_preservation": {
+    "status": "PASS",
+    "sha256": "e260101e23f5bdcf81db747dafff088652dbb48e9640156ab53b232674b8ba94",
+    "method": "byte-for-byte comparison and SHA-256"
+  },
+  "copy": {
+    "status": "PASS",
+    "method": "XML visible text extraction normalized only for whitespace, exact ordered comparison with all nine approved items",
+    "extracted": [
+      "COMMON GROUND",
+      "Repair together.",
+      "A neighbourhood repair day",
+      "Saturday 14 November 2026",
+      "09:00 to 13:00",
+      "Civic Hall",
+      "Free entry",
+      "Bring one small item. Tools provided.",
+      "Everyone welcome"
+    ]
+  },
+  "weekday": {
+    "status": "PASS",
+    "method": "Python datetime Gregorian calendar",
+    "result": "Saturday 14 November 2026"
+  },
+  "fonts": {
+    "status": "PASS",
+    "method": "fc-match plus fontTools name tables and cmap for packaged DejaVu Sans Regular/Bold; visual specimen reviewed",
+    "data": [
+      {
+        "file": "DejaVuSans.ttf",
+        "names": {
+          "1": [
+            "DejaVu Sans"
+          ],
+          "2": [
+            "Book"
+          ],
+          "5": [
+            "Version 2.37"
+          ],
+          "6": [
+            "DejaVuSans"
+          ]
+        },
+        "missing_approved_glyphs": []
+      },
+      {
+        "file": "DejaVuSans-Bold.ttf",
+        "names": {
+          "1": [
+            "DejaVu Sans"
+          ],
+          "2": [
+            "Bold"
+          ],
+          "5": [
+            "Version 2.37"
+          ],
+          "6": [
+            "DejaVuSans-Bold"
+          ]
+        },
+        "missing_approved_glyphs": []
+      }
+    ]
+  },
+  "geometry": {
+    "status": "PASS",
+    "method": "Inkscape query-all bounds in CSS px; visual overlap inspection performed separately",
+    "text_and_illustration": [
+      {
+        "id": "common-ground",
+        "bbox_css_px": [
+          38.6894,
+          38.6442,
+          205.34,
+          13.5785
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 10.225
+      },
+      {
+        "id": "repair-together",
+        "bbox_css_px": [
+          34.0923,
+          78.141,
+          371.795,
+          151.179
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 9.02
+      },
+      {
+        "id": "event-description",
+        "bbox_css_px": [
+          37.9577,
+          239.325,
+          289.816,
+          20.1175
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 10.043
+      },
+      {
+        "id": "repair-tools",
+        "bbox_css_px": [
+          162.544,
+          278.071,
+          243.642,
+          140.105
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 40.53
+      },
+      {
+        "id": "event-date",
+        "bbox_css_px": [
+          39.7621,
+          461.071,
+          437.515,
+          26.7326
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 10.52
+      },
+      {
+        "id": "event-time",
+        "bbox_css_px": [
+          39.477,
+          505.475,
+          185.496,
+          19.2958
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 10.445
+      },
+      {
+        "id": "event-venue",
+        "bbox_css_px": [
+          39.4894,
+          558.093,
+          172.653,
+          26.3257
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 10.448
+      },
+      {
+        "id": "free-entry",
+        "bbox_css_px": [
+          369.641,
+          562.681,
+          129.718,
+          21.4259
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 15.878
+      },
+      {
+        "id": "bring-item",
+        "bbox_css_px": [
+          37.7261,
+          649.139,
+          250.246,
+          54.9868
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 9.982
+      },
+      {
+        "id": "everyone-welcome",
+        "bbox_css_px": [
+          39.9637,
+          737.958,
+          245.39,
+          23.0453
+        ],
+        "within_page": true,
+        "trim_clearance_mm": 8.651
+      }
+    ]
+  },
+  "svg_preflight": {
+    "file": "common-ground-a5.svg",
+    "kind": "svg",
+    "metadata": {
+      "file_bytes": 3321,
+      "safe_for_static_image_embedding": true,
+      "dimensions": {
+        "width": {
+          "raw": "148mm",
+          "status": "PASS",
+          "pixels": 559.3700787401575,
+          "unit": "mm"
+        },
+        "height": {
+          "raw": "210mm",
+          "status": "PASS",
+          "pixels": 793.7007874015749,
+          "unit": "mm"
+        }
+      },
+      "viewbox": [
+        0.0,
+        0.0,
+        592.0,
+        840.0
+      ],
+      "preserve_aspect_ratio": "xMidYMid meet",
+      "active_features": [],
+      "dependencies": [],
+      "font_families": [
+        "DejaVu Sans"
+      ],
+      "contains_text_elements": true
+    },
+    "checks": [
+      {
+        "name": "file_read",
+        "status": "PASS",
+        "message": "Read the supplied local file without changing it."
+      },
+      {
+        "name": "svg_parse",
+        "status": "PASS",
+        "message": "Parsed a standalone SVG document without executing it."
+      },
+      {
+        "name": "width",
+        "status": "PASS",
+        "message": "Declared absolute length converted using 96 CSS px per inch."
+      },
+      {
+        "name": "height",
+        "status": "PASS",
+        "message": "Declared absolute length converted using 96 CSS px per inch."
+      },
+      {
+        "name": "viewbox",
+        "status": "PASS",
+        "message": "viewBox contains four finite values and positive width and height."
+      },
+      {
+        "name": "aspect_mapping",
+        "status": "PASS",
+        "message": "Declared viewport and viewBox have matching aspect ratios."
+      },
+      {
+        "name": "unique_ids",
+        "status": "PASS",
+        "message": "Checked for duplicate id attributes."
+      },
+      {
+        "name": "static_content",
+        "status": "PASS",
+        "message": "No known active or animated features detected by this limited scan."
+      },
+      {
+        "name": "css_dependencies",
+        "status": "PASS",
+        "message": "No unsupported CSS dependency syntax detected."
+      },
+      {
+        "name": "self_contained",
+        "status": "PASS",
+        "message": "References are internal fragments or embedded raster data."
+      },
+      {
+        "name": "fonts",
+        "status": "NOT RUN",
+        "message": "Font availability, fallback, glyph coverage, shaping, and licensing require separate verification."
+      },
+      {
+        "name": "artwork_bounds",
+        "status": "NOT RUN",
+        "message": "Geometric bounds, clipped content, masks, filters, and visible crop correctness need rendering."
+      },
+      {
+        "name": "visual_review",
+        "status": "NOT RUN",
+        "message": "Render and inspect the final artifact at delivery size and in its intended context."
+      }
+    ],
+    "scope": "Local metadata and structural checks only. No visual review, font-license verification, accessibility audit, PDF/X validation, or client-readiness certification.",
+    "status": "NOT RUN"
+  },
+  "png_preflight": {
+    "file": "common-ground-a5.png",
+    "kind": "raster",
+    "metadata": {
+      "file_bytes": 227704,
+      "format": "PNG",
+      "pixel_dimensions": [
+        1748,
+        2480
+      ],
+      "display_pixel_dimensions": [
+        1748,
+        2480
+      ],
+      "mode": "RGB",
+      "exif_orientation": 1,
+      "frames": 1,
+      "has_alpha_channel_or_transparency": false,
+      "embedded_icc_profile": true,
+      "declared_dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "checks": [
+      {
+        "name": "file_read",
+        "status": "PASS",
+        "message": "Read the supplied local file without changing it."
+      },
+      {
+        "name": "raster_decode",
+        "status": "PASS",
+        "message": "The first raster frame decoded successfully; appearance was not inspected."
+      },
+      {
+        "name": "other_frames",
+        "status": "N/A",
+        "message": "Single-frame image."
+      },
+      {
+        "name": "color_profile",
+        "status": "NOT RUN",
+        "message": "ICC presence is reported; profile correctness and output suitability are not validated."
+      },
+      {
+        "name": "effective_ppi",
+        "status": "N/A",
+        "message": "No explicit print size supplied; DPI metadata alone is not a quality test."
+      },
+      {
+        "name": "crop_and_sharpness",
+        "status": "NOT RUN",
+        "message": "Crop, halos, compression defects, generated-image errors, and useful detail require visual inspection."
+      },
+      {
+        "name": "visual_review",
+        "status": "NOT RUN",
+        "message": "Render and inspect the final artifact at delivery size and in its intended context."
+      }
+    ],
+    "scope": "Local metadata and structural checks only. No visual review, font-license verification, accessibility audit, PDF/X validation, or client-readiness certification.",
+    "status": "NOT RUN"
+  },
+  "digital_contrast": {
+    "status": "PASS",
+    "conditions": "Exact opaque sRGB pairs; all visible flyer text uses either ink/paper or ink/amber; numeric diagnostic does not establish full accessibility or physical print contrast",
+    "data": {
+      "source-name-descriptor": {
+        "status": "FAIL",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#c2bfb8",
+          "background": "#faf8f2",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            0.7607843137254902,
+            0.7490196078431373,
+            0.7215686274509804
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9725490196078431,
+            0.9490196078431372
+          ]
+        },
+        "ratio": 1.7287425334083675,
+        "ratio_display": "1.73:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "FAIL"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      },
+      "source-date-venue": {
+        "status": "FAIL",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#b9b5aa",
+          "background": "#faf8f2",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            0.7254901960784313,
+            0.7098039215686275,
+            0.6666666666666666
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9725490196078431,
+            0.9490196078431372
+          ]
+        },
+        "ratio": 1.9286242882365505,
+        "ratio_display": "1.93:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "FAIL"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      },
+      "source-free-entry": {
+        "status": "FAIL",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#ffffff",
+          "background": "#e6a939",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.9019607843137255,
+            0.6627450980392157,
+            0.2235294117647059
+          ]
+        },
+        "ratio": 2.079441146190662,
+        "ratio_display": "2.08:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "FAIL"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "FAIL"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      },
+      "source-instructions": {
+        "status": "FAIL",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#87847d",
+          "background": "#faf8f2",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            0.5294117647058824,
+            0.5176470588235295,
+            0.49019607843137253
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9725490196078431,
+            0.9490196078431372
+          ]
+        },
+        "ratio": 3.5142273915420197,
+        "ratio_display": "3.51:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "FAIL"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "FAIL"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      },
+      "final-ink-paper": {
+        "status": "PASS",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#173E36",
+          "background": "#F7F3E8",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            0.09019607843137255,
+            0.24313725490196078,
+            0.21176470588235294
+          ],
+          "background": [
+            0.9686274509803922,
+            0.9529411764705882,
+            0.9098039215686274
+          ]
+        },
+        "ratio": 10.648100790467327,
+        "ratio_display": "10.65:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "PASS"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "PASS"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "PASS"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      },
+      "final-ink-amber": {
+        "status": "PASS",
+        "target": "normal-text-aa",
+        "input": {
+          "foreground": "#173E36",
+          "background": "#E79A3B",
+          "canvas": null
+        },
+        "effective_srgb_0_to_1": {
+          "foreground": [
+            0.09019607843137255,
+            0.24313725490196078,
+            0.21176470588235294
+          ],
+          "background": [
+            0.9058823529411765,
+            0.6039215686274509,
+            0.23137254901960785
+          ]
+        },
+        "ratio": 5.106495941757136,
+        "ratio_display": "5.11:1",
+        "assessments": {
+          "normal-text-aa": {
+            "threshold": 4.5,
+            "status": "PASS"
+          },
+          "large-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          },
+          "normal-text-aaa": {
+            "threshold": 7.0,
+            "status": "FAIL"
+          },
+          "large-text-aaa": {
+            "threshold": 4.5,
+            "status": "PASS"
+          },
+          "non-text-aa": {
+            "threshold": 3.0,
+            "status": "PASS"
+          }
+        },
+        "scope": "Solid sRGB colors only. Alpha uses source-over compositing in encoded sRGB channel space on the stated opaque canvas. Gradients, images, blend modes, color management, font rendering, and accessibility conformance are not tested. The caller must determine whether a criterion and its exceptions apply.",
+        "large_text_definition": "At least 18 pt regular or 14 pt bold, with equivalent provisions for other scripts; assess at delivery size."
+      }
+    }
+  },
+  "visual_inspection": {
+    "status": "PASS",
+    "method": "Actual exported images opened with view_image; final result read visually, including crops and annotations. Tool metadata alone was not treated as visual inspection.",
+    "artifacts_and_conditions": [
+      "source-preview.png: 888x1260",
+      "common-ground-a5.png: 1748x2480 flat export (view tool display may reduce large images)",
+      "common-ground-a5-small.png: 592x840",
+      "common-ground-a5-phone.png: 370x525 reduced digital diagnostic",
+      "common-ground-a5-grayscale.png: 592x840 grayscale diagnostic",
+      "detail-information.png: 1560x995 crop of date, time, venue, entry, instructions and welcome",
+      "annotated-review.png: 1880x1240, with evidence images, anchored region boxes and all six notes",
+      "concept-comparison.png: 1880x1110, all three A5 routes",
+      "type-specimens.png: 1660x760, three available font families",
+      "subtraction-with-workbench-line.png: 592x840, comparison against retained plain field",
+      "outlined-preview.png: 1748x2480, actual outlined SVG rendered and viewed"
+    ],
+    "physical_size_limit": "No calibrated 1:1 physical display or print was inspected. A5 dimensions and point sizes are calculated from SVG units."
+  },
+  "physical_print_proof": {
+    "status": "NOT RUN",
+    "reason": "No printer, stock or output profile supplied; no physical proof available."
+  },
+  "print_workflow_preflight": {
+    "status": "NOT RUN",
+    "reason": "A5 trim-size RGB artwork only. Bleed, output intent, marks, destination ICC profile, separations and overprint have not been set or checked for a named printer."
+  },
+  "audience_testing": {
+    "status": "NOT RUN",
+    "reason": "No representative participants; internal critique only."
+  },
+  "qr_barcode": {
+    "status": "N/A",
+    "reason": "None requested or included."
+  },
+  "external_reference_images": {
+    "status": "NOT RUN",
+    "inspected": [
+      "Two Wolff Olins NYBG application images, 2024 project"
+    ],
+    "not_inspected": [
+      "Repair Café manual/brand graphics; tool exposed text only and direct download returned 403.",
+      "National Archives mending poster; direct retrieval returned 403."
+    ],
+    "limitations": "These blocked images were not used to make observed visual claims.",
+    "coverage": "Partial visual reference coverage; named inspected images remain documented."
+  },
+  "bundled_qa_guide": {
+    "status": "PASS",
+    "method": "Read the completed references/tools.md in full before final handoff and reconciled the documented scope with the invoked scripts.",
+    "current_state": "Guide present in final assembled skill package.",
+    "history": "Guide was not yet assembled at the start of this trial. The actual scripts were present and their --help was read before use; this is a historical assembly-time observation, not an outstanding limitation."
+  },
+  "release_status": "final digital artwork; not prepared for a named print workflow",
+  "defect_log": [
+    {
+      "location": "initial tool illustration",
+      "severity": "important",
+      "observation": "Tools overlapped descriptor and touched divider.",
+      "repair": "Reduced scale to 0.8, repositioned and made angles shallower.",
+      "recheck": "PASS: final render viewed and independent reviewer confirmed clearance."
+    },
+    {
+      "location": "initial review board",
+      "severity": "blocking",
+      "observation": "Renderer omitted embedded source/revision PNG images using href alone.",
+      "repair": "Added xlink namespace and xlink:href.",
+      "recheck": "PASS: actual re-export viewed with both images present and numbered boxes correctly anchored."
+    },
+    {
+      "location": "decorative line trial",
+      "severity": "minor",
+      "observation": "Curved amber line competed with the information divider.",
+      "repair": "Removed after controlled comparison.",
+      "recheck": "PASS: retained simpler field."
+    }
+  ],
+  "independent_internal_review": {
+    "status": "PASS",
+    "reviewer": "Separate AI agent /root",
+    "artifact": "common-ground-a5-small.png revision 2; annotated-review.png and reduced/full compositions",
+    "observations": "Correct copy and hierarchy clear; illustration clears descriptor; full footer inside format; tools communicate repair without extra claims; six annotated callouts preserve visible source evidence and connect observations with implemented changes; no further consequential visible defect.",
+    "limits": "No participant study, physical proof or client approval."
+  },
+  "physical_type_sizes": {
+    "method": "SVG font size * (148 mm / 592 viewBox units) * (72 pt / 25.4 mm)",
+    "units_to_mm": 0.25,
+    "type_sizes_pt": {
+      "wordmark": 13.46457,
+      "headline": 58.11024,
+      "descriptor": 15.59055,
+      "date": 20.55118,
+      "time": 19.13386,
+      "venue": 25.51181,
+      "entry": 17.00787,
+      "instructions": 17.71654,
+      "welcome": 17.71654
+    }
+  },
+  "annotation_evidence": {
+    "status": "PASS",
+    "method": "Decoded both data-URI image payloads from the final review SVG; byte and hash comparison against the preserved original render and final small preview. Visual anchors separately inspected.",
+    "embedded_images": [
+      {
+        "expected_file": "source-preview.png",
+        "matches_file_bytes": true,
+        "sha256": "6fe56c4beae7eec3a624239c80ee8f3d8942972cf3f7c52e4da210ab99c24fc6"
+      },
+      {
+        "expected_file": "common-ground-a5-small.png",
+        "matches_file_bytes": true,
+        "sha256": "39729d96089fd430712017cef3ac441b5e32aa1a07bc0b2a45031283a208b254"
+      }
+    ]
+  },
+  "raster_delivery": {
+    "status": "PASS",
+    "dimensions": [
+      1748,
+      2480
+    ],
+    "mode": "RGB",
+    "alpha": false,
+    "icc_profile_name": "sRGB built-in",
+    "effective_ppi_if_placed_at_a5": [
+      299.99459459459456,
+      299.9619047619047
+    ],
+    "ppi_gate": "N/A: no print-provider resolution gate supplied; approximately 300 PPI is informational."
+  },
+  "outlined_companion": {
+    "status": "PASS",
+    "text_elements": 0,
+    "method": "XML element count, actual render viewed, raster comparison at 1748x2480",
+    "pixel_identical": false,
+    "rms_rgb_0_to_255": [
+      0.11106852997553539,
+      0.09150751420982485,
+      0.08991945207528322
+    ],
+    "interpretation": "Tiny antialiasing differences; no visible layout change found."
+  },
+  "checks_complete_for_requested_digital_deliverables": true,
+  "final_artifact_hashes": {
+    "common-ground-a5.svg": "ebdc35f3114d008b8bd4e499f3af7ed72cbb2c14fe2765691acaed6a67860182",
+    "common-ground-a5.png": "c8acbcaf794d7fc27f390f1bb82fd356dee42f34d2fa04293dac748b21501f67",
+    "common-ground-a5-outlined.svg": "6819dfeef8dbae819844d59c003f79cb7cf46b4bf2f09422db3f9d3d34101f13",
+    "annotated-review.svg": "e2d731323894d5e680c454e1400e3404b3b534b7b918313ff46fe0d03fdf4c03",
+    "annotated-review.png": "7733a4304e0d89e40ec140249aaf47def8b371ea8b9cc5ffeeb5064940f17d5d",
+    "source-original.svg": "e260101e23f5bdcf81db747dafff088652dbb48e9640156ab53b232674b8ba94"
+  },
+  "repository_example_scope": "Curated record from the creation run. Some diagnostic views and the original font bundle were inspected during that run but are not redistributed in this repository example. Installed font paths record that environment. Source paths have been made relative where possible."
+}

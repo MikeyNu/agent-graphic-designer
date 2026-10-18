@@ -1,0 +1,30 @@
+{
+  "template_version": "1.0",
+  "artifact": "",
+  "artifact_version": "",
+  "requested_delivery": "",
+  "delivery_status": "concept study",
+  "reviewer": "",
+  "reviewed_at": null,
+  "conditions": [],
+  "checks": [
+    {"id": "approved_content", "required": true, "status": "NOT RUN", "criterion": "Approved facts and required copy match the final artifact.", "method": "", "evidence": ""},
+    {"id": "visual_inspection", "required": true, "status": "NOT RUN", "criterion": "Inspect the actual final artifact at relevant sizes and detail.", "method": "", "evidence": ""},
+    {"id": "delivery_specification", "required": true, "status": "NOT RUN", "criterion": "Requested format, dimensions, variants, and editability are correct.", "method": "", "evidence": ""},
+    {"id": "accessibility_scope", "required": true, "status": "NOT RUN", "criterion": "Establish and verify applicable accessibility requirements.", "method": "", "evidence": ""},
+    {"id": "rights", "required": true, "status": "NOT RUN", "criterion": "Asset and font permissions support the requested use and handoff.", "method": "", "evidence": ""},
+    {"id": "print_production", "required": false, "status": "NOT RUN", "criterion": "Apply the named print provider's specification when print delivery is requested.", "method": "", "evidence": ""}
+  ],
+  "design_critique": {
+    "fit": {"judgment": null, "evidence": ""},
+    "communication": {"judgment": null, "evidence": ""},
+    "distinctiveness": {"judgment": null, "evidence": ""},
+    "craft": {"judgment": null, "evidence": ""},
+    "coherence": {"judgment": null, "evidence": ""}
+  },
+  "defects": [],
+  "changes": [],
+  "rechecks": [],
+  "limitations": [],
+  "human_approval": {"status": "NOT RUN", "evidence": ""}
+}

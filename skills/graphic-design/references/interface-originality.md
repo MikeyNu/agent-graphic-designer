@@ -23,6 +23,8 @@ Do not evade the second constraint by mirroring the columns, making the same spl
 
 Keep legitimate status labels, filter chips, category controls, and necessary announcements where they help the task. Put important announcements in a distinct, appropriately placed region rather than attaching them to the hero heading. Keep readable left-aligned body copy, tables, forms, conventional navigation, familiar icons, and recognizable controls. The constraint targets a repeated hero composition, not alignment throughout the interface.
 
+A product-detail view pairing product imagery with variant selection, specifications, and purchase controls is not automatically the rejected promotional hero. Judge its task and content relationship. This distinction does not permit relabeling a generic marketing split as a product detail to evade the constraint.
+
 ## 2. Diagnose the visible problem
 
 Use concrete observations and consequences. A smell triggers review; it is not a probabilistic AI detector. Several co-occurring smells warrant reopening the concept, but no arbitrary count certifies quality.
@@ -34,7 +36,7 @@ Use concrete observations and consequences. A smell triggers review; it is not a
 | Repeated section recipe | Every section is eyebrow, title, paragraph, three equal cards | Organize each section around its question: comparison, evidence, sequence, work sample, or action. |
 | Card carpet | Similar boxes for unrelated content; nested panels; no clear priority | Use shared surfaces, lists, tables, or editorial structure where they express relationships. |
 | Decoration carries the brand | Default glows, purple gradients, mesh, glass, sparkles, blobs, floating spheres | Run a subtraction comparison; retain only a purposeful part of the visual idea. |
-| Dashboard theater | Fictional charts, four KPI tiles, unreadable miniature UI | Use real metrics and operational decisions, or clearly bounded prototype fixtures. |
+| Dashboard theater | Fictional charts, duplicated metric labels, unexplained totals, decorative data glyphs, unreadable miniature UI | Reconcile definitions and scope, use meaningful encodings, and support an operational decision. Keep prototype fixtures explicit. |
 | Type is loud but unspecific | Oversized vague promise, arbitrary italic word, tiny gray support copy | Establish a voice through actual wording and role-based typography; inspect delivered size. |
 | Excessive whitespace or density | Empty screens require scrolling to reach the task, or all content competes | Set density for the information and user context; preserve grouping and priority. |
 | Motion masks weak structure | Every object enters late, continuous float, scroll lock, cursor replacement | Keep essential content immediately available; animate meaningful change or explanation. |

@@ -1,6 +1,6 @@
 ---
 name: graphic-design
-description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, apps, dashboards, portals, navigation, forms, onboarding, design systems, responsive interfaces, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant image, vector, web, document, and production tools.
+description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, onboarding, design systems, responsive interfaces, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant image, vector, web, document, and production tools.
 ---
 
 # Graphic Design
@@ -26,9 +26,12 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | Decision or task | Read |
 | --- | --- |
 | Website, app, dashboard, portal, responsive layout, or design system | [UI and UX design](references/ui-ux-design.md) |
+| SaaS dashboard, analytics, queue, bulk action, collaboration, or administration | [SaaS product design](references/saas-product-design.md) |
+| Mobile app, device input, notification entry, interruption, or offline behavior | [Mobile app design](references/mobile-app-design.md) |
 | Forms, navigation, states, flows, accessibility, motion, or interface QA | [Interaction and validation](references/interaction-and-validation.md) |
 | New interface composition, hero, or repetitive AI-looking UI | [Interface originality](references/interface-originality.md) |
 | Studying Dribbble, Mobbin, Page Flows, Recent, or product references | [Interface reference study](references/interface-reference-study.md) |
+| Studying SaaS and mobile examples, including paired desktop/mobile workflows | [SaaS and mobile reference study](references/saas-mobile-reference-study.md) |
 | New composition, hierarchy, visual balance, or annotated critique | [Composition and layout](references/composition-and-layout.md) |
 | Font selection, personality, microtypography, language, or perception | [Typography and perception](references/typography-and-perception.md) |
 | Palette, emotional associations, contrast, or output color | [Color and accessibility](references/color-and-accessibility.md) |
@@ -44,7 +47,7 @@ Use the [brief template](assets/brief-template.md), [concept review](assets/conc
 
 For substantive UI/UX work, read the UI/UX, interaction, and interface-originality guides before designing. Apply the core art-direction workflow with these additional gates:
 
-1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones.
+1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; establish data scope, authority, interruption, and return context before styling.
 2. Study relevant screens and flows with the reference-study method. Distinguish visual observation from text-only descriptions, inaccessible content, and unverified promotional claims.
 3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Derive a direction from the product and task.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.

@@ -2,6 +2,8 @@
 
 Use for websites, apps, dashboards, portals, and reusable interface systems. Read [interaction and validation](interaction-and-validation.md) before specifying behavior, and [interface originality](interface-originality.md) before choosing a new visual direction. These are practical design instructions, not a fixed style or proof of usability.
 
+For recurring operational work, continue with [SaaS product design](saas-product-design.md). For mobile task adaptation, device capabilities, and interruption, use [mobile app design](mobile-app-design.md). Load the relevant guide rather than applying marketing-page structure to working interfaces.
+
 ## Contents
 
 - [1. Define the experience](#1-define-the-experience)
@@ -38,6 +40,8 @@ Group by relationships people need to understand, not by the available component
 
 Make task priority visible. A work queue should expose what needs attention and why. A personal dashboard should help someone continue or act, not open with four interchangeable KPI tiles because space is available. A metric needs a meaningful time window, unit, comparison, and a next action where relevant.
 
+Check the data model behind the composition: definition, population, time range, denominator, unit, source, freshness, and whether higher or lower is desirable. Reconcile headline totals with filtered lists and detail views; explain differing scopes rather than silently displaying conflicting numbers. Catch duplicate metric labels and copied sample values. Use a chart whose position, length, area, or other encoding answers the actual comparison; decorative dots, petals, and gradients must not imply unsupported quantitative meaning. Keep a legible value or suitable text/table alternative. These are practical review rules, illustrated by the [Dribbble follow-up](interface-reference-study.md#dribbble-visual-follow-up-after-access-was-restored), not measured claims about those products' outcomes.
+
 Use progressive disclosure for secondary detail or advanced settings. Keep costs, consequences, essential instructions, and critical choices visible before commitment. Do not hide required actions in hover states, mystery icons, or tooltips. An info icon can explain a term; it cannot carry the only explanation of a fee or failure.
 
 Distinguish navigation from selection. Tabs switch related views; filters constrain a collection; segmented controls choose a mode; buttons perform actions. Do not make all four look identical. Preserve filter, sort, pagination, and return position when users inspect an item and come back. Use deep links when a view should be shareable or restorable.
@@ -70,6 +74,8 @@ Use proximity and common alignment to group. Increase separation between groups 
 Create a clear first focus without making every heading oversized. A display headline can be expressive; form labels, navigation, numeric values, and dense operational text need consistent reading rhythm. Inspect the actual longest label, numeral formatting, language glyphs, and line breaks. Do not force center alignment onto long text to avoid the banned hero formula.
 
 Give imagery a job: demonstrate the product, establish a meaningful setting, show work, compare states, or explain a process. A floating dashboard miniature that cannot be read and communicates nothing specific is decoration. Do not invent product capabilities to make a convincing screenshot.
+
+For commerce, align imagery and metadata with what determines the choice: shape, scale, material, available variant, price, and relevant specifications. Keep selection and purchase context together. A color swatch needs an accessible name and selected-state indication; distinguish a different viewing angle from a different variant. Ensure the displayed image, price, availability, and resulting cart item agree. Never infer that these behaviors work from a polished product mockup.
 
 Use cards when containment explains a unit or action. Use plain rows, dividers, spacing, typography, or shared surfaces when these communicate better. Neither borderless bento nor brutalist typography is a universal answer. Maintain a deliberate relationship between page margins, section rhythm, panel padding, and control spacing across related routes.
 

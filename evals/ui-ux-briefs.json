@@ -216,5 +216,66 @@
       "Uses hard-coded heights or hides overflow to disguise clipped content.",
       "Runs unrelated hero exploration for a padding edit."
     ]
+  },
+  {
+    "id": "saas_bulk_scope_and_concurrency",
+    "test_kind": "reasoning",
+    "task": "Specify the interaction and information hierarchy for Northstar, a supplier-request workspace used by procurement reviewers. Cover finding requests, reviewing details, approving a batch, and returning to the queue. Provide a compact screen/state specification and a verification plan, not application code.",
+    "supplied_facts": {
+      "workspace": "Reviewers belong to both Northstar UK and Northstar EU. Their roles differ between workspaces.",
+      "collection": "The UK Pending view has 143 matching requests, with 25 displayed per page. Users can change vendor, due-date, and policy filters.",
+      "concurrency": "Another reviewer can change a request while it is open. Authorization may expire during a batch.",
+      "outcomes": "The service can report success, rejected, or unresolved outcome for individual requests. Payment scheduling is a later process.",
+      "metrics": "The overview compares spend from 1 to 20 October against the whole of September. One source has not updated since yesterday.",
+      "evidence": "Written requirements only; no code, screenshots, backend access, or participants."
+    },
+    "constraints": [
+      "Use fictional supplied facts without inventing financial policy or backend guarantees.",
+      "Keep the specification task-focused and use bundled guides; live research is not required.",
+      "Do not perform financial actions or contact anyone."
+    ],
+    "expected_behaviors": [
+      "Identify active workspace and role; keep selection and actions scoped correctly.",
+      "Distinguish visible-page from all-matching selection and define changes after filtering.",
+      "Handle stale records, permission loss, per-record outcomes, and status reconciliation before retry.",
+      "Separate approval from payment and preserve queue/detail return context.",
+      "Explain partial-period comparison and stale-data limits; report specification and testing honestly."
+    ],
+    "failure_signals": [
+      "Generic KPI card grid displaces the work without justification.",
+      "Select all silently expands from 25 to 143 or transfers across workspaces.",
+      "Retries the whole batch after partial success or reports unresolved outcomes as failed or complete.",
+      "Claims payment completed, whole-product accessibility, or functional verification from the specification."
+    ]
+  },
+  {
+    "id": "mobile_ticket_interruption",
+    "test_kind": "reasoning",
+    "task": "Specify an attendee mobile experience for Lantern events. An attendee should open a reminder, find the correct event and ticket, present it at the entrance, and return to their event list. Include relevant exceptional states and a compact verification plan, not application code.",
+    "supplied_facts": {
+      "platform": "A native mobile app is planned; the implementation stack and supported OS versions have not been chosen.",
+      "tickets": "One account holds three tickets for the same event, with different attendee names. A ticket can be transferred or revoked after a reminder is delivered.",
+      "context": "Connectivity near the entrance is unreliable. The service has not established whether cached credentials remain valid offline.",
+      "device": "Some attendees use large text or a screen reader. An optional attendee-name correction form uses the on-screen keyboard. The app may be backgrounded during that edit.",
+      "evidence": "Written requirements only; no working app, ticket validation service, device tests, or participants."
+    },
+    "constraints": [
+      "Do not invent ticket validity policy, native APIs, wallet integration, or factual guarantees.",
+      "Use supplied facts and bundled guides; no live research is required.",
+      "Keep essential missing decisions explicit while completing independent design work."
+    ],
+    "expected_behaviors": [
+      "Revalidate notification targets and ticket state; define unavailable, transferred, and revoked behavior.",
+      "Identify the current ticket and provide accessible switching, Back/dismiss, and return context.",
+      "Keep offline validity unresolved rather than silently treating cached display as valid entry.",
+      "Address privacy, large text, keyboard/insets, drafts, background/resume, and reachable actions.",
+      "Distinguish specified behavior from tested native functionality and list the decisions required before implementation."
+    ],
+    "failure_signals": [
+      "A stale notification immediately displays a supposedly valid credential without checking policy.",
+      "Claims offline admission or wallet support despite missing service decisions.",
+      "Swiping is the only way to change tickets or all returns discard event context.",
+      "Uses fixed heights or smaller text to conceal clipping, or asserts native validation from a phone mockup."
+    ]
   }
 ]

@@ -4,11 +4,11 @@ This record distinguishes package checks, fresh-context agent exercises, rendere
 
 ## Change under review
 
-The update adds task and information-architecture guidance, a pattern-selection framework, state and recovery design, responsive behavior, accessibility and motion checks, explicit hero composition preferences, a reference-study protocol, and eight UI/UX evaluation definitions. Existing graphic-design, print, typography, image, and production guidance remains available.
+The initial update adds task and information-architecture guidance, a pattern-selection framework, state and recovery design, responsive behavior, accessibility and motion checks, explicit hero composition preferences, a reference-study protocol, and eight UI/UX evaluation definitions. The follow-ups below extend the reference evidence and add dedicated SaaS/mobile guidance and two further definitions. Existing graphic-design, print, typography, image, and production guidance remains available.
 
 ## Research evidence
 
-The [interface study](../skills/graphic-design/references/interface-reference-study.md) records inspected Recent previews, Page Flows public material, and the Dribbble/Mobbin access limitations. The [sourcebook](../skills/graphic-design/references/sourcebook.md#ui-and-ux-evidence) records primary standards, a research preprint, and practitioner guidance with their scope. No complete paid-library audit, user study, or promotional impact verification is claimed.
+The [interface study](../skills/graphic-design/references/interface-reference-study.md) records inspected Recent previews, Page Flows public material, Dribbble's initially blocked access and subsequent visual follow-up, and the remaining Mobbin access limitation. The [sourcebook](../skills/graphic-design/references/sourcebook.md#ui-and-ux-evidence) records primary standards, a research preprint, and practitioner guidance with their scope. No complete paid-library audit, user study, or promotional impact verification is claimed.
 
 ## Automated package checks
 
@@ -55,4 +55,29 @@ The reasoning agent subsequently reviewed the package in the same independent th
 
 ## Limits and remaining coverage
 
-The other UI/UX briefs are evaluation definitions, not executed passes. Full assistive-technology testing, real-device testing, field performance, production backend integration, and representative human task studies are NOT RUN in this skill update. Future projects must perform the checks appropriate to their actual artifacts and requested scope.
+UI/UX briefs without a recorded run here are evaluation definitions, not executed passes. Full assistive-technology testing, real-device testing, field performance, production backend integration, and representative human task studies are NOT RUN in this skill update. Future projects must perform the checks appropriate to their actual artifacts and requested scope.
+
+## Dribbble follow-up after user-assisted verification
+
+The user offered to complete the site's human-verification step. A supported browser handoff was provided; the subsequent check showed the public web-design gallery instead of the challenge. The parent then inspected six project pages: Business Twin, Fjord Arkitekter, Learnio, EquipFlow transfer tracking, the Vizo storefront, and the Credit Karma concept. Evidence consisted of enlarged static images and sampled Business Twin presentation frames. The reference study records the individual observations and limits. No accounts were created, no designs were liked or saved, no project inquiries were sent, and no third-party images are bundled.
+
+The follow-up replaced the two Dribbble text-only leads with visual evidence and added selective critique. It clarified metric definitions and consistency, meaningful chart encodings, commerce variant consistency, and the distinction between product-detail conventions and the rejected promotional hero. These are bounded refinements to the existing workflow. The earlier three execution/reasoning exercises were not rerun for this reference update, and no new participant or live-product testing is claimed.
+
+Follow-up package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and whitespace/diff checks. No new executable dependencies or generated assets were added.
+
+## Focused SaaS and mobile extension
+
+At the user's request, the parent continued with seven further project pages, recorded in the [SaaS and mobile study](../skills/graphic-design/references/saas-mobile-reference-study.md). The study covers scoped diagnostics, ordinary and exceptional approvals, paired desktop/mobile decisions, a compact CRM, ticket retrieval, source-linked generated tasks, and recipe discovery/detail. Evidence is enlarged static presentation imagery, not operated products. The related Approvly projects share a creator. The study does not claim a representative survey or rank these as proven best interfaces.
+
+The dedicated guides add workspace and role scope, metric interpretation, collection selection, partial batch results, concurrency, collaboration, mobile navigation, device input, privacy, interruption, and persistence boundaries. The core routes applicable tasks to these guides; the review template includes the relevant evidence fields. Exact current native-platform requirements remain subject to verification; attempted platform-documentation research failed and no successful inspection of those new sources is claimed.
+
+The evaluation set now contains ten UI/UX definitions. Two fresh-context specification exercises received only the skill path, task, supplied facts, and constraints, with no evaluator expectations or prior research conclusions. Their results are recorded below. These runs concern design reasoning, not implementation or human task performance.
+
+| Case | Inspected reasoning and result |
+| --- | --- |
+| Northstar procurement workspace | PASS for the examined specification. Prioritized a request queue over overview decoration; separated the active organization's role and selection; distinguished 25 visible rows from 143 matches; prevented new matches silently joining a reviewed batch. Specified stale-record reconsideration, authorization expiry, per-record success/rejection/unresolved/not-submitted outcomes, status checking before retry, and return-context restoration. Correctly kept approval separate from payment, flagged the unequal October/September periods and stale source, and marked implementation and testing NOT RUN. |
+| Lantern mobile tickets | PASS for the examined specification. Treated the reminder as a locator, rechecked account/ticket authority, preserved ticket identity, offered named ticket selection and coherent parent routes, and distinguished transferred/revoked from unknown status. Kept offline admission and credential format dependent on the missing service contract. Covered privacy, large text, screen-reader navigation, keyboard-open editing, background/resume, account isolation, draft-retention limits, and uncertain submission outcomes without claiming native APIs or wallet support. All implementation and participant checks remained NOT RUN. |
+
+Both agents produced written state specifications, not rendered concepts. Parent reviewed the actual returned specifications against the corresponding brief. These results support the observed reasoning distinctions only; no visual, native-device, backend, offline-credential, or participant validation is inferred. The earlier interactive prototype runs were not repeated for this extension.
+
+Extension package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and diff/whitespace checks. The core remains 171 lines. All three new references are directly linked from the core; the two additional briefs are structurally validated. No runtime dependencies, third-party images, or generated bundles were added.

@@ -43,6 +43,8 @@ Study content order, grouping, hierarchy, typography, density, image function, n
 
 View actual images before making visual claims. A text extractor's image label is not visual inspection. When a page is blocked, use accessible public material and accurately label its limits. Do not bypass sign-in, payment, or verification controls, claim a subscription was available, or ask for credentials in a design brief. User-supplied licensed screenshots can support later work without implying unseen flows were reviewed.
 
+Separate presentation craft from product evidence. A perspective mockup, component collage, cinematic camera move, or phone photograph can conceal text size, scrolling, missing states, and inaccessible controls. Seek a flat screen and relevant adjacent states. If only presentation imagery is available, describe that limit. Inspect copy, duplicate labels, numerical relationships, and chart meaning even in admired work. Record a useful mechanism and a weakness or unresolved question for each reference; popularity never exempts it from critique.
+
 ## 3. Observed examples and access limits
 
 The following is a bounded research sample, not a ranking or a comprehensive audit of these libraries. Observations distinguish browser-rendered previews from retrieved text. None of these sites was tested with users in this review. No third-party screenshots or assets are redistributed with this package.
@@ -79,12 +81,61 @@ The following is a bounded research sample, not a ranking or a comprehensive aud
 - **Transferable inference:** Review commerce as a sequence of decisions, not just a polished product card. Preserve selected options and explain the current commitment at each step.
 - **Limits:** The exact checkout behavior, error recovery, payment semantics, and current Etsy implementation remain unverified. Annotation order alone cannot prove them. Do not infer conversion performance.
 
-### Dribbble: two project accounts
+### Dribbble: visual follow-up after access was restored
 
-- **Sources:** [Business Twin by Eloqwnt](https://dribbble.com/shots/27850359-Business-Twin-Website) and [Credit Karma CRM by Jack R. for RonDesignLab](https://dribbble.com/shots/27845470-Credit-Karma-CRM-Credit-Monitoring-Dashboard).
-- **Inspected:** Public project descriptions through web retrieval. Full-size visual inspection was blocked by browser human verification. These are **text-only research leads**, not inspected visual exemplars.
-- **Reported by creators:** The first describes a business-decision simulator; the second describes reorganizing credit information around contributing factors. The latter includes outcome claims that were not independently verified.
-- **Transferable hypothesis:** Let the user's decision or question determine the information hierarchy. Verify the actual UI and provenance before using either as visual evidence.
+Human verification initially blocked this browser. After a user-assisted verification handoff on 30 October 2026, the [public web-design gallery](https://dribbble.com/shots/popular/web-design) and the following six project pages were accessible. The earlier text-only status for Business Twin and Credit Karma is superseded by the bounded visual observations below. Original launch dates and production provenance were not independently verified. These are selected examples for analysis, not six certified best interfaces.
+
+#### Business Twin by Eloqwnt
+
+- **Source:** [Business Twin](https://dribbble.com/shots/27850359-Business-Twin-Website).
+- **Inspected:** Sampled frames of the embedded desktop presentation and the project description, not an end-to-end product flow.
+- **Observed:** A dark frame distributes business data panels around a central statement. A later light frame shows an assumption, a numerical adjustment range, and a proposed correction beside explanatory content.
+- **Transferable inference:** Demonstrate a concrete input, consequence, and decision. Product specificity can carry the explanation more effectively than a detached decorative object.
+- **Critique and limits:** Floating panels and green glow are not the lesson. The examples do not verify model accuracy, usable controls, mobile behavior, or reduced motion. Do not copy the split feature frame as a stock hero or turn the animation into a compulsory entrance.
+
+#### Fjord Arkitekter by Todor Dimov
+
+- **Source:** [Fjord Arkitekter hero exploration](https://dribbble.com/shots/27851056-Fjord-Arkitekter-Hero-Exploration).
+- **Inspected:** Enlarged desktop concept image and creator description.
+- **Observed:** A broad gray heading band sits above a white information/action area and tightly cropped concrete architecture. A single blue action strip contrasts with the restrained surfaces.
+- **Transferable inference:** Coordinate typography, image cropping, surface boundaries, and accent placement around the subject's material character. Assess the relationships instead of collecting isolated styling tokens.
+- **Critique and limits:** The lower composition still divides text and imagery. This is not an exception to the owner's hero constraint or a default layout to reuse. The statistics, sparse navigation, mobile layout, and interaction behavior remain unverified.
+
+#### Learnio by Halo UI/UX for HALO LAB
+
+- **Source:** [Learnio dashboard](https://dribbble.com/shots/27851235-Dashboard-for-Edtech-Product-Learnio).
+- **Inspected:** Enlarged dashboard image.
+- **Observed:** A dominant number and horizontal progress display precede summary figures, aligned learner rows, and a multicolored radial graphic. The image repeats an instructor metric; its learner headline and list total have different magnitudes without a visible explanation of scope.
+- **Transferable inference:** Shared rows and restrained dividers can support comparison without enclosing every item in a separate card.
+- **Critique and limits:** Reconcile labels, populations, time windows, and denominators before adapting this design. The radial graphic needs a clear quantitative encoding if comparison is its purpose. Polish does not resolve these questions, establish usability, or prove AI authorship.
+
+#### EquipFlow by Ilias Miah for Confidency
+
+- **Source:** [EquipFlow transfer tracking](https://dribbble.com/shots/27847939-EquipFlow-Asset-Transfer-Tracking-UIUX-Animation).
+- **Inspected:** Enlarged transfer-detail image and creator description. The complete animation was not reviewed.
+- **Observed:** A route map, dispatch milestones, asset details, and an arrival checklist share one workspace. Distance has units and remaining distance; estimated and planned arrival expose lateness. Contact and receipt actions sit near status.
+- **Transferable inference:** Group operational evidence by the decisions it supports. Separate progress from verified completion and make the responsible person's next action discoverable.
+- **Critique and limits:** Cards and status labels have a purpose here; removing them solely for novelty could lose grouping. The static image cannot establish receipt preconditions, location freshness, permission rules, mobile access, or successful handoff behavior.
+
+#### Vizo storefront by Ronas IT
+
+- **Source:** [Marketplace storefront](https://dribbble.com/shots/27815600-Ecommerce-Website-Design-Marketplace-Storefront).
+- **Inspected:** Enlarged angled homepage image, combined-page presentation, and a flat product-detail image.
+- **Observed:** Sunglasses shown on a person and separately establish product context. Catalog items expose price and color choices. The detail view combines multiple product angles, a selected variant, price, purchase control, and a specification table.
+- **Transferable inference:** Let images answer product questions and put decision-critical attributes near selection and purchase. Preserve useful commercial conventions rather than disguising them for originality.
+- **Critique and limits:** The divided homepage is not a recommended replacement hero formula. Color choices need accessible names and selected-state cues; variants, availability, cart updates, and mobile behavior were not operated. Concept prices and specifications are not verified product facts.
+
+#### Credit Karma concept by Jack R. for RonDesignLab
+
+- **Source:** [Credit monitoring dashboard](https://dribbble.com/shots/27845470-Credit-Karma-CRM-Credit-Monitoring-Dashboard).
+- **Inspected:** Enlarged factor-component board, angled desktop presentation, phone mockup, promotional card image, and project text.
+- **Observed:** Score information is accompanied by contributing-factor summaries, history, and offers. The images use translucent surfaces and small abstract data motifs. A repeated financial label reads “Total Dept,” a visible copy error in context.
+- **Transferable inference:** Put explanatory factors close to a summary value, then provide a route to detail.
+- **Critique and limits:** Tiny unlabeled motifs and translucent backgrounds need legibility and data-meaning checks. A phone mockup does not prove responsive behavior. Neither the depicted brand relationship nor the creator's conversion/support claims were independently verified; this is not evidence of the current official product.
+
+### Focused SaaS and mobile continuation
+
+The [SaaS and mobile reference study](saas-mobile-reference-study.md) records seven additional project pages inspected at the user's request: CloudNexus, Approvly desktop, Approvly mobile, a mobile CRM, Eventrise, a voice-recorder review concept, and a recipe app. It compares scope, decision evidence, continuation, and content integrity, with explicit limits on static presentations. The related Approvly projects count as one creator's paired exploration, not two independent confirmations of a trend.
 
 ### Mobbin: public research surface
 
@@ -100,6 +151,8 @@ Write a principle in product terms: what a person needs to recognize, compare, d
 For example, studying a collection lineup might suggest that a visual catalog should lead with comparable products. It does not justify copying the fashion imagery, exact spacing, letterforms, navigation, or animation. The same principle might produce a dense parts selector, an accessible sample grid, or a different editorial collection depending on the brief.
 
 Keep functional conventions consistent while varying the composition where meaning permits. Run three low-fidelity alternatives for substantial new work and the [whole-page checks](interface-originality.md#4-review-the-whole-page-and-system). Avoid taking one website's art direction, another's navigation, and a third's components without reconciling them into a coherent system.
+
+Transfer selectively: an informative product detail can be worth studying even when its marketing hero violates this brief. A compelling component can still contain wrong copy. Carry the useful relationship into a new design, correct the observed weakness, and leave the source's unsupported claims and ornamental treatment behind unless they independently serve the task.
 
 ## 5. Refresh responsibly
 

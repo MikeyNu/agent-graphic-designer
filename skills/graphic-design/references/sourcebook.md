@@ -113,9 +113,15 @@ Reviewed 30 October 2026. The interface guides are original practical synthesis 
 
 ### Interface library observations
 
-See the [dated reference study](interface-reference-study.md#3-observed-examples-and-access-limits) for exact pages, access levels, observations, transfers, and limitations. Recent previews for Shopify Design, Becane Paris, and Interfere were visually inspected. Page Flows' Etsy public preview and annotation list were inspected; locked screens and the complete recording were not. Dribbble project descriptions and Mobbin public workflow material were available, but their full product visuals were not inspected because of the recorded access limitations. These distinctions are part of the evidence, not missing details to invent.
+See the [dated reference study](interface-reference-study.md#3-observed-examples-and-access-limits) for exact pages, access levels, observations, transfers, and limitations. Recent previews for Shopify Design, Becane Paris, and Interfere were visually inspected. Page Flows' Etsy public preview and annotation list were inspected; locked screens and the complete recording were not. Dribbble initially blocked visual access, then a user-assisted verification handoff restored access on 30 October 2026. The [six-project follow-up](interface-reference-study.md#dribbble-visual-follow-up-after-access-was-restored) records enlarged images or sampled presentation frames for Business Twin, Fjord Arkitekter, Learnio, EquipFlow, Vizo, and the Credit Karma concept. These are visual observations and original design critique, not production validation or independent support for creators' outcome claims. Mobbin remains limited to public workflow material; its full product visuals were not inspected.
 
 Do not rank examples as objectively best, repeat promotional outcome figures as established facts, or infer usability from visual polish. Gallery observations inform design hypotheses; standards govern requirements within scope; actual task testing evaluates the resulting experience.
+
+### SaaS and mobile extension
+
+The [focused study](saas-mobile-reference-study.md) adds seven Dribbble project pages with enlarged static images: CloudNexus, Approvly desktop and mobile, Ronas IT's mobile CRM, Eventrise, Purrweb's voice-recorder review concept, and SM Rubel's recipe app. The linked record separates visible facts, inferred mechanisms, critiques, and untested behavior. The two Approvly presentations share one creator and are not independent evidence. No full live app flow, native capability, backend policy, or commercial outcome was verified.
+
+The [SaaS](saas-product-design.md) and [mobile](mobile-app-design.md) guides synthesize practical design and verification procedures from the observed problems, existing U3 heuristics, and the scoped web requirements above. The new guides do not claim controlled empirical validation or universal platform rules. An attempted refresh of Apple, Material, and Carbon guidance returned research-service errors; no newly verified claims or exact current native-platform thresholds are attributed to those sources. Verify official platform documentation when applying native-specific requirements.
 
 ## Refresh procedure
 

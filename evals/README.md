@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add eight interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add ten interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 

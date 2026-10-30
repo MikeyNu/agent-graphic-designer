@@ -38,6 +38,10 @@ Hero constraint exception, only if explicitly requested or preserving approved w
 
 Applicable empty, loading, partial, pending, success, error, offline, and permission states:
 
+For SaaS: workspace/role scope, metric definitions and freshness, selection scope, concurrent changes, and per-record outcomes:
+
+For mobile: platform and entry point, navigation/return, keyboard and system insets, permissions, background/resume, and offline persistence limits:
+
 ## Verification
 
 Artifact/version:
@@ -47,6 +51,8 @@ Artifact/version:
 | Composition and whole-page specificity | | NOT RUN | |
 | Primary task and durable outcome | | NOT RUN | |
 | Failure recovery and repeat action | | NOT RUN | |
+| Data scope, freshness, selection, and permissions | | NOT RUN | |
+| Mobile interruption, device input, and return context | | NOT RUN | |
 | Small screen, intermediate width, and desktop | | NOT RUN | |
 | Long content, zoom, and reflow | | NOT RUN | |
 | Keyboard, focus, and overlay lifecycle | | NOT RUN | |

@@ -38,9 +38,12 @@ Attach the generated document with your brief. The document links back to execut
 | --- | --- |
 | [Core skill](skills/graphic-design/SKILL.md) | Brief, research, concepts, construction, critique, verification, and delivery. |
 | [UI and UX design](skills/graphic-design/references/ui-ux-design.md) | User tasks, information architecture, pattern selection, visual systems, responsive behavior, and content. |
+| [SaaS product design](skills/graphic-design/references/saas-product-design.md) | Trustworthy dashboards, dense collections, bulk actions, permissions, collaboration, and return context. |
+| [Mobile app design](skills/graphic-design/references/mobile-app-design.md) | Focused tasks, navigation, device input, interruption, offline states, and actual-device verification. |
 | [Interaction and validation](skills/graphic-design/references/interaction-and-validation.md) | Complete flows, states, recovery, accessibility, motion, performance, and actual verification. |
 | [Interface originality](skills/graphic-design/references/interface-originality.md) | Explicit hero constraints, repetitive-layout diagnosis, meaningful alternatives, and whole-page critique. |
 | [Interface reference study](skills/graphic-design/references/interface-reference-study.md) | How to study Dribbble, Mobbin, Page Flows, and Recent; dated observations with honest access limits. |
+| [SaaS and mobile study](skills/graphic-design/references/saas-mobile-reference-study.md) | Seven focused project observations, including desktop/mobile approval views, diagnostics, CRM, tickets, and content use. |
 | [Composition and layout](skills/graphic-design/references/composition-and-layout.md) | Hierarchy, grouping, grids, balance, scale, rhythm, visual tension, and annotated review. |
 | [Typography and perception](skills/graphic-design/references/typography-and-perception.md) | Font anatomy, situated emotional associations, specimen testing, multilingual text, and microtypography. |
 | [Color and accessibility](skills/graphic-design/references/color-and-accessibility.md) | Contextual palette development, color psychology limits, contrast, and color management. |
@@ -51,7 +54,7 @@ Attach the generated document with your brief. The document links back to execut
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
-| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Eight additional interface tasks covering composition, workflow, accessibility, preservation, and research honesty. |
+| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Ten interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 
 ## How the design method works

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "repair_studio_request_preview",
+    "test_kind": "execution",
+    "task": "Create a responsive self-contained HTML prototype for Morrow Instrument Repair in Johannesburg. Help visitors describe an instrument problem and review an estimate request before sending it.",
+    "supplied_facts": {
+      "services": [
+        "guitars",
+        "basses",
+        "small amplifiers"
+      ],
+      "process": "Bring an instrument for assessment; an estimate is agreed before repair begins.",
+      "hours": "Tuesday to Saturday 09:00 to 17:00",
+      "fixture_contract": "No external assets required; local request preview only."
+    },
+    "constraints": [
+      "Do not send requests or invent prices, addresses, ratings, testimonials, or turnaround times.",
+      "Make useful controls work and inspect actual rendered output.",
+      "Use supplied facts and bundled reference notes; no live research required."
+    ],
+    "expected_behaviors": [
+      "Choose a product-specific composition and compare meaningful roughs before polish.",
+      "Avoid the default hero constraints without replacing them with arbitrary novelty.",
+      "Support entry, field validation, review, editing, and an honest local preview result.",
+      "Inspect narrow and desktop layouts, keyboard focus, and long input.",
+      "Separate simulated behavior and unchecked accessibility from actual test evidence."
+    ],
+    "failure_signals": [
+      "Decorative hero pill or unrequested stock split hero.",
+      "Only recolors the same layout and calls it three concepts.",
+      "Claims a request was sent or invents credibility.",
+      "Returns an uninspected image or nonfunctional controls as a complete prototype."
+    ]
+  },
+  {
+    "id": "dispatch_queue_assignment",
+    "test_kind": "execution",
+    "task": "Create a responsive local HTML dispatch console to filter jobs, inspect one, assign a technician, and return to the same queue. Include an assignment failure and no-results state.",
+    "supplied_facts": {
+      "jobs": [
+        "J-104, Johannesburg North, urgent, pump inspection",
+        "J-105, Soweto, normal, meter replacement",
+        "J-106, Midrand, urgent, generator diagnosis"
+      ],
+      "technicians": [
+        "Lerato Dube",
+        "Sam Patel"
+      ],
+      "fixture_contract": "All records are fictional local demo data."
+    },
+    "constraints": [
+      "No network writes or production persistence claims.",
+      "Make the specified controls work and inspect rendered output.",
+      "Use supplied facts and bundled reference notes; no live research required."
+    ],
+    "expected_behaviors": [
+      "Prioritize actionable queue information over a decorative dashboard hero.",
+      "Use a table, list, or justified workspace pattern suited to comparison.",
+      "Preserve filters and return context; distinguish pending, failure, retry, and actual local assignment.",
+      "Expose selected item and mobile detail/navigation behavior.",
+      "Test keyboard and important failure flows with evidence."
+    ],
+    "failure_signals": [
+      "KPI theater displaces unassigned work.",
+      "Every action opens an unrelated generic modal.",
+      "Filters reset on return or a failed action reports success.",
+      "Turns every record into a large card without preserving useful comparison."
+    ]
+  },
+  {
+    "id": "maintenance_and_checkout_review",
+    "test_kind": "reasoning",
+    "task": "Review the current request to fix only a footer typo on an approved split-hero landing page, and a separate proposed checkout redesign. Checkout immediately says Payment complete while the request runs; failure clears all fields. Labels are placeholders. A 28 by 28 CSS px mobile button has ample separation. A sticky banner can hide the focused field. The team requests a 95% non-AI score and claims WCAG AA from a contrast check.",
+    "supplied_facts": {
+      "current_scope": "Footer typo only; landing layout already approved.",
+      "future_scope": "Checkout redesign is proposed separately.",
+      "provided_evidence": "Specification only; no screenshots, code, or users."
+    },
+    "constraints": [
+      "Separate the authorized current edit from future proposals.",
+      "Use the supplied facts without claiming a rendered inspection."
+    ],
+    "expected_behaviors": [
+      "Preserve the approved hero for the narrow edit.",
+      "Prioritize premature payment success, data loss, labels, and obscured focus in the future redesign.",
+      "Treat 24 CSS px plus exceptions as the AA target-size criterion, not 44/48.",
+      "Reject numerical authorship certainty and whole-product accessibility certification."
+    ],
+    "failure_signals": [
+      "Insists on redesigning the approved hero before fixing the typo.",
+      "Encourages blind payment retries or accepts premature success.",
+      "Calls the 28 CSS px target an automatic AA failure.",
+      "Claims a visual/functional pass from a written specification."
+    ]
+  },
+  {
+    "id": "different_products_different_structure",
+    "test_kind": "execution",
+    "task": "Create two independent homepage concept sets: a ceramics studio selling three collections, and a developer tool for comparing deployment logs. Produce visible roughs, then one selected responsive composition for each.",
+    "supplied_facts": {
+      "studio": "Kiln Room; collections named Clay, Ash, and Salt.",
+      "tool": "Tracepath; compares logs across two deployments.",
+      "fixture_contract": "Evaluator supplies approved product imagery or explicitly permits abstract local placeholders labeled as such."
+    },
+    "constraints": [
+      "No invented testimonials, metrics, pricing, or claims.",
+      "Do not borrow a distinctive reference composition."
+    ],
+    "expected_behaviors": [
+      "Different content relationships and product-specific reasons across the two products.",
+      "Comparable fidelity and real supplied copy within each concept set.",
+      "Conventional controls remain recognizable.",
+      "Mobile adaptations preserve each task."
+    ],
+    "failure_signals": [
+      "Both products share the same hero silhouette with swapped labels.",
+      "Random typography and decorative effects are the only differences.",
+      "Novelty hides shopping or comparison actions."
+    ]
+  },
+  {
+    "id": "explicit_reference_exception",
+    "test_kind": "reasoning",
+    "task": "Plan a faithful implementation of a user-approved reference: a rounded announcement above the headline, copy on the left, product screenshot on the right. The user explicitly requires that composition and asks for responsive behavior and accessibility.",
+    "supplied_facts": {
+      "approval": "The user explicitly chose the composition.",
+      "fixture_contract": "Evaluator supplies the approved screenshot for visual execution; this case assesses the plan only."
+    },
+    "constraints": [
+      "Preserve explicit composition direction.",
+      "Do not claim behavior or readability has already been tested."
+    ],
+    "expected_behaviors": [
+      "Recognize the explicit-user exception and state it briefly.",
+      "Preserve the requested layout while planning useful mobile ordering and semantic controls.",
+      "Separate appearance preference from accessibility obligations."
+    ],
+    "failure_signals": [
+      "Refuses a safe explicit direction because the default forbids it.",
+      "Deletes useful announcements or left alignment everywhere.",
+      "Claims reference fidelity without having the fixture."
+    ]
+  },
+  {
+    "id": "calendar_and_interruptions",
+    "test_kind": "reasoning",
+    "task": "Specify a responsive appointment calendar and day agenda for staff booking on behalf of clients. Include conflict recovery, changing a booking, keyboard access, and clear timezone display.",
+    "supplied_facts": {
+      "timezone": "Africa/Johannesburg",
+      "roles": [
+        "staff booking for a client",
+        "client viewing their booking"
+      ],
+      "failure": "A slot can become unavailable after selection."
+    },
+    "constraints": [
+      "Do not invent clinical rules, fees, or backend implementation.",
+      "Explain the minimum useful flow without a new platform architecture."
+    ],
+    "expected_behaviors": [
+      "Show who the booking is for and preserve entered details through conflicts.",
+      "Support narrow-screen agenda and reachable day details.",
+      "Provide non-dragging pointer alternatives as well as keyboard access.",
+      "Distinguish pending from confirmed booking and safe retry behavior."
+    ],
+    "failure_signals": [
+      "Desktop calendar merely shrinks on mobile.",
+      "Only dragging can reschedule.",
+      "Conflict clears the entire form or silently changes the chosen slot."
+    ]
+  },
+  {
+    "id": "blocked_reference_research",
+    "test_kind": "reasoning",
+    "task": "Develop a reference research plan for a mobile search-and-filter interface. Available evidence consists of a Dribbble description, one Mobbin screenshot, Page Flows annotations with a locked video, and an accessible Recent desktop preview.",
+    "supplied_facts": {
+      "access": "Only the specified material is accessible.",
+      "scope": "Research plan and bounded design hypotheses, not implementation."
+    },
+    "constraints": [
+      "No bypassing access restrictions.",
+      "No invented visual inspection or user outcomes."
+    ],
+    "expected_behaviors": [
+      "Classify access and distinguish observation from inference.",
+      "Use the screenshot for visible facts only; treat unseen flow recovery as unknown.",
+      "Choose task-specific comparisons and preserve standard search/filter behavior.",
+      "Continue with available evidence and identify what a future check needs."
+    ],
+    "failure_signals": [
+      "Claims to have studied complete paid flows.",
+      "Treats popularity as usability proof.",
+      "Demands unnecessary login before any useful work."
+    ]
+  },
+  {
+    "id": "long_content_and_small_correction",
+    "test_kind": "reasoning",
+    "task": "Propose a bounded fix for inconsistent padding in an established authenticated portal. A long organization name clips on mobile, the sidebar scrolls under a fixed header, and a footer action is hidden at 200% text size.",
+    "supplied_facts": {
+      "scope": "Existing layout and brand are approved; spacing and overflow correction only.",
+      "states": "Short and long names, populated and empty views."
+    },
+    "constraints": [
+      "Reuse existing tokens and components where suitable.",
+      "Do not rebuild the visual identity or introduce a new navigation system."
+    ],
+    "expected_behaviors": [
+      "Locate shared causes, define content-safe sizing, and keep intentional differences.",
+      "Check short viewports, text resizing, and reachable focus/actions.",
+      "Separate sidebar scrolling from page scrolling without traps.",
+      "Use a concise affected-surface verification plan."
+    ],
+    "failure_signals": [
+      "Creates a new design system before fixing the defects.",
+      "Uses hard-coded heights or hides overflow to disguise clipped content.",
+      "Runs unrelated hero exploration for a padding edit."
+    ]
+  }
+]

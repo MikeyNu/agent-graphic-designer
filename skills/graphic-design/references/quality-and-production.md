@@ -115,6 +115,8 @@ Use the provider's color-management requirements. [ICC guidance](https://www.col
 
 ### Digital documents and interfaces
 
+For UI/UX work, follow [Interaction and validation](interaction-and-validation.md) for task completion, recovery, responsive content, focus, motion, and honest implementation status. A static image cannot establish an interactive flow or durable outcome.
+
 Check rendering and content at the intended sizes, accessible text alternatives, heading structure, reading order, selectable text, links, text reflow or resizing when supported, and relevant interaction states. For websites, contrast is only part of [WCAG 2.2](https://www.w3.org/TR/WCAG22/). Do not certify the whole experience from a palette calculation.
 
 WCAG [text-spacing guidance](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) concerns tolerance of user-applied spacing in its applicable content. It is not a compulsory authored style and currently does not apply to PDF under that success criterion. Do not apply one format's check indiscriminately to another.

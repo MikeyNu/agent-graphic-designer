@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [briefs](briefs.json) define twelve realistic tasks. They are not twelve completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add eight interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 
@@ -24,3 +24,5 @@ Do not expect a particular palette, font, period, or layout. Different successfu
 ## Current evidence
 
 See [validation-2026-10-18.md](validation-2026-10-18.md) for the initial implementation's recorded automated checks and selected design exercises. Its limits are part of the result, not an invitation to infer universal reliability.
+
+See [validation-2026-10-30.md](validation-2026-10-30.md) for the UI/UX extension's checks and fresh-context exercises. Test composition specificity alongside task completion and preservation: an agent that removes useful controls to look original has not passed. Include the explicit-user exception and narrow-maintenance cases to catch over-application of the hero constraints.

@@ -1,6 +1,6 @@
 # Research sourcebook
 
-Research reviewed on 18 October 2026. Preserve these distinctions when using or updating the skill:
+Graphic-design research reviewed on 18 October 2026; UI/UX extension reviewed on 30 October 2026. Preserve these distinctions when using or updating the skill:
 
 - **Research finding:** A result within a particular study's sample, task, stimulus, and method.
 - **Technical requirement:** A specification within its stated medium and scope.
@@ -8,6 +8,18 @@ Research reviewed on 18 October 2026. Preserve these distinctions when using or 
 - **Design synthesis:** The workflow, tests, examples, and critique rubric proposed by this repository.
 
 Do not turn any of them into a guarantee of taste, originality, human response, accessibility, or commercial success. Most procedural instructions in the skill are design synthesis. Source notes identify the narrower claims supported by published material.
+
+## Contents
+
+- [Process and perception](#process-visual-principles-and-perception)
+- [Typography and emotion](#typography-and-emotion)
+- [Color research](#color-research)
+- [AI and diversity](#ai-ideation-and-diversity)
+- [Case studies](#contemporary-and-historical-case-studies)
+- [Accessibility and type specifications](#accessibility-and-type-specifications)
+- [Production and licensing](#production-and-licensing)
+- [UI and UX evidence](#ui-and-ux-evidence)
+- [Refresh procedure](#refresh-procedure)
 
 ## Process, visual principles, and perception
 
@@ -78,6 +90,32 @@ Do not turn any of them into a guarantee of taste, originality, human response, 
 | [Adobe Fonts, Font licensing FAQs](https://helpx.adobe.com/fonts/web/font-licensing/font-licensing.html), 27 March 2026 | Finished uses, editable access, embedding, and font-file transfer distinctions. | Specific to Adobe Fonts. Verify each actual license. |
 | [Adobe Stock, Usage and licensing FAQ](https://helpx.adobe.com/stock/web/common-questions/usage-licensing.html), 27 March 2026 | Commercial/editorial distinctions, nonexclusive stock, and logo restrictions. | Provider-specific terms; not a general legal opinion. |
 | [W3C, SVG 2 coordinate systems](https://www.w3.org/TR/SVG/coords.html), current snapshot | Viewports, viewBox, aspect ratio, and coordinate mapping. | Specification knowledge does not replace target-renderer inspection. |
+
+## UI and UX evidence
+
+Reviewed 30 October 2026. The interface guides are original practical synthesis except where a narrower source claim is identified below. The two hero composition constraints are the owner's explicit design preference, not empirical findings. Do not describe them as universal usability laws.
+
+| ID and source | Support used in this skill | Evidence type and limits |
+| --- | --- | --- |
+| U1. Shin et al., [Interrogating Design Homogenization in Web Vibe Coding](https://arxiv.org/html/2603.13036v1), arXiv v1, 13 March 2026 | Analyzes homogenization risks across AI-assisted web creation and proposes reflective friction in the creator's process. | Research preprint and sociotechnical analysis. Not a prevalence measurement of hero layouts, a controlled validation of this skill, or a reason to add friction for the end user. Abstract and introductory text inspected; no independent replication. |
+| U2. Wang and Brown, [AI Prototyping in Real Design Contexts](https://www.nngroup.com/articles/ai-prototyping/), 24 October 2025; page reviewed 19 August 2026 | Their evaluation found generic styling and inappropriate prioritization in some outputs; more explicit task and design context improved results in the examined project. | Practitioner evaluation of a training-profile redesign, not a universal benchmark of every model or library. Do not infer that any particular component proves AI authorship. |
+| U3. Nielsen, [10 Usability Heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/), 24 April 1994; page reviewed 30 January 2024 | Broad review principles covering status, language, control, consistency, prevention, recognition, efficiency, relevance, recovery, and help. | Heuristics, not precise rules or a replacement for contextual task research. |
+| U4. W3C, [WCAG 2.2](https://www.w3.org/TR/WCAG22/), Recommendation 12 December 2024 | Baseline web requirements with criterion-specific scope, levels, and exceptions. | Normative specification. This skill's checklist is selective; it cannot certify complete conformance. Existing color/type source entries cover contrast and spacing in more detail. |
+| U5. W3C, [Reflow, SC 1.4.10](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) | Vertically scrolling content at the equivalent of 320 CSS px without two-dimensional scrolling or lost function, with scoped exceptions. | Informative explanation of AA criterion. Data tables, maps, and other genuinely two-dimensional content can qualify for exceptions; individual table cells still need reflow. Not a universal mobile breakpoint. |
+| U6. W3C, [Target Size (Minimum), SC 2.5.8](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum) | 24 by 24 CSS px pointer targets or the criterion's exceptions, including defined spacing. | Informative AA explanation. Larger touch targets are a design choice; 44/48 CSS px is not the minimum defined by this criterion. |
+| U7. W3C, [Focus Not Obscured (Minimum), SC 2.4.11](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum) | An author-created overlay must not entirely hide the focused component. | Informative AA explanation. Full visibility is a stronger practical goal; do not misstate the minimum as requiring every pixel visible. |
+| U8. W3C, [Accessible Authentication (Minimum), SC 3.3.8](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum) and [APG modal dialog pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/) | Assisted/alternative authentication within criterion scope; focus containment, dismissal, and restoration for modals. | Authentication Understanding is informative; APG is implementation guidance, not a substitute for testing. Password-manager and paste support help avoid forced recall/transcription; apply the actual exceptions correctly. |
+| U9. GOV.UK, [Recover from validation errors](https://design-system.service.gov.uk/patterns/validation/) and [Error summary](https://design-system.service.gov.uk/components/error-summary/), current pages retrieved 30 October 2026 | Concrete page-form recovery pattern using a focused summary linked to field errors, consistent wording, and actionable corrections. | Government design-system guidance. Its mandatory wording is scoped to that system; the general skill adapts the mechanism to the product, not its exact styling or every one-field interaction. |
+| U10. Google, [Web Vitals](https://web.dev/articles/vitals), updated 31 October 2024 | LCP at most 2.5 s, INP at most 200 ms, CLS at most 0.1; assess the 75th percentile of visits, segmented by mobile/desktop. | Performance guidance. Lab measurements are useful diagnostics but do not establish field performance or overall usability. Refresh metrics when applying them. |
+| U11. W3C, [Dragging Movements, SC 2.5.7](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html) | A single-pointer alternative without dragging, except where essential or qualifying unmodified user-agent behavior. | Informative AA explanation. Keyboard support alone does not meet the pointer alternative requirement. |
+| U12. W3C, [Pause, Stop, Hide, SC 2.2.2](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) | Control over qualifying automatically moving and updating content. | Informative Level A explanation. Moving content has the stated more-than-five-second condition; auto-updating content has different conditions. Reduced motion does not replace every required pause control. |
+| U13. W3C, [Animation from Interactions, SC 2.3.3](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html) | Ability to disable nonessential interaction-triggered motion. | This criterion is AAA, not AA. Respecting reduced-motion preferences is also this skill's design standard; do not mislabel that recommendation as a universal AA requirement. |
+
+### Interface library observations
+
+See the [dated reference study](interface-reference-study.md#3-observed-examples-and-access-limits) for exact pages, access levels, observations, transfers, and limitations. Recent previews for Shopify Design, Becane Paris, and Interfere were visually inspected. Page Flows' Etsy public preview and annotation list were inspected; locked screens and the complete recording were not. Dribbble project descriptions and Mobbin public workflow material were available, but their full product visuals were not inspected because of the recorded access limitations. These distinctions are part of the evidence, not missing details to invent.
+
+Do not rank examples as objectively best, repeat promotional outcome figures as established facts, or infer usability from visual polish. Gallery observations inform design hypotheses; standards govern requirements within scope; actual task testing evaluates the resulting experience.
 
 ## Refresh procedure
 

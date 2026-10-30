@@ -38,4 +38,6 @@ Named outstanding checks or approvals:
 
 Material limitations:
 
+For interfaces, distinguish specified behavior, implemented behavior, visual inspection, functional testing, and actual human testing. Identify simulated data or dependencies and remaining untested flows. Use the [interface review](interface-review-template.md) when helpful.
+
 Keep routine implementation details out of the client-facing explanation. Do not equate internal review with client approval.

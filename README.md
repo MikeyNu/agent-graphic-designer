@@ -1,6 +1,6 @@
 # Agent Graphic Designer
 
-A research-informed graphic design skill for agents that can inspect references, create visual artifacts, and iterate on the result. It combines art direction, typography, color, composition, contemporary and historical design judgment, tool selection, and rigorous visual and production QA.
+A research-informed graphic design and UI/UX skill for agents that can inspect references, create visual artifacts and interfaces, and iterate on the result. It combines art direction, typography, color, composition, task-centered interaction design, responsive behavior, contemporary and historical design judgment, and rigorous visual, functional, and production QA.
 
 **Start with [the skill](skills/graphic-design/SKILL.md).** Its supporting guides provide the depth needed for difficult decisions without loading an entire design manual for a small edit.
 
@@ -37,6 +37,10 @@ Attach the generated document with your brief. The document links back to execut
 | Component | Purpose |
 | --- | --- |
 | [Core skill](skills/graphic-design/SKILL.md) | Brief, research, concepts, construction, critique, verification, and delivery. |
+| [UI and UX design](skills/graphic-design/references/ui-ux-design.md) | User tasks, information architecture, pattern selection, visual systems, responsive behavior, and content. |
+| [Interaction and validation](skills/graphic-design/references/interaction-and-validation.md) | Complete flows, states, recovery, accessibility, motion, performance, and actual verification. |
+| [Interface originality](skills/graphic-design/references/interface-originality.md) | Explicit hero constraints, repetitive-layout diagnosis, meaningful alternatives, and whole-page critique. |
+| [Interface reference study](skills/graphic-design/references/interface-reference-study.md) | How to study Dribbble, Mobbin, Page Flows, and Recent; dated observations with honest access limits. |
 | [Composition and layout](skills/graphic-design/references/composition-and-layout.md) | Hierarchy, grouping, grids, balance, scale, rhythm, visual tension, and annotated review. |
 | [Typography and perception](skills/graphic-design/references/typography-and-perception.md) | Font anatomy, situated emotional associations, specimen testing, multilingual text, and microtypography. |
 | [Color and accessibility](skills/graphic-design/references/color-and-accessibility.md) | Contextual palette development, color psychology limits, contrast, and color management. |
@@ -47,6 +51,7 @@ Attach the generated document with your brief. The document links back to execut
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
+| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Eight additional interface tasks covering composition, workflow, accessibility, preservation, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 
 ## How the design method works
@@ -64,6 +69,12 @@ It means detecting interchangeability, automatic decoration, empty concepts, rep
 
 The agent should be able to explain why a visual mechanism belongs to the subject, then judge whether the actual execution succeeds. Historical vocabulary can work well today when the application gives it meaning.
 
+For new interfaces, the owner's explicit defaults exclude pills, badges, and rounded announcements above hero titles and the stock left-copy/right-graphic hero. Mirroring the split does not solve it. Explicit user direction and faithful preservation of approved work take priority, including narrowly scoped maintenance edits. These are design preferences, not claims that left alignment, rounded controls, or familiar interaction patterns are inherently bad.
+
+The interface workflow starts with a user task, compares genuinely different compositions, designs the necessary states, and checks the actual result across content and screen conditions. It distinguishes an attractive mockup from a tested flow. It also avoids replacing the rejected formula with compulsory centered heroes, bento cards, large serif type, or another repeated aesthetic.
+
+The [30 October UI/UX evidence](skills/graphic-design/references/sourcebook.md#ui-and-ux-evidence) separates standards, research, practitioner evaluation, and design synthesis. The [reference study](skills/graphic-design/references/interface-reference-study.md) records what was visible and what was inaccessible, rather than claiming a complete audit of paid libraries.
+
 ### Psychology without a false dictionary
 
 Font voice and color associations are treated as hypotheses grounded in form, culture, content, and context. Research findings retain their limits. A serif is not automatically trustworthy; a sans serif is not automatically modern or more readable; a color does not guarantee a response. See the [sourcebook](skills/graphic-design/references/sourcebook.md).
@@ -79,7 +90,7 @@ python3 -m unittest discover -s tests -v
 
 Read [the tool guide](skills/graphic-design/references/tools.md) before running the artwork checks. The tools report narrow technical facts and unperformed checks. They do not score beauty, inspect anatomy, validate copyright, perform user research, or certify production readiness.
 
-The repository's CI runs software and package checks. It does not count as visual QA of a future design. See [evaluation guidance](evals/README.md) and [the recorded validation](evals/validation-2026-10-18.md) for the distinction between automated tests and design exercises actually performed.
+The repository's CI runs software and package checks. It does not count as visual QA of a future design. See [evaluation guidance](evals/README.md), [the original validation](evals/validation-2026-10-18.md), and [the UI/UX update validation](evals/validation-2026-10-30.md) for the distinction between automated tests and exercises actually performed.
 
 ## Maintain it
 

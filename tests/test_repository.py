@@ -51,14 +51,16 @@ class RepositoryTests(unittest.TestCase):
                 self.assertTrue(resolved.exists(), f"Missing resource: {path.name}: {target}")
 
     def test_evaluation_definitions_have_distinct_cases(self):
-        data = json.loads((ROOT / "evals" / "briefs.json").read_text(encoding="utf-8"))
-        cases = data if isinstance(data, list) else data["briefs"]
-        self.assertEqual(len(cases), 12)
-        self.assertEqual(len({case["id"] for case in cases}), len(cases))
-        for case in cases:
-            for field in ("task", "supplied_facts", "constraints", "expected_behaviors", "failure_signals"):
-                self.assertTrue(case[field], f"{case['id']}: {field}")
-            self.assertIn(case["test_kind"], {"execution", "reasoning"})
+        for filename, expected_count in (("briefs.json", 12), ("ui-ux-briefs.json", 8)):
+            with self.subTest(filename=filename):
+                data = json.loads((ROOT / "evals" / filename).read_text(encoding="utf-8"))
+                cases = data if isinstance(data, list) else data["briefs"]
+                self.assertEqual(len(cases), expected_count)
+                self.assertEqual(len({case["id"] for case in cases}), len(cases))
+                for case in cases:
+                    for field in ("task", "supplied_facts", "constraints", "expected_behaviors", "failure_signals"):
+                        self.assertTrue(case[field], f"{case['id']}: {field}")
+                    self.assertIn(case["test_kind"], {"execution", "reasoning"})
 
     def test_qa_template_never_preclaims_pass(self):
         report = json.loads((SKILL / "assets" / "qa-report-template.json").read_text(encoding="utf-8"))

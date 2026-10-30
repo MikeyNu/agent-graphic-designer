@@ -1,17 +1,18 @@
 ---
 name: graphic-design
-description: Research, art-direct, create, critique, and refine purposeful graphic design with original concepts and strict visual and production QA. Use for brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentation or document graphics, annotations, and visual systems, including requests for the best, most creative, modern, vintage, polished, or less generic design. Apply alongside the relevant image, vector, document, presentation, web, and production tools.
+description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, apps, dashboards, portals, navigation, forms, onboarding, design systems, responsive interfaces, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant image, vector, web, document, and production tools.
 ---
 
 # Graphic Design
 
-Research baseline: 18 October 2026. Refresh current-practice claims, specifications, tools, and licenses when relevant.
+Graphic-design research baseline: 18 October 2026. UI/UX research update: 30 October 2026. Refresh current-practice claims, specifications, tools, and licenses when relevant.
 
 ## Operating standard
 
 Work as a designer and art director. Create the strongest communication for this particular product, audience, setting, and medium. Define what “best” means from the brief. Make the work clear, memorable, appropriate, distinctive, and well crafted. Let restraint, exuberance, precision, humor, heritage, or experimentation serve the communication.
 
 - Deliver artwork when creation is requested. Advice, mood boards, image prompts, and unrendered code do not complete an artwork request.
+- For interface work, define the user task, content hierarchy, behavior, and recovery before visual polish. A screenshot is not a complete experience; distinguish static design, interactive prototype, and integrated implementation.
 - Preserve approved copy, facts, identity assets, and explicit preferences. Distinguish deliberate visual decisions from accidental defects before changing existing work.
 - Use judgment. No font, color, period, effect, or layout guarantees quality. Checklist compliance does not replace a visual idea.
 - Separate observation, interpretation, and hypothesis. Never invent audience research, emotional certainty, conversion gains, visual inspection, or client approval.
@@ -24,6 +25,10 @@ Read the complete core workflow below. Open these guides before the relevant sub
 
 | Decision or task | Read |
 | --- | --- |
+| Website, app, dashboard, portal, responsive layout, or design system | [UI and UX design](references/ui-ux-design.md) |
+| Forms, navigation, states, flows, accessibility, motion, or interface QA | [Interaction and validation](references/interaction-and-validation.md) |
+| New interface composition, hero, or repetitive AI-looking UI | [Interface originality](references/interface-originality.md) |
+| Studying Dribbble, Mobbin, Page Flows, Recent, or product references | [Interface reference study](references/interface-reference-study.md) |
 | New composition, hierarchy, visual balance, or annotated critique | [Composition and layout](references/composition-and-layout.md) |
 | Font selection, personality, microtypography, language, or perception | [Typography and perception](references/typography-and-perception.md) |
 | Palette, emotional associations, contrast, or output color | [Color and accessibility](references/color-and-accessibility.md) |
@@ -33,7 +38,21 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | Running measurable checks or making a review board | [QA tools](references/tools.md) |
 | Checking research support or refreshing evidence | [Sourcebook](references/sourcebook.md) |
 
-Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [QA record](assets/qa-report-template.json), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
+Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [QA record](assets/qa-report-template.json), [interface review](assets/interface-review-template.md), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
+
+## Interface workflow and composition constraints
+
+For substantive UI/UX work, read the UI/UX, interaction, and interface-originality guides before designing. Apply the core art-direction workflow with these additional gates:
+
+1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones.
+2. Study relevant screens and flows with the reference-study method. Distinguish visual observation from text-only descriptions, inaccessible content, and unverified promotional claims.
+3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Derive a direction from the product and task.
+4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
+5. Preserve readable left-aligned prose, useful status/filter chips, familiar controls, and consistent navigation. Avoid replacing one formula with compulsory centered heroes, bento grids, giant type, or random asymmetry.
+6. Specify meaningful loading, empty, error, success, interruption, and return states. Recompose for mobile; verify keyboard, focus, contrast, target sizes, zoom/reflow, and reduced motion as applicable.
+7. Inspect the rendered result and execute the requested behavior using available tools. Check the whole page and important flows, not only the hero. Record untested behavior honestly; prototype simulations do not demonstrate backend success.
+
+For a narrowly scoped correction, preserve the established concept and check the affected states and layouts. For graphics without interaction, continue with the core workflow without adding interface paperwork.
 
 ## 1. Establish the brief
 
@@ -103,6 +122,8 @@ Treat “AI slop” as a critique of low specificity, repetition, weak editing, 
 
 Run a subtraction comparison and a category comparison. Remove an effect temporarily and judge the actual difference. Restore it if it strengthens the concept. Do not replace one default with an equally generic “anti-AI” aesthetic. Minimalism, maximalism, nostalgic type, gradients, and handmade references can all be appropriate. Preserve useful conventions where recognition matters.
 
+For interfaces, also inspect repeated section recipes, unnecessary card grids, dashboard theater, fake credibility, decorative controls, cosmetic responsiveness, and motion that delays the task. Apply the explicit hero constraints above and the diagnosis-and-repair method in [Interface originality](references/interface-originality.md).
+
 ## 7. Use the full visual toolset
 
 Select the medium that serves the idea and preserves required precision:
@@ -137,6 +158,8 @@ Fix the highest-impact issue, re-export, and reinspect the changed result and af
 Provide the requested artwork, editable source, variants, and useful preview. Explain the concept and its connection to the brief in plain language. Include relevant dimensions, font/color details, licensing dependencies, checks performed, and material limits. Keep routine internal process details out of the client-facing design.
 
 Use accurate status: **concept study**, **review draft**, **final digital artwork**, or **prepared for the named print workflow**, as supported by evidence. Internal QA is not client approval, complete accessibility certification, or guaranteed audience impact.
+
+For interfaces, distinguish **static interface design**, **interactive prototype**, and **integrated implementation**. State which flows were specified, implemented, visually inspected, functionally tested, and user-tested. Do not describe an untested application as production-ready.
 
 For a reusable system, identify fixed assets, permitted variations, and content limits. Show representative applications rather than only a hero mockup. Preserve research and decisions so later work can refresh the evidence while maintaining intentional identity.
 

@@ -104,6 +104,8 @@ If all results resemble the first image, change the concept source, metaphor, co
 
 Use the actual category reference set for comparison. Do not maintain a universal ban on gradients, serif fonts, grids, glows, grain, symmetry, scribbles, rounded forms, or minimalism.
 
+For UI/UX, also apply [Interface originality](interface-originality.md). Its two explicit hero constraints reflect the repository owner's preference, not a universal trend blacklist or an AI-authorship test. Preserve useful functional conventions and approved work within the requested scope.
+
 | Diagnostic question | Useful response when it reveals a problem |
 | --- | --- |
 | Could an unrelated brand use this after replacing only its name? | Add a subject-specific idea or reconsider generic imagery. |

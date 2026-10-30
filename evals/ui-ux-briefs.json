@@ -443,5 +443,60 @@
       "Role picker implies self-escalation; matrix loses channel identity on mobile.",
       "Says static references prove hover, motion, accessibility, persistence, or performance."
     ]
+  },
+  {
+    "id": "temporal_gallery_direction",
+    "test_kind": "reasoning",
+    "task": "Analyze two supplied clips and develop a new visual and motion direction for an independent photographic travel collection. Give a concrete implementation handoff. Written specification only.",
+    "supplied_facts": {
+      "product": "Aster publishes photographer-owned landscape stories. Visitors browse destinations, open a story, and return to their selected image. The identity should be visually expressive, with original typography and photographic composition. No purchases or sign-in.",
+      "fixtures": "Original owner clips C02 and C09; both graphic-design and web-motion-director skills.",
+      "scope": "No site implementation, live product access, or participant study."
+    },
+    "constraints": [
+      "Inspect the raw temporal inputs and use both skills.",
+      "Preserve the brief while making an independent direction.",
+      "Keep the handoff to 1400 words and state actual evidence limits."
+    ],
+    "expected_behaviors": [
+      "Records concrete sequence relationships and separates UI motion from presentation and unsupported source-stack claims.",
+      "Co-designs a distinctive composition and choreography with useful readable/usable/settled milestones, overlap, and coherent visual identity.",
+      "Specifies aligned crop or other concrete mechanism for selected-media continuity, including repeat input and route/history behavior.",
+      "Recomposes mobile and reduced motion while preserving facts and controls; distinguishes specification from runtime proof."
+    ],
+    "failure_signals": [
+      "Claims exact original easing/library or live inputs from sampled frames.",
+      "Copies source identity or applies the same generic reveal everywhere.",
+      "Uses a mandatory cinematic wait before navigation or loses selected-image continuity and return context.",
+      "Claims playback, device performance, or working navigation from prose."
+    ]
+  },
+  {
+    "id": "operational_motion_from_showcase",
+    "test_kind": "reasoning",
+    "task": "Study the supplied motion clips and propose coordinated visual and motion improvements to a team export workspace. Give a practical design and implementation handoff. Written specification only.",
+    "supplied_facts": {
+      "product": "Parcel lets teams select export jobs, inspect progress and details, and cancel a running export. Its approved identity is warm white, deep navy, and coral, with illustrated section artwork.",
+      "service": "Progress may be indeterminate. Jobs and cancellation are server-confirmed. Events can arrive out of order; a newer selection may occur during a transition. The destination detail has a real URL.",
+      "fixtures": "Original owner clips C03 and C04; both graphic-design and web-motion-director skills.",
+      "scope": "Existing service is not accessible. No application implementation or live changes."
+    },
+    "constraints": [
+      "Inspect the raw inputs and use both skills.",
+      "Respect the supplied product and service behavior; propose an independent visual direction.",
+      "Keep the handoff to 1400 words and distinguish the work performed from proposed checks."
+    ],
+    "expected_behaviors": [
+      "Transfers coordinated progression or group/detail choreography while distinguishing media, showcase camera work, and actual interface evidence.",
+      "Uses one truthful state model for related progress visuals, distinguishes pending cancellation from confirmation, and rejects stale events.",
+      "Separates immediate response, useful content, and decorative finish with explicit repeated-input and interruption behavior.",
+      "Preserves beauty and original illustrated character alongside stable targets, readable data, direct routes, history, and reduced-motion alternatives."
+    ],
+    "failure_signals": [
+      "Treats a showcase percentage or timeline as real service progress.",
+      "Animation completion confirms cancellation, stale events overwrite new selection, or users cannot act until a flourish finishes.",
+      "Imposes rotating page mockups or mandatory preloader on the operational workspace.",
+      "Strips all character by default or claims implemented and tested runtime behavior."
+    ]
   }
 ]

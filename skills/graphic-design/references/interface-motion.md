@@ -38,7 +38,7 @@ For each principal flow or signature moment, define the following. Simple contro
 | States | Resting, active/pending, intermediate, settled, and relevant failure or cancel states. |
 | Stable anchor | What stays visually reliable while the other elements change? |
 | Moving properties | Position, scale, clipping, opacity, shape, color, or media progress; axis, origin, travel, and stacking order. |
-| Choreography | What leads, follows, overlaps, holds, and settles? Identify a focal element instead of staggering everything. |
+| Choreography | What leads, follows, overlaps, holds, and settles? Identify a focal element instead of staggering everything. Record first readability and input readiness separately from visual settlement. |
 | Timing and easing | Candidate duration or scroll range, easing behavior, and why it feels appropriate here. Label untested values as proposals. |
 | Interruption | What happens on immediate reversal, repeated activation, new data, resize, route exit, or late async completion? |
 | Input and navigation | Focus, semantics, touch alternative, direct entry, Back/forward, and return position where relevant. |
@@ -51,13 +51,15 @@ Separate visual feedback from committed application state. A button may compress
 
 Think in relationships: a quick response can lead into a longer settling surface; a still heading can anchor a moving illustration; related elements can overlap in time instead of entering in a mechanical queue. Let movement express the apparent material. A soft card, rigid table row, drawn line, and photographic crop need not have the same acceleration or rebound.
 
-Define a small family of feedback, component, and scene timings appropriate to this product. Trial values such as 120 ms for a small press response, 240 ms for a compact panel, or 600 ms for an expressive scene are **starting experiments**, not measured recommendations or universal defaults. Tune at normal playback speed, with realistic content and repeated use. Springs need observed damping and settling behavior, not the adjective “bouncy.”
+Define a small family of feedback, component, and scene timings appropriate to this product. Trial values such as 120 ms for a small press response, 240 ms for a compact panel, or 600 ms for an expressive scene are **starting experiments**, not measured recommendations or universal defaults. Tune at normal playback speed, with realistic content and repeated use. Springs need observed damping and settling behavior, not the adjective “bouncy.” A spring can settle without visible bounce. Choose duration-based movement, springs, progress mapping, or media timing from the relationship; do not impose one model everywhere.
 
 Use delay and stagger selectively. Stagger a small meaningful group if the sequence improves its appeal or reading; cap the aggregate delay and keep controls immediately usable. Do not delay an entire long table row by row. Decide whether entrances run once, on a specific state change, or on deliberate replay. Re-entering a viewport should not blindly replay an introductory performance.
 
 Hover may add a lift, image crop, contour, light change, reveal, or playful accent. Pair it with a deliberate focus state and touch behavior; they need equivalent access, not necessarily identical movement. Keep hit areas stable, avoid hover oscillation caused by a moving target, and distinguish hover, keyboard focus, pressed, selected, disabled, and pending.
 
 Personality does not require perpetual motion. Give expressive moments enough quiet around them to be noticed. A dense workspace can feel responsive through selection continuity, useful panel transitions, and carefully tuned feedback while an illustrated lesson or portfolio earns a more expansive sequence. Do not automatically strip motion from a serious product or impose cinematic delays on every repeated action.
+
+The [motion-principles guide](https://github.com/MikeyNu/Web-Motion-Director/blob/main/skills/web-motion-director/references/motion-principles-and-choreography.md) develops staging, anticipation, overlap, follow-through, weight, easing, and construction. Locally, use four distinctions: recording time locates evidence; animation time drives a timed sequence; user progress drives a gesture or scrub; application state determines selection, pending, success, and failure. None can silently substitute for another. A decorative finish must not be the only path to revealing content or enabling controls.
 
 ## 4. Design scrolling as an experience
 
@@ -79,7 +81,9 @@ Recompose for narrow and short screens. A desktop chapter may become smaller dis
 
 ## 5. Transfer the reference relationships
 
-These are **proposed adaptations** of the static [workspace study](owner-workspace-study.md), not recovered animation recipes. Do not implement every row as a checklist.
+The [nine-clip study](owner-motion-study.md) now supplies temporal observations: Romp's content-before-accents, Vestmark's persistent aperture, FORMA's linked progression, Pedrix's group-before-detail assembly, Tenners' image/type intersections, forge's legible navigation travel, the poster's occlusion rhythm, DentalProClinic's overlapping planes, and Cicileta's aligned shutters and shared-image expansion. Use its timestamped evidence and limits. Presentation-camera movement is not an instruction to rotate the actual interface. These relationships extend the owner's taste without making every project share one motion style.
+
+The following are **proposed adaptations** of the static [workspace study](owner-workspace-study.md), not recovered animation recipes. Do not implement every row as a checklist.
 
 | Static relationship | Motion direction to explore | What the contract must preserve |
 | --- | --- | --- |
@@ -111,7 +115,7 @@ For each useful sequence:
 6. Record what should transfer and what is specific to that creator's assets or composition. Propose a new version for the current product, including narrow, touch, reduced-motion, and failed-load variants.
 7. Prototype and compare at normal speed. Judge rhythm, character, continuity, readability, and actual input response together. Separate faithful reconstruction from inspired adaptation.
 
-Use an evidence row: `source + timestamps | observed sequence | supported trigger | uncertainties | transferable relationship | proposed implementation | checks`. Do not mark a planned video analysis as completed. This update contains static-image study and motion proposals only.
+Use an evidence row: `source + timestamps | observed sequence | supported trigger | uncertainties | transferable relationship | proposed implementation | checks`. The [completed sampled-frame study](owner-motion-study.md) covers nine supplied clips, 199 overview selections, 395 denser selections, and seven source-detail crops. It supports sequence and composition observations; continuous normal-speed playback, audio, exact source curves, and live interaction remain unverified. Do not upgrade recorded notes into personal viewing or original implementation certainty.
 
 ## 7. Implement and inspect the sequence
 
@@ -126,6 +130,7 @@ Respect the scoped pause/stop/hide requirements and the reduced-motion design st
 Verify the actual rendered sequence:
 
 - Normal-speed forward playback and settled appearance, not just an attractive midpoint screenshot.
+- Mask seams, crop continuity, clipped type, overlap contrast, first readability, input readiness, and loop boundaries when relevant.
 - Immediate reversal, rapid repeat activation, cancellation, late data, and navigation away/back as relevant.
 - Keyboard, focus, pointer, touch, direct route entry, history, and return position.
 - Narrow and short viewports, long content, resize, reduced motion, and missing/slow media.

@@ -21,6 +21,7 @@ The 30 October 2026 visual-judgment refinement responds to the owner's explicit 
 - [Accessibility and type specifications](#accessibility-and-type-specifications)
 - [Production and licensing](#production-and-licensing)
 - [UI and UX evidence](#ui-and-ux-evidence)
+- [Motion principles research](#motion-principles-research)
 - [Refresh procedure](#refresh-procedure)
 
 ## Process, visual principles, and perception
@@ -138,11 +139,29 @@ This evidence refines the scope of the hero defaults: the owner positively inclu
 
 The owner supplied 20 more uploads on 30 October 2026: 19 distinct rasters plus an exact duplicate. The [workspace study](owner-workspace-study.md) records R21 through R40, covering reports, learning, assistants, board/map operations, settings, notification matrices, and related product screens. All distinct originals and 19 enlarged analysis crops were inspected. R40's six partial screens received separate crops. No hidden controls, unreadable source detail, interaction, live data, or clinical behavior is inferred from this study.
 
-The owner's additional instruction establishes coordinated, enjoyable UI motion as a design goal. The [motion guide](interface-motion.md), shared brief, and reference-specific animation suggestions are original design synthesis. The suggested timing values are experiments, not empirical thresholds. No animation videos had arrived, and no source timing, easing, scrolling, or motion-library implementation was observed. Later video studies must record their own source identities, timestamps, playback access, and uncertainty.
+The owner's additional instruction establishes coordinated, enjoyable UI motion as a design goal. The [motion guide](interface-motion.md), shared brief, and reference-specific animation suggestions are original design synthesis. The suggested timing values are experiments, not empirical thresholds. At this earlier still-reference stage, no animation videos had arrived. The subsequent nine-clip study below records its own source identities, timestamps, playback access, and uncertainty.
 
 The companion [Web Motion Director](https://github.com/MikeyNu/Web-Motion-Director) was inspected at commit `ba39e2ad9cc262f458420581b9fc039d531aaae1` before coordinating the two workflows. That is a companion package, not an empirical source or proof of host capabilities. This update establishes one shared composition/motion contract and a reciprocal workflow, while preserving project-specific stack and identity choices.
 
 The research service returned errors for this follow-up's standards queries. Direct retrieval from the original publishers succeeded: the relevant U12/U13 criterion, level, and conditions and U14 rendering guidance were inspected on 30 October 2026. Moving information and automatic updates have different conditions under SC 2.2.2; the more-than-five-second condition does not apply to its auto-updating branch. No other current API/browser-support claims were freshly verified here.
+
+### Motion principles research
+
+Consulted 30 October 2026. The companion [research register](https://github.com/MikeyNu/Web-Motion-Director/blob/main/skills/web-motion-director/RESEARCH.md#30-october-2026-motion-principles-research) gives source-level access notes. These sources inform the workflow without dictating the owner's aesthetic.
+
+| Source | Support | Limits |
+| --- | --- | --- |
+| U15. [Carbon, Motion](https://www.carbondesignsystem.com/building-blocks/foundations/motion/overview), updated 12 August 2026 | Productive/expressive moments; page choreography; timing related to movement. | Official design-system guidance. IBM's tokens and stylistic restrictions are not universal rules. Text inspected, demos not played. |
+| U16. [Material 3, Motion](https://m3.material.io/styles/motion) and [MotionScheme API](https://developer.android.com/reference/kotlin/androidx/compose/material3/MotionScheme) | Spring schemes and separation of spatial movement from bounded effects. | Official indexed design text/API inspected. No embedded playback; native conventions do not define every web implementation. |
+| U17. [Apple HIG, Motion](https://developer.apple.com/design/human-interface-guidelines/motion) | Responsive, interruptible feedback and optional motion. | Official indexed text inspected; direct page required JavaScript. Platform guidance, not an experimental proof or a ban on ornament. |
+| U18. [Android Developers, Animation quick guide](https://developer.android.com/develop/ui/compose/animation/quick-guide) | Distinct motion models, shared state, and velocity-aware spring interruption in Compose. | Documentation inspected, native code not executed. Verify other libraries independently. |
+| U19. [Heer and Robertson, Animated Transitions in Statistical Data Graphics](https://idl.uw.edu/papers/animated-transitions), 2007 | Examined chart tasks benefited from animation and some simple staging; complex staging sometimes increased error. | Paper sections inspected. Scoped experiments, not general proof of website usability, optimal timing, or business outcomes. |
+| U20. [NNGroup, Executing UX Animations](https://www.nngroup.com/articles/animation-duration/), 9 February 2020 | Trigger, properties, duration, and easing considered separately. | Practitioner guidance; timing recommendations require contextual judgment and testing. |
+| U21. [MDN, Scroll-driven animations](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scroll-driven_animations) | Scroll/view progress differs from elapsed-time animation. | Primary technical documentation, not evidence of browser support for a particular project's targets. |
+
+U12 through U14 were also rechecked against official text for pause/update controls, reduced motion, and rendering costs. The [nine-clip study](owner-motion-study.md) supplies timestamped visual observations, including 199 overview selections, 395 dense selections, and seven detail crops. It does not establish normal-speed smoothness, audio choreography, original source technology, production interaction, accessibility conformance, or user response. No raw clips or frames are republished.
+
+The resulting four-clock model, readiness/settlement distinction, visual construction methods, creative interpretations, and adaptation choices are original design synthesis. Preserve the difference between what a frame shows, what a source recommends, what a study tested, and what we propose to build.
 
 ## Refresh procedure
 

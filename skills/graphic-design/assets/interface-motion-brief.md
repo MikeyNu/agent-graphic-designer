@@ -12,6 +12,8 @@ Source evidence, access level, and timestamps if temporal:
 
 Observed behavior versus newly proposed behavior:
 
+Interface animation versus presentation camera/editing, with access and sampling limits:
+
 Stable anchors, expressive regions, and quiet regions:
 
 Composition/motion alternatives explored and chosen relationship:
@@ -23,6 +25,12 @@ Existing stack, animation conventions, and real capability limits:
 Component or route and persistent object identity:
 
 Trigger, input modes, and responsible state/scroll owner:
+
+Clock: recording evidence, elapsed animation, user progress, or application/data state:
+
+First readable state, input readiness, and visual settlement:
+
+Crop/focal-point continuity, masks, layer order, and text treatment:
 
 | State or beat | Visible composition | Moving properties and origin | Timing/progress, overlap, and easing | Semantic/data state |
 | --- | --- | --- | --- | --- |
@@ -52,7 +60,8 @@ Design changes made after observing motion:
 
 | Check | Conditions and method | Status | Evidence or limitation |
 | --- | --- | --- | --- |
-| Normal-speed sequence and settled composition | | NOT RUN | |
+| Normal-speed sequence, first readability, input readiness, and settlement | | NOT RUN | |
+| Mask/type intersections, crop continuity, and loop seam if relevant | | NOT RUN | |
 | Reverse, cancel, rapid input, and cleanup | | NOT RUN | |
 | Input, semantics, focus, and navigation | | NOT RUN | |
 | Scroll entry, progress, reverse, and release, if relevant | | NOT RUN | |

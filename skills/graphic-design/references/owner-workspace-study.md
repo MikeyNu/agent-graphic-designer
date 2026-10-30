@@ -2,7 +2,7 @@
 
 Studied **30 October 2026**. This second owner-supplied set contains 20 uploads and 19 distinct rasters. R29 is byte-identical to R28. All distinct originals and 19 enlarged crops were inspected, including six separate regions of R40. Enlargement assists inspection but cannot recover missing detail. These notes extend the [first 20-reference study](owner-reference-study.md) and [taste profile](owner-design-taste.md).
 
-The evidence is static. No animation, live flow, original creator, typeface identity, shipped status, or user outcome was verified. Motion suggestions in the companion [motion guide](interface-motion.md) are new proposals, not observations of these sources. The owner plans to supply videos; none were available for this study. Original assets are not bundled or licensed by these notes.
+The evidence is static. No animation, live flow, original creator, typeface identity, shipped status, or user outcome was verified. Motion suggestions in the companion [motion guide](interface-motion.md) are new proposals, not observations of these sources. Videos were unavailable for this still-image study; the subsequent [nine-clip study](owner-motion-study.md) records separate temporal evidence. Original assets are not bundled or licensed by these notes.
 
 ## Reference index
 

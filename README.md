@@ -92,7 +92,7 @@ The [second reference set](skills/graphic-design/references/owner-workspace-stud
 
 Use the [shared UI and motion brief](skills/graphic-design/assets/interface-motion-brief.md) with [Web Motion Director](https://github.com/MikeyNu/Web-Motion-Director) when available. The graphic-design skill handles visual relationships and art direction; the companion deepens temporal implementation and verification. Both use the same plan and prototype. This does not install another skill, grant tools, or require multiple agents. The local guide remains usable without the companion.
 
-Static images establish composition, not original animation. The workflow includes a timestamped video-study method, but the owner's forthcoming motion videos have not yet been studied. Proposed animations and timing values remain clearly labeled proposals until tested.
+The [nine-clip motion study](skills/graphic-design/references/owner-motion-study.md) adds timestamped analysis of masks, typography, drawn accents, synchronized progression, surface choreography, and shared-image transitions. It separates interface movement from presentation-camera work and records the sampled-frame limits. [Motion-principles research](skills/graphic-design/references/sourcebook.md#motion-principles-research) supports the expanded guidance. Proposed implementation, exact source easing, and untested behavior remain explicitly distinguished.
 
 ### Psychology without a false dictionary
 

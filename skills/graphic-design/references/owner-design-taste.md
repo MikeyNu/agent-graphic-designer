@@ -1,6 +1,6 @@
 # Owner's interface taste: direction without a new formula
 
-Use this profile before substantial new interface art direction in this repository. It interprets two sets the owner selected on **30 October 2026**: 40 uploads containing 39 distinct images. Read the [first study](owner-reference-study.md) and [workspace/settings study](owner-workspace-study.md) for concrete observations. The original images are not bundled; reading these notes is not personal visual inspection of those images. The owner also explicitly wants motion designed alongside the UI. Static examples suggest opportunities; forthcoming videos must supply their own temporal evidence.
+Use this profile before substantial new interface art direction in this repository. It interprets two sets the owner selected on **30 October 2026**: 40 uploads containing 39 distinct images. Read the [first study](owner-reference-study.md) and [workspace/settings study](owner-workspace-study.md) for concrete observations. The original images are not bundled; reading these notes is not personal visual inspection of those images. The owner also explicitly wants motion designed alongside the UI. The subsequent [nine-clip study](owner-motion-study.md) adds timestamped temporal observations with its own evidence limits.
 
 Treat this as a strong starting preference, not a universal style system. Current instructions, approved identity, audience, task, and supplied project references take priority. Do not force the profile onto an unrelated maintenance edit. The owner's approval establishes aesthetic interest in the collection, not approval of every depicted label, control, metric, or claim. Interpretations below remain revisable through feedback.
 
@@ -78,6 +78,10 @@ R21's tiny repeated accents, R27's layered object context, R31's aligned table, 
 ### Design its behavior at the same time
 
 The owner wants engaging motion designed with the element, including transitions, reveals, hover, and scrolling. Explore the relationship between a resting composition and its movement before finalizing either. An illustrated cover may react playfully; a selected record may remain recognizable while its details open; an expressive page may unfold through coordinated chapters. Use the [shared motion workflow](interface-motion.md), including reliable controls, interruption, and alternate conditions. Preserve beauty and pleasure as valid intentions. Neither a static-first draft with universal fade-ups nor constant motion everywhere expresses this preference well.
+
+### Extend the taste through time
+
+The [nine-clip motion study](owner-motion-study.md) adds multiple temporal voices: playful follow-through, architectural masks, coordinated progress, typographic collage, quiet travel, kinetic illustration, overlapping surfaces, and photographic continuity. Learn the underlying relationship. A late drawn accent, a recognizable crop, or a stable anchor can matter more than the nominal duration. Coherence does not mean one effect everywhere. The clips include presentation-camera moves and an animated poster; neither proves live interface behavior. Admiring a sequence does not endorse its every component, numerical claim, or sample label.
 
 ## 3. Resolve the apparent contradictions
 

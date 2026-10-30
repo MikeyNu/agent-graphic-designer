@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add sixteen interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add eighteen interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 
@@ -32,3 +32,5 @@ See [validation-2026-10-30.md](validation-2026-10-30.md) for the UI/UX extension
 For owner-taste cases, test interpretation and transfer rather than exact visual imitation. The reference-boundary case requires raw images; the cross-dashboard case tests written specification only. Preserve current project identity, keep valid task conventions, and check that the selected reference set has not become a universal palette or silhouette.
 
 For joint-motion cases, supply both skills and the named raw stills without evaluator diagnosis. Evaluate coordinated decisions, reference honesty, and transaction semantics. A reasoning pass does not prove animation execution; temporal QA requires a later running prototype and actual playback/input evidence.
+
+For temporal-reference cases, supply the named original clips and both skills, without analysis notes or evaluator expectations. Check sampled evidence, identity/crop continuity, readability versus settlement, and state truth. These written exercises evaluate transfer and specification only; normal-speed runtime and input checks remain separate.

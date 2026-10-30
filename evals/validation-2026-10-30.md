@@ -218,3 +218,55 @@ The full temporary specifications were extensive reasoning outputs, not producti
 - Relay: `d7b1f06b8c8d248ea32ef82ee1145fe71bf5e4f5bb4dfdcd592107e073a111d1`.
 
 These passes establish bounded specification behavior for the examined cases. They do not establish rendered aesthetic quality, good animation timing, working integrations, complete accessibility, or representative-user success. Those remain separate execution checks for future implementation and the forthcoming video study.
+
+
+## Nine motion clips and principles research
+
+Date: 30 October 2026. Baselines: Graphic Design `317c8fc`, Web Motion Director `afc3d2b`. This follow-up updates the existing source packages; it does not install a personal skill, deploy an interface, or modify a live product.
+
+### Source inspection
+
+The [motion study](../skills/graphic-design/references/owner-motion-study.md) records all nine original filenames, SHA-256 identities, dimensions, nominal frame rates, durations, and audio-track presence. Total container duration is 194.700 seconds. Inspection used 199 one-second overview selections in 16 sheets, then 395 selections across 26 denser windows in 28 sheets, plus seven source-resolution detail crops. Every listed sheet and crop was visually inspected. Frame selections can overlap between overview and dense sampling.
+
+| Clip | Dense windows inspected | Dense selections |
+| --- | --- | --- |
+| C01 Romp | Category, product, phone scene, invitation/button, mobile rail | 66 |
+| C02 Vestmark | Aperture/metric sequence, photographic rows, gallery | 46 |
+| C03 FORMA | Hero-to-timeline handoff, linked progression | 28 |
+| C04 Pedrix | Brand/media introduction, battery illustration, image windows, tile assembly | 62 |
+| C05 Tenners | Type/image collage, portraits, quotation pair | 41 |
+| C06 forge | Navigation travel, next section, footer | 44 |
+| C07 athlete poster | Full three-second phrase at 0.1-second intervals | 31 |
+| C08 DentalProClinic | Teal plane, booking section | 29 |
+| C09 Cicileta | Shutters, gallery entry, selected-image expansion | 48 |
+
+The seven larger crops examined C01's rolling-label/fill button, C02's partially revealed row, C03's ring/card/number relationship, C05's letter/photo intersections, C07's occlusion, and C09's shutters and expanding shared image. Neither source clips nor extracted frames are redistributed.
+
+Continuous normal-speed playback, audio, live inputs, original source code, exact easing, original pin/scroll mechanism, measured production performance, and participant response were NOT RUN or unavailable. Timestamped samples support visible sequence and composition observations, not those stronger claims. Interpretations and reconstruction techniques are explicitly proposals.
+
+### Changes and research
+
+The package adds a nine-clip reference study and connects it to the owner profile, motion workflow, shared brief, and core routing. The companion adds a principles/construction guide covering staging, overlap, follow-through, holds, springs versus timed/progress-driven motion, masks, moving type, linked indicators, shared media, and group assembly. Both distinguish recording time, animation time, user progress, and application state, and separate readability/input readiness from visual settlement. Spring physics is no longer conflated with visible bounce. Beauty and expressive character remain valid goals.
+
+The [sourcebook](../skills/graphic-design/references/sourcebook.md#motion-principles-research) and companion research register document Carbon, Material, Apple, Android, MDN, W3C, web.dev, NNGroup, and the scoped Heer/Robertson experiments. Official indexed text was used where JavaScript blocked direct page extraction; embedded demos were not played. Platform guidance, empirical findings, observations, and original synthesis remain separate. No universal timing scale or source-library attribution is claimed.
+
+### Package checks
+
+- Graphic Design: PASS, all 43 existing tests, including structure for 18 UI/UX cases, portable paths/anchors, local links, frontmatter, and no em dashes.
+- Portable generation: PASS, including the new study and shared-brief fields. Generated bundle remains temporary.
+- Both skill structures: PASS using the skill-creator validator. Core sizes: 182 and 210 lines, respectively.
+- Web Motion Director: JSON parsing, 1.2.0 manifest/core agreement, local Markdown file links, and authored-text checks passed. Both original MIT notices remain unchanged. An initial ad hoc equality assertion incorrectly assumed those two pre-existing notices were byte-identical; checking each against its own baseline corrected that validation assumption without changing either license.
+- Coordinated cross-repository source links resolve to files in the updated checkouts. No runtime helper, dependency, or artwork script changed.
+
+### Fresh-context temporal-reference exercises
+
+Two new reasoning definitions are in `ui-ux-briefs.json`. Separate fresh-context agents received both skill paths, a neutral task brief, supplied product/service facts, the named raw clips, and a 1400-word written-handoff limit. They were not given evaluator expectations or the parent's diagnosis. Temporary analysis artifacts were isolated from the source packages. The parent reviewed each complete final response; results follow.
+
+| Exercise | Evidence and assessment |
+| --- | --- |
+| Aster photographic stories, raw C02/C09 | PASS for the examined specification. The agent reported metadata, overview sheets, five dense windows, and two source-resolution stills. Its response identified persistent apertures, shutter overlap, and selected-image expansion while explicitly withholding curve/input/stack certainty. It compared three written directions, proposed an independent photographic index and original wordmark, and specified crop/focal-point continuity, early readable content, interruption, real routes, direct entry, return selection/scroll/focus, responsive composition, and reduced motion. Timings were proposals. It did not claim rendered roughs, playback, or working navigation. |
+| Parcel export workspace, raw C03/C04 | PASS for the examined specification. The agent reported 97 sampled frames and two source-resolution crops. It transferred linked progression and group-before-detail choreography while distinguishing the presentation camera. It preserved warm white/navy/coral and illustrated character. Its accepted-state model included server revisions, stale-event rejection, per-job cancellation, unknown timeout reconciliation, completion/cancellation races, and a newer selection during transition. It rejected fabricated percentages and timer-based success, separated usable content from ornament, and preserved direct URLs, history, input, reduced motion, and failure recovery. No implementation or runtime test was claimed. |
+
+Both complete outputs were reviewed as written handoffs. Their independent sampling is separate from the parent study's 594 frame selections and is not added to that count. The brief permitted specification only, so the absence of rendered concept comparisons is an explicit scope limit rather than a visual-quality pass. No further skill correction was required by these two responses. Broader generalization remains untested.
+
+These exercises assess written transfer and specification. They do not establish rendered aesthetics, running animation, actual latency, integration correctness, accessibility conformance, or human approval. A future implementation requires its own normal-speed playback, interaction, responsive, reduced-motion, and performance checks.

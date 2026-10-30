@@ -6,6 +6,7 @@ Research snapshot: **30 October 2026**. Use this method for future research as w
 
 - [1. Choose the evidence for the question](#1-choose-the-evidence-for-the-question)
 - [2. Inspect and decompose](#2-inspect-and-decompose)
+- [Study a supplied taste collection](#study-a-supplied-taste-collection)
 - [3. Observed examples and access limits](#3-observed-examples-and-access-limits)
 - [4. Synthesize an independent design](#4-synthesize-an-independent-design)
 - [5. Refresh responsibly](#5-refresh-responsibly)
@@ -44,6 +45,16 @@ Study content order, grouping, hierarchy, typography, density, image function, n
 View actual images before making visual claims. A text extractor's image label is not visual inspection. When a page is blocked, use accessible public material and accurately label its limits. Do not bypass sign-in, payment, or verification controls, claim a subscription was available, or ask for credentials in a design brief. User-supplied licensed screenshots can support later work without implying unseen flows were reviewed.
 
 Separate presentation craft from product evidence. A perspective mockup, component collage, cinematic camera move, or phone photograph can conceal text size, scrolling, missing states, and inaccessible controls. Seek a flat screen and relevant adjacent states. If only presentation imagery is available, describe that limit. Inspect copy, duplicate labels, numerical relationships, and chart meaning even in admired work. Record what is visually compelling and any actual weakness or unresolved question; do not manufacture a criticism for every reference. A work can teach beauty, material sensitivity, or surprising composition even when no task benefit is established. Popularity never exempts it from critique.
+
+### Study a supplied taste collection
+
+Treat a user's chosen examples as direct evidence of their preference, with unresolved details rather than blanket approval of every pixel. Inspect every supplied image when a thorough study is requested. Record a stable identifier, dimensions, access, and any relevant crop; preserve originals. Work at composition scale, detail scale, and intended viewing size. Magnification helps inspect edges and relationships but cannot recover absent text or prove exact font, technique, authorship, or behavior.
+
+First identify the attraction: image and type placement, proportions, density, contour, color area, light, material, recurring detail, and quiet versus rich regions. Explain the relationship in ordinary language. Keep the original designer's unknown intent separate from an aesthetic interpretation. Then identify specific production questions without letting the critique erase the aesthetic lesson.
+
+Compare across the set. Find preferences that recur, meaningful differences, and examples that challenge earlier assumptions. Distinguish a prototype's data defects from its art direction, a device/browser presentation from in-product chrome, and a component board from a single page. Do not count related template variations as independent trend evidence or assume a screenshot timestamp is its publication date.
+
+Convert the study into a flexible profile: what to favor, alternatives within that preference, appropriate contexts, what to preserve, and what must be adapted. State which preferences are explicit and which are inferred. Keep current instructions and approved identity ahead of the profile. The [owner's profile](owner-design-taste.md) and [20-example study](owner-reference-study.md) demonstrate this method. The notes can guide future work without bundling the original images, but later agents must not claim personal visual inspection from notes alone.
 
 ## 3. Observed examples and access limits
 
@@ -152,7 +163,7 @@ For example, studying a collection lineup might suggest that a visual catalog sh
 
 Keep functional conventions consistent while varying the composition where meaning permits. Run three low-fidelity alternatives for substantial new work and the [whole-page checks](interface-originality.md#4-review-the-whole-page-and-system). Avoid taking one website's art direction, another's navigation, and a third's components without reconciling them into a coherent system.
 
-Transfer selectively: an informative product detail can be worth studying even when its marketing hero violates this brief. A compelling component can still contain wrong copy. Carry the useful relationship into a new design, correct the observed weakness, and leave the source's unsupported claims and ornamental treatment behind unless they independently serve the task.
+Transfer selectively: an informative product detail can be worth studying even when its marketing hero violates this brief. A compelling component can still contain wrong copy. Carry the useful relationship into a new design and correct the observed weakness. Leave unsupported claims behind. Adapt the visual qualities of ornament, material, or imagery when they improve the new composition; they do not need an independent task function. Use original or permitted assets and avoid copying a distinctive source treatment wholesale.
 
 ## 5. Refresh responsibly
 

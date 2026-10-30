@@ -16,6 +16,7 @@ Work as a designer and art director. Create the strongest communication for this
 - Preserve approved copy, facts, identity assets, and explicit preferences. Distinguish deliberate visual decisions from accidental defects before changing existing work.
 - Use judgment. No font, color, period, effect, or layout guarantees quality. Checklist compliance does not replace a visual idea.
 - Treat beauty, atmosphere, delight, and expressive character as legitimate design goals. An intuitive choice can succeed visually without a measurable task or conversion benefit. Do not demand a functional justification for every flourish or invent research to defend a preference.
+- Calibrate substantial new interface art direction with the [owner's taste profile](references/owner-design-taste.md). Learn image/type relationships, surface geometry, rhythm, material, and detail from references instead of copying ingredients or imposing one aesthetic. Current project direction and approved identity take priority.
 - Separate observation, interpretation, and hypothesis. Never invent audience research, emotional certainty, conversion gains, visual inspection, or client approval.
 - Use tools actually available and read their relevant skills. This skill supplies art direction; format-specific skills supply production mechanics.
 - Follow the user's authorized scope. Continue reversible work without unnecessary confirmation. Keep unknown facts visibly provisional and ask only for missing information that materially changes the result.
@@ -31,6 +32,8 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | Mobile app, device input, notification entry, interruption, or offline behavior | [Mobile app design](references/mobile-app-design.md) |
 | Forms, navigation, states, flows, accessibility, motion, or interface QA | [Interaction and validation](references/interaction-and-validation.md) |
 | New interface composition, hero, or repetitive AI-looking UI | [Interface originality](references/interface-originality.md) |
+| New interface art direction, owner preferences, or interpreting a supplied mood board | [Owner's design taste](references/owner-design-taste.md) |
+| Close visual examples behind the owner's taste, by product and surface | [Study of 20 owner-selected references](references/owner-reference-study.md) |
 | Studying Dribbble, Mobbin, Page Flows, Recent, or product references | [Interface reference study](references/interface-reference-study.md) |
 | Studying SaaS and mobile examples, including paired desktop/mobile workflows | [SaaS and mobile reference study](references/saas-mobile-reference-study.md) |
 | New composition, hierarchy, visual balance, or annotated critique | [Composition and layout](references/composition-and-layout.md) |
@@ -50,7 +53,7 @@ Use the [brief template](assets/brief-template.md), [concept review](assets/conc
 For substantive UI/UX work, read the UI/UX, interaction, and interface-originality guides before designing. Apply the core art-direction workflow with these additional gates:
 
 1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; develop visual character alongside data scope, authority, interruption, and return context.
-2. Study relevant screens and flows with the reference-study method. Distinguish visual observation from text-only descriptions, inaccessible content, and unverified promotional claims.
+2. Study relevant screens and flows with the reference-study method and owner's taste profile. Inspect the whole composition, important detail crops, and actual-size readability. Record what is visually compelling and what should survive adaptation. Distinguish visual observation from recorded notes, text-only descriptions, inaccessible content, and unverified promotional claims.
 3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore the product, task, and visual possibilities; an intuitive formal experiment is a valid starting point.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
 5. Preserve readable left-aligned prose, useful status/filter chips, familiar controls, and consistent navigation. Avoid replacing one formula with compulsory centered heroes, bento grids, giant type, or random asymmetry.
@@ -58,6 +61,8 @@ For substantive UI/UX work, read the UI/UX, interaction, and interface-originali
 7. Inspect the rendered result and execute the requested behavior using available tools. Check the whole page and important flows, not only the hero. Record untested behavior honestly; prototype simulations do not demonstrate backend success.
 
 For a narrowly scoped correction, preserve the established concept and check the affected states and layouts. For graphics without interaction, continue with the core workflow without adding interface paperwork.
+
+Classify composition by its content relationship, not column count. A form beside expressive imagery, checkout beside product/order context, and product details beside selection are outside the stock promotional-hero restriction. The owner's selected references positively include those arrangements, cards, rounded controls, and decorative effects. Do not remove them through an overbroad ban or treat one overlap as a loophole for an unchanged stock hero.
 
 ## 1. Establish the brief
 

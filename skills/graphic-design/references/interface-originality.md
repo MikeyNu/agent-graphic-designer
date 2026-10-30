@@ -25,6 +25,10 @@ Keep legitimate status labels, filter chips, category controls, and necessary an
 
 A product-detail view pairing product imagery with variant selection, specifications, and purchase controls is not automatically the rejected promotional hero. Judge its task and content relationship. This distinction does not permit relabeling a generic marketing split as a product detail to evade the constraint.
 
+Apply the same distinction to authentication forms beside expressive imagery and checkout beside product or order context. The owner explicitly selected such references in the [20-image study](owner-reference-study.md); no exception is required for a pattern outside the restriction. The [taste profile](owner-design-taste.md#3-resolve-the-apparent-contradictions) also distinguishes attractive cards, rounded navigation, star motifs, gradients, and dimensional imagery from mechanical use of those ingredients. Preserve the narrower hero-announcement constraint.
+
+Inspect the actual composition. An image can bind a shared field, cross a surface boundary, or coordinate with shaped negative space. Those relationships can differ from detached columns, but a decorative overlap alone does not transform the same generic headline/paragraph/CTA stack. Do not use the rule to reject every split or the reference set to permit every split.
+
 ## 2. Diagnose the visible problem
 
 Use concrete observations and consequences. A smell triggers review; it is not a probabilistic AI detector. Several co-occurring smells warrant reopening the concept, but no arbitrary count certifies quality.
@@ -55,6 +59,8 @@ Apply the same scrutiny to over-sanitized output: removing every ornament, irreg
 ## 3. Derive alternatives from the product
 
 Before opening a reference feed, write the product's concrete value and a few relevant facts, materials, actions, or data relationships. Use references to expand that starting point rather than letting one admired screenshot set the entire brief.
+
+For this repository's default art direction, use the [owner's taste](owner-design-taste.md) as a flexible starting point. Compare relevant examples across its restrained and expressive range. Transfer relationships such as material color recurring through a dashboard or quiet controls beside expressive imagery; do not copy a distinctive arrangement or force one palette onto unrelated products.
 
 For substantial new work, render at least three comparable roughs with the same approved content. Change the content architecture, focal point, relationship between text and image, or interaction model, not only the theme. Consider these mechanisms as prompts, never a menu to rotate through automatically:
 

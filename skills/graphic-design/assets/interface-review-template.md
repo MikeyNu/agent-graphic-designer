@@ -14,6 +14,8 @@ Approved facts and content:
 
 Aesthetic intention and expressive choices worth preserving:
 
+Applicable owner/project references, observed relationships to adapt, and source-specific elements to leave behind:
+
 Scope, assumptions, and essential unknowns:
 
 ## Reference evidence
@@ -33,6 +35,8 @@ Selected route and evidence:
 Visual preference, what it adds, and what a simpler alternative might lose:
 
 Hero constraint exception, only if explicitly requested or preserving approved work:
+
+If a split is used, identify its actual role; authentication, checkout, and product selection are not automatically promotional heroes:
 
 ## Primary flow
 

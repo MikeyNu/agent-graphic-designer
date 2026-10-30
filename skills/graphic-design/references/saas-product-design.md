@@ -81,9 +81,11 @@ For AI-assisted work, distinguish generated proposals, cited source material, us
 
 Spend space on relationships and readable decisions. Use shared baselines, consistent row rhythm, semantic type roles, restrained dividers, and predictable action placement. Allow sufficient target area without inflating every row into a promotional card. Differentiate selected, focused, hovered, disabled, warning, and error states with more than subtle hue changes.
 
-Reserve strong accents for meaningful emphasis rather than coloring every metric. Keep status and magnitude distinct: a rising cost is not automatically a green success. Use tabular numerals where they improve comparison. Inspect realistic magnitudes, long labels, multi-line rows, and empty cells.
+Compose strong color at the scale the identity needs. It can organize broad sections or provide small accents; neither is universally better. Keep hierarchy and readable values within colorful surfaces instead of assuming all metrics must be neutral. Keep brand/category color, status, and magnitude distinct: a rising cost is not automatically a green success. Use tabular numerals where they improve comparison. Inspect realistic magnitudes, long labels, multi-line rows, and empty cells.
 
 Allow a beautiful or playful visual system around these requirements. Rich color, distinctive typography, material, illustration, and pleasing small interactions can belong in SaaS without proving a productivity gain. Judge their actual effect on the composition and the task. Protect truthful chart encodings, readable values, and operable controls with local adjustments; do not strip the product to a neutral template by default.
+
+The owner's [dashboard references](owner-reference-study.md#dashboards-and-creative-tools) range from sharp olive/charcoal panels to an open cream canvas and exuberant pet-care colors. Study their differences. Use shared surfaces or varied modules according to the content; a domain illustration, textured chart highlight, or expressive greeting can be part of the character. Do not copy source metric errors or impose one of these compositions on every workspace. Scale the visual expression to the role and task without erasing it automatically.
 
 Reuse navigation and repeated task patterns across the product. Originality can come from unusually clear task fit, domain language, information hierarchy, and thoughtful detail. It does not require making a familiar table, settings page, or search control look unfamiliar.
 

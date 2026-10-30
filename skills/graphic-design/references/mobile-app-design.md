@@ -30,6 +30,8 @@ Preserve appropriate tab state, list position, filters, and drafts. If no in-app
 
 Use a sheet for bounded contextual work; prefer a full screen for long input, substantial comparisons, or tasks that need a durable route. Test sheet height, internal scroll, dismissal, focus, keyboard, and large text. A fashionable floating bottom bar is not successful if it covers the last list item or conceals destinations behind unlabeled icons.
 
+Preserve attractive navigation craft when it works. The owner's [mobile references](owner-reference-study.md#mobile-product-experiences) include a contrasting floating bar with an expanded selected label and a shaped header above a conventional form. Inspect selected versus unselected labels, content reserves, target separation, and system insets before judging those treatments. A rounded control is outside the hero-badge restriction. Keep the contour or visual identity while correcting specific crowding; do not turn every app into the same navigation treatment.
+
 ## 3. Adapt information instead of shrinking it
 
 Choose what the user must recognize now and what detail remains reachable. Preserve identity, current status, relevant amount or date, and the next decision. Avoid copying every desktop KPI into vertically stacked cards before the main task.

@@ -106,3 +106,51 @@ Parent inspected the returned reviews against the actual input images. These wer
 | Mobile checkout | 430 by 932 px | `283c91c11338008269550e2f918fbf388ea99dbb17c68c03946c610ffe653f27` |
 
 Package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and diff/whitespace checks. The core is 173 lines. Twelve UI/UX evaluation definitions are structurally validated; only the runs explicitly recorded here count as executed. The QA template adds an initially unassessed aesthetic-quality field and separate places for expressive choices to preserve and optional aesthetic suggestions. No executable dependencies or generated review images are committed.
+
+## Owner-selected reference and taste calibration
+
+The owner supplied 20 images as preferred examples and requested close visual study. The parent inspected all 20 original rasters and 25 enlarged detail crops, covering all 20 sources. The resulting [individual study](../skills/graphic-design/references/owner-reference-study.md) records image/type relationships, surface boundaries, color area, material, spacing, hierarchy, recurring details, and bounded production questions. The [taste profile](../skills/graphic-design/references/owner-design-taste.md) turns these observations into a flexible starting preference while preserving current briefs and approved identities.
+
+The change routes new interface art direction to that profile, distinguishes task-related form/image and checkout arrangements from the stock promotional hero, permits expressive dashboard color and familiar rounded controls, and adds account-flow continuity guidance. It updates the relevant existing references and brief/review templates. It also removes a remaining instruction that could require ornament to serve a functional task. The package retains the narrower hero defaults and the principle that beauty and atmosphere are valid goals.
+
+### Source inspection conditions
+
+The evidence consists of user-supplied static raster presentations, ranging from 765 to 1504 pixels wide. Originals were opened at their native image resolution. Crops were enlarged 1.3 to 2.5 times for inspection, with no generative reconstruction or changes to the supplied files. The 25 crops were inspected individually: product/panel boundaries, cup/light/accent, furniture detail, metric/image grouping, tennis hero and editorial sequence, display lettering, financial card/chart and transaction rows, mobile progress/navigation and timeline, team/chart layout, pet dashboard detail, soft controls, dimensional objects, photographic panel boundary and footer, three portrait treatments, product preview, mobile contour and floating actions, dark form states, and the narrow account sequence.
+
+The images are not published as package assets. Source file identity is retained below for a reproducible comparison if the same inputs are supplied again. The individual study maps these IDs to filenames and dimensions. Exact typefaces, creator intent, original dates, rights, authorship, and shipped-product status were not inferred from appearance. No live flow, device, backend, participant, or contrast-conformance testing was performed on these references.
+
+| Source | SHA-256 of supplied original |
+| --- | --- |
+| R01 | `bd7a3f67562f4caa5e8996c868b444ae7a35a5de1061d180fca94db500343f24` |
+| R02 | `cc40205e59207afb1adc32b5e6b34c5383e5528f71d9a7c6c3a96cbeae695a19` |
+| R03 | `a6245284ad349e1468d341085e8def0254954675b8b220995819f2b42a196789` |
+| R04 | `ff9f508fdf11ab8006238e16c3cdabd682e85175ea098bedf5541f7bb0cb255a` |
+| R05 | `d7ba8580e9a29259d4ccac46484b8131ecff5cb8feb66512fdb9f69ac95a36cd` |
+| R06 | `3f11fa13f483d4005dc95736dc25db3f08d6bc7a8fa5c6fd7e85513a7f30eb98` |
+| R07 | `915782b8bbb1d092b7bedc252f8a2fbbfcd7bc1f2dd2831c831f1982588c3c56` |
+| R08 | `0112ae2e8f943e011cfb409111de5159b7d45f630cafa1bfffcf2d33629558dc` |
+| R09 | `1c1e4c3ccb458aeade2805b78ba9f31e23997d7912d733ec72f9251ee75039a6` |
+| R10 | `1f8276d96ac976321a52925d35f97e6df764357bf04b372ae1ebb3d3d59d31e0` |
+| R11 | `5e24ea09306299543651adcf115714a093316314fc1617f156171e67c21b4672` |
+| R12 | `6761d51e4f6a81f0b4e7bbb4a9791cc9350c0eb0d5b5b0146c39f41a8076b4ea` |
+| R13 | `0089f61c2439be970fba39168871c8db95cfed21045b75ae79f6eb0cc822ad93` |
+| R14 | `f0215c4a4344334c8e06737977120e928cae11674ac5ff4eca29188891ef9bbb` |
+| R15 | `0e6bf8acc722097c237c497431646062bd5378ac57c65e8141c0c3e094d57dda` |
+| R16 | `5d31ee2f9ab3a3f24e818a8add1d96862d65de49cf3a934281641a7fa2ffad9a` |
+| R17 | `9c3437cbd46d7c2a8fc3473b164d011b37e3279de0f5be3131fe4d929dc58c61` |
+| R18 | `ea24dd9a3eb5ee1ad3d33c92813fbd14b23175d3a1e29663118ec07c720397cc` |
+| R19 | `92b7d805ba78c75287df4e7cfb58da0086a7a905e52c6001b769372771a213c8` |
+| R20 | `841835e70390496a548939ca4a112c83c84fe5880677ef4d3e251697c8638b20` |
+
+### Fresh-context transfer exercises
+
+Two new agents received only the skill path, their natural task, supplied facts, and applicable raw images. They did not receive evaluator expectations, the parent's diagnosis, or other agents' outputs, and were instructed not to read evaluation files. The first task is a bounded visual/interaction brief; the second is written art direction and screen structure for two different approved identities. Neither asks for application code or finished artwork.
+
+| Case | Observed result |
+| --- | --- |
+| Folio account and purchase reference brief | PASS for the examined visual reasoning. The reviewer inspected R01, R02, R13, and R17, described their boundary crossing, central tonal composition, shaped image edge, monochrome masses, and small accents, and separated those lessons from source artwork and claims. It treated form/image and checkout/product relationships as valid task compositions, retained visual expression, and avoided importing shipping, social providers, prices, or testimonials. It specified the supplied password-reset operation, clear review versus purchase commitment, return context, and honest pending/uncertain outcomes. It left implementation, numerical contrast, rights clearance, device behavior, and participant testing unclaimed. |
+| Pip and Civic Queue dashboard briefs | PASS for the examined transfer reasoning. The reviewer kept Pip's approved lively illustration and warm saturated color, proposing an arrivals/collections workspace with selected-pet detail and readable feeding notes. It kept Civic Queue's approved deep blue, white, and restrained typography, proposing a comparison table and focused evidence view with preserved return context. It adapted relationships from the recorded references without copying source metrics, inventing KPI charts, or imposing one shared visual theme. It acknowledged that it had read recorded observations rather than viewed unavailable originals. Both specifications included appropriate content/state checks and explicitly left rendering, implementation, and participant testing NOT RUN. |
+
+The parent inspected both returned briefs against their assigned tasks and, for Folio, the actual supplied images. These exercises support the observed interpretation and transfer distinctions only. They do not demonstrate that an agent has produced a beautiful new interface, implemented the proposed transitions, or validated human preferences. The earlier interactive prototype runs were not repeated for this documentation and taste-calibration update.
+
+Package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and diff/whitespace checks. The core remains 178 lines. Both new references are directly linked from the core, and all 20 source entries are present exactly once. Fourteen UI/UX definitions are structurally validated; only specifically recorded exercises count as runs. Existing agent metadata remains consistent. No new runtime dependencies, third-party images, generated bundles, or temporary review crops are committed.

@@ -334,5 +334,59 @@
       "Claims tap interception, exact contrast compliance, persistence, or payment correctness without the required evidence.",
       "Demands measurable ROI before retaining a harmless ornament."
     ]
+  },
+  {
+    "id": "owner_reference_task_boundaries",
+    "test_kind": "reasoning",
+    "task": "Study the supplied checkout, product-presentation, sign-in, and mobile creator-app references. Recommend what an independent creative-asset marketplace should carry into its account and purchase screens, what it should adapt, and what still needs verification. Return a bounded visual and interaction brief, not an implementation.",
+    "supplied_facts": {
+      "product": "Folio sells downloadable creative assets. Account entry uses email and password, account recovery sends a password-reset link, and checkout reviews the selected asset and price before commitment.",
+      "evidence": "Four supplied static rasters only; no code, payment service, brand rights, user tests, or current implementation.",
+      "fixture_contract": "Supply the owner-study images R01, R02, R13, and R17, or equivalent independently sourced examples with the same task coverage. Supply raw artifacts without evaluator diagnosis."
+    },
+    "constraints": [
+      "Inspect the actual supplied images; use the graphic-design package and relevant guides.",
+      "Do not copy source identity, artwork, testimonial claims, prices, or social-provider capabilities.",
+      "Do not create concepts, perform purchases, contact anyone, or claim implementation testing."
+    ],
+    "expected_behaviors": [
+      "Distinguish authentication/checkout relationships from the stock promotional hero without blanket bans or indiscriminate exceptions.",
+      "Describe observed image boundaries, scale, contour, tonal/color relationships, and controls rather than only style adjectives.",
+      "Preserve expressive image treatment and familiar task structure, proposing appropriate independent adaptations.",
+      "Separate observed appearance, inferred appeal, unsupported claims, and behavior requiring verification."
+    ],
+    "failure_signals": [
+      "Rejects every form/image split, capsule, gradient, or card as AI slop.",
+      "Accepts any generic marketing split merely because a liked example has two regions.",
+      "Copies original testimonials, portraits, product facts, or provider options into the new product.",
+      "Claims exact typefaces, creators intent, functioning payment/authentication, or audience outcomes from screenshots."
+    ]
+  },
+  {
+    "id": "owner_taste_across_dashboard_briefs",
+    "test_kind": "reasoning",
+    "task": "Develop separate art-direction and screen-structure briefs for two new dashboards using this repository skill. One is a pet-daycare team workspace, and the other is a municipal permit-review workspace. Give a concrete visual direction for each, the primary screen hierarchy, a representative transition, and the checks needed before implementation. Written briefs only.",
+    "supplied_facts": {
+      "pet_workspace": "Pip is a pet-daycare team workspace. Staff check arrivals, feeding notes, upcoming collections, and a selected pet. Its approved identity uses lively illustration and warm, saturated colors.",
+      "permit_workspace": "Civic Queue supports professional permit reviewers. Its approved identity uses deep blue, white, and restrained typography. Staff compare permit ID, address, submission date, status, and assigned reviewer across many records, then inspect evidence and return to the list.",
+      "scope": "Use the owner taste profile as applicable, while preserving each supplied identity. No supplied metrics, charts, approved images, implementation, or participants."
+    },
+    "constraints": [
+      "Use the supplied facts and bundled references; live research is not required.",
+      "Do not create code, rendered concepts, external messages, or additional business facts.",
+      "Do not require a shared visual theme or a different navigation system solely for originality."
+    ],
+    "expected_behaviors": [
+      "Translate preferences into distinct content and visual relationships while preserving both approved identities.",
+      "Allow expressive color/illustration in Pip and deliberate restrained craft in Civic Queue without flattening both into the same template.",
+      "Prioritize actual work, preserve collection/detail context, and avoid fabricated KPI or chart content.",
+      "Identify meaningful visual/behavioral checks and honestly report that only specifications were produced."
+    ],
+    "failure_signals": [
+      "Applies the same palette, large greeting, KPI row, or card hierarchy to both products regardless of the brief.",
+      "Overrides an approved identity with the owner profile or imports source sample facts.",
+      "Treats a restrained table as uncreative or strips Pip of its approved playful character.",
+      "Claims actual visual comparison, usability, or functional testing from prose alone."
+    ]
   }
 ]

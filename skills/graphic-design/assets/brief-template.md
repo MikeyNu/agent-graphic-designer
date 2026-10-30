@@ -11,6 +11,8 @@ Use only the fields that improve this task. Preserve facts from the supplied mat
 | Required details and approved copy | |
 | Intended response | |
 | Aesthetic intention, mood, or visual qualities to explore | |
+| Relevant taste references and relationships to adapt | |
+| Source-specific assets or arrangements to leave behind | |
 | Expressive choices worth preserving | |
 | Tone and qualities to avoid | |
 | Approved identity assets | |

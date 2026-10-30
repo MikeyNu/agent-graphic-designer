@@ -87,6 +87,8 @@ Choose the point of view and crop as design decisions. Compare a contextual view
 
 Check the interaction of the image's main masses with the headline and page edges. Inspect awkward tangencies, partly clipped objects, accidental halos, limbs or lines meeting text, and insufficient space around the main subject. Do not assume every face must point toward text; inspect the actual effect.
 
+Compose the boundaries too. An image may straddle two tonal fields, a product silhouette may extend beyond its panel, or a curved surface may make space for a control. Judge visible silhouette and optical balance rather than treating every image as a rectangle with uniform padding. Keep intentional cropping, occlusion, and negative-space shapes distinct from accidental clipping. Rework the relationship at smaller sizes; a successful desktop overlap does not justify covering mobile content. See the [owner's reference study](owner-reference-study.md) for several different treatments, not one prescribed contour.
+
 Use texture, illustration, symbols, or dimensionality for their visual qualities as well as conceptual meaning. Match texture to an implied material or process when that relationship is being claimed. Decorative paper grain can be attractive without establishing authenticity. A custom drawing is not automatically better than excellent photography, and an expensive image-generation pass is not a substitute for a strong composition.
 
 Keep enough quiet area for the information that must be read. Where text overlays imagery, inspect the whole text region and alternate crops; an average background color cannot establish reliable contrast. Preserve expressive visual fields where expression is the task, while maintaining access to required information.

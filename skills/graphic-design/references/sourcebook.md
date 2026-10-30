@@ -125,6 +125,14 @@ The [focused study](saas-mobile-reference-study.md) adds seven Dribbble project 
 
 The [SaaS](saas-product-design.md) and [mobile](mobile-app-design.md) guides synthesize practical design and verification procedures from the observed problems, existing U3 heuristics, and the scoped web requirements above. The new guides do not claim controlled empirical validation or universal platform rules. An attempted refresh of Apple, Material, and Carbon guidance returned research-service errors; no newly verified claims or exact current native-platform thresholds are attributed to those sources. Verify official platform documentation when applying native-specific requirements.
 
+### Owner-selected visual taste study
+
+On 30 October 2026, the owner supplied 20 raster references and explicitly identified them as preferred UI/UX taste. The [individual study](owner-reference-study.md) records their filenames, dimensions, visible decisions, aesthetic interpretations, transferable relationships, and production questions. All 20 originals and 25 enlarged detail crops were visually inspected. Crops were for analysis; enlargement does not establish unreadable text or recover source detail. No original images are bundled or republished.
+
+The [taste profile](owner-design-taste.md) is owner-directed preference plus original design synthesis, not empirical research or a market-wide claim about modernity. The collection includes multiple art directions and related account-screen variations. Those variations are not independent confirmation of a trend. Exact typefaces, creators, original dates, asset rights, production methods, AI/human authorship, and shipped-product status were not independently verified. No live flows, device behavior, contrast conformance, conversion, or human participant testing is inferred from the images.
+
+This evidence refines the scope of the hero defaults: the owner positively includes authentication forms beside expressive imagery, checkout/product pairings, useful capsules, cards, and decorative effects. These do not constitute a blanket approval of the stock promotional hero, every source's sample data, or its depicted behavior. Follow current project direction, preserve aesthetic character, and verify actual requirements separately. Later agents using the notes alone must describe them as recorded observations, not claim they viewed unavailable originals.
+
 ## Refresh procedure
 
 Before a substantial claim about current design practice, inspect dated independent applications and their actual images. Record category, region, audience, original project date, observed device, rationale, and limits. Keep a historical reference when it clarifies how a device is being reinterpreted.

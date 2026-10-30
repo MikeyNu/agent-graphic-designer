@@ -69,6 +69,8 @@ Establish the most important information, the next decision, and the supporting 
 
 Develop visual character alongside the task. Beauty, mood, play, and an appealing composition are valid goals for an interface, including a working product. Explore promising visual ideas before requiring an explanation; use [visual judgment](composition-and-layout.md#develop-visual-judgment) to refine them. Essential controls and information must remain usable, but every expressive detail does not need a measurable usability benefit.
 
+Use the [owner's taste profile](owner-design-taste.md) for substantial new art direction here. Explore the relationship among imagery, type, surfaces, and quiet space before selecting isolated components. A distinctive image treatment can coexist with ordinary forms; rich color can coexist with aligned data. Do not treat authentication or checkout as a banned hero merely because it uses two regions. Current project references and approved brand direction remain controlling.
+
 On a task-oriented entry, inspect how much scrolling precedes the first useful choice at the shortest supported viewport. Remove redundant introductions, repeated instructions, and duplicate step headings. Keep the context needed for an informed decision; do not force everything above the fold or shrink essential text to make it fit.
 
 Use proximity and common alignment to group. Increase separation between groups more than within them. Combine differences in scale, weight, position, and whitespace deliberately. Keep an appropriate reading width for prose while using available space for comparison or work. Treat line length and spacing as tested choices, not magic ratios.
@@ -92,6 +94,8 @@ Reuse the current system when it works. For new work, define semantic roles befo
 - State: hover, focus-visible, pressed, selected, loading, disabled, error, and success.
 
 Use shared components for repeated behavior and variants for real differences. Avoid one-off padding and radius values on every page. Avoid abstracting a one-time composition into an elaborate system before reuse exists. Specify content limits and interaction states with each important component, not just its default appearance.
+
+Keep system coherence separate from identical composition. Related surfaces can share type, color relationships, spacing, and state language while varying image scale, density, contour, or emphasis. A special media frame need not impose its shape on fields and tables. Conversely, equivalent tasks should not acquire different controls merely to look creative.
 
 Keep one icon family or a deliberate compatible set; match optical size, stroke, fill, baseline, and meaning. Label unfamiliar actions. Use accessible names for icon-only controls and adequate hit areas regardless of glyph size. Do not treat decorative icons as a substitute for content or differentiation.
 

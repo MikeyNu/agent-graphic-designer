@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add twelve interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add fourteen interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 
@@ -28,3 +28,5 @@ For aesthetic-review cases, supply the actual visuals and withhold the evaluator
 See [validation-2026-10-18.md](validation-2026-10-18.md) for the initial implementation's recorded automated checks and selected design exercises. Its limits are part of the result, not an invitation to infer universal reliability.
 
 See [validation-2026-10-30.md](validation-2026-10-30.md) for the UI/UX extension's checks and fresh-context exercises. Test composition specificity alongside task completion and preservation: an agent that removes useful controls to look original has not passed. Include the explicit-user exception and narrow-maintenance cases to catch over-application of the hero constraints.
+
+For owner-taste cases, test interpretation and transfer rather than exact visual imitation. The reference-boundary case requires raw images; the cross-dashboard case tests written specification only. Preserve current project identity, keep valid task conventions, and check that the selected reference set has not become a universal palette or silhouette.

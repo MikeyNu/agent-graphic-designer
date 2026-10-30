@@ -51,6 +51,10 @@ Make optional and required information unambiguous. Do not disable the only subm
 
 For multistep work, explain meaningful progress, keep completed answers, support Back, and show a review step when consequences warrant it. Request permissions when their benefit becomes clear. Allow optional onboarding to be skipped or resumed without blocking the core task.
 
+For authentication, coordinate sign-in, registration, email verification, and recovery as related but distinct tasks. Keep naming consistent with the actual operation: a reset link, passwordless sign-in link, and code confirmation are not interchangeable. Define code input, paste/autofill, active versus completed state, expiry, resend, correction, and return where relevant. Follow the actual provider's supported behavior and policy instead of borrowing password rules, provider logos, trial claims, or testimonials from a reference. The owner's [account-screen study](owner-reference-study.md#authentication-and-account-flows) is visual evidence, not an authentication specification.
+
+Let expressive media and shaped surfaces accompany a form while keeping the form operable if media is absent or fails. Recompose that relationship for keyboard-open, narrow, and short layouts. Preserve optional visual character where it fits; removing the image on every small screen is not a design requirement.
+
 For selection and bulk actions, distinguish visible rows from all matching results. Show selection count, scope, and the affected items before consequential operations. For filters, show applied criteria and a clear reset path. For calendars, expose timezone and duration, prevent selection of unavailable slots, and provide a usable agenda or list when the grid is too dense.
 
 ## 4. Build accessible behavior

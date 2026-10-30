@@ -53,6 +53,10 @@ python3 evals/examples/qa-2026-10-31/queue/check-source.py
 
 The repository suite passes **45 tests**, including two added SVG-animation regressions. The portable document builds with internal links resolved. The skill-creator package validator passes. The companion passes 27 package/helper tests, making **72 repository tests across both packages**; the exercise checks are reported separately and must not be counted as browser tests. MIT notices are unchanged. Both core files remain below 500 lines. Git diff whitespace checks pass. These are local results; configured CI is not a claim that a hosted run completed.
 
+### Post-publication CI observation
+
+The published trees were verified against the locally tested trees. GitHub's [Graphic Design run](https://github.com/MikeyNu/agent-graphic-designer/actions/runs/41146228634) and [Motion Director run](https://github.com/MikeyNu/Web-Motion-Director/actions/runs/41146233823) both report failure before any test steps, with no assigned runner and no downloadable job log. The connector could not retrieve check annotations, so the cause is unconfirmed. The prior Graphic Design main revision also has a [failed hosted run](https://github.com/MikeyNu/agent-graphic-designer/actions/runs/41140249615). Do not describe hosted CI as passing or invent a billing, permission, or workflow diagnosis. The 72 executed local tests remain the available automated execution evidence; hosted execution needs investigation through GitHub's run details.
+
 ## Capability boundary and remaining checks
 
 The permitted browser rejected the local `file://` preview with “protocol not allowed (only http/https are supported)” and expressly prohibited alternate routes. No browser workaround followed. A queue agent's earlier local renderer probe had already failed before loading the page because its browser executable was absent. Static SVG rendering through Inkscape and isolated Node/Python checks remained available.

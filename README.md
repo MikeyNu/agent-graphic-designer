@@ -1,6 +1,6 @@
 # Agent Graphic Designer
 
-A research-informed graphic design and UI/UX skill for agents that can inspect references, create visual artifacts and interfaces, and iterate on the result. It combines art direction, typography, color, composition, task-centered interaction design, responsive behavior, contemporary and historical design judgment, and rigorous visual, functional, and production QA.
+A research-informed graphic design and UI/UX skill for agents that can inspect references, create visual artifacts and interfaces, and iterate on the result. It combines art direction, typography, color, composition, coordinated UI motion, task-centered interaction design, responsive behavior, contemporary and historical design judgment, and rigorous visual, temporal, functional, and production QA.
 
 **Start with [the skill](skills/graphic-design/SKILL.md).** Its supporting guides provide the depth needed for difficult decisions without loading an entire design manual for a small edit.
 
@@ -44,6 +44,8 @@ Attach the generated document with your brief. The document links back to execut
 | [Interface originality](skills/graphic-design/references/interface-originality.md) | Explicit hero constraints, repetitive-layout diagnosis, meaningful alternatives, and whole-page critique. |
 | [Owner's design taste](skills/graphic-design/references/owner-design-taste.md) | A flexible preference profile covering integrated imagery, shaped surfaces, typography, color, rhythm, and appropriate task conventions. |
 | [20-reference close study](skills/graphic-design/references/owner-reference-study.md) | Individual observations from owner-selected commerce, dashboard, mobile, creative-tool, and account-screen examples, including enlarged detail inspection. |
+| [Workspace and settings study](skills/graphic-design/references/owner-workspace-study.md) | Twenty further uploads, nineteen distinct images: analytics, learning, assistants, boards, maps, settings, profiles, and notification matrices. |
+| [UI and motion co-design](skills/graphic-design/references/interface-motion.md) | Joint composition and animation, shared contracts, choreography, scroll relationships, reference-video study, and temporal QA. |
 | [Interface reference study](skills/graphic-design/references/interface-reference-study.md) | How to study Dribbble, Mobbin, Page Flows, and Recent; dated observations with honest access limits. |
 | [SaaS and mobile study](skills/graphic-design/references/saas-mobile-reference-study.md) | Seven focused project observations, including desktop/mobile approval views, diagnostics, CRM, tickets, and content use. |
 | [Composition and layout](skills/graphic-design/references/composition-and-layout.md) | Hierarchy, grouping, grids, balance, scale, rhythm, visual tension, and annotated review. |
@@ -56,7 +58,7 @@ Attach the generated document with your brief. The document links back to execut
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
-| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Fourteen interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, and research honesty. |
+| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Sixteen interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 
 ## How the design method works
@@ -83,6 +85,14 @@ The interface workflow starts with a user task, compares genuinely different com
 The [visual-judgment guidance](skills/graphic-design/references/composition-and-layout.md#develop-visual-judgment) protects expressive choices from overcorrection. It encourages intuitive experiments, gives aesthetic quality explicit weight, separates taste from demonstrated defects, and repairs specific problems while preserving the design's character. Subtraction is a comparison, not a mandate to simplify. Accessibility, truthful content, and working controls remain requirements within their applicable scope.
 
 The [30 October UI/UX evidence](skills/graphic-design/references/sourcebook.md#ui-and-ux-evidence) separates standards, research, practitioner evaluation, and design synthesis. The [reference study](skills/graphic-design/references/interface-reference-study.md) records what was visible and what was inaccessible, rather than claiming a complete audit of paid libraries.
+
+### UI and motion designed together
+
+The [second reference set](skills/graphic-design/references/owner-workspace-study.md) expands the visual vocabulary to dense workspaces and settings. The core workflow now develops motion while arranging the interface, prototypes a principal sequence early for interactive implementation, and revises the composition and choreography together. Hover, focus, transitions, scroll scenes, and save feedback are designed states, not a final layer of identical entrance effects. Beauty and enjoyment are valid motion goals.
+
+Use the [shared UI and motion brief](skills/graphic-design/assets/interface-motion-brief.md) with [Web Motion Director](https://github.com/MikeyNu/Web-Motion-Director) when available. The graphic-design skill handles visual relationships and art direction; the companion deepens temporal implementation and verification. Both use the same plan and prototype. This does not install another skill, grant tools, or require multiple agents. The local guide remains usable without the companion.
+
+Static images establish composition, not original animation. The workflow includes a timestamped video-study method, but the owner's forthcoming motion videos have not yet been studied. Proposed animations and timing values remain clearly labeled proposals until tested.
 
 ### Psychology without a false dictionary
 

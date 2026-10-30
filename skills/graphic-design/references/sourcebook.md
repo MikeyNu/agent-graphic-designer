@@ -112,6 +112,7 @@ Reviewed 30 October 2026. The interface guides are original practical synthesis 
 | U11. W3C, [Dragging Movements, SC 2.5.7](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html) | A single-pointer alternative without dragging, except where essential or qualifying unmodified user-agent behavior. | Informative AA explanation. Keyboard support alone does not meet the pointer alternative requirement. |
 | U12. W3C, [Pause, Stop, Hide, SC 2.2.2](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) | Control over qualifying automatically moving and updating content. | Informative Level A explanation. Moving content has the stated more-than-five-second condition; auto-updating content has different conditions. Reduced motion does not replace every required pause control. |
 | U13. W3C, [Animation from Interactions, SC 2.3.3](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html) | Ability to disable nonessential interaction-triggered motion. | This criterion is AAA, not AA. Respecting reduced-motion preferences is also this skill's design standard; do not mislabel that recommendation as a universal AA requirement. |
+| U14. Google, [How to create high-performance CSS animations](https://web.dev/articles/animations-guide), retrieved 30 October 2026 | Prefer transform/opacity where suitable, inspect rendering costs, and use `will-change` selectively. | Implementation guidance, not a universal guarantee of compositing, smoothness, or frame rate. Profile the actual result. |
 
 ### Interface library observations
 
@@ -132,6 +133,16 @@ On 30 October 2026, the owner supplied 20 raster references and explicitly ident
 The [taste profile](owner-design-taste.md) is owner-directed preference plus original design synthesis, not empirical research or a market-wide claim about modernity. The collection includes multiple art directions and related account-screen variations. Those variations are not independent confirmation of a trend. Exact typefaces, creators, original dates, asset rights, production methods, AI/human authorship, and shipped-product status were not independently verified. No live flows, device behavior, contrast conformance, conversion, or human participant testing is inferred from the images.
 
 This evidence refines the scope of the hero defaults: the owner positively includes authentication forms beside expressive imagery, checkout/product pairings, useful capsules, cards, and decorative effects. These do not constitute a blanket approval of the stock promotional hero, every source's sample data, or its depicted behavior. Follow current project direction, preserve aesthetic character, and verify actual requirements separately. Later agents using the notes alone must describe them as recorded observations, not claim they viewed unavailable originals.
+
+### Second owner set and joint motion direction
+
+The owner supplied 20 more uploads on 30 October 2026: 19 distinct rasters plus an exact duplicate. The [workspace study](owner-workspace-study.md) records R21 through R40, covering reports, learning, assistants, board/map operations, settings, notification matrices, and related product screens. All distinct originals and 19 enlarged analysis crops were inspected. R40's six partial screens received separate crops. No hidden controls, unreadable source detail, interaction, live data, or clinical behavior is inferred from this study.
+
+The owner's additional instruction establishes coordinated, enjoyable UI motion as a design goal. The [motion guide](interface-motion.md), shared brief, and reference-specific animation suggestions are original design synthesis. The suggested timing values are experiments, not empirical thresholds. No animation videos had arrived, and no source timing, easing, scrolling, or motion-library implementation was observed. Later video studies must record their own source identities, timestamps, playback access, and uncertainty.
+
+The companion [Web Motion Director](https://github.com/MikeyNu/Web-Motion-Director) was inspected at commit `ba39e2ad9cc262f458420581b9fc039d531aaae1` before coordinating the two workflows. That is a companion package, not an empirical source or proof of host capabilities. This update establishes one shared composition/motion contract and a reciprocal workflow, while preserving project-specific stack and identity choices.
+
+The research service returned errors for this follow-up's standards queries. Direct retrieval from the original publishers succeeded: the relevant U12/U13 criterion, level, and conditions and U14 rendering guidance were inspected on 30 October 2026. Moving information and automatic updates have different conditions under SC 2.2.2; the more-than-five-second condition does not apply to its auto-updating branch. No other current API/browser-support claims were freshly verified here.
 
 ## Refresh procedure
 

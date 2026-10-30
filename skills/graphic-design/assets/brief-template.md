@@ -26,6 +26,8 @@ Use only the fields that improve this task. Preserve facts from the supplied mat
 | Primary user task and observable completion, for UI | |
 | Entry, return, and highest-impact failure, for UI | |
 | Existing routes, components, and tokens to preserve, for UI | |
+| Visual and temporal character, stable anchors, and principal motion opportunity, for UI | |
+| Motion references: observed sequence/timestamps versus proposed behavior, for UI | |
 | Devices, input modes, languages, and connectivity, for UI | |
 | Known facts | |
 | Reversible assumptions | |
@@ -36,3 +38,5 @@ Optional guiding sentence: Help [audience] recognize [specific value] and [respo
 Do not invent factual content to fill a blank. Mark a field N/A when it does not apply.
 
 For substantial interfaces, use the [interface review](interface-review-template.md) to record the flow, references, responsive decisions, and checks. Keep it proportionate to the task.
+
+Design appearance and movement together using the [shared UI and motion brief](interface-motion-brief.md). A still reference cannot establish original timing, easing, or triggers.

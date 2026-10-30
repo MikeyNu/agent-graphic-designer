@@ -77,6 +77,20 @@ Use audit history to answer who changed what, when, and with what result, within
 
 For AI-assisted work, distinguish generated proposals, cited source material, user edits, and committed actions. Let people inspect evidence, correct the proposal, and reject or cancel it. Show uncertainty and source limits where they affect a decision; never use an invented confidence percentage as a substitute for evidence. Failure or cancellation must leave the work in an understandable state.
 
+When conversation accompanies a table, document, or chart, give the artifact a clear identity and lifecycle. Keep its draft edits, source context, generation status, and saved version distinct. Do not replay the entire workspace entrance on each streamed update or let a late result replace the object the person has since selected. The [second owner study](owner-workspace-study.md) provides static examples of chat/artifact and multi-panel relationships, not proof that those products implement them correctly.
+
+### Settings and preference transactions
+
+Design the transaction boundary before polishing its animation. Choose and explain immediate saving, explicit section saving, or page-wide draft saving. If a page mixes them, make the boundaries visible. A global Save button, instant-looking switches, and a local password action cannot silently share one ambiguous contract.
+
+- Keep personal, workspace, notification-channel, billing, and security scopes identifiable. Reflect real permissions; a visible role field is not permission to escalate a role.
+- For explicit saving, track dirty values, validation, pending, confirmed, failed, and canceled states. Define tab/navigation behavior and preserve legitimate input after failure. Do not announce success when the animation ends rather than when the save completes.
+- For immediate saving, give each affected control an understandable pending/result state. Handle rapid toggles and out-of-order responses without letting an older result overwrite the latest intent. Explain a rollback rather than silently reversing a choice.
+- For a preference matrix, retain both event and channel in the control's accessible name/context. Scope column-wide actions, account for partial failure, and distinguish off, unavailable, policy-controlled, and unsaved. On narrow screens, recompose with named channel controls inside each event or another tested structure that preserves both axes.
+- Treat image/profile preview as a draft when it is one. Cancel must restore the appropriate prior state; upload failure must not imply a durable change. Password, security setup, and payment changes follow their real service contracts rather than screenshot conventions.
+
+Use aligned labels, field widths fitted to content, legible descriptions, deliberate section spacing, and restrained rules or surfaces to organize the form. Quiet craft and expressive brand accents can coexist. Tune tabs, disclosures, switches, and feedback with the [motion guide](interface-motion.md) while keeping field positions and reading stable.
+
 ## 6. Craft dense interfaces
 
 Spend space on relationships and readable decisions. Use shared baselines, consistent row rhythm, semantic type roles, restrained dividers, and predictable action placement. Allow sufficient target area without inflating every row into a promotional card. Differentiate selected, focused, hovered, disabled, warning, and error states with more than subtle hue changes.
@@ -99,6 +113,7 @@ Trace a representative person from the real entry point through finding a record
 | Partial period, stale widget, missing source | Honest units, comparison basis, freshness, and incomplete totals. |
 | Pagination, filters, bulk action | Explicit selection scope, per-record results, safe recovery, stable return context. |
 | Concurrent change or session expiry | Revalidation, preserved permitted input, no premature success. |
+| Settings save and preference changes | Clear transaction boundaries; rapid input, failed/partial saves, canceled drafts, and matrix scope handled. |
 | Dense or narrow content | Readable values, reachable actions, deliberate scroll ownership, useful detail view. |
 | Keyboard and assistive technology | Operable controls, understandable table semantics, focus after removed or updated rows. |
 

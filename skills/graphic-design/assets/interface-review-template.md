@@ -48,7 +48,21 @@ Applicable empty, loading, partial, pending, success, error, offline, and permis
 
 For SaaS: workspace/role scope, metric definitions and freshness, selection scope, concurrent changes, and per-record outcomes:
 
+For settings: immediate/section/page save boundaries, dirty values, rapid input, failed or partial save, cancel, and preference-channel scope:
+
 For mobile: platform and entry point, navigation/return, keyboard and system insets, permissions, background/resume, and offline persistence limits:
+
+## Joint visual and motion direction
+
+Shared [UI and motion brief](interface-motion-brief.md), principal sequence, or existing component contract:
+
+Observed reference evidence versus new animation proposals:
+
+Stable anchors, moving objects, trigger, choreography, timing/progress, and interruption:
+
+Composition changes after motion prototyping:
+
+Responsive, reduced-motion, loading, and failed-enhancement alternatives:
 
 ## Verification
 
@@ -65,6 +79,8 @@ Artifact/version:
 | Long content, zoom, and reflow | | NOT RUN | |
 | Keyboard, focus, and overlay lifecycle | | NOT RUN | |
 | Labels, contrast, targets, and assistive technology | | NOT RUN | |
+| Normal-speed motion, intermediate/settled states, and visual character | | NOT RUN | |
+| Reverse, rapid input, cancellation, scroll release, and cleanup | | NOT RUN | |
 | Reduced motion and performance | | NOT RUN | |
 | Representative human task study | | NOT RUN | |
 
@@ -83,6 +99,8 @@ Behavior specified:
 Behavior implemented:
 
 Visually inspected and functionally tested:
+
+Temporally inspected, including playback access and limitations:
 
 Simulated dependencies and remaining limitations:
 

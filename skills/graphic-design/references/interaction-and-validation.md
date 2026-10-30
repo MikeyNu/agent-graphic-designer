@@ -8,7 +8,7 @@ Use for any interface with navigation, input, async behavior, or user decisions.
 - [2. Specify meaningful states](#2-specify-meaningful-states)
 - [3. Design input and recovery](#3-design-input-and-recovery)
 - [4. Build accessible behavior](#4-build-accessible-behavior)
-- [5. Make motion and speed serve the task](#5-make-motion-and-speed-serve-the-task)
+- [5. Design motion and responsiveness together](#5-design-motion-and-responsiveness-together)
 - [6. Verify the experience](#6-verify-the-experience)
 - [7. Report the actual status](#7-report-the-actual-status)
 
@@ -76,9 +76,13 @@ Use the applicable platform standard and semantic elements. For web interfaces, 
 
 See [U4 through U8 and U11 through U13](sourcebook.md#ui-and-ux-evidence). Automated tools can find some defects, but keyboard, screen-reader, content, and visual checks remain necessary. An untested component library is not proof of accessibility.
 
-## 5. Make motion and speed serve the task
+## 5. Design motion and responsiveness together
+
+Read [Interface motion](interface-motion.md) while composing substantial UI. Define visual and temporal relationships together, share one brief with an available motion skill, and prototype a principal sequence before the entire layout is fixed. Include trigger, anchor, active/intermediate/settled states, timing or scroll progress, interruption, and alternate conditions. Do not satisfy a request for an animated implementation with prose alone.
 
 Use motion for spatial relationships, continuity, feedback, product behavior, expressive rhythm, or enjoyment. An aesthetic reason can be sufficient; inspect the actual sequence and its cost to the experience. Keep essential content available without waiting through a reveal. Respect reduced-motion preferences with a coherent alternative. Do not merely make the same large movement slightly faster.
+
+Let visual response start promptly while durable work remains pending. Show confirmed success only when the actual operation succeeds. Retarget or reverse an interrupted transition from its current state where appropriate; prevent obsolete callbacks from changing a newer state. Verify normal-speed playback, rapid repeat input, reversal, cleanup, and final composition as applicable. A screenshot proves only its captured state.
 
 Avoid scroll hijacking, mandatory horizontal journeys for routine work, custom cursors that obscure targets, distracting continuous movement, and autoplay carousels that hide essential content. Ornamental animation is not automatically a defect; evaluate distraction, control, accessibility, and performance in the actual context. For cinematic experiences, preserve usable navigation, direct access to the information, a reduced-motion path, and a usable mobile experience. Apply pause/stop/hide requirements to qualifying moving content. [U12 and U13](sourcebook.md#ui-and-ux-evidence).
 

@@ -1,6 +1,6 @@
 ---
 name: graphic-design
-description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, onboarding, design systems, responsive interfaces, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant image, vector, web, document, and production tools.
+description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts, coordinated motion, and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, settings, onboarding, design systems, responsive interfaces, UI animation, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant motion, image, vector, web, document, and production tools.
 ---
 
 # Graphic Design
@@ -13,6 +13,7 @@ Work as a designer and art director. Create the strongest communication for this
 
 - Deliver artwork when creation is requested. Advice, mood boards, image prompts, and unrendered code do not complete an artwork request.
 - For interface work, define the user task, content hierarchy, behavior, and recovery before visual polish. A screenshot is not a complete experience; distinguish static design, interactive prototype, and integrated implementation.
+- Compose UI and motion together. Design transitions, reveals, hover/focus, scroll relationships, and state feedback while arranging the relevant elements. Read the [motion co-design guide](references/interface-motion.md) for substantial interface work; coordinate with an available motion skill through one shared brief. Do not finish a static design and add identical entrance effects everywhere.
 - Preserve approved copy, facts, identity assets, and explicit preferences. Distinguish deliberate visual decisions from accidental defects before changing existing work.
 - Use judgment. No font, color, period, effect, or layout guarantees quality. Checklist compliance does not replace a visual idea.
 - Treat beauty, atmosphere, delight, and expressive character as legitimate design goals. An intuitive choice can succeed visually without a measurable task or conversion benefit. Do not demand a functional justification for every flourish or invent research to defend a preference.
@@ -34,6 +35,8 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | New interface composition, hero, or repetitive AI-looking UI | [Interface originality](references/interface-originality.md) |
 | New interface art direction, owner preferences, or interpreting a supplied mood board | [Owner's design taste](references/owner-design-taste.md) |
 | Close visual examples behind the owner's taste, by product and surface | [Study of 20 owner-selected references](references/owner-reference-study.md) |
+| Dense workspaces, learning, maps, assisted work, profiles, and settings | [Second owner-reference study](references/owner-workspace-study.md) |
+| UI/motion co-design, hover, reveals, transitions, scroll choreography, or studying animation video | [Interface motion](references/interface-motion.md) |
 | Studying Dribbble, Mobbin, Page Flows, Recent, or product references | [Interface reference study](references/interface-reference-study.md) |
 | Studying SaaS and mobile examples, including paired desktop/mobile workflows | [SaaS and mobile reference study](references/saas-mobile-reference-study.md) |
 | New composition, hierarchy, visual balance, or annotated critique | [Composition and layout](references/composition-and-layout.md) |
@@ -46,19 +49,19 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | Running measurable checks or making a review board | [QA tools](references/tools.md) |
 | Checking research support or refreshing evidence | [Sourcebook](references/sourcebook.md) |
 
-Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [QA record](assets/qa-report-template.json), [interface review](assets/interface-review-template.md), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
+Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [shared UI and motion brief](assets/interface-motion-brief.md), [QA record](assets/qa-report-template.json), [interface review](assets/interface-review-template.md), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
 
 ## Interface workflow and composition constraints
 
-For substantive UI/UX work, read the UI/UX, interaction, and interface-originality guides before designing. Apply the core art-direction workflow with these additional gates:
+For substantive UI/UX work, read the UI/UX, interaction, interface-originality, and interface-motion guides before designing. Apply the core art-direction workflow with these additional gates:
 
 1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; develop visual character alongside data scope, authority, interruption, and return context.
 2. Study relevant screens and flows with the reference-study method and owner's taste profile. Inspect the whole composition, important detail crops, and actual-size readability. Record what is visually compelling and what should survive adaptation. Distinguish visual observation from recorded notes, text-only descriptions, inaccessible content, and unverified promotional claims.
-3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore the product, task, and visual possibilities; an intuitive formal experiment is a valid starting point.
+3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore spatial and temporal possibilities together; an intuitive formal experiment is a valid starting point. Prototype a principal motion sequence early when implementing an interactive result, then revise the composition and motion together. Static deliverables may specify the sequence but must not claim playback.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
 5. Preserve readable left-aligned prose, useful status/filter chips, familiar controls, and consistent navigation. Avoid replacing one formula with compulsory centered heroes, bento grids, giant type, or random asymmetry.
-6. Specify meaningful loading, empty, error, success, interruption, and return states. Recompose for mobile; verify keyboard, focus, contrast, target sizes, zoom/reflow, and reduced motion as applicable.
-7. Inspect the rendered result and execute the requested behavior using available tools. Check the whole page and important flows, not only the hero. Record untested behavior honestly; prototype simulations do not demonstrate backend success.
+6. Specify meaningful loading, empty, error, success, interruption, and return states. Give principal motion sequences a trigger, stable anchor, choreography, timing or scroll range, interruption policy, and responsive/reduced-motion alternatives. Beauty and enjoyment can guide an expressive sequence; keep repeated work responsive. Recompose for mobile; verify keyboard, focus, contrast, target sizes, and zoom/reflow as applicable.
+7. Inspect the rendered result and execute the requested behavior using available tools. Check the whole page and important flows, not only the hero. Inspect motion at normal speed and through reverse/interrupted states where relevant. Record untested behavior honestly; stills do not prove animation, and prototype simulations do not demonstrate backend success.
 
 For a narrowly scoped correction, preserve the established concept and check the affected states and layouts. For graphics without interaction, continue with the core workflow without adding interface paperwork.
 
@@ -169,7 +172,7 @@ Provide the requested artwork, editable source, variants, and useful preview. Ex
 
 Use accurate status: **concept study**, **review draft**, **final digital artwork**, or **prepared for the named print workflow**, as supported by evidence. Internal QA is not client approval, complete accessibility certification, or guaranteed audience impact.
 
-For interfaces, distinguish **static interface design**, **interactive prototype**, and **integrated implementation**. State which flows were specified, implemented, visually inspected, functionally tested, and user-tested. Do not describe an untested application as production-ready.
+For interfaces, distinguish **static interface design**, **interactive prototype**, and **integrated implementation**. State which flows were specified, implemented, visually and temporally inspected, functionally tested, and user-tested. Do not describe an untested application as production-ready.
 
 For a reusable system, identify fixed assets, permitted variations, and content limits. Show representative applications rather than only a hero mockup. Preserve research and decisions so later work can refresh the evidence while maintaining intentional identity.
 

@@ -16,6 +16,8 @@ Visual preference and observed reasons:
 
 What gives this version its appeal and should survive revision:
 
+For interfaces: how the visual relationship changes through time, principal motion prototype or storyboard, and what its inspection changed in the composition:
+
 Most important unresolved uncertainty:
 
 Useful visual experiment or comparison, if needed:

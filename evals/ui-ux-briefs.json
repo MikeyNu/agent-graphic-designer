@@ -388,5 +388,60 @@
       "Treats a restrained table as uncreative or strips Pip of its approved playful character.",
       "Claims actual visual comparison, usability, or functional testing from prose alone."
     ]
+  },
+  {
+    "id": "joint_visual_motion_direction",
+    "test_kind": "reasoning",
+    "task": "Study the supplied two static references and develop a visual and motion direction for a new learning workspace. Give a concrete principal sequence, a scroll relationship, component responses, and an implementation handoff. Written specification only.",
+    "supplied_facts": {
+      "product": "Mosaic helps adults resume short language lessons. The main view contains three lesson covers, current progress, and upcoming study sessions. Its approved identity is warm and illustrated. Users open a lesson, resume their place, and return to the same selection.",
+      "evidence": "Static owner references R25 and R26. No animation video, source code, backend, or participant testing.",
+      "fixture_contract": "Evaluator supplies original R25 and R26 rasters and access to both graphic-design and web-motion-director skills."
+    },
+    "constraints": [
+      "Inspect the supplied artifacts and read both skills and relevant guides.",
+      "Do not copy original identity/assets, invent progress figures, or implement a site.",
+      "Return the coordinated direction and clearly identify the evidence and verification limits."
+    ],
+    "expected_behaviors": [
+      "Extract concrete visual relationships while retaining the supplied identity and inventing an independent composition.",
+      "Plan UI and motion together with a shared object, states, anchor, choreography, timing/progress, interruption, and alternate conditions.",
+      "Give expressive rhythm or pleasure real weight without requiring invented functional gains or applying one fade-up everywhere.",
+      "Separate observed static evidence from proposed timing/trigger/easing; describe honest prototype and playback checks still needed."
+    ],
+    "failure_signals": [
+      "Claims the source stack visibly animates or gives exact original easing from the stills.",
+      "Hands a completed static UI to the motion skill only afterward or duplicates separate disconnected briefs.",
+      "Strips all expression without a demonstrated defect, or imposes constant animation and delayed lesson access.",
+      "Claims playback, performance, or working navigation from a written proposal."
+    ]
+  },
+  {
+    "id": "settings_motion_transaction_boundaries",
+    "test_kind": "reasoning",
+    "task": "Review the supplied settings references and specify a new settings workspace with coordinated motion. Cover profile saving, notification preferences, channel-wide changes, and navigation through unsaved work. Written design and behavior specification only.",
+    "supplied_facts": {
+      "product": "Relay is a team workspace with a black/white identity and violet accents. Profile fields use an explicit page Save. Password changes are a separate service operation. Individual notification preferences save immediately. A channel-wide update can partially fail. Responses can arrive out of order.",
+      "roles": "Members can edit their own permitted preferences; roles are read-only to them. Administrators have a separate role-management workflow.",
+      "evidence": "Static references R36 and R38 only. No code, runtime, motion video, or tests.",
+      "fixture_contract": "Evaluator supplies original R36 and R38 rasters and access to graphic-design and web-motion-director skills."
+    },
+    "constraints": [
+      "Inspect the raw references and use both skills with relevant guides.",
+      "Preserve the supplied identity and service contracts; do not invent an implemented backend.",
+      "Do not change repositories or create rendered concepts; state what remains unverified."
+    ],
+    "expected_behaviors": [
+      "Learn aligned fields, section rhythm, and two-axis preference relationships without copying reference errors or weakening the identity.",
+      "Distinguish page draft, local password operation, immediately saved preferences, pending/failure/cancel states, and partial channel results.",
+      "Specify rapid input/out-of-order handling and animation cancellation without treating visual completion as durable success.",
+      "Keep event/channel control identity, sensible narrow composition, keyboard/touch access, reduced motion, and testable temporal checks."
+    ],
+    "failure_signals": [
+      "One global Save silently governs every action or animation completion claims save success.",
+      "A late response overwrites newer intent, all partially successful channel rows are blindly retried, or current drafts are discarded without a policy.",
+      "Role picker implies self-escalation; matrix loses channel identity on mobile.",
+      "Says static references prove hover, motion, accessibility, persistence, or performance."
+    ]
   }
 ]

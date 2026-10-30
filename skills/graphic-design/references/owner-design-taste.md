@@ -1,6 +1,6 @@
 # Owner's interface taste: direction without a new formula
 
-Use this profile before substantial new interface art direction in this repository. It interprets 20 references the owner explicitly selected as their taste on **30 October 2026**. Read the relevant entries in the [detailed study](owner-reference-study.md) for concrete observations. The original images are not bundled; reading these notes is not personal visual inspection of those images.
+Use this profile before substantial new interface art direction in this repository. It interprets two sets the owner selected on **30 October 2026**: 40 uploads containing 39 distinct images. Read the [first study](owner-reference-study.md) and [workspace/settings study](owner-workspace-study.md) for concrete observations. The original images are not bundled; reading these notes is not personal visual inspection of those images. The owner also explicitly wants motion designed alongside the UI. Static examples suggest opportunities; forthcoming videos must supply their own temporal evidence.
 
 Treat this as a strong starting preference, not a universal style system. Current instructions, approved identity, audience, task, and supplied project references take priority. Do not force the profile onto an unrelated maintenance edit. The owner's approval establishes aesthetic interest in the collection, not approval of every depicted label, control, metric, or claim. Interpretations below remain revisable through feedback.
 
@@ -27,6 +27,9 @@ Use these as possible directions, not presets to assign automatically:
 | Playful and tactile | Friendly display type, cropped objects, confident color blocks, rounded interactive surfaces | R08, R09, R10, R12 |
 | Graphic and assertive | Type as a shape, strong light/dark masses, expressive portraits, sparse vivid details | R06, R17 |
 | Quiet utility with expressive imagery | Conventional forms, careful spacing, unusual photography, shaped boundaries | R13 through R16, R18 through R20 |
+| Dense and coordinated | Compact internal hierarchy, persistent object context, different panels within one working surface | R21 through R23, R27, R30 through R32 |
+| Editorial learning and luminous depth | Square illustrated sequences or a concentrated atmospheric feature with quiet surrounding work | R25, R26 |
+| Precise settings | Aligned labels/controls, deliberate section rhythm, small recurring accents, light or dark surface steps | R33 through R40 |
 
 These families overlap. The table is an interpretation of a small selected set, not a classification of all modern design or evidence that these styles are currently prevalent.
 
@@ -68,6 +71,14 @@ The exuberant portfolio has small orderly captions; the altered portraits sit be
 
 Let a surface have a memorable visual moment and enough support around it. There is no fixed number of focal points or mandatory decoration budget. Evaluate the whole at actual size, including a busy state. Keep visual texture or material when it improves the experience, even without a task metaphor.
 
+### Find character in working detail
+
+R21's tiny repeated accents, R27's layered object context, R31's aligned table, and R33 through R38's settings grids extend the preference beyond expressive imagery. Quiet utility can be beautiful through type scale, column starts, line weight, surface steps, and optical spacing. R40 shows that a dense collection, open assistant entry, and profile preview can share one identity without sharing one composition. Do not inflate every operational surface into a presentation dashboard.
+
+### Design its behavior at the same time
+
+The owner wants engaging motion designed with the element, including transitions, reveals, hover, and scrolling. Explore the relationship between a resting composition and its movement before finalizing either. An illustrated cover may react playfully; a selected record may remain recognizable while its details open; an expressive page may unfold through coordinated chapters. Use the [shared motion workflow](interface-motion.md), including reliable controls, interruption, and alternate conditions. Preserve beauty and pleasure as valid intentions. Neither a static-first draft with universal fade-ups nor constant motion everywhere expresses this preference well.
+
 ## 3. Resolve the apparent contradictions
 
 Classify the actual relationship before applying an anti-slop rule:
@@ -91,6 +102,7 @@ Keep the [explicit hero defaults](interface-originality.md#1-honor-the-compositi
 - **Authentication and checkout:** Keep the operational area calm and reliable while allowing an image, object, contour, or material field to carry personality. A split is permissible. Ensure the form and recovery work without the media, then recompose their relationship on small or short screens. Do not always delete the expressive part on mobile.
 - **Mobile apps:** Develop a coherent relationship between canvas, cards, content imagery, navigation, and selected state. A floating bar or shaped header can be attractive. Reserve room for it, keep destinations identifiable, and verify the last item, keyboard, large text, and system insets. Do not reproduce screenshot device frames as app chrome.
 - **Creative tools:** Make panel hierarchy and workspace ownership understandable. Soft surfaces and sparse pastel accents can provide a pleasing working environment. Keep actual labels and control states strong enough to read; distinguish settings panels from the work being edited.
+- **Settings and profiles:** Direct the alignment of labels, descriptions, fields, and section breaks. Use brand accents, a deliberate shell, or a small identity moment where appropriate. Design unsaved, pending, confirmed, failed, and canceled feedback as part of that visual language; do not let an attractive switch conceal its save contract.
 
 Transfer an abstraction such as “quiet form beside expressive image treatment” or “shared warm surface with color recurring in useful details.” Create new assets, proportions, content relationships, and identity. Copying a source's distinctive face treatment, lettering arrangement, logo, testimonials, or exact contour is not learning its principle.
 

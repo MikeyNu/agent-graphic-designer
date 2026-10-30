@@ -22,6 +22,8 @@ Permitted variations:
 
 Content limits and tested applications:
 
+For interfaces, shared visual/motion rules, principal sequence, alternate motion modes, and verified temporal states:
+
 ## Production and permissions
 
 Font families and access requirements:

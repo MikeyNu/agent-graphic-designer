@@ -44,7 +44,7 @@ Choose what the user must recognize now and what detail remains reachable. Prese
 
 Keep units and definitions when simplifying a metric. A “team activity” ring without a denominator remains ambiguous even if it fits neatly on a phone. Distinguish a selected period from a navigation destination. Avoid horizontal carousels for urgent items unless the hidden content and route to all items are clear.
 
-Use imagery to answer a question. A product angle, recipe photograph, or event poster can aid identification; a large abstract object may contribute only to promotion. Ensure captions, variants, instructions, quantities, and imagery describe the same item. Avoid ingredient pictures without usable names or quantities where the task requires them.
+Use imagery both for useful recognition and for visual pleasure. A product angle, recipe photograph, or event poster can aid identification; an abstract form can add mood, charm, or beauty without explaining a feature. Inspect its scale and placement in context rather than deleting it for lacking a functional role. Ensure captions, variants, instructions, quantities, and factual imagery describe the same item. Avoid ingredient pictures without usable names or quantities where the task requires them.
 
 Keep critical information available without waiting for animation. Offer visible alternatives to swipe, drag, and long-press where they carry essential actions. A slider or slide-to-confirm control does not by itself prove accessibility or prevent error.
 

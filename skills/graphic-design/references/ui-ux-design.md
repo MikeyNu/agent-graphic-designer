@@ -67,13 +67,15 @@ Choose the least elaborate pattern that satisfies the actual task. A bottom shee
 
 Establish the most important information, the next decision, and the supporting evidence before choosing a grid. Layout should express their relationship. Separate acquisition pages from working interfaces: many authenticated screens should start directly with the task, not a hero.
 
+Develop visual character alongside the task. Beauty, mood, play, and an appealing composition are valid goals for an interface, including a working product. Explore promising visual ideas before requiring an explanation; use [visual judgment](composition-and-layout.md#develop-visual-judgment) to refine them. Essential controls and information must remain usable, but every expressive detail does not need a measurable usability benefit.
+
 On a task-oriented entry, inspect how much scrolling precedes the first useful choice at the shortest supported viewport. Remove redundant introductions, repeated instructions, and duplicate step headings. Keep the context needed for an informed decision; do not force everything above the fold or shrink essential text to make it fit.
 
 Use proximity and common alignment to group. Increase separation between groups more than within them. Combine differences in scale, weight, position, and whitespace deliberately. Keep an appropriate reading width for prose while using available space for comparison or work. Treat line length and spacing as tested choices, not magic ratios.
 
 Create a clear first focus without making every heading oversized. A display headline can be expressive; form labels, navigation, numeric values, and dense operational text need consistent reading rhythm. Inspect the actual longest label, numeral formatting, language glyphs, and line breaks. Do not force center alignment onto long text to avoid the banned hero formula.
 
-Give imagery a job: demonstrate the product, establish a meaningful setting, show work, compare states, or explain a process. A floating dashboard miniature that cannot be read and communicates nothing specific is decoration. Do not invent product capabilities to make a convincing screenshot.
+Use imagery for demonstration, atmosphere, visual pleasure, identity, or explanation. Abstract decoration can succeed through form and color without a product metaphor. When an image is presented as product evidence, make the relevant content understandable and truthful; an unreadable dashboard miniature does not establish product capability. Do not invent capabilities to make a convincing screenshot.
 
 For commerce, align imagery and metadata with what determines the choice: shape, scale, material, available variant, price, and relevant specifications. Keep selection and purchase context together. A color swatch needs an accessible name and selected-state indication; distinguish a different viewing angle from a different variant. Ensure the displayed image, price, availability, and resulting cart item agree. Never infer that these behaviors work from a polished product mockup.
 
@@ -122,7 +124,7 @@ Avoid manipulative defaults, hidden fees, fake scarcity, forced consent, obstruc
 
 ## 8. Decide with evidence
 
-Connect each consequential choice to a task, content relationship, known constraint, observed reference mechanism, or testable hypothesis. Use a short decision record when needed: choice, reason, tradeoff, and how to check it.
+Ground consequential behavior in the task, data, authority, and applicable requirements. Judge expressive choices through rendered appearance, aesthetic intent, and the brief; they do not all require measurable evidence. State taste as taste and test predictions as hypotheses. Use a short decision record only when it helps; a visual experiment can precede its rationale.
 
 Define an observable success criterion for the primary flow, such as finding the relevant item, completing an edit, understanding the confirmation, or recovering without re-entry. With representative participants available, observe task completion, mistakes, uncertainty, and recovery. Ask neutral questions and report the actual sample and conditions. Do not turn an agent walkthrough into user research or claim conversion improvements without measurement.
 

@@ -40,7 +40,7 @@ Compare like with like. A partial month against a complete previous month needs 
 
 Choose encodings by the comparison. Aligned positions and bars can support comparisons; a line can reveal change over ordered time. Start quantitative bars at zero unless a clearly explained exception is justified; explain nonzero line-chart axes when material. Do not hide uncertainty in smoothing or invent interpolated observations. Keep hover values accessible by other means and provide useful summaries or data access.
 
-Let a chart lead to the relevant records without losing its scope. Keep units, legends, axis labels, and annotations legible at delivered size. Decorative radial forms, 3D effects, and gradients must earn their place; a beautiful number without an interpretable meaning is a defect. Never claim a specific chart choice improves business outcomes without evidence.
+Let a chart lead to the relevant records without losing its scope. Keep units, legends, axis labels, and annotations legible at delivered size. Distinguish quantitative encoding from ornament: decorative radial forms, dimensionality, and gradients can add aesthetic pleasure, but must not distort values or imply data they do not represent. A number presented as a metric needs an interpretable meaning. Never claim a specific chart choice improves business outcomes without evidence.
 
 ## 3. Design collections for comparison and action
 
@@ -82,6 +82,8 @@ For AI-assisted work, distinguish generated proposals, cited source material, us
 Spend space on relationships and readable decisions. Use shared baselines, consistent row rhythm, semantic type roles, restrained dividers, and predictable action placement. Allow sufficient target area without inflating every row into a promotional card. Differentiate selected, focused, hovered, disabled, warning, and error states with more than subtle hue changes.
 
 Reserve strong accents for meaningful emphasis rather than coloring every metric. Keep status and magnitude distinct: a rising cost is not automatically a green success. Use tabular numerals where they improve comparison. Inspect realistic magnitudes, long labels, multi-line rows, and empty cells.
+
+Allow a beautiful or playful visual system around these requirements. Rich color, distinctive typography, material, illustration, and pleasing small interactions can belong in SaaS without proving a productivity gain. Judge their actual effect on the composition and the task. Protect truthful chart encodings, readable values, and operable controls with local adjustments; do not strip the product to a neutral template by default.
 
 Reuse navigation and repeated task patterns across the product. Originality can come from unusually clear task fit, domain language, information hierarchy, and thoughtful detail. It does not require making a familiar table, settings page, or search control look unfamiliar.
 

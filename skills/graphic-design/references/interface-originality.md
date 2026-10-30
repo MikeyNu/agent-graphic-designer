@@ -35,7 +35,7 @@ Use concrete observations and consequences. A smell triggers review; it is not a
 | Identity can be swapped with one word | Does the same page fit a bank, dentist, developer tool, and clothing label? | Use truthful domain content and a visual mechanism connected to it. |
 | Repeated section recipe | Every section is eyebrow, title, paragraph, three equal cards | Organize each section around its question: comparison, evidence, sequence, work sample, or action. |
 | Card carpet | Similar boxes for unrelated content; nested panels; no clear priority | Use shared surfaces, lists, tables, or editorial structure where they express relationships. |
-| Decoration carries the brand | Default glows, purple gradients, mesh, glass, sparkles, blobs, floating spheres | Run a subtraction comparison; retain only a purposeful part of the visual idea. |
+| Effects appear mechanically repeated | Glows, gradients, mesh, glass, sparkles, or floating forms with little sensitivity to the composition | Compare the visual result with and without the effect. Keep beauty, atmosphere, and character; correct repetition or poor execution rather than the ingredient itself. |
 | Dashboard theater | Fictional charts, duplicated metric labels, unexplained totals, decorative data glyphs, unreadable miniature UI | Reconcile definitions and scope, use meaningful encodings, and support an operational decision. Keep prototype fixtures explicit. |
 | Type is loud but unspecific | Oversized vague promise, arbitrary italic word, tiny gray support copy | Establish a voice through actual wording and role-based typography; inspect delivered size. |
 | Excessive whitespace or density | Empty screens require scrolling to reach the task, or all content competes | Set density for the information and user context; preserve grouping and priority. |
@@ -44,11 +44,13 @@ Use concrete observations and consequences. A smell triggers review; it is not a
 | Decorative functionality | Button-shaped elements do nothing; all CTAs open one generic dialog | Define distinct destinations and complete the requested behavior. |
 | Cosmetic responsiveness | The same desktop scene shrinks; labels clip; hover-only actions disappear | Recompose around mobile tasks, usable targets, and content order. |
 | Copy is interchangeable | Inflated promises, repeated vague verbs, redundant labels | State the actual benefit, mechanism, constraint, and next action. |
-| Anti-AI costume | Random serif, acid accent, distress, giant type, or forced asymmetry | Retain only choices that belong to this product and improve the execution. |
+| Anti-AI costume | A prescribed serif, acid accent, distress, giant type, or asymmetry used as automatic proof of creativity | Judge the actual combination. Preserve a convincing expressive choice without demanding a functional metaphor. |
 
 Do not ban a library, font family, gradient, border, card, pill-shaped control, or visual period just because it is common. A real product can use familiar components well. Conversely, bespoke code can still deliver generic and unusable output.
 
 Distinguish interchangeable branding and repetitive marketing sections from useful consistency inside a product. Reuse established navigation, form patterns, and page structures for equivalent tasks. Do not randomize each screen to demonstrate originality; predictable behavior reduces relearning.
+
+Apply the same scrutiny to over-sanitized output: removing every ornament, irregularity, generous pause, or surprising relationship can erase the appeal of a design. Identify what is visually strong before proposing changes. “No measurable benefit” is not a defect in a decorative choice, and restraint is not automatically more professional. Follow [visual judgment](composition-and-layout.md#develop-visual-judgment) when a review starts replacing taste with rules.
 
 ## 3. Derive alternatives from the product
 
@@ -66,7 +68,7 @@ For substantial new work, render at least three comparable roughs with the same 
 | Use a spatial or full-bleed scene | Place, material, or experience is central to the product | Readability, bandwidth, reduced motion, and a direct path to information. |
 | Begin with an operational workspace | Returning users need to act | Clear priorities, state recovery, and information density. A hero may be unnecessary. |
 
-For each rough, name the product-specific reason, the main visual relationship, the task it supports, and the likely failure. Compare mobile and desktop silhouettes at low fidelity before spending effort on polish. Choose one coherent direction, not an average of three unrelated aesthetics.
+For each rough, identify its main visual relationship, aesthetic intention, and connection to the brief. Note material task risks where relevant; avoid a required functional justification for every form. Compare mobile and desktop silhouettes at low fidelity before spending effort on polish. Choose one coherent direction, not an average of three unrelated aesthetics.
 
 A useful identity may live in typography, content structure, image-making, rhythm, motion, data presentation, or a combination. Do not add a special flourish just to pass a distinction checklist. Small utilitarian interfaces can be excellent through precise task fit and craft.
 
@@ -76,18 +78,20 @@ Use rendered output, with the known brief beside it:
 
 1. **Silhouette check:** Reduce to content blocks or inspect at thumbnail size. Do independent concepts still have the same outline? If yes, reopen the composition.
 2. **Brand-swap check:** Mentally replace the name. Identify what remains meaningfully tied to this offering. Do not require ornamental branding in every utility view.
-3. **Subtraction check:** Hide an effect. Restore it only if it contributes to comprehension, hierarchy, identity, or appropriate enjoyment.
+3. **Subtraction check:** Compare with and without an effect. Retain it when it makes the whole more beautiful, atmospheric, expressive, or clear. Simplicity has no automatic priority.
 4. **Content check:** Replace short idealized copy with realistic labels, an unusually long item, missing imagery, and a meaningful empty state. Inspect what breaks.
 5. **Sequence check:** Read the entire page. Each section should answer a different useful question; delete or combine repetition. Keep navigation and recurrent components consistent.
 6. **Task check:** Follow the main action and its recovery route. A distinctive entrance must lead into a usable experience.
 7. **Reference-distance check:** Compare against the sources. Remove recognizable borrowed identity assets or distinctive compositions that have not become an independent design.
 
-Record important findings as: location, observed pattern, consequence, replacement, and recheck evidence. Prefer this to a numerical slop score. Classify a failure as a brief violation, usability defect, factual problem, accessibility issue, or design judgment so the remedy is clear.
+Record actual defects as: location, observed pattern, consequence, correction, and recheck evidence. Record taste-based alternatives as optional aesthetic judgments, including what the current version does well and what a revision might lose. Keep brief violations, usability defects, factual problems, and accessibility issues separate. Do not turn stylistic disagreement into a numerical slop score or automatic failure.
 
 ## 5. Repair without aesthetic overcorrection
 
 Correct task and content problems first, then structure, hierarchy, type, imagery, and finish. Preserve successful parts of the existing product. A fresh layout that breaks comparison or hides navigation is a regression.
 
+Use a local correction when possible: move a flourish away from a label, adjust text contrast, or change the mobile crop before discarding the art direction. Keep expressive choices that work visually even if their only benefit is aesthetic pleasure. Intentionality alone does not excuse a real obstruction or misleading content. The owner's explicit hero defaults still apply; aesthetic freedom does not silently waive a stated preference.
+
 If the original work is the banned split hero, build a rough that expresses a different relationship with the same content, inspect it at the target sizes, and then implement. Recoloring or swapping sides is not a repair. If the problem is a hero pill alone, remove it or relocate genuine information appropriately and rebalance spacing; do not redesign the entire site automatically.
 
-Stop when the brief is met, the composition has a defensible purpose, critical defects are resolved, and the inspected result is strong. Novelty is not an unlimited mandate. Follow the [reference method and access limits](interface-reference-study.md); support research claims through [U1 and U2](sourcebook.md#ui-and-ux-evidence), not through claims that all AI tools always produce one layout.
+Stop when the brief is met, critical defects are resolved, and the inspected result is visually strong. A compelling composition does not need a lengthy defense. Novelty is not an unlimited mandate. Follow the [reference method and access limits](interface-reference-study.md); support research claims through [U1 and U2](sourcebook.md#ui-and-ux-evidence), not through claims that all AI tools always produce one layout.

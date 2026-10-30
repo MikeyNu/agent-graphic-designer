@@ -2,7 +2,7 @@
 
 Use comparable content, dimensions, and fidelity. Each route needs a different idea, not just a different palette.
 
-| Route | Premise | Visual mechanism | Product/audience connection | Likely failure | Visible rough |
+| Route | Starting idea or intuition | Visual relationship | Aesthetic intent and brief fit | Material uncertainty, if any | Visible rough |
 | --- | --- | --- | --- | --- | --- |
 | A | | | | | |
 | B | | | | | |
@@ -12,11 +12,13 @@ Use comparable content, dimensions, and fidelity. Each route needs a different i
 
 Selected route:
 
-Observed reasons:
+Visual preference and observed reasons:
+
+What gives this version its appeal and should survive revision:
 
 Most important unresolved uncertainty:
 
-Controlled comparison to run:
+Useful visual experiment or comparison, if needed:
 
 Actual rendered result and viewing conditions:
 
@@ -24,4 +26,4 @@ What changed after inspection:
 
 Remaining limitations:
 
-Use the labels strong, adequate, and weak with concrete evidence for fit, communication, distinctiveness, craft, and coherence. Do not turn these into a claimed scientific quality score.
+Use the labels strong, adequate, and weak only when helpful for aesthetic quality, fit, communication, distinctiveness, craft, and coherence. State aesthetic judgment honestly; it needs no invented conversion benefit. Separate demonstrated defects from optional preferences. Do not turn these into a claimed scientific quality score.

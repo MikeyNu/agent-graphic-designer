@@ -9,6 +9,8 @@ Graphic-design research reviewed on 18 October 2026; UI/UX extension reviewed on
 
 Do not turn any of them into a guarantee of taste, originality, human response, accessibility, or commercial success. Most procedural instructions in the skill are design synthesis. Source notes identify the narrower claims supported by published material.
 
+The 30 October 2026 visual-judgment refinement responds to the owner's explicit direction that beauty, intuition, and creative freedom deserve weight alongside functional reasoning. It is a normative design stance and practical synthesis, not a newly established scientific finding. Aesthetic preferences may guide decisions without measured task benefits; empirical outcome claims and technical conformance still require their own evidence. See [visual judgment](composition-and-layout.md#develop-visual-judgment).
+
 ## Contents
 
 - [Process and perception](#process-visual-principles-and-perception)

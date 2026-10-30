@@ -277,5 +277,62 @@
       "Swiping is the only way to change tickets or all returns discard event context.",
       "Uses fixed heights or smaller text to conceal clipping, or asserts native validation from a phone mockup."
     ]
+  },
+  {
+    "id": "homepage_aesthetic_comparison",
+    "test_kind": "reasoning",
+    "task": "Compare two supplied homepage variants for Moro, an independent homeware collection. Recommend one and give a concise visual review with any worthwhile refinements. Review the supplied variants only; do not create a third layout or implementation.",
+    "supplied_facts": {
+      "brand": "Moro makes independent objects for everyday living.",
+      "content": "Both variants use the same approved headline, copy, products, labels, navigation, and collection action.",
+      "evidence": "Static desktop renders only. No usability study, conversion data, mobile render, or working implementation.",
+      "fixture_contract": "Evaluator supplies two comparable original renders, including one with expressive ornament and one with reduced ornament; neither is designated the correct answer."
+    },
+    "constraints": [
+      "Inspect both supplied images before judging.",
+      "Keep required copy and product facts.",
+      "Use the skill and supplied material; no live research required.",
+      "Return a review, not an implementation or a claim of human testing."
+    ],
+    "expected_behaviors": [
+      "State a visual preference from the actual composition, with either variant allowed to win.",
+      "Consider aesthetic pleasure, mood, rhythm, and character without demanding a measurable functional benefit for every ornament.",
+      "Identify successful choices worth preserving and specific refinements or tradeoffs.",
+      "Distinguish taste, observed defects, and untested behavior; avoid fabricated conversion or universal human-response claims."
+    ],
+    "failure_signals": [
+      "Automatically selects the stripped version because decoration lacks a task function.",
+      "Invents a product metaphor, neuroscience claim, or performance gain to legitimize a visual preference.",
+      "Calls all expressive shapes AI slop or treats a preference as an objective accessibility defect.",
+      "Only recites principles without inspecting the supplied visuals."
+    ]
+  },
+  {
+    "id": "expressive_checkout_visual_review",
+    "test_kind": "reasoning",
+    "task": "Review the supplied Moro mobile checkout render and prioritize any changes before implementation. Explain what to keep and what to change in a concise visual QA note. Do not redesign the whole brand or implement payment behavior.",
+    "supplied_facts": {
+      "approved_content": "Blue planter, quantity 1, R480; collect at studio free; card ending 4242; total R480; action Pay R480.",
+      "evidence": "One static mobile screen, no application code, live payment service, user study, or device testing.",
+      "fixture_contract": "Evaluator supplies an original static mobile checkout render with the approved content. Do not identify its strengths or defects in the execution prompt."
+    },
+    "constraints": [
+      "Inspect the supplied image before judging.",
+      "Preserve approved product and payment facts.",
+      "Use the skill and supplied material; no live research required.",
+      "Do not perform a purchase, claim working interactions, or modify the repository."
+    ],
+    "expected_behaviors": [
+      "Identify the obscured payment label and weak total legibility as concrete visual problems.",
+      "Preserve successful typography, palette, illustration, and ornament elsewhere instead of removing every expressive choice.",
+      "Propose local corrections and explain remaining implementation checks separately.",
+      "Do not excuse obstruction because the style is intentional or imply visual appearance proves transaction safety."
+    ],
+    "failure_signals": [
+      "Accepts an unreadable payment label because artistic freedom overrides usability.",
+      "Replaces the entire design with a neutral template without addressing the local nature of the defects.",
+      "Claims tap interception, exact contrast compliance, persistence, or payment correctness without the required evidence.",
+      "Demands measurable ROI before retaining a harmless ornament."
+    ]
   }
 ]

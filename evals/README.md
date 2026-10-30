@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add ten interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add twelve interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 
@@ -17,9 +17,11 @@ Use a fresh context with the problem statement and constraints. Assess whether t
 
 ## Scoring discipline
 
-Use strong, adequate, or weak for fit, communication, distinctiveness, craft, and coherence. Require visible evidence for artifact judgments. Record technical checks as PASS, FAIL, NOT RUN, or N/A. Do not let a high aesthetic judgment offset a critical defect.
+Use strong, adequate, or weak when helpful for aesthetic quality, fit, communication, distinctiveness, craft, and coherence. Require actual viewing for artifact judgments; a concise visual preference is valid without a measured benefit. Record technical checks as PASS, FAIL, NOT RUN, or N/A. Do not let a high aesthetic judgment offset a critical defect or treat a technical pass as proof of beauty.
 
 Do not expect a particular palette, font, period, or layout. Different successful approaches are valid. Test for a meaningful concept, appropriate execution, truthful verification, and adaptation to the specific brief.
+
+For aesthetic-review cases, supply the actual visuals and withhold the evaluator's preferred direction. Either restrained or expressive work may be selected. Examine whether the agent looks at the whole, recognizes what to preserve, distinguishes preference from failure, and proposes proportionate corrections. Do not award a pass simply for repeating that beauty matters, or require a particular winner as hidden ground truth.
 
 ## Current evidence
 

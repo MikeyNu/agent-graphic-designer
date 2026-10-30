@@ -1,5 +1,5 @@
 {
-  "template_version": "1.0",
+  "template_version": "1.1",
   "artifact": "",
   "artifact_version": "",
   "requested_delivery": "",
@@ -16,12 +16,15 @@
     {"id": "print_production", "required": false, "status": "NOT RUN", "criterion": "Apply the named print provider's specification when print delivery is requested.", "method": "", "evidence": ""}
   ],
   "design_critique": {
+    "aesthetic_quality": {"judgment": null, "evidence": ""},
     "fit": {"judgment": null, "evidence": ""},
     "communication": {"judgment": null, "evidence": ""},
     "distinctiveness": {"judgment": null, "evidence": ""},
     "craft": {"judgment": null, "evidence": ""},
     "coherence": {"judgment": null, "evidence": ""}
   },
+  "expressive_choices_to_preserve": [],
+  "optional_aesthetic_suggestions": [],
   "defects": [],
   "changes": [],
   "rechecks": [],

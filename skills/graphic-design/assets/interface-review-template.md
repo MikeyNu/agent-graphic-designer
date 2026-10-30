@@ -12,6 +12,8 @@ Existing system to preserve:
 
 Approved facts and content:
 
+Aesthetic intention and expressive choices worth preserving:
+
 Scope, assumptions, and essential unknowns:
 
 ## Reference evidence
@@ -22,11 +24,13 @@ Scope, assumptions, and essential unknowns:
 
 ## Composition decision
 
-| Route and rough artifact | Product-specific reason | Organizing relationship | Mobile adaptation | Principal failure to test |
+| Route and rough artifact | Aesthetic intent and brief fit | Organizing relationship | Mobile adaptation | Material uncertainty, if any |
 | --- | --- | --- | --- | --- |
 | | | | | |
 
 Selected route and evidence:
+
+Visual preference, what it adds, and what a simpler alternative might lose:
 
 Hero constraint exception, only if explicitly requested or preserving approved work:
 
@@ -63,6 +67,8 @@ Artifact/version:
 Use PASS, FAIL, NOT RUN, or N/A. Explain N/A. Keep automated, manual, and human-study evidence separate.
 
 ## Defects and release
+
+Keep demonstrated defects separate from optional aesthetic suggestions. Correct the specific problem while preserving successful visual choices. Beauty and atmosphere do not need a measurable task benefit.
 
 | Location | Severity and consequence | Correction | Recheck evidence |
 | --- | --- | --- | --- |

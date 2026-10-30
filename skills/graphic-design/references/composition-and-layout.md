@@ -5,6 +5,7 @@ Make a visual argument. Decide what a person needs to recognize, understand, fee
 ## Contents
 
 - [Write the visual thesis](#write-the-visual-thesis)
+- [Develop visual judgment](#develop-visual-judgment)
 - [Use principles as instruments](#use-principles-as-instruments)
 - [Build the underlying structure](#build-the-underlying-structure)
 - [Direct images and negative space](#direct-images-and-negative-space)
@@ -15,13 +16,36 @@ Make a visual argument. Decide what a person needs to recognize, understand, fee
 
 ## Write the visual thesis
 
-Before decorating, complete: “The viewer should first recognize **subject**, then understand **message**, then notice **support or action**. The central visual idea is **specific relationship**.” For an awareness poster, the final action may be remembering a fact. For a report, it may be understanding a comparison. Do not force a sales CTA into every artifact.
+Use a visual thesis when it helps: “The viewer should first recognize **subject**, then understand **message**, then notice **support or action**. The central visual idea is **specific relationship**.” A promising crop, color relationship, or typographic experiment can come first; develop the explanation after seeing it. For an awareness poster, the final action may be remembering a fact. For a report, it may be understanding a comparison. Do not force a sales CTA or a functional metaphor into every artifact.
 
 List required content, verify its source, and rank its importance. Distinguish content that needs visual prominence from content that merely needs to be available. Preserve important qualifications, captions, and instructions; do not remove them solely to make a layout sparse.
 
 Translate adjectives into decisions. “Energetic” could mean directional crop, rhythmic repetition, scale shifts, or expressive lettering. It does not automatically mean bright gradients and decorative arrows. “Premium” may require material sensitivity, image direction, precise spacing, or careful editing. It does not automatically mean black, gold, and a thin serif.
 
 Identify the relevant communication environment: passing glance, phone feed, held object, projected slide, workstation, exhibition wall, or long reading. Choose a realistic test size and viewing condition before judging the result.
+
+## Develop visual judgment
+
+Treat aesthetic pleasure as a valid outcome in its own right. A beautiful color relationship, a playful flourish, an evocative material, or a surprising crop can belong simply because the composition is better with it. Do not require every choice to explain the product, accelerate a task, or increase conversion. State a preference honestly rather than inventing an empirical benefit or a symbolic story.
+
+Begin with looking. Notice the overall feeling and what attracts or holds attention before breaking the work into checklist items. Then inspect proportion, tension, rhythm, color, texture, type, edges, and their relationships. A design can satisfy every isolated rule and still feel lifeless; it can bend several conventions and look convincing. Judge the actual combination at its intended size.
+
+Allow intuition to generate a visible experiment before analytical review. Try the unusual crop, offset, pairing, or scale change without first writing a defense. Compare the result with a credible alternative, then refine what works. Keep the original available so successive rounds of cleanup do not erase the strongest idea. Exploration can change several related variables when the whole composition needs it; isolating one variable is useful for diagnosis, not compulsory for art direction.
+
+Keep distinct kinds of judgment clear:
+
+| Kind | Example | Response |
+| --- | --- | --- |
+| Required constraint | Essential information is obscured or an action cannot be operated. | Correct the specific failure and preserve expression elsewhere. |
+| Aesthetic judgment | A crop feels tense, a color pairing feels rich, or a proportion feels awkward. | Inspect and, when useful, compare. State the judgment without claiming universal agreement. |
+| Functional hypothesis | A new hierarchy may make the next step easier to find. | Identify how to check it; do not treat the prediction as a measured result. |
+| Explicit preference | The user asks for expressive maximalism or specifies a composition. | Work within that direction and applicable requirements; do not replace it with the reviewer's preferred style. |
+
+Risk can live in scale, composition, image-making, ornament, or tone while essential information and controls remain usable. If a flourish overlaps a control, first try moving or resizing the flourish or protecting the control's area. Removing all ornament is not the default correction. Equally, do not use the word intentional to excuse an observed failure.
+
+Compare what a revision gains and what it loses. Simplification may increase calm but erase energy; a tighter crop may increase tension but lose context. Choose the stronger whole for this brief. Record a few words about what must survive the revision, such as the abrupt crop, the generous pause, or the eccentric lettering. Do not average opposing preferences into an anonymous compromise.
+
+Stop demanding explanation when the visual decision is clear enough to make. A concise statement such as “The off-center form makes this version more lively” can be sufficient. The agent's aesthetic assessment remains fallible; actual human feedback can revise it, and no checklist certifies what all people will find beautiful.
 
 ## Use principles as instruments
 
@@ -38,10 +62,10 @@ Use this matrix to diagnose what a composition needs. No row is a requirement to
 | Rhythm and repetition | Establish recurrence with a useful variation | Monotony, arbitrary inconsistency, or a pattern overpowering content |
 | Unity and variety | Maintain a shared visual vocabulary with purposeful differences | Several unrelated styles or a lifeless template |
 | Figure and ground | Make the subject and surrounding field legible | Ambiguous silhouettes, weak separation, accidental shapes |
-| Negative space | Shape pauses, groupings, emphasis, and breathing room | Empty areas without purpose; gaps that sever relationships |
+| Negative space | Shape pauses, groupings, emphasis, and breathing room | Gaps that weaken the composition or sever necessary relationships |
 | Direction and tension | Use orientation, crops, and asymmetry to create movement or anticipation | Tangencies, awkward edge pressure, or attention pulled away |
 
-Explain decisions by their function. “The date is grouped with the location so they can be found together” is useful. “I used the proximity principle” leaves the actual improvement unspecified.
+Explain decisions at the level that matters. “The date is grouped with the location so they can be found together” describes function; “the uneven pause gives the composition a more interesting rhythm” describes an aesthetic judgment. Either can be useful. Naming a principle alone does not explain the visible result, and neither explanation requires invented audience outcomes.
 
 ## Build the underlying structure
 
@@ -57,13 +81,13 @@ Set text and imagery together. Test headline breaks against the image's shape, k
 
 ## Direct images and negative space
 
-Give each visual element a role: identify the subject, demonstrate use, establish atmosphere, explain a relationship, provide evidence, or carry a metaphor. Remove or replace elements whose only explanation is that the layout looked empty.
+Consider what an element contributes: recognition, demonstration, atmosphere, evidence, metaphor, visual pleasure, or an interesting relationship of forms. Empty space can remain empty or become a place for ornament. Compare the actual composition before deciding; no functional role is required for every decorative element.
 
 Choose the point of view and crop as design decisions. Compare a contextual view, a revealing detail, and a silhouette when they serve different ideas. Preserve product shape, factual relationships, meaningful gestures, and truthful context. Do not crop an evidence image to imply something it does not show.
 
 Check the interaction of the image's main masses with the headline and page edges. Inspect awkward tangencies, partly clipped objects, accidental halos, limbs or lines meeting text, and insufficient space around the main subject. Do not assume every face must point toward text; inspect the actual effect.
 
-Use texture, illustration, symbols, or dimensionality when they strengthen the concept. Match texture to the implied material or process. Decorative paper grain does not establish authenticity. A custom drawing is not automatically better than excellent photography, and an expensive image-generation pass is not a substitute for a strong composition.
+Use texture, illustration, symbols, or dimensionality for their visual qualities as well as conceptual meaning. Match texture to an implied material or process when that relationship is being claimed. Decorative paper grain can be attractive without establishing authenticity. A custom drawing is not automatically better than excellent photography, and an expensive image-generation pass is not a substitute for a strong composition.
 
 Keep enough quiet area for the information that must be read. Where text overlays imagery, inspect the whole text region and alternate crops; an average background color cannot establish reliable contrast. Preserve expressive visual fields where expression is the task, while maintaining access to required information.
 
@@ -136,16 +160,17 @@ Label annotations as **observed defect**, **proposed change**, or **hypothesis t
 
 Inspect the rendered artifact at composition scale, intended viewing size, and close detail. Use reduced-size or squint/blur views to diagnose visual masses; grayscale can expose value relationships. These aids do not prove comprehension, disability accessibility, or actual eye movements.
 
-Review five questions:
+Review the composition before applying these questions:
 
-1. Does the subject and purpose emerge without a long rationale?
-2. Can the viewer find required information in an appropriate sequence?
-3. Does every prominent element deserve its prominence?
-4. Does the concept belong to this content, audience, and context?
-5. Do crop, alignment, spacing, edges, and repeated details feel resolved?
+1. What gives this version its appeal, mood, or visual energy, and what should survive revision?
+2. Does the subject and purpose emerge without a long rationale where communication requires it?
+3. Can the viewer find required information in an appropriate sequence?
+4. Do prominent elements create a compelling relationship?
+5. Does the direction suit this content, audience, and context?
+6. Do crop, alignment, spacing, edges, and repeated details feel resolved, including deliberate irregularities?
 
 Use a brand-swap thought experiment to detect weak specificity: if replacing the name leaves every creative decision equally suitable, investigate whether the identity or concept needs more work. This is a heuristic, not a demand that every utilitarian graphic be unique.
 
-Classify defects by consequence. Correct inaccurate content, obscured meaning, and failed legibility before minor spacing. For a subjective disagreement, identify what is visible and connect it to the brief. “Cheap,” “boring,” and “premium” alone are not actionable diagnoses.
+Classify defects by consequence. Correct inaccurate content, obscured meaning, and failed legibility before minor spacing. For a subjective disagreement, identify the visible relationship and state a preference or comparison. Do not promote stylistic dislike to a usability failure. “Cheap,” “boring,” and “premium” alone are not actionable diagnoses.
 
-Run an explicit revision loop: **criterion → observed evidence → change → rendered recheck**. Compare meaningful alternatives instead of endlessly adding decoration. Stop optional polishing when the purpose is met and no material defect remains. Report any untested physical proof, audience interpretation, or unsupported export behavior honestly.
+For a concrete defect, follow **criterion → observed evidence → change → rendered recheck**. For art direction, use **intuition → visible experiment → looking and comparison → refinement** without requiring a metric. Keep decoration when it improves the experience, and stop when the work is visually satisfying for the brief and relevant defects are resolved. Report untested physical proof, audience interpretation, or export behavior honestly.

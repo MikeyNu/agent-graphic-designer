@@ -28,21 +28,22 @@ Do not convert NOT RUN into PASS because the file is likely correct. Do not mark
 
 ## Critique the design
 
-Inspect the actual render and compare it with the brief. Give concrete observations under these five dimensions:
+Inspect the actual render and compare it with the brief. First identify the overall appeal and the choices worth preserving. Then use these dimensions to organize useful observations; they are lenses, not a formula for manufacturing beauty:
 
 | Dimension | Strong evidence | Weak evidence |
 | --- | --- | --- |
-| Fit | The visual idea expresses a specific audience need, product property, place, or story. | A rationale could describe any product; styling leads the communication. |
+| Aesthetic quality | Relationships of form, color, type, rhythm, and material create visual pleasure, atmosphere, or expressive force. | The render feels inert or unresolved despite a convincing explanation or correct checklist. |
+| Fit | The visual character suits the brief, including aesthetic intent as well as audience, product, place, or story. | The direction conflicts with the brief or relies on invented meaning to defend an unsuitable result. |
 | Communication | Required information is clearly grouped and readable at intended size. | Essential text competes with ornaments, gets cropped, or requires explanation outside the artwork. |
 | Distinctiveness | A coherent idea is recognizable beyond fashionable ingredients. | A new name could replace the existing name without changing the image or composition. |
 | Craft | Optical spacing, typography, color, crop, image details, and alignment are intentional. | Nearly aligned edges, accidental tangencies, weak rags, blurry assets, or inconsistent strokes remain. |
 | Coherence | Elements and variants reinforce a clear direction while adapting to different formats. | Every section or format seems to belong to a different visual system. |
 
-Rate each as strong, adequate, or weak only to organize judgment. Supply visible evidence and a practical correction. Do not present a self-awarded 9.7/10 as validation. A high aesthetic score cannot offset a content or production failure.
+Use strong, adequate, or weak only when helpful to organize judgment. State visible observations and preferences honestly. Aesthetic assessment does not require a measured conversion gain, unanimous approval, or a forced correction. Do not present a self-awarded 9.7/10 as validation. A strong aesthetic judgment cannot offset a content or production failure, and passing technical checks does not establish aesthetic quality.
 
 Use a relevant professional benchmark, not an intentionally poor comparison. Compare composition, typography, asset quality, and real application. Awards, brand prestige, or an attractive mockup do not prove that a particular work suits this brief.
 
-For a large or difficult task, use a fresh reviewer with the brief and actual artifacts. Do not prime the reviewer with praise or desired scores. Ask for the most consequential visible defects and what would resolve them. Treat another AI's critique as inspection support, not representative audience research.
+For a large or difficult task, use a fresh reviewer with the brief and actual artifacts. Do not prime the reviewer with praise or desired scores. Ask what should be preserved, what demonstrably fails, and which suggestions are matters of taste. Treat another AI's critique as inspection support, not representative audience research. Resolve disagreements through the brief and actual render rather than blending every preference into a safe compromise.
 
 ### Order revisions by consequence
 
@@ -52,7 +53,7 @@ For a large or difficult task, use a fresh reviewer with the brief and actual ar
 4. Refine spacing, optical alignment, texture, and finish.
 5. Re-export and reinspect the affected outputs.
 
-Do not polish a weak concept into a more expensive weak concept. Conversely, do not reopen a successful identity because a reviewer prefers another style. Connect every proposed change to the brief or an observed defect.
+Do not polish a weak concept into a more expensive weak concept. Preserve a successful identity when a reviewer merely prefers another style. Separate necessary corrections from optional aesthetic experiments, and compare both the improvement and the character lost. Prefer the smallest effective correction to a defect; keep a stronger expressive version when simplification offers no demonstrated advantage. An aesthetic experiment can be worth trying simply because it may look better.
 
 ## Verify content and assets
 

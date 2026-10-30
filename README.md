@@ -4,7 +4,7 @@ A research-informed graphic design and UI/UX skill for agents that can inspect r
 
 **Start with [the skill](skills/graphic-design/SKILL.md).** Its supporting guides provide the depth needed for difficult decisions without loading an entire design manual for a small edit.
 
-The goal is purposeful, distinctive work for a particular product and audience. The skill does not promise infallible taste, universal psychological effects, automatic audience validation, or client approval.
+The goal is beautiful, distinctive work suited to a particular product and audience. Beauty, atmosphere, play, and visual intuition are legitimate design goals alongside clarity and usability. The skill does not promise infallible taste, universal psychological effects, automatic audience validation, or client approval.
 
 ## Use it
 
@@ -54,12 +54,12 @@ Attach the generated document with your brief. The document links back to execut
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
-| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Ten interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, and research honesty. |
+| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Twelve interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 
 ## How the design method works
 
-1. **Define the specific communication problem.** Translate “best,” “modern,” or “creative” into audience, message, context, and observable success criteria.
+1. **Define the specific brief.** Translate “best,” “modern,” or “creative” into audience, message, aesthetic intent, context, and appropriate success criteria.
 2. **Study real work.** Inspect sources and actual images, distinguish original project dates from repost dates, and avoid treating one design feed as the entire audience.
 3. **Explore different concepts.** For substantial work, make visible roughs of different visual ideas using comparable copy and fidelity. Palette swaps do not count as different concepts.
 4. **Build with the right tools.** Combine original imagery, vector construction, real typography, diagrams, layout tools, or annotations as the idea requires.
@@ -70,11 +70,13 @@ Attach the generated document with your brief. The document links back to execut
 
 It means detecting interchangeability, automatic decoration, empty concepts, repetitive composition, inaccurate copy, and uninspected synthetic defects. It does not mean banning gradients, serif fonts, vintage references, rounded shapes, minimalism, expressive illustration, or maximalism.
 
-The agent should be able to explain why a visual mechanism belongs to the subject, then judge whether the actual execution succeeds. Historical vocabulary can work well today when the application gives it meaning.
+The agent should judge the actual visual result and use taste as well as analysis. A crop, color relationship, ornament, or unusual proportion can belong because it is beautiful or evocative; every detail does not need a functional metaphor or measurable business benefit. Historical vocabulary can work well today through its execution and context.
 
 For new interfaces, the owner's explicit defaults exclude pills, badges, and rounded announcements above hero titles and the stock left-copy/right-graphic hero. Mirroring the split does not solve it. Explicit user direction and faithful preservation of approved work take priority, including narrowly scoped maintenance edits. These are design preferences, not claims that left alignment, rounded controls, or familiar interaction patterns are inherently bad.
 
 The interface workflow starts with a user task, compares genuinely different compositions, designs the necessary states, and checks the actual result across content and screen conditions. It distinguishes an attractive mockup from a tested flow. It also avoids replacing the rejected formula with compulsory centered heroes, bento cards, large serif type, or another repeated aesthetic.
+
+The [visual-judgment guidance](skills/graphic-design/references/composition-and-layout.md#develop-visual-judgment) protects expressive choices from overcorrection. It encourages intuitive experiments, gives aesthetic quality explicit weight, separates taste from demonstrated defects, and repairs specific problems while preserving the design's character. Subtraction is a comparison, not a mandate to simplify. Accessibility, truthful content, and working controls remain requirements within their applicable scope.
 
 The [30 October UI/UX evidence](skills/graphic-design/references/sourcebook.md#ui-and-ux-evidence) separates standards, research, practitioner evaluation, and design synthesis. The [reference study](skills/graphic-design/references/interface-reference-study.md) records what was visible and what was inaccessible, rather than claiming a complete audit of paid libraries.
 

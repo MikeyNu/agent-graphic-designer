@@ -23,11 +23,13 @@ Start with the actual product, organization, message, audience, and viewing situ
 Ask four separate questions:
 
 1. Does the design communicate the intended message?
-2. Is there a specific reason for this organization or product to look this way?
+2. Does the visual character suit this organization or product, including an aesthetic preference that needs no functional metaphor?
 3. Is it sufficiently distinguishable in the relevant category?
 4. Does the execution work in the required medium?
 
 Familiarity can help recognition and comprehension. Novelty can help express an identity. Decide where each is useful. Keep necessary information and familiar functional conventions clear while finding an appropriate place for a distinctive visual idea.
+
+Allow beauty, pleasure, atmosphere, and an intriguing formal relationship to be the reason for a choice. Originality does not require a strategic story behind every detail. Use [visual judgment](composition-and-layout.md#develop-visual-judgment) to explore intuitively, inspect the result, and distinguish a taste judgment from a factual or usability claim.
 
 Use “AI slop” as a description of problems to investigate, not a reliable authorship detector. Separate **visible defects**, **generic decisions**, and **overused combinations**. A technically polished composition can be interchangeable. An unconventional image can still be irrelevant or unreadable. Never infer that a work was AI-generated solely from its appearance.
 
@@ -84,13 +86,13 @@ Search beyond other finished graphics when useful: the product's construction, c
 
 Scale exploration to the request. For substantial new work, develop at least three meaningfully different concept hypotheses and visible roughs before polishing one, as the core skill requires. A specified correction usually needs one faithful implementation. Preserve an approved direction unless the requested change exposes a concrete problem.
 
-Write a short concept card before rendering:
+Use a short concept card when it helps; a visible experiment can precede it:
 
-- **Insight:** a relevant fact about the audience, product, or message.
+- **Starting point:** a relevant fact, visual intuition, material, mood, or relationship to explore.
 - **Intention:** what the design should help people understand or experience.
 - **Mechanism:** how imagery, type, arrangement, material, or motion expresses it.
-- **Risk:** the most likely misunderstanding or production failure.
-- **Trial:** the cheapest visible experiment that can expose that risk.
+- **Uncertainty:** what needs to be seen or checked, if anything material is unclear.
+- **Trial:** a quick visible experiment to explore the appeal or resolve that uncertainty.
 
 Alternatives should differ in their idea or communication mechanism. Recoloring one layout produces variants of one concept. Do not label familiar style bundles as three independent strategic ideas.
 
@@ -110,18 +112,18 @@ For UI/UX, also apply [Interface originality](interface-originality.md). Its two
 | --- | --- |
 | Could an unrelated brand use this after replacing only its name? | Add a subject-specific idea or reconsider generic imagery. |
 | Does every alternative share the same composition and metaphor? | Reopen concept exploration before adjusting styling. |
-| Are several recognizable devices competing for attention? | Give each device a purpose and remove unnecessary competition. |
+| Are several recognizable devices competing for attention? | Inspect their combined energy and hierarchy; keep expressive richness when it works and revise actual confusion. |
 | Is “human” being represented only by random imperfections? | Investigate meaningful material, observation, or craft. |
-| Does removing decoration improve the message? | Retain only decoration that contributes to the intended experience. |
+| What does removing decoration gain and lose? | Compare beauty, atmosphere, character, and clarity; the simpler version has no automatic priority. |
 | Is an unusual treatment obscuring necessary information? | Revise the hierarchy or locate expression elsewhere. |
 
-These are diagnostic prompts, not automatic failure rules. A restrained service identity may appropriately use few proprietary visual assets. A celebratory campaign may appropriately use many. Explain the choice through the brief, not through a defense of personal taste.
+These are diagnostic prompts, not automatic failure rules. A restrained service identity may appropriately use few proprietary visual assets. A celebratory campaign may appropriately use many. Use taste to make the choice and state it honestly; do not manufacture functional evidence to legitimize visual pleasure. Familiar aesthetics can produce excellent work through their particular execution.
 
 ## 7. Judge the rendered work and its practical use
 
 Inspect the result at useful viewing sizes and in its intended context. Check the first readable message, secondary information, visual grouping, tone, factual accuracy, and conspicuous craft defects. For a system, inspect both a representative application and a difficult one: long copy, dense information, an awkward crop, or a small output.
 
-Assess concept relevance, distinction, hierarchy, typography, imagery, consistency, and production suitability. Mark issues as **blocking**, **important**, or **minor**, with the affected location and a concrete correction. A persuasive rationale does not excuse a weak rendered result.
+Assess aesthetic appeal, concept relevance, distinction, hierarchy, typography, imagery, consistency, and production suitability. Separate observed defects from optional aesthetic suggestions. Mark actual defects as **blocking**, **important**, or **minor**, with the affected location and a concrete correction. A persuasive rationale does not excuse a weak render, and a short intuitive rationale does not make a strong render weak.
 
 Use short viewing or recall exercises as exploratory checks, not universal three-second laws. An agent's imagined audience response is a hypothesis. An independent critique is an internal review. Only describe a result as audience-tested when actual people completed a documented test.
 

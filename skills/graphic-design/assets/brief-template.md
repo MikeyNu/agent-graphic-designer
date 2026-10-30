@@ -10,6 +10,8 @@ Use only the fields that improve this task. Preserve facts from the supplied mat
 | Primary message | |
 | Required details and approved copy | |
 | Intended response | |
+| Aesthetic intention, mood, or visual qualities to explore | |
+| Expressive choices worth preserving | |
 | Tone and qualities to avoid | |
 | Approved identity assets | |
 | Dimensions and applications | |
@@ -27,7 +29,7 @@ Use only the fields that improve this task. Preserve facts from the supplied mat
 | Reversible assumptions | |
 | Essential unknowns | |
 
-Guiding sentence: Help [audience] recognize [specific value] and [response] through [central visual idea] in [setting].
+Optional guiding sentence: Help [audience] recognize [specific value] and [response] through [central visual idea] in [setting]. A visual intuition or desired feeling can guide an expressive brief without a functional metaphor.
 
 Do not invent factual content to fill a blank. Mark a field N/A when it does not apply.
 

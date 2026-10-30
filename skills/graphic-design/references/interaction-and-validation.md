@@ -74,9 +74,9 @@ See [U4 through U8 and U11 through U13](sourcebook.md#ui-and-ux-evidence). Autom
 
 ## 5. Make motion and speed serve the task
 
-Use motion to explain a spatial relationship, show continuity, acknowledge an action, or reveal meaningful product behavior. Keep essential content available without waiting through a reveal. Respect reduced-motion preferences with a coherent alternative. Do not merely make the same large movement slightly faster.
+Use motion for spatial relationships, continuity, feedback, product behavior, expressive rhythm, or enjoyment. An aesthetic reason can be sufficient; inspect the actual sequence and its cost to the experience. Keep essential content available without waiting through a reveal. Respect reduced-motion preferences with a coherent alternative. Do not merely make the same large movement slightly faster.
 
-Avoid scroll hijacking, mandatory horizontal journeys for routine work, custom cursors that obscure targets, perpetual decorative movement, and autoplay carousels that hide essential content. If a cinematic experience is explicitly requested, preserve normal navigation, direct access to the information, a reduced-motion path, and a usable mobile experience. Apply pause/stop/hide requirements to qualifying moving content. [U12 and U13](sourcebook.md#ui-and-ux-evidence).
+Avoid scroll hijacking, mandatory horizontal journeys for routine work, custom cursors that obscure targets, distracting continuous movement, and autoplay carousels that hide essential content. Ornamental animation is not automatically a defect; evaluate distraction, control, accessibility, and performance in the actual context. For cinematic experiences, preserve usable navigation, direct access to the information, a reduced-motion path, and a usable mobile experience. Apply pause/stop/hide requirements to qualifying moving content. [U12 and U13](sourcebook.md#ui-and-ux-evidence).
 
 Reserve image and media space, avoid layout shifts, keep font fallbacks usable, and budget images, video, animation, and scripts for the actual audience's devices and connectivity. Load secondary media only when useful; do not defer the content needed for the main task. Show real progress when available rather than invented percentages.
 

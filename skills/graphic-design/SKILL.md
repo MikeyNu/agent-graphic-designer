@@ -15,6 +15,7 @@ Work as a designer and art director. Create the strongest communication for this
 - For interface work, define the user task, content hierarchy, behavior, and recovery before visual polish. A screenshot is not a complete experience; distinguish static design, interactive prototype, and integrated implementation.
 - Preserve approved copy, facts, identity assets, and explicit preferences. Distinguish deliberate visual decisions from accidental defects before changing existing work.
 - Use judgment. No font, color, period, effect, or layout guarantees quality. Checklist compliance does not replace a visual idea.
+- Treat beauty, atmosphere, delight, and expressive character as legitimate design goals. An intuitive choice can succeed visually without a measurable task or conversion benefit. Do not demand a functional justification for every flourish or invent research to defend a preference.
 - Separate observation, interpretation, and hypothesis. Never invent audience research, emotional certainty, conversion gains, visual inspection, or client approval.
 - Use tools actually available and read their relevant skills. This skill supplies art direction; format-specific skills supply production mechanics.
 - Follow the user's authorized scope. Continue reversible work without unnecessary confirmation. Keep unknown facts visibly provisional and ask only for missing information that materially changes the result.
@@ -33,6 +34,7 @@ Read the complete core workflow below. Open these guides before the relevant sub
 | Studying Dribbble, Mobbin, Page Flows, Recent, or product references | [Interface reference study](references/interface-reference-study.md) |
 | Studying SaaS and mobile examples, including paired desktop/mobile workflows | [SaaS and mobile reference study](references/saas-mobile-reference-study.md) |
 | New composition, hierarchy, visual balance, or annotated critique | [Composition and layout](references/composition-and-layout.md) |
+| Intuition, expressive choices, aesthetic disagreement, or an over-sanitized design | [Visual judgment](references/composition-and-layout.md#develop-visual-judgment) |
 | Font selection, personality, microtypography, language, or perception | [Typography and perception](references/typography-and-perception.md) |
 | Palette, emotional associations, contrast, or output color | [Color and accessibility](references/color-and-accessibility.md) |
 | Current practice, historical reuse, distinctiveness, or generic AI output | [Originality and trends](references/originality-and-trends.md) |
@@ -47,9 +49,9 @@ Use the [brief template](assets/brief-template.md), [concept review](assets/conc
 
 For substantive UI/UX work, read the UI/UX, interaction, and interface-originality guides before designing. Apply the core art-direction workflow with these additional gates:
 
-1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; establish data scope, authority, interruption, and return context before styling.
+1. Identify the primary task, entry point, completion, and highest-impact failure. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; develop visual character alongside data scope, authority, interruption, and return context.
 2. Study relevant screens and flows with the reference-study method. Distinguish visual observation from text-only descriptions, inaccessible content, and unverified promotional claims.
-3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Derive a direction from the product and task.
+3. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore the product, task, and visual possibilities; an intuitive formal experiment is a valid starting point.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
 5. Preserve readable left-aligned prose, useful status/filter chips, familiar controls, and consistent navigation. Avoid replacing one formula with compulsory centered heroes, bento grids, giant type, or random asymmetry.
 6. Specify meaningful loading, empty, error, success, interruption, and return states. Recompose for mobile; verify keyboard, focus, contrast, target sizes, zoom/reflow, and reduced motion as applicable.
@@ -61,7 +63,7 @@ For a narrowly scoped correction, preserve the established concept and check the
 
 Identify the product's specific value, audience, context, intended understanding or action, approved content, brand assets, tone, medium, dimensions, lifespan, production needs, and success criteria. Establish available fonts, imagery, rights, editability needs, and practical constraints. Avoid demographic stereotypes and universal assumptions about taste.
 
-Write a guiding sentence: “Help [audience] recognize [specific value] and [intended response] through [visual idea] in [setting].” Define what viewers should notice first, understand next, and remember or do afterward. Identify the hardest real condition, such as small phone display, distant viewing, long names, dense copy, multiple scripts, or an awkward package panel.
+Use a guiding sentence when it clarifies the work: “Help [audience] recognize [specific value] and [intended response] through [visual idea] in [setting].” A desired feeling or aesthetic direction can guide an expressive brief without a forced business rationale. Define what viewers should notice first, understand next, and remember or do afterward. Identify the hardest real condition, such as small phone display, distant viewing, long names, dense copy, multiple scripts, or an awkward package panel.
 
 For a small correction, preserve the concept, change the affected element, and inspect the export. For substantial new work, use the complete research, exploration, construction, and QA loop. For an identity or campaign, test representative applications. Do not turn every edit into a discovery exercise or exceptional creative work into a single unexamined draft.
 
@@ -81,15 +83,15 @@ For substantial new work, develop at least three meaningfully different concept 
 
 Find ideas in the product's function, making process, people, language, shape, place, or materials. Experiment with metaphor, juxtaposition, scale, framing, negative space, cropping, repetition, omission, typographic construction, or a meaningful constraint. Do not rely exclusively on the first generated image or the same popular reference feed.
 
-For each viable route, record the premise, visual mechanism, intended response, connection to the brief, and likely failure. Produce a visible rough using the same real content, dimensions, and comparable fidelity. Use sketches, vector studies, type specimens, collage, or generated studies as appropriate.
+Produce visible roughs using the same real content, dimensions, and comparable fidelity. Use sketches, vector studies, type specimens, collage, or generated studies as appropriate. Let visual experimentation precede the explanation when useful. Record only the premise or aesthetic intention, connection to the brief, and material uncertainties needed to choose a route; do not make a theory a prerequisite to trying an idea.
 
-Compare the results at the intended size and against the hardest condition. Select the strongest concept with concrete reasons. Resolve its largest uncertainty with a controlled visual comparison, changing the important variable while holding the others steady. Inspect, revise, re-export, and compare again. Keep the stronger version or return to the concept. Avoid averaging incompatible directions into a confused compromise.
+Compare the results at the intended size and against the hardest condition. Select the strongest visual experience, considering beauty, character, communication, and practical use. A concise aesthetic judgment is a valid reason. Use a controlled comparison when isolating a specific problem; judge whole compositions freely when exploring art direction. Inspect, revise, re-export, and compare again. Keep the stronger version or return to the concept. Avoid averaging incompatible directions into a confused compromise.
 
 If the user already chose a direction, develop within it. Offer options when they help a meaningful decision. Make routine art-direction decisions yourself. Stop extra experiments when the brief is satisfied and no specific unresolved weakness justifies more work.
 
 ## 4. Compose and typeset deliberately
 
-Control hierarchy, grouping, grid, alignment, balance, contrast, scale, proportion, figure/ground, rhythm, repetition, density, texture, and image/text relationships together. Give every prominent element a reason to demand attention. Use empty space actively; it need not be white. Make intentional asymmetry distinguishable from accidental misalignment.
+Control hierarchy, grouping, grid, alignment, balance, contrast, scale, proportion, figure/ground, rhythm, repetition, density, texture, and image/text relationships together. Judge prominent elements by what they contribute visually, including pleasure, tension, atmosphere, or surprise. Use empty space actively; it need not be white. Inspect the result before calling asymmetry, an unusual crop, or an optical adjustment a defect.
 
 Do not impose a golden ratio, fixed font count, universal reading path, or predetermined amount of whitespace as scientific proof of good design. A poster, poem, timetable, label, and report need different structures. Inspect optical relationships as well as numeric spacing.
 
@@ -116,14 +118,14 @@ Use perceptual grouping and meaningful contrast to guide attention. Balance fami
 Treat “AI slop” as a critique of low specificity, repetition, weak editing, or carelessness. Appearance does not prove AI authorship. Inspect these risks:
 
 - **Interchangeability:** Could an unrelated product use the design after changing only the name? If so, inspect whether enough specific meaning remains.
-- **Automatic decoration:** Do glows, gradients, blobs, sparkles, glass, 3D objects, badges, icon grids, texture, or fashionable type carry any purpose?
+- **Automatic decoration:** Are effects arranged with visual sensitivity, or do repetitive defaults weaken the actual composition? Beauty and atmosphere are sufficient contributions; ornamental form does not need to encode a task or product metaphor.
 - **Cosmetic originality:** Are the options actually different concepts, or one default layout restyled?
 - **Overproduction:** Does everything compete for attention? Is the hierarchy weakened by unnecessary finish?
 - **Empty authenticity:** Do rough edges, collage, handwriting, or distress express something real, or imply a false making process?
 - **Weak substance:** Is copy generic, inflated, excessive, inaccurate, or unrelated to the image?
 - **Synthetic defects:** Are anatomy, product details, text, reflections, light, materials, or object continuity wrong?
 
-Run a subtraction comparison and a category comparison. Remove an effect temporarily and judge the actual difference. Restore it if it strengthens the concept. Do not replace one default with an equally generic “anti-AI” aesthetic. Minimalism, maximalism, nostalgic type, gradients, and handmade references can all be appropriate. Preserve useful conventions where recognition matters.
+Use subtraction and category comparisons as diagnostics, not mandatory simplification. Compare the whole experience with and without an effect; retain it when the composition is more beautiful, expressive, or engaging with it. Do not treat the stripped version as the winner by default or replace one formula with an equally generic “anti-AI” aesthetic. Minimalism, maximalism, nostalgic type, gradients, and handmade references can all be appropriate. Preserve useful conventions where recognition matters.
 
 For interfaces, also inspect repeated section recipes, unnecessary card grids, dashboard theater, fake credibility, decorative controls, cosmetic responsiveness, and motion that delays the task. Apply the explicit hero constraints above and the diagnosis-and-repair method in [Interface originality](references/interface-originality.md).
 
@@ -142,7 +144,7 @@ If a required capability is absent, use an appropriate alternative and state the
 
 ## 8. Critique and verify the actual artifact
 
-Run two passes: design critique and technical preflight. Judge **fit**, **communication**, **distinctiveness**, **craft**, and **coherence** as strong, adequate, or weak, using visible evidence. These are working judgments, not a validated aesthetic score. A requested exceptional result needs a defensible concept and strong fit, communication, and craft.
+Run two passes: design critique and technical preflight. First look at the composition as a whole and identify what should be preserved. Judge **aesthetic quality**, **fit**, **communication**, **distinctiveness**, **craft**, and **coherence** as useful, using visible observations. These are working judgments, not a validated aesthetic score. Give visual pleasure, atmosphere, and expressive force real weight; a compelling rationale and a clean checklist cannot substitute for a strong-looking result.
 
 Inspect a flat export as well as a mockup, the full composition, actual delivery size, smallest important use, and detail crops. Check every final variant and every document page. Test relevant cropping, compression, display, distance, and print conditions. Record what was actually checked.
 
@@ -154,7 +156,7 @@ Record critical checks as **PASS**, **FAIL**, **NOT RUN**, or **N/A**, with meth
 
 Block claimed final status for wrong facts, unreadable essential text, broken output, required accessibility failures, missing deliverables, prohibited asset use, failed codes, or unverified material production requirements. A strong concept cannot average away a critical defect. Mark outstanding human, language, client, or printer review specifically.
 
-Fix the highest-impact issue, re-export, and reinspect the changed result and affected variants. Preserve the strongest previous version. Stop when applicable gates pass and the brief is met. Use further work to resolve a concrete weakness, not to chase an invented perfection score.
+Fix the highest-impact issue with the smallest change that preserves the design's character, then reinspect the result and affected variants. Label aesthetic suggestions as judgments, not objective failures. Keep a distinctive version when a safer alternative loses its appeal without fixing a demonstrated problem. Stop when applicable gates pass and the brief is met; do not chase an invented perfection score or endless reviewer consensus.
 
 ## 9. Deliver with evidence
 

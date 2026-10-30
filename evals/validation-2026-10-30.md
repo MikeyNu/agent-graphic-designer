@@ -4,7 +4,7 @@ This record distinguishes package checks, fresh-context agent exercises, rendere
 
 ## Change under review
 
-The initial update adds task and information-architecture guidance, a pattern-selection framework, state and recovery design, responsive behavior, accessibility and motion checks, explicit hero composition preferences, a reference-study protocol, and eight UI/UX evaluation definitions. The follow-ups below extend the reference evidence and add dedicated SaaS/mobile guidance and two further definitions. Existing graphic-design, print, typography, image, and production guidance remains available.
+The initial update adds task and information-architecture guidance, a pattern-selection framework, state and recovery design, responsive behavior, accessibility and motion checks, explicit hero composition preferences, a reference-study protocol, and eight UI/UX evaluation definitions. The follow-ups below extend the reference evidence, add dedicated SaaS/mobile guidance, refine aesthetic judgment, and add four further definitions. Existing graphic-design, print, typography, image, and production guidance remains available.
 
 ## Research evidence
 
@@ -81,3 +81,28 @@ The evaluation set now contains ten UI/UX definitions. Two fresh-context specifi
 Both agents produced written state specifications, not rendered concepts. Parent reviewed the actual returned specifications against the corresponding brief. These results support the observed reasoning distinctions only; no visual, native-device, backend, offline-credential, or participant validation is inferred. The earlier interactive prototype runs were not repeated for this extension.
 
 Extension package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and diff/whitespace checks. The core remains 171 lines. All three new references are directly linked from the core; the two additional briefs are structurally validated. No runtime dependencies, third-party images, or generated bundles were added.
+
+## Visual judgment and expressive freedom refinement
+
+The owner identified an imbalance: the functional emphasis could make the agent demand a calculable reason for every creative choice. The revision treats beauty, atmosphere, enjoyment, and intuition as legitimate design goals. It permits visual experimentation before explanation, gives aesthetic quality an explicit critique dimension, distinguishes subjective preference from demonstrated failure, and asks reviewers to preserve successful character during corrections. It updates the core, affected references, templates, and agent metadata rather than adding a conflicting exception in one isolated paragraph. The owner's hero defaults, truthful content, applicable accessibility requirements, and functional verification remain in force.
+
+This is an owner-directed design stance and practical synthesis, not a new empirical claim about universal taste. No new external research or participant study is claimed in this refinement.
+
+### Fresh-context visual reviews
+
+Two agents received only the revised skill, brief, supplied facts, and relevant PNG inputs. They did not receive the fixture generator, evaluator expectations, preferred winner, or a diagnosis. The parent created original SVG fixtures, rendered them with Inkscape, and inspected all three PNGs before use. These fixtures are temporary evaluation inputs, not finished client designs or package assets. The inputs used identical approved content for the homepage comparison and fictional approved transaction information for the static checkout.
+
+| Case | Observed result |
+| --- | --- |
+| Moro homepage variants | PASS for the examined visual reasoning. The reviewer preferred the expressive variant for the observed interplay of cobalt curve, lavender ribbon, red star, object silhouettes, and orderly typography. It recognized the quieter variant's merits, explicitly framed the choice as aesthetic, and proposed local spacing/caption refinements while preserving the expressive elements. Either variant could have been a valid choice; selecting the expressive one was not the pass criterion. No conversion, universal audience preference, or interactive accessibility outcome was claimed. |
+| Moro mobile checkout | PASS for the examined visual reasoning. The reviewer retained the palette, serif headline, illustration, blue loop, and red curve, while identifying the star's obstruction of the payment label and the total's faint appearance. It proposed moving/resizing the obstructing star and strengthening the total, rather than replacing the art direction. It left numerical contrast, touch behavior, payment integration, and device testing NOT RUN. |
+
+Parent inspected the returned reviews against the actual input images. These were visual critique/reasoning exercises, not executions of the proposed corrections. No revised interface, live transaction, user study, or device test was performed. They demonstrate the distinctions made in these two cases, not reliable human taste across all future work.
+
+| Temporary input | Render dimensions | SHA-256 |
+| --- | --- | --- |
+| Homepage variant A | 1320 by 960 px | `635e59abf3857a8b52aa8b8e06bf5a6b8ca80fff7559242fe67ad23a6ff60131` |
+| Homepage variant B | 1320 by 960 px | `aa3682b52893d66695f9c00a6de1a71aa298c707eba337cbf5ed51827758abd4` |
+| Mobile checkout | 430 by 932 px | `283c91c11338008269550e2f918fbf388ea99dbb17c68c03946c610ffe653f27` |
+
+Package checks: PASS, all 43 unit tests, skill frontmatter validation, portable generation, and diff/whitespace checks. The core is 173 lines. Twelve UI/UX evaluation definitions are structurally validated; only the runs explicitly recorded here count as executed. The QA template adds an initially unassessed aesthetic-quality field and separate places for expressive choices to preserve and optional aesthetic suggestions. No executable dependencies or generated review images are committed.

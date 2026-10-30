@@ -163,6 +163,14 @@ U12 through U14 were also rechecked against official text for pause/update contr
 
 The resulting four-clock model, readiness/settlement distinction, visual construction methods, creative interpretations, and adaptation choices are original design synthesis. Preserve the difference between what a frame shows, what a source recommends, what a study tested, and what we propose to build.
 
+### UUPM negative-reference comparison
+
+U22. [UI UX Pro Max](https://uupm.cc/), observed 30 October 2026. The [detailed study](template-convergence-study.md) records visual comparison of all 39 published desktop gallery previews, twelve opened full-page compositions and DOM section maps, and six displayed prompts. It separates recurring arrangements from useful exceptions and from the gallery's own style labels. This is a primary-source case observation plus original critique, not a controlled generator benchmark, an authorship detector, or independent support for promotional claims.
+
+The prompts describe landing-page briefs with prescribed content and, often, surface treatments. This supports discussing the brief's contribution; it does not establish the tool's internal generation rules or causation. Two image-demo controls visibly changed local input/options. Generation, wallet operations, forms, backend persistence, mobile, complete accessibility, reduced motion, and performance were not tested. A computed 20-second infinite marquee on the agency page is one declared animation, not gallery-wide temporal evidence. No raw screenshots are republished.
+
+The section-question map, treatment-versus-structure comparison, asset/evidence review, and motion-template checks are original design synthesis. The owner's explicit hero preferences retain their existing scope. The study does not justify banning familiar components, expressive effects, or consistency within a product.
+
 ## Refresh procedure
 
 Before a substantial claim about current design practice, inspect dated independent applications and their actual images. Record category, region, audience, original project date, observed device, rationale, and limits. Keep a historical reference when it clarifies how a device is being reinterpreted.

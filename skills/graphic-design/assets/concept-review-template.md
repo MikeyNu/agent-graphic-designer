@@ -16,6 +16,10 @@ Visual preference and observed reasons:
 
 What gives this version its appeal and should survive revision:
 
+For interfaces: product-specific content relationships, section questions, and evidence that organize the composition beyond a named style:
+
+Structural differences between the roughs; useful conventions and approved identity preserved:
+
 For interfaces: how the visual relationship changes through time, principal motion prototype or storyboard, and what its inspection changed in the composition:
 
 Most important unresolved uncertainty:

@@ -8,6 +8,8 @@ Product and audience:
 
 Primary task and observable completion:
 
+Surface type: marketing, collection, transaction, returning-user workspace, or demonstration:
+
 Existing system to preserve:
 
 Approved facts and content:
@@ -26,11 +28,23 @@ Scope, assumptions, and essential unknowns:
 
 ## Composition decision
 
+For substantial new work, map useful questions before choosing sections:
+
+| Visitor question | Approved content or evidence | Content relationship and suitable form | Next action |
+| --- | --- | --- | --- |
+| | | | |
+
+Missing proof/assets to obtain, identify as fixtures, or omit:
+
 | Route and rough artifact | Aesthetic intent and brief fit | Organizing relationship | Mobile adaptation | Material uncertainty, if any |
 | --- | --- | --- | --- | --- |
 | | | | | |
 
 Selected route and evidence:
+
+What changes structurally across the roughs, beyond style, palette, imagery, and effect swaps:
+
+If comparable unrelated work is available, repeated hierarchy or choreography to reconsider; useful within-product consistency to retain:
 
 Visual preference, what it adds, and what a simpler alternative might lose:
 
@@ -71,6 +85,7 @@ Artifact/version:
 | Check | Conditions and method | Status | Evidence or limitation |
 | --- | --- | --- | --- |
 | Composition and whole-page specificity | | NOT RUN | |
+| Asset/content correspondence and source of credibility claims | | NOT RUN | |
 | Primary task and durable outcome | | NOT RUN | |
 | Failure recovery and repeat action | | NOT RUN | |
 | Data scope, freshness, selection, and permissions | | NOT RUN | |

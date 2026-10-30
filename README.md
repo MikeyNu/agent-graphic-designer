@@ -42,6 +42,7 @@ Attach the generated document with your brief. The document links back to execut
 | [Mobile app design](skills/graphic-design/references/mobile-app-design.md) | Focused tasks, navigation, device input, interruption, offline states, and actual-device verification. |
 | [Interaction and validation](skills/graphic-design/references/interaction-and-validation.md) | Complete flows, states, recovery, accessibility, motion, performance, and actual verification. |
 | [Interface originality](skills/graphic-design/references/interface-originality.md) | Explicit hero constraints, repetitive-layout diagnosis, meaningful alternatives, and whole-page critique. |
+| [UUPM demo comparison](skills/graphic-design/references/template-convergence-study.md) | All 39 gallery previews and twelve full-page compositions, recurring formulas, useful exceptions, evidence limits, and concrete repairs. |
 | [Owner's design taste](skills/graphic-design/references/owner-design-taste.md) | A flexible preference profile covering integrated imagery, shaped surfaces, typography, color, rhythm, and appropriate task conventions. |
 | [20-reference close study](skills/graphic-design/references/owner-reference-study.md) | Individual observations from owner-selected commerce, dashboard, mobile, creative-tool, and account-screen examples, including enlarged detail inspection. |
 | [Workspace and settings study](skills/graphic-design/references/owner-workspace-study.md) | Twenty further uploads, nineteen distinct images: analytics, learning, assistants, boards, maps, settings, profiles, and notification matrices. |
@@ -58,7 +59,7 @@ Attach the generated document with your brief. The document links back to execut
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
-| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Sixteen interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, and research honesty. |
+| [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Twenty interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, template convergence, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 
 ## How the design method works
@@ -81,6 +82,8 @@ For new interfaces, the owner's explicit defaults exclude pills, badges, and rou
 The owner's [20 selected references](skills/graphic-design/references/owner-reference-study.md) clarify the desired range, from quiet cream dashboards and cinematic product imagery to playful multicolor interfaces and forceful typography. The [taste profile](skills/graphic-design/references/owner-design-taste.md) teaches relationships rather than a new template. Forms beside expressive images, checkout/product pairings, useful rounded controls, and carefully composed cards are within that range. They are not automatically the rejected marketing hero. Current project direction and approved identity take priority over the default profile.
 
 The interface workflow starts with a user task, compares genuinely different compositions, designs the necessary states, and checks the actual result across content and screen conditions. It distinguishes an attractive mockup from a tested flow. It also avoids replacing the rejected formula with compulsory centered heroes, bento cards, large serif type, or another repeated aesthetic.
+
+The [UUPM comparison](skills/graphic-design/references/template-convergence-study.md) turns a supplied negative reference into specific guidance. It distinguishes surface variety from structural variety, maps sections to actual visitor questions before choosing components, checks whether imagery and proof support the proposition, and reviews repeated choreography. It records useful exceptions and limited interaction checks; it does not claim every demo is identical or that familiar components reveal AI authorship. See the [update's validation record](evals/validation-2026-10-30-uupm.md) for package checks and bounded forward exercises.
 
 The [visual-judgment guidance](skills/graphic-design/references/composition-and-layout.md#develop-visual-judgment) protects expressive choices from overcorrection. It encourages intuitive experiments, gives aesthetic quality explicit weight, separates taste from demonstrated defects, and repairs specific problems while preserving the design's character. Subtraction is a comparison, not a mandate to simplify. Accessibility, truthful content, and working controls remain requirements within their applicable scope.
 

@@ -498,5 +498,62 @@
       "Imposes rotating page mockups or mandatory preloader on the operational workspace.",
       "Strips all character by default or claims implemented and tested runtime behavior."
     ]
+  },
+  {
+    "id": "category_style_and_content_relationships",
+    "test_kind": "reasoning",
+    "task": "Study three supplied homepage references and prepare independent homepage directions for a ceramics workshop and a deployment-comparison tool. Provide a concise design and motion handoff. Written specification only.",
+    "supplied_facts": {
+      "ceramics": "Tide Kiln offers adult hand-building workshops and sells Clay, Salt, and Ash collections. The approved identity is warm, tactile, and colorful. The visitor must understand the workshop format and choose whether to enquire. Sessions are two hours; beginners are welcome; firing is included. No approved dates, prices, availability, customer claims, or original product photography are available.",
+      "developer_tool": "Tracepath compares two deployment logs and highlights changed error signatures. The requested surface is a public product homepage. Its approved identity is precise, dark, and cyan. A supplied fictional before/after log pair may be shown as a clearly labeled demonstration. No customer logos, performance claims, or prices are approved.",
+      "fixture_contract": "Evaluator supplies the original UUPM analytics, education, and pet-grooming gallery previews as visual exploration inputs, plus both skill paths. They are not approved target compositions.",
+      "scope": "Written concepts, section/content decisions, principal motion, and verification plan only; no implementation."
+    },
+    "constraints": [
+      "Inspect the supplied raw images and read both skills and relevant guides.",
+      "Preserve each approved identity and the marketing-page scope. Do not invent missing commercial facts.",
+      "Use at most 1400 words. Do not read evaluation definitions or validation records."
+    ],
+    "expected_behaviors": [
+      "Distinguishes observed reference treatments from structural relationships and avoids copying the common shell.",
+      "Derives different concepts and section forms from each product and the available evidence, with credible asset/fixture handling.",
+      "Keeps useful controls and expressive craft, without a new default aesthetic or arbitrary novelty.",
+      "Co-designs different principal sequences with stable anchors, readiness, interruption, and reduced-motion alternatives; reports specification limits."
+    ],
+    "failure_signals": [
+      "Only changes palette, domain nouns, images, or easing on the same structure.",
+      "Builds an authenticated workspace instead of the requested homepage or fills missing facts with invented proof.",
+      "Bans all cards, gradients, serif type, or animation, or treats a named style as the concept.",
+      "Claims rendered alternatives, playback, performance, or human testing from prose."
+    ]
+  },
+  {
+    "id": "approved_identity_and_demo_state",
+    "test_kind": "reasoning",
+    "task": "Review a proposed motion treatment for an approved music-learning workspace and provide a revised implementation handoff. Written specification only.",
+    "supplied_facts": {
+      "product": "Cadence is a returning-member music-learning workspace. Its approved appearance uses colorful illustrated lesson cards, rounded controls, a quiet progress table, and a cream/violet gradient field. The existing composition is approved and should remain.",
+      "service": "Opening a lesson preserves return selection. Progress can be delayed or indeterminate. Save confirmation comes from the service. A user may choose another lesson before the previous request returns.",
+      "proposal": "Every visible item fades upward with 90 ms sequential delays on every entry. Lesson cards float indefinitely. The progress table counts from zero after each filter change. An illustrative typing sequence loops beside the real activity feed. Save changes to a checkmark when its 700 ms tween finishes. The proposal says the new easing makes the layout original.",
+      "evidence": "A written proposal only. No live service, code, recording, screenshots, or user study.",
+      "scope": "Preserve the approved visual identity and structure. Revise motion and evidence handling only."
+    },
+    "constraints": [
+      "Read graphic-design and web-motion-director and relevant guides.",
+      "Keep the handoff within 1100 words; do not create an application.",
+      "Do not read evaluation definitions or validation records."
+    ],
+    "expected_behaviors": [
+      "Preserves the approved imagery, cards, controls, table, and gradient instead of imposing a new aesthetic.",
+      "Separates surface/easing changes from originality and revises rhythm around a principal lesson transition and quiet repeated work.",
+      "Distinguishes demonstration from live activity, keeps real progress truthful, waits for confirmed save success, and rejects stale selection results.",
+      "Specifies immediate readiness, repeat/reverse behavior, keyboard/touch and reduced-motion alternatives, with honest unperformed checks."
+    ],
+    "failure_signals": [
+      "Demands a visual redesign because common components or gradients appear.",
+      "Allows animation completion or a timer to establish save success or real progress.",
+      "Removes all expressive behavior by default or gives every region the same replacement reveal.",
+      "Claims actual visual or runtime QA from the written proposal."
+    ]
   }
 ]

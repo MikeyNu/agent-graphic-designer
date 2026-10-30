@@ -2,6 +2,8 @@
 
 Use when creating or reviewing interfaces, especially when asked for modern, distinctive work or to remove AI slop. Read alongside [UI and UX design](ui-ux-design.md). This guide diagnoses the work; it cannot identify its author or guarantee originality.
 
+For concrete comparisons, the [UUPM study](template-convergence-study.md) records all 39 gallery previews and twelve full-page compositions, including useful exceptions. Use its observed relationships, not its category names as a new blacklist.
+
 ## Contents
 
 - [1. Honor the composition constraint](#1-honor-the-composition-constraint)
@@ -60,6 +62,25 @@ Apply the same scrutiny to over-sanitized output: removing every ornament, irreg
 
 Before opening a reference feed, write the product's concrete value and a few relevant facts, materials, actions, or data relationships. Use references to expand that starting point rather than letting one admired screenshot set the entire brief.
 
+### Interrupt the default recipe
+
+For substantial new work, establish the product and content relationships before selecting a named style or assembling components:
+
+1. **Identify the surface.** Distinguish a marketing page, collection, transaction, returning-user workspace, and presentation demo. A marketing brief can warrant persuasion and a clear proposition; an operational brief needs the work itself. Do not turn every platform request into a landing page or every landing page into an application.
+2. **Find the specific material.** Record the main decision/action, approved facts, distinctive content or assets, uncertainty, and something this audience must understand. If the brief is sparse, make a reversible compositional choice around the known material. Do not fill the gaps with fictional ratings, clients, credentials, performance figures, prices, or sample customer portraits presented as real.
+3. **Map sections by their question.** Use a short row such as `visitor question | actual content/evidence | relationship | suitable form | next action`. A comparison may need aligned rows; a process may need a sequence; a collection may need item previews and filters; an argument may need an editorial progression. These are possibilities, not a fixed menu. Omit sections with no useful content instead of writing filler to complete a template.
+4. **Build the organizing relationship.** Let the collection, useful task, specific evidence, place, material, or visual idea affect hierarchy and space. Merely changing domain nouns, icons, and photographs inside a stock shell is weak adaptation. Aesthetic intuition can also originate a concept, but inspect how it works with this content.
+5. **Compare structure before finish.** Review the three required roughs at comparable fidelity with the same approved content. Record what changes in focal point, content order, spatial relationship, and motion, and what useful conventions stay consistent. Different style labels, color tokens, shadows, or entrance effects do not count as different concepts.
+6. **Develop the chosen language.** Choose type, color, assets, surfaces, rhythm, and motion in the actual composition. A palette strip, font pair, animation library, or style-database match is a candidate resource, not a design decision already validated.
+
+Do not fabricate novelty when the appropriate answer is a precise conventional interface. Within an established product, reuse patterns for equivalent tasks. For unrelated projects available in the current work, compare their opening silhouettes, section order, image treatment, proof blocks, and motion. If they inherit the same hierarchy for no product-specific reason, reopen that relationship. This is a contextual comparison, not a requirement to search private history, randomize layouts, or maintain an arbitrary novelty score.
+
+### Make evidence visible in the composition
+
+Before polishing proof blocks, verify what the material actually demonstrates. A dashboard photograph may signal software without explaining the promised workflow. A colorful rectangle labeled as artwork does not demonstrate image quality. An icon and a broad benefit do not replace a concrete mechanism or example. Use an accurate product view, relevant work sample, clear explanation, or honestly labeled placeholder as appropriate to the deliverable.
+
+For prototypes, keep fixture data and simulated outcomes clear without burying the design in implementation notes. For production, obtain approved evidence, use truthful copy, or omit the unsupported claim. Never promote demo statistics, generated testimonials, decorative certification marks, or a timer-driven success animation into real credibility.
+
 For this repository's default art direction, use the [owner's taste](owner-design-taste.md) as a flexible starting point. Compare relevant examples across its restrained and expressive range. Transfer relationships such as material color recurring through a dashboard or quiet controls beside expressive imagery; do not copy a distinctive arrangement or force one palette onto unrelated products.
 
 For substantial new work, render at least three comparable roughs with the same approved content. Change the content architecture, focal point, relationship between text and image, or interaction model, not only the theme. Consider these mechanisms as prompts, never a menu to rotate through automatically:
@@ -89,6 +110,8 @@ Use rendered output, with the known brief beside it:
 5. **Sequence check:** Read the entire page. Each section should answer a different useful question; delete or combine repetition. Keep navigation and recurrent components consistent.
 6. **Task check:** Follow the main action and its recovery route. A distinctive entrance must lead into a usable experience.
 7. **Reference-distance check:** Compare against the sources. Remove recognizable borrowed identity assets or distinctive compositions that have not become an independent design.
+8. **Treatment-versus-structure check:** Set aside the named style, palette, and effects. Identify the product-specific content relationship that still organizes the result. If the only difference from another unrelated page is its skin, repair the hierarchy rather than adding a louder flourish.
+9. **Motion comparison:** Watch the principal sequence and a repeated ordinary action. Check what leads, remains stable, overlaps, and settles. A universal fade-up, identical hover lift, perpetual float, or simulated progress loop may repeat the same formula through time. Keep a coherent family of responses and expressive moments where they work; do not require every component to move differently.
 
 Record actual defects as: location, observed pattern, consequence, correction, and recheck evidence. Record taste-based alternatives as optional aesthetic judgments, including what the current version does well and what a revision might lose. Keep brief violations, usability defects, factual problems, and accessibility issues separate. Do not turn stylistic disagreement into a numerical slop score or automatic failure.
 

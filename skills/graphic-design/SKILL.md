@@ -24,7 +24,16 @@ Work as a designer and art director. Create the strongest communication for this
 
 ## Load the right depth
 
-Read the complete core workflow below. Open these guides before the relevant substantive decisions; do not load every guide for a tiny correction.
+Read the complete core workflow below, then choose the task route. The route controls which steps apply; the workflow is not a requirement to redesign every artifact.
+
+| Requested result | Work to perform | Completion evidence |
+| --- | --- | --- |
+| Small repair to approved work | Preserve the concept, change the affected element, inspect affected outputs and states. | Before/after comparison, exact change, and relevant recheck. No mandatory new concepts. |
+| Faithful reconstruction or chosen direction | Preserve required fidelity; explore only unresolved decisions. | Comparison with supplied reference and checks of requested behavior. Do not substitute the owner's defaults for explicit direction. |
+| Substantial new artwork or interface | Research relevant material, make three comparable visible roughs, choose and build the result. | Rendered deliverables and checks appropriate to the medium and requested functionality. |
+| Critique, storyboard, or implementation handoff | Inspect available evidence and provide actionable decisions or specifications within scope. | The requested review or handoff, with proposed behavior separate from executed evidence. Do not build an unrequested application. |
+
+Open guides before the relevant substantive decisions. Follow links for needed detail, not recursively through every historical study or citation. Use the shared brief once when working with a motion skill; do not duplicate discovery, alternatives, or QA paperwork. Read [execution and evidence](references/execution-and-evidence.md) when scope, missing capabilities, or completion status is uncertain.
 
 | Decision or task | Read |
 | --- | --- |

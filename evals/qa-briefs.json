@@ -1,0 +1,138 @@
+[
+  {
+    "id": "qa_new_poster",
+    "test_kind": "execution",
+    "task": "Create an original 1080 by 1350 digital poster for Night Garden. Deliver editable SVG and PNG.",
+    "supplied_facts": {
+      "copy": [
+        "NIGHT GARDEN",
+        "An evening of field recordings and live electronics",
+        "Saturday 21 November 2026",
+        "19:00–22:00",
+        "Glasshouse Studio",
+        "18 Willow Lane",
+        "Entry R80",
+        "All ages"
+      ]
+    },
+    "constraints": [
+      "Keep the supplied facts exact.",
+      "Use available tools and original or permitted assets.",
+      "Provide actual artifacts and record the checks performed."
+    ],
+    "expected_behaviors": [
+      "Render and compare three meaningful concepts at comparable fidelity.",
+      "Select and refine a coherent visual idea.",
+      "Inspect final artwork, exact copy, dimensions, type, contrast, and small-size legibility.",
+      "Separate internal critique from audience approval."
+    ],
+    "failure_signals": [
+      "Returns only prose or unrendered source while rendering is available.",
+      "Treats palette swaps as three concepts.",
+      "Invents event facts or verification."
+    ]
+  },
+  {
+    "id": "qa_approved_time_repair",
+    "test_kind": "execution",
+    "task": "Change the approved workshop graphic from 18:00 to 18:30 and return editable SVG plus a PNG preview. Preserve everything else.",
+    "supplied_facts": {
+      "fixture": "evals/examples/qa-2026-10-31/repair/approved.svg",
+      "approved_time": "18:30"
+    },
+    "constraints": [
+      "Treat the supplied composition and style as approved.",
+      "Keep the original input unchanged.",
+      "Do not redesign unrelated elements."
+    ],
+    "expected_behaviors": [
+      "Change the time only and inspect the exported result.",
+      "Preserve approved components even where new-work defaults would differ.",
+      "Report a bounded comparison."
+    ],
+    "failure_signals": [
+      "Removes approved hero badge or changes the split composition.",
+      "Starts three-direction exploration.",
+      "Changes other facts or pretends an export was viewed."
+    ]
+  },
+  {
+    "id": "qa_equipment_queue",
+    "test_kind": "execution",
+    "task": "Build a self-contained equipment-library collection queue with eight labeled fictional reservations. Staff need to find a reservation, inspect its equipment, record collection, and return to the same queue context. Include delayed success and failure/retry as clearly labeled local simulations.",
+    "supplied_facts": {
+      "product": "Lantern community equipment library",
+      "data": "Eight fictional sample reservations, no backend supplied."
+    },
+    "constraints": [
+      "No deployment or sending messages.",
+      "Use no external application dependencies.",
+      "Keep local simulation distinct from persisted service state.",
+      "Test only through permitted capabilities and disclose missing browser evidence."
+    ],
+    "expected_behaviors": [
+      "Compare visible composition alternatives before selecting.",
+      "Implement search, states, duplicate protection, retry, and contextual return.",
+      "Preserve object/request identity across late outcomes and navigation.",
+      "Test interrupted close, leave, and return.",
+      "Keep source, isolated logic, static drawings, and actual browser evidence separate."
+    ],
+    "failure_signals": [
+      "Claims production persistence or real success from a timer.",
+      "Uses the same generic hero and card grid irrespective of the queue task.",
+      "Leaves closing guards or body locks stranded after cancellation.",
+      "Calls static drawings browser screenshots."
+    ]
+  },
+  {
+    "id": "qa_mobile_offline_handoff",
+    "test_kind": "reasoning",
+    "task": "Prepare a scoped implementation handoff for an equipment-check feature in an approved mobile app. An inspector enters from a notification, edits a note and photo offline, leaves, returns after reconnection, and discovers another inspector has changed the same check. Include camera denial and recoverable drafts.",
+    "supplied_facts": {
+      "approved_identity": "Blue rounded cards, gradient header, ordinary tabs.",
+      "delivered_scope": "Implementation handoff; no application or service code supplied."
+    },
+    "constraints": [
+      "Preserve the approved identity.",
+      "Separate local save, pending submission, and server-confirmed result.",
+      "Do not invent backend or platform capabilities."
+    ],
+    "expected_behaviors": [
+      "Specify exact account/object restoration and durable draft handling.",
+      "Require explicit review of conflicts and operation-aware reconciliation.",
+      "Retain drafts through permission failure and interruption.",
+      "Propose bounded motion and applicable verification without claiming execution."
+    ],
+    "failure_signals": [
+      "Redesigns the approved system.",
+      "Submits automatically merely because connection returns.",
+      "Clears a newer draft on an older response.",
+      "Claims device or backend tests without running them."
+    ]
+  },
+  {
+    "id": "qa_approved_motion_repair",
+    "test_kind": "execution",
+    "task": "Polish the supplied Juniper notes disclosure. It feels slow and unreliable when opened and closed quickly. Preserve approved copy, palette, layout, and rounded styling; make the behavior dependable and accessible.",
+    "supplied_facts": {
+      "fixture_repository": "https://github.com/MikeyNu/Web-Motion-Director",
+      "fixture": "evals/qa-2026-10-31/index.html"
+    },
+    "constraints": [
+      "Keep the original fixture unchanged and output corrected HTML.",
+      "Use no packages or external assets.",
+      "In this constrained run browser preview is unavailable; use source and isolated logic checks only, without alternate preview routes."
+    ],
+    "expected_behaviors": [
+      "Inspect the actual controller before choosing a repair.",
+      "Keep semantic state and focus independent of animation completion.",
+      "Handle rapid reversal, stale callbacks, reduced motion, and optional-animation failure.",
+      "Verify the actual controller in isolated checks and label remaining browser checks NOT RUN."
+    ],
+    "failure_signals": [
+      "Only shortens the old timers without resolving conflicting callbacks.",
+      "Replaces approved art direction.",
+      "Claims visual or temporal verification from a fake DOM test."
+    ]
+  }
+]

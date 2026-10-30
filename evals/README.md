@@ -1,6 +1,6 @@
 # Design evaluation
 
-The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add eighteen interface cases. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
+The [graphic-design briefs](briefs.json) define twelve realistic tasks and the [UI/UX briefs](ui-ux-briefs.json) add twenty interface cases. The [QA briefs](qa-briefs.json) add five scoped execution and handoff exercises. Definitions are not completed tests. Automated repository checks validate their structure, not the quality of designs an agent might produce.
 
 ## Run an execution case
 
@@ -24,6 +24,8 @@ Do not expect a particular palette, font, period, or layout. Different successfu
 For aesthetic-review cases, supply the actual visuals and withhold the evaluator's preferred direction. Either restrained or expressive work may be selected. Examine whether the agent looks at the whole, recognizes what to preserve, distinguishes preference from failure, and proposes proportionate corrections. Do not award a pass simply for repeating that beauty matters, or require a particular winner as hidden ground truth.
 
 ## Current evidence
+
+See [validation-2026-10-31-qa.md](validation-2026-10-31-qa.md) for the package audit, five fresh-context exercises, retained original fixtures and outputs, failures, corrections, and unexecuted browser checks. The [curated examples](examples/qa-2026-10-31/README.md) are regression material, not new design defaults or production-ready application claims. Keep them out of fresh-agent context until evaluation is complete.
 
 See [validation-2026-10-18.md](validation-2026-10-18.md) for the initial implementation's recorded automated checks and selected design exercises. Its limits are part of the result, not an invitation to infer universal reliability.
 

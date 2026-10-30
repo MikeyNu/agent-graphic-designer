@@ -37,6 +37,7 @@ Attach the generated document with your brief. The document links back to execut
 | Component | Purpose |
 | --- | --- |
 | [Core skill](skills/graphic-design/SKILL.md) | Brief, research, concepts, construction, critique, verification, and delivery. |
+| [Execution and evidence](skills/graphic-design/references/execution-and-evidence.md) | Task scope, approved-direction preservation, honest verification, missing capabilities, recovery, and completion. |
 | [UI and UX design](skills/graphic-design/references/ui-ux-design.md) | User tasks, information architecture, pattern selection, visual systems, responsive behavior, and content. |
 | [SaaS product design](skills/graphic-design/references/saas-product-design.md) | Trustworthy dashboards, dense collections, bulk actions, permissions, collaboration, and return context. |
 | [Mobile app design](skills/graphic-design/references/mobile-app-design.md) | Focused tasks, navigation, device input, interruption, offline states, and actual-device verification. |
@@ -61,6 +62,8 @@ Attach the generated document with your brief. The document links back to execut
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
 | [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Twenty interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, template convergence, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
+| [QA exercise definitions](evals/qa-briefs.json) | Five scoped creation, repair, prototype, and handoff cases, with evaluator-only expectations. |
+| [31 October QA and retained cases](evals/validation-2026-10-31-qa.md) | Fresh-context artifact exercises, actual defects and corrections, automated regressions, and explicit browser limits. |
 
 ## How the design method works
 

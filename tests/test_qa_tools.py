@@ -166,6 +166,22 @@ class PreflightTests(AssetTestCase):
                 path.write_bytes(source.encode(encoding))
                 self.assertEqual(checks_by_name(preflight.inspect_file(path))["xml_safety"]["status"], "FAIL")
 
+    def test_css_animated_svg_is_not_a_static_review_asset(self):
+        for body in ('<style>@keyframes spin {to {transform:rotate(360deg)}} rect {animation:spin 1s infinite}</style><rect/>',
+                     '<rect style="animation-name:pulse; animation-duration:2s"/>',
+                     '<style>rect {-webkit-animation:pulse 2s infinite}</style><rect/>'):
+            with self.subTest(body=body):
+                path = self.svg(body)
+                result = preflight.inspect_file(path)
+                self.assertEqual(checks_by_name(result)["static_content"]["status"], "FAIL")
+                self.assertFalse(result["metadata"]["safe_for_static_image_embedding"])
+                with self.assertRaises(ValueError):
+                    review_board.load_asset({"path": str(path)}, self.folder)
+
+    def test_animation_word_in_svg_comment_does_not_reject_static_art(self):
+        path = self.svg('<style>/* animation:spin 1s infinite */ rect {fill:#333}</style><rect/>')
+        self.assertTrue(preflight.inspect_file(path)["metadata"]["safe_for_static_image_embedding"])
+
     def test_embedded_svg_data_is_not_treated_as_safe_raster(self):
         result = preflight.inspect_file(self.svg('<image href="data:image/svg+xml;base64,PHN2Zy8+"/>'))
         self.assertEqual(result["status"], "FAIL")

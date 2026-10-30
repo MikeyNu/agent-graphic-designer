@@ -171,6 +171,14 @@ The prompts describe landing-page briefs with prescribed content and, often, sur
 
 The section-question map, treatment-versus-structure comparison, asset/evidence review, and motion-template checks are original design synthesis. The owner's explicit hero preferences retain their existing scope. The study does not justify banning familiar components, expressive effects, or consistency within a product.
 
+### QA and lifecycle evidence
+
+Consulted 31 October 2026. U23. MDN's [pagehide](https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event) and [pageshow](https://developer.mozilla.org/en-US/docs/Web/API/Window/pageshow_event) document page suspension, possible reuse, and restoration. `pagehide` is compatible with the back/forward cache but is not guaranteed on every mobile termination. Do not depend on it as the only opportunity to persist a draft. These are technical lifecycle facts, not evidence that any example implementation works.
+
+U24. The [Playwright Page API](https://playwright.dev/python/docs/api/class-page) documents that its Back/Forward Cache testing is unsupported and normally disabled. A synthetic event or ordinary automated Back test must not be described as actual BFCache verification. Check the installed tool's current limitations before choosing a browser test method.
+
+The execution guide's instruction to settle transient closing state after cancellation is original engineering synthesis, prompted by a reproduced source/isolated-logic defect in the 31 October queue exercise. Actual browser restoration remains untested in that exercise. This refresh does not revalidate every historical source in this register.
+
 ## Refresh procedure
 
 Before a substantial claim about current design practice, inspect dated independent applications and their actual images. Record category, region, audience, original project date, observed device, rationale, and limits. Keep a historical reference when it clarifies how a device is being reinterpreted.

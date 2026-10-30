@@ -64,7 +64,7 @@ Use the following culturally situated associations to develop candidates. They a
 | Script / calligraphic | Personal, expressive, ceremonial | Generic wedding shorthand or poor small-size recognition |
 | Vernacular or specific display | A particular place, era, subculture, or performance | Misreading, parody, cultural misuse, or illegibility |
 
-For each serious candidate, complete: “This treatment should suggest **quality** to **audience**, because of **visible feature or relevant reference**. Its likely misreading is **risk**, which I will check through **comparison or review**.”
+When an emotional interpretation materially affects the choice, use a short hypothesis: “This treatment should suggest **quality** to **audience**, because of **visible feature or relevant reference**. Its likely misreading is **risk**, which I will check through **comparison or review**.” Do not require this paperwork for every specimen or an approved-font correction; direct visual judgment remains valid.
 
 Do not equate new fonts with modern design, old fonts with obsolete work, or popular fonts with poor quality. A familiar face can be excellent in a specific composition. Research the present context before making a claim about current overuse. Avoid gender-essentialist font rules and novelty added solely to escape familiarity.
 

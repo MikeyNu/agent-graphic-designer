@@ -98,7 +98,7 @@ Absolute SVG units use 96 CSS pixels per inch. Relative or unsupported lengths r
 
 Local linked resources are checked for existence only when they remain within the asset's folder. Network URLs, absolute references, and references leaving that folder are not opened. A locally existing linked file still means the SVG is not self-contained. Embedded data URIs are limited to base64 PNG, JPEG, GIF, and WebP.
 
-For the static review-board workflow, the limited scan rejects scripts, event handlers, foreign objects, animation elements, XML entity or DOCTYPE declarations, external stylesheet instructions, unsupported CSS dependency syntax, and external or missing dependencies. A rejection is a reason to export a supported static copy through a suitable authoring tool. The script never silently rewrites or sanitizes the source.
+For the static review-board workflow, the limited scan rejects scripts, event handlers, foreign objects, animation elements, CSS keyframes/animation declarations, XML entity or DOCTYPE declarations, external stylesheet instructions, unsupported CSS dependency syntax, and external or missing dependencies. A rejection is a reason to export a supported static copy through a suitable authoring tool. The script never silently rewrites or sanitizes the source. This conservative check does not establish playback or comprehensive SVG safety.
 
 ### Raster
 

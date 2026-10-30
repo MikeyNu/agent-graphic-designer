@@ -193,4 +193,4 @@ Filenames identify the supplied artifacts; IDs continue the first study. Pixel d
 
 Use the new set to expand the design vocabulary: expressive learning covers, luminous stacks, dense analytical detail, selected board objects, spatial operations, and carefully aligned settings all belong. Do not assign a greeting, KPI row, hero, or card grid to every surface.
 
-Design the active states alongside these compositions. Identify which object persists, what changes around it, and where a transition might add pleasure or continuity. The [motion co-design workflow](interface-motion.md) provides the shared plan; the future video study must establish temporal observations separately. Do not infer a complete animation recipe from a layered still.
+Design the active states alongside these compositions. Identify which object persists, what changes around it, and where a transition might add pleasure or continuity. The [motion co-design workflow](interface-motion.md) provides the shared plan; the later [nine-clip study](owner-motion-study.md) records temporal observations separately. Do not infer a complete animation recipe from a layered still.

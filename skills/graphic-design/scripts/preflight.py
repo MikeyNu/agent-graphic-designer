@@ -167,6 +167,8 @@ def inspect_svg(data: bytes, path: Path, result: dict) -> None:
                 css_values.append(value)
         for css in css_values:
             cleaned = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+            if re.search(r"@(?:-\w+-)?keyframes\b|(?:^|[;{])\s*(?:-\w+-)?animation(?:-[\w-]+)?\s*:", cleaned, re.I):
+                active.append("CSS animation")
             if "\\" in cleaned or re.search(r"@import\b|expression\s*\(", cleaned, re.I):
                 css_issues.append("CSS escapes, imports, or expressions need independent inspection.")
             references.extend(match.group(2).strip() for match in URL_RE.finditer(cleaned))

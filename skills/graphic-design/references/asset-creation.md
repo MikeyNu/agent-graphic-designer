@@ -41,7 +41,7 @@ Build an image brief from concrete decisions:
 
 Avoid relying on “award-winning,” “premium,” or “8K” to supply decisions. Resolution language does not establish composition, faithful detail, or actual output dimensions. Ask for exact dimensions only when the tool supports them and verify its actual result.
 
-Explore distinct concepts before refining one result. Once a concept is selected, vary one consequential feature at a time. A large batch of near-duplicates is not evidence of a broad search.
+Explore distinct concepts before refining one result when the scope calls for new art direction. For a focused uncertainty within the selected concept, vary one consequential feature at a time. A coordinated compositional revision may change several related features. A large batch of near-duplicates is not evidence of a broad search.
 
 For raster creation and editing, use the available image tools according to their current instructions. Do not substitute improvised bitmap manipulation where a governing tool requires a particular workflow. For exact vector or diagram work, use the appropriate native construction instead of image generation.
 

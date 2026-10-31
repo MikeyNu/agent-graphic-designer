@@ -16,6 +16,10 @@ Visual preference and observed reasons:
 
 What gives this version its appeal and should survive revision:
 
+What would need to change if this belonged to a different brand, beyond its name or logo:
+
+Thoughtful details added within scope, and why this composition benefits from its chosen density:
+
 For interfaces: product-specific content relationships, section questions, and evidence that organize the composition beyond a named style:
 
 Structural differences between the roughs; useful conventions and approved identity preserved:

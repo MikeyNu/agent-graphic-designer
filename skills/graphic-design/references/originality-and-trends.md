@@ -18,6 +18,8 @@ Research snapshot: **18 October 2026**. Refresh examples when present-day releva
 
 ## 1. Give originality a job
 
+For an incomplete prompt, first use [creative direction](creative-direction.md) to turn the available context into a provisional brief. The user does not need to supply a theme or detailed art direction. A polished category template can still fail through interchangeability; novelty alone can also fail through weak appeal or poor fit.
+
 Start with the actual product, organization, message, audience, and viewing situation. State what people should understand, feel, or do, and identify the facts that support that intention. “Premium,” “friendly,” and “innovative” need concrete meaning in this brief. They do not prescribe a font, color, or composition.
 
 Ask four separate questions:
@@ -34,6 +36,8 @@ Allow beauty, pleasure, atmosphere, and an intriguing formal relationship to be 
 Use “AI slop” as a description of problems to investigate, not a reliable authorship detector. Separate **visible defects**, **generic decisions**, and **overused combinations**. A technically polished composition can be interchangeable. An unconventional image can still be irrelevant or unreadable. Never infer that a work was AI-generated solely from its appearance.
 
 ## 2. Research current practice without freezing taste
+
+Make provisional observations about the particular subject before searching finished designs. Use research to challenge and widen those possibilities. This protects room for interpretation without making the first self-generated idea authoritative or forbidding reference study.
 
 Scope the reference search to the intended audience, location, category, channel, and useful lifespan. A music-event poster, a public-information leaflet, and a packaging identity can require different relationships to fashion.
 
@@ -137,6 +141,8 @@ CreativeConnect's CHI 2024 study evaluated structured reference decomposition an
 
 Doshi and Hauser found improved individual evaluations but reduced aggregate diversity in AI-assisted short stories.[3] The writing task illustrates that polish and diversity are separate outcomes. It does not measure visual slop.
 
+Other tasks show different outcomes. Ashkinaze and colleagues' dynamic ideation experiment found greater collective diversity under high AI exposure, without improved individual creativity.[10] Do not treat convergence as an inevitable property of every AI interaction or assume shared training data alone explains a particular design. Evaluate the actual workflow and outputs.
+
 The operational conclusion is modest: preserve independent alternatives, inspect what generation is doing to the exploration, and validate the actual output. The Design Council's iterative framework supports moving between discovery, definition, alternatives, and testing rather than treating design as one prompt followed by delivery.[4]
 
 ## Sources
@@ -150,3 +156,4 @@ The operational conclusion is modest: preserve independent alternatives, inspect
 7. New York Botanical Garden. [Meet Our New Brand](https://www.nybg.org/planttalk/meet-our-new-brand/), 29 January 2024.
 8. Wolff Olins. [New York Botanical Garden](https://www.wolffolins.com/work/nybg), undated case page describing the January 2024 launch.
 9. Cooper Hewitt, Smithsonian Design Museum. [Design Across Time: Exploring the Smithsonian's Design Collection](https://www.cooperhewitt.org/exhibition/design-across-time/), 17 June 2026.
+10. Ashkinaze et al. [How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas](https://arxiv.org/abs/2401.13481v3), revised 31 July 2025; accepted at ACM Collective Intelligence 2025. Abstract and bibliographic record inspected; task-specific evidence, not a website-design experiment.

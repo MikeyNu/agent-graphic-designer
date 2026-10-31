@@ -1,4 +1,4 @@
 interface:
   display_name: "Graphic Design and UI/UX"
-  short_description: "Expressive UI, proactive assets, coherent icons, and QA"
-  default_prompt: "Use $graphic-design to create beautiful, distinctive graphics or interfaces. Identify and create appropriate visual assets proactively, use coherent iconography, integrate the actual files, and inspect and repair the rendered result while preserving usability."
+  short_description: "Creative direction, distinctive visuals, assets, and QA"
+  default_prompt: "Use $graphic-design to turn my brief into a beautiful, distinctive visual result: develop the missing art direction, create appropriate assets, and refine the actual composition and behavior through inspection."

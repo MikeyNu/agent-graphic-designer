@@ -17,6 +17,7 @@ The 30 October 2026 visual-judgment refinement responds to the owner's explicit 
 - [Typography and emotion](#typography-and-emotion)
 - [Color research](#color-research)
 - [AI and diversity](#ai-ideation-and-diversity)
+- [Creative direction and open briefs](#creative-direction-and-open-briefs)
 - [Case studies](#contemporary-and-historical-case-studies)
 - [Accessibility and type specifications](#accessibility-and-type-specifications)
 - [Production and licensing](#production-and-licensing)
@@ -60,6 +61,21 @@ The 30 October 2026 visual-judgment refinement responds to the owner's explicit 
 | [Wadinambiarachchi et al., The Effects of Generative AI on Design Fixation and Divergent Thinking](https://doi.org/10.1145/3613904.3642919), CHI, May 2024; [author PDF](https://samangi.com/papers/chi24-1021.pdf) | N=60 experiment found higher initial-example fixation and reduced ideation measures in its AI condition. | Specific task, tool, and sample. Indexed abstract and author-hosted excerpts were retrieved; the full PDF exceeded the retrieval tool's size limit. |
 | [Choi et al., CreativeConnect](https://creativeconnect.kixlab.org/), CHI, May 2024; [author PDF](https://suminhong.me/screen/chi2024.pdf) | Structured reference decomposition/recombination and sketches supported early ideation; evaluation N=16. | Baseline also included AI tools; mainly early-career participants and illustration ideation. More ideas and self-reported creativity do not establish finished client quality. |
 | [Doshi and Hauser, Generative AI enhances individual creativity but reduces the collective diversity of novel content](https://doi.org/10.1126/sciadv.adn5290), Science Advances, 12 July 2024 | Individual evaluation and collective diversity can move in different directions. | Short-story experiment, not graphic design. Use as indirect evidence only. |
+
+## Creative direction and open briefs
+
+Reviewed 31 October 2026 after the owner clarified the skill's purpose: supply intentional art direction when a prompt omits it, across visual media. The [creative-direction guide](creative-direction.md), proactive choices, density comparisons, and brand-guide application checks are original design synthesis. They are not validated claims that this skill recreates human experience or guarantees user satisfaction.
+
+| Source inspected | Relevant finding or method | Application and limit |
+| --- | --- | --- |
+| [Design Council, Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/), current official text | Understand the problem, define it, develop alternatives, and test iteratively. | Supports an iterative method rather than single-shot execution. Practitioner framework, not proof of this agent workflow. |
+| [Jansson and Smith, Design fixation](https://doi.org/10.1016/0142-694X(91)90003-F), 1991, publisher abstract | Experiments demonstrate fixation as a barrier in conceptual design. | Humans can also fixate. Abstract only inspected here; no detailed intervention or universal anti-reference rule inferred. |
+| [Wadinambiarachchi et al.](https://doi.org/10.1145/3613904.3642919), CHI 2024, publisher abstract and indexed method/conclusion | In a 60-person visual-ideation experiment, the AI-supported condition showed more initial-example fixation and weaker divergent-output measures. | Specific novice-design task and tools, not a test of all contemporary agents. The author PDF again exceeded the retrieval size limit. |
+| [Choi et al., CreativeConnect](https://suminhong.me/screen/chi2024.pdf), CHI 2024, author PDF abstract, introduction, and study description | Reference decomposition/recombination supported ideation in a 16-person comparison against a baseline that also included AI. | Supports investigating how references are used, not banning them. More ideas and self-reported creativity do not establish client-ready quality. |
+| [Doshi and Hauser](https://doi.org/10.1126/sciadv.adn5290), Science Advances, 2024, publisher text | Better individual short-story evaluations coexisted with greater similarity across outputs. | Polish and collective diversity are distinct. Constrained writing study, not evidence that visual work or all AI use necessarily converges. |
+| [Ashkinaze et al.](https://arxiv.org/abs/2401.13481v3), revised 31 July 2025, accepted at ACM Collective Intelligence 2025; abstract inspected | A dynamic ideation experiment with over 800 participants found increased collective diversity under high AI exposure without better individual creativity. | Contrasting evidence makes a blanket convergence claim inappropriate. Different task and interaction design; no direct evaluation of website quality. |
+
+Use these sources to motivate inspection and alternative exploration, not to claim a complete explanation of model creativity. The owner's definition includes polished but interchangeable work. Observing that defect does not identify its training-data cause, prove AI authorship, or imply that random novelty solves it. This refresh does not revalidate unrelated sourcebook entries.
 
 ## Contemporary and historical case studies
 

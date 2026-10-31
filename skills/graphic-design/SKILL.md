@@ -1,6 +1,6 @@
 ---
 name: graphic-design
-description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts, proactive image and illustration generation, coherent iconography, coordinated motion, and rigorous asset, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, settings, onboarding, design systems, responsive interfaces, UI animation, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Assess and create needed visual assets even when the user does not separately request images. Apply alongside relevant production tools.
+description: Turn open-ended visual requests into intentional, distinctive designs by supplying missing art direction, concepts, imagery, typography, color, iconography, motion, and rigorous QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, settings, onboarding, design systems, responsive interfaces, UI animation, UX audits, and removing repetitive AI slop, as well as brand identities, brand guidelines, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Infer and test creative choices and create appropriate assets without requiring a detailed design prompt or separate image request. Apply alongside relevant production tools.
 ---
 
 # Graphic Design
@@ -8,6 +8,8 @@ description: Research, art-direct, create, critique, and refine graphic design a
 Graphic-design research baseline: 18 October 2026. UI/UX research update: 30 October 2026. Refresh current-practice claims, specifications, tools, and licenses when relevant.
 
 ## Operating standard
+
+Bridge the gap between the user's request and a considered visual result. A sparse prompt delegates art direction: complete the creative brief, form and test an idea rooted in the subject, and make thoughtful unrequested design decisions within scope. Read [creative direction](references/creative-direction.md) for open briefs and new identities. This applies across visual media, including brand guidelines; it is not only a frontend checklist. Keep factual unknowns separate from reversible creative choices.
 
 Work as a designer and art director. Create the strongest communication for this particular product, audience, setting, and medium. Define what “best” means from the brief. Make the work clear, memorable, appropriate, distinctive, and well crafted. Let restraint, exuberance, precision, humor, heritage, or experimentation serve the communication.
 
@@ -33,13 +35,14 @@ Read the complete core workflow below, then choose the task route. The route con
 | --- | --- | --- |
 | Small repair to approved work | Preserve the concept, change the affected element, inspect affected outputs and states. | Before/after comparison, exact change, and relevant recheck. No mandatory new concepts. |
 | Faithful reconstruction or chosen direction | Preserve required fidelity; explore only unresolved decisions. | Comparison with supplied reference and checks of requested behavior. Do not substitute the owner's defaults for explicit direction. |
-| Substantial new artwork or interface | Research relevant material, make three comparable visible roughs, choose and build the result. | Rendered deliverables and checks appropriate to the medium and requested functionality. |
+| Substantial new artwork or interface | Complete the creative brief, research focused questions, make three comparable visible roughs, choose and build the result. | Rendered deliverables and checks appropriate to the medium and requested functionality. |
 | Critique, storyboard, or implementation handoff | Inspect available evidence and provide actionable decisions or specifications within scope. | The requested review or handoff, with proposed behavior separate from executed evidence. Do not build an unrequested application. |
 
 Open guides before the relevant substantive decisions. Follow links for needed detail, not recursively through every historical study or citation. Use the shared brief once when working with a motion skill; do not duplicate discovery, alternatives, or QA paperwork. Read [execution and evidence](references/execution-and-evidence.md) when scope, missing capabilities, or completion status is uncertain.
 
 | Decision or task | Read |
 | --- | --- |
+| Open-ended visual request, missing art direction, new identity, or brand guidelines | [Creative direction](references/creative-direction.md) |
 | Website, app, dashboard, portal, responsive layout, or design system | [UI and UX design](references/ui-ux-design.md) |
 | SaaS dashboard, analytics, queue, bulk action, collaboration, or administration | [SaaS product design](references/saas-product-design.md) |
 | Mobile app, device input, notification entry, interruption, or offline behavior | [Mobile app design](references/mobile-app-design.md) |
@@ -72,7 +75,7 @@ Use the [brief template](assets/brief-template.md), [concept review](assets/conc
 For substantive UI/UX work, read the UI/UX, interaction, interface-originality, interface-motion, and asset-creation guides before designing. Load iconography when controls need symbols and asset-quality before accepting imagery. Apply the core art-direction workflow with these additional gates:
 
 1. Identify the surface, primary task, entry point, completion, and highest-impact failure. Distinguish marketing, a working product, and a presentation demo. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; develop visual character alongside data scope, authority, interruption, and return context.
-2. Study relevant screens and flows with the reference-study method and owner's taste profile. Inspect the whole composition, important detail crops, and actual-size readability. Record what is visually compelling and what should survive adaptation. Distinguish visual observation from recorded notes, text-only descriptions, inaccessible content, and unverified promotional claims.
+2. Form provisional observations and an experience worth exploring from this subject before browsing finished designs. Study relevant screens and flows with the reference-study method and owner's taste profile to widen or challenge that thinking. Inspect whole compositions, detail, and actual-size readability. Distinguish observation from interpretation, inaccessible content, and unverified promotional claims.
 3. Before selecting a style or components, map the particular content and visitor questions to suitable relationships. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore spatial and temporal possibilities together; an intuitive formal experiment is a valid starting point. Prototype a principal motion sequence early when implementing an interactive result, then revise the composition and motion together. Static deliverables may specify the sequence but must not claim playback.
    Map visual opportunities at the same time: what should be illustrated, what needs an isolated silhouette, what needs a full environment, and what should remain quiet. Generate the highest-impact asset early enough to shape the composition. A rough can be provisional; the selected design cannot remain an empty asset slot or a decorative code substitute when suitable generation is available.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
@@ -88,11 +91,15 @@ Classify composition by its content relationship, not column count. A form besid
 
 Identify the product's specific value, audience, context, intended understanding or action, approved content, brand assets, tone, medium, dimensions, lifespan, production needs, and success criteria. Establish available fonts, imagery, rights, editability needs, and practical constraints. Avoid demographic stereotypes and universal assumptions about taste.
 
+Fill missing aesthetic direction through considered proposals, not a long request for the user to choose every font, color, asset, or effect. Use available context; disclose consequential assumptions. A name can inspire exploration without proving the organization's audience, heritage, or offering. Make the creative decisions yourself and keep them revisable.
+
 Use a guiding sentence when it clarifies the work: “Help [audience] recognize [specific value] and [intended response] through [visual idea] in [setting].” A desired feeling or aesthetic direction can guide an expressive brief without a forced business rationale. Define what viewers should notice first, understand next, and remember or do afterward. Identify the hardest real condition, such as small phone display, distant viewing, long names, dense copy, multiple scripts, or an awkward package panel.
 
 For a small correction, preserve the concept, change the affected element, and inspect the export. For substantial new work, use the complete research, exploration, construction, and QA loop. For an identity or campaign, test representative applications. Do not turn every edit into a discovery exercise or exceptional creative work into a single unexamined draft.
 
 ## 2. Research the visual problem
+
+Start with questions raised by the subject and the provisional creative brief. Research should inform, challenge, and extend the direction, rather than assemble the most popular category elements into a design. Preserve independent possibilities and revise the first hypothesis when evidence or visible experiments suggest a better one.
 
 Inspect a small, diverse reference set: actual work in the category, strong adjacent work, and relevant historical or material references. Prefer original studios, foundries, archives, cultural institutions, standards, and research. Read the work and inspect its images, not just descriptions. Record the source, project date, observed mechanism, relevance, and what must remain unique to the original.
 
@@ -140,7 +147,7 @@ Use perceptual grouping and meaningful contrast to guide attention. Balance fami
 
 ## 6. Detect generic AI-looking output
 
-Treat “AI slop” as a critique of low specificity, repetition, weak editing, or carelessness. Appearance does not prove AI authorship. Inspect these risks:
+Treat “AI slop” as a critique of interchangeability and unexamined repeated choices, even in attractive, technically polished work. Inspect craft and specificity separately: removing defects does not establish a distinctive design, and novelty does not establish quality. Appearance does not prove AI authorship. Inspect these risks:
 
 - **Interchangeability:** Could an unrelated product use the design after changing only the name? If so, inspect whether enough specific meaning remains.
 - **Automatic decoration:** Are effects arranged with visual sensitivity, or do repetitive defaults weaken the actual composition? Beauty and atmosphere are sufficient contributions; ornamental form does not need to encode a task or product metaphor.

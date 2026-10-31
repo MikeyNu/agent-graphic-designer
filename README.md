@@ -6,6 +6,8 @@ A research-informed graphic design and UI/UX skill for agents that can inspect r
 
 The goal is beautiful, distinctive work suited to a particular product and audience. Beauty, atmosphere, play, and visual intuition are legitimate design goals alongside clarity and usability. The skill does not promise infallible taste, universal psychological effects, automatic audience validation, or client approval.
 
+Its central purpose is to bridge an incomplete prompt and a considered visual result. A request such as “create a beautiful website for my clothing business” delegates art direction: the agent should develop the missing creative brief, explore a subject-specific identity, and resolve composition, assets, typography, color, iconography, and motion together. The same responsibility applies to brand guidelines, campaigns, documents, and graphics. Thoughtful unrequested touches belong within the design task. The user should not need to prescribe every asset or effect. See [creative direction](skills/graphic-design/references/creative-direction.md).
+
 The agent should identify and create appropriate assets without a separate image request. It chooses transparent foreground art or opaque scenes according to the composition, uses a coherent existing icon family for controls, and inspects actual pixels and integrated screens. Rich illustration can be generated 2D art; custom SVG is no longer the implied default. The generation and production-quality workflows are integrated from [Visual Asset Pipeline](https://github.com/MikeyNu/visual-asset-pipeline-plugin) and [Agent AI Detector](https://github.com/MikeyNu/agent-ai-detector), with [pinned source attribution and notices](skills/graphic-design/references/integrated-source-notices.md). No separate installation of those packages is required.
 
 ## Use it
@@ -39,6 +41,7 @@ Attach the generated document with your brief. The document links back to execut
 | Component | Purpose |
 | --- | --- |
 | [Core skill](skills/graphic-design/SKILL.md) | Brief, research, concepts, construction, critique, verification, and delivery. |
+| [Creative direction](skills/graphic-design/references/creative-direction.md) | Complete open briefs, develop subject-specific ideas, make useful unrequested decisions, and carry an identity into brand guidelines. |
 | [Execution and evidence](skills/graphic-design/references/execution-and-evidence.md) | Task scope, approved-direction preservation, honest verification, missing capabilities, recovery, and completion. |
 | [UI and UX design](skills/graphic-design/references/ui-ux-design.md) | User tasks, information architecture, pattern selection, visual systems, responsive behavior, and content. |
 | [SaaS product design](skills/graphic-design/references/saas-product-design.md) | Trustworthy dashboards, dense collections, bulk actions, permissions, collaboration, and return context. |
@@ -71,6 +74,7 @@ Attach the generated document with your brief. The document links back to execut
 | [31 October QA and retained cases](evals/validation-2026-10-31-qa.md) | Fresh-context artifact exercises, actual defects and corrections, automated regressions, and explicit browser limits. |
 | [31 October asset integration QA](evals/validation-2026-10-31-assets.md) | Three fresh-context tasks with proactive transparent art, opaque scenes, and icon repair, tested in the local desktop browser. |
 | [Retained asset examples](evals/examples/asset-integration-2026-10-31/README.md) | Working source, actual generated assets, selected screenshots, source notices, and bounded check results. |
+| [Creative-direction validation](evals/validation-2026-10-31-creative-direction.md) | Open-brief research and two fresh-context written handoffs, with planning outcomes kept separate from visual execution. |
 
 ## How the design method works
 
@@ -83,7 +87,7 @@ Attach the generated document with your brief. The document links back to execut
 
 ### What “avoid AI slop” means here
 
-It means detecting interchangeability, automatic decoration, empty concepts, repetitive composition, inaccurate copy, and uninspected synthetic defects. It does not mean banning gradients, serif fonts, vintage references, rounded shapes, minimalism, expressive illustration, or maximalism.
+It includes attractive, polished work that remains interchangeable because its choices repeat a familiar formula. Evaluate specificity separately from execution quality. Inspect automatic decoration, empty concepts, repetitive composition, inaccurate copy, and synthetic defects as related risks. This does not mean banning gradients, serif fonts, vintage references, rounded shapes, minimalism, expressive illustration, or maximalism.
 
 The agent should judge the actual visual result and use taste as well as analysis. A crop, color relationship, ornament, or unusual proportion can belong because it is beautiful or evocative; every detail does not need a functional metaphor or measurable business benefit. Historical vocabulary can work well today through its execution and context.
 

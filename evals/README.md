@@ -25,6 +25,8 @@ For aesthetic-review cases, supply the actual visuals and withhold the evaluator
 
 ## Current evidence
 
+See [validation-2026-10-31-creative-direction.md](validation-2026-10-31-creative-direction.md) for the open-brief refinement and two fresh-context written handoffs. They test creative planning across a storefront and a brand guide, not rendered visual quality or browser behavior. Keep these outputs out of future fresh-agent context unless they are explicit fixtures.
+
 See [validation-2026-10-31-qa.md](validation-2026-10-31-qa.md) for the package audit, five fresh-context exercises, retained original fixtures and outputs, failures, corrections, and unexecuted browser checks. The [curated examples](examples/qa-2026-10-31/README.md) are regression material, not new design defaults or production-ready application claims. Keep them out of fresh-agent context until evaluation is complete.
 
 See [validation-2026-10-18.md](validation-2026-10-18.md) for the initial implementation's recorded automated checks and selected design exercises. Its limits are part of the result, not an invitation to infer universal reliability.

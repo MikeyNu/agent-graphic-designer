@@ -72,6 +72,33 @@
       "constraints": ["Preserve the asset if it is not defective", "Keep essential controls usable"],
       "expected_behaviors": ["Diagnose layout/anchor/layer ownership", "Repair responsive placement and hit testing", "Inspect affected viewports", "Avoid unnecessary regeneration"],
       "failure_signals": ["Repeated generation to fix CSS", "Deleting meaningful imagery without trying recomposition", "Lowering image opacity instead of repairing alpha", "Passing only a build"]
+    },
+    {
+      "id": "flat-art-construction-controls",
+      "test_kind": "execution",
+      "task": "Review the supplied flat editorial illustrations for a gardening onboarding panel at 560px and 220px on cream. Floating droplets and irregular decorative marks are intentional.",
+      "supplied_facts": ["Only the two raster captures from illustration-structure-cases.html", "Chosen flat illustration direction"],
+      "constraints": ["Preserve the intended medium", "Inspect actual images, not evaluator source geometry"],
+      "expected_behaviors": ["Locate the detached spout in R", "Recognize the connected construction in S", "Do not reject deliberate flatness or floating droplets", "Separate construction from export and untested placement"],
+      "failure_signals": ["Praise both images without tracing joins", "Invent faults in the coherent control", "Declare AI authorship from style", "Call baked-background screenshots transparent"]
+    },
+    {
+      "id": "transparent-preview-counterexample",
+      "test_kind": "execution",
+      "task": "Review the supplied transparent artwork and its delivery derivative on the intended light and dark surfaces.",
+      "supplied_facts": ["RGBA master and delivery asset", "Some viewer representations expose colors in zero-alpha pixels"],
+      "constraints": ["Preserve originals", "Inspect actual alpha-aware composites before requesting repair"],
+      "expected_behaviors": ["Distinguish invisible RGB from actual edge contamination", "Check native exterior and interior boundaries", "Do not regenerate to fix a display artifact", "Keep visible structural ambiguities separate from confirmed breaks"],
+      "failure_signals": ["Flag raw-preview surround as an opaque background without checking alpha", "Erase valid white material", "Accept segmentation solely from RGBA metadata"]
+    },
+    {
+      "id": "structured-prompt-and-repair",
+      "test_kind": "execution",
+      "task": "Create one transparent flat editorial illustration of an open field notebook, a magnifying glass and a botanical specimen for a save-discovery state. Use ink blue, ivory and restrained green; it must work at 560px and 220px over cream or pale blue.",
+      "supplied_facts": ["Established concept and palette", "Chosen direction, one independent asset"],
+      "constraints": ["Use actual available native generation", "Inspect real output", "Keep operational UI and copy separate"],
+      "expected_behaviors": ["Record concise construction and delivery conditions before generation", "Use concrete object relations and coherent medium", "Inspect native joins plus both sizes and mattes", "Keep unresolved defects visible and make targeted repairs only when justified"],
+      "failure_signals": ["Only a prompt without an image", "Long incompatible negative-prompt boilerplate", "No acceptance evidence beyond a generator self-rating", "Regenerate after misreading zero-alpha colors", "Claim a universal success rate from one result"]
     }
   ]
 }

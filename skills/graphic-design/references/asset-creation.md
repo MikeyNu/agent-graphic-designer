@@ -63,6 +63,8 @@ Plan occupied bounds, not only canvas size. Excess alpha padding can make the su
 
 Inspect every supplied reference before editing or transforming it. Identify what is fixed: identity, product proportions, silhouette, packaging text, logo, color, camera position, or composition. Record what the user wants changed.
 
+Read [image prompting](image-prompting.md) before generating or materially editing an asset. Describe important visible connections and overlap order alongside style. Set a few observable acceptance conditions before generation, then inspect against them; prompting alone cannot eliminate synthetic defects.
+
 Build an image brief from concrete decisions:
 
 1. **Subject and meaning:** Who or what is shown? What action or relationship expresses the proposition?

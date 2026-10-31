@@ -64,6 +64,7 @@ Open guides before the relevant substantive decisions. Follow links for needed d
 | Any new visual composition, missing imagery, cutouts, backgrounds, illustrations, mockups, or asset integration | [Proactive asset creation](references/asset-creation.md) |
 | Navigation/action/status icons, pictograms, or an inconsistent symbol family | [Iconography](references/iconography.md) |
 | Generated, edited, or supplied imagery; alpha edges, realism, series consistency, or synthetic defects | [Asset quality and repair](references/asset-quality.md) |
+| Directing an image generator, controlling illustration structure, references, or targeted edits | [Image prompting](references/image-prompting.md) |
 | Final critique, export, print, multi-format delivery, or release status | [Quality and production](references/quality-and-production.md) |
 | Running measurable checks or making a review board | [QA tools](references/tools.md) |
 | Checking research support or refreshing evidence | [Sourcebook](references/sourcebook.md) |
@@ -147,7 +148,7 @@ Use perceptual grouping and meaningful contrast to guide attention. Balance fami
 
 ## 6. Detect generic AI-looking output
 
-Treat “AI slop” as a critique of interchangeability and unexamined repeated choices, even in attractive, technically polished work. Inspect craft and specificity separately: removing defects does not establish a distinctive design, and novelty does not establish quality. Appearance does not prove AI authorship. Inspect these risks:
+For overall design, “AI slop” includes interchangeability and unexamined repeated choices, even in attractive, polished work. For generated imagery, also inspect locally plausible but globally inconsistent construction, repeated details, and careless cutouts. These are separate quality problems. Removing defects does not establish a distinctive design, and novelty does not establish quality. Appearance does not prove AI authorship. Inspect these risks:
 
 - **Interchangeability:** Could an unrelated product use the design after changing only the name? If so, inspect whether enough specific meaning remains.
 - **Automatic decoration:** Are effects arranged with visual sensitivity, or do repetitive defaults weaken the actual composition? Beauty and atmosphere are sufficient contributions; ornamental form does not need to encode a task or product metaphor.
@@ -168,6 +169,7 @@ Use named styles as vocabulary, not finished concepts. Compare content hierarchy
 Use [asset creation](references/asset-creation.md) to execute **assess → select medium → generate/reuse → inspect → integrate → inspect in context → repair**. Do this proactively as part of the design, not only after an explicit asset request. Preserve approved originals and existing project conventions.
 
 - Use native image generation/editing for expressive illustration, transparent 2D artwork, isolated objects, photographic scenes, material, and atmosphere. Inspect references and make a concrete brief. Create separate assets when their placement or motion must be independent.
+- Before generation or a material edit, use [image prompting](references/image-prompting.md) to define the important parts, connections, overlap order, and observable acceptance conditions. Keep prompts concise and model-aware; do not rely on “no AI artifacts,” giant negative lists, or resolution adjectives to supply craft.
 - Request true alpha for foreground artwork that should blend with page surfaces, overlap a panel, or move independently. Use an opaque scene for a full background or photographic field. Verify actual alpha and edges; a white or checkerboard background is not transparency. Test the result on the intended surface as well as light and dark mattes.
 - Use an existing coherent icon family for operational symbols, with verified meaning, optical weight, size, states, and accessible labels. Do not hand-draw a poorer replacement merely to claim originality. Read [iconography](references/iconography.md).
 - Use vector/layout tools for exact type, approved identities, diagrams, masks, and controlled geometry. Use custom SVG only when it serves the medium and the rendered result is good. If a rich drawn idea looks crude, change medium to generated illustration or a suitable existing asset rather than adding more paths. A bitmap inside SVG is not an editable vector.
@@ -189,6 +191,8 @@ Inspect a flat export as well as a mockup, the full composition, actual delivery
 Verify approved copy, names, figures, dates, units, links, and claims. Use extraction or OCR as assistance followed by visual inspection. Decode actual exported QR codes or barcodes and verify the encoded information. Inspect fonts, glyphs, clipping, overlaps, image details, transparency, and output dimensions. Inspect image-generation defects at delivery size and detail.
 
 Apply the [asset-quality inspection](references/asset-quality.md): whole composition, native-resolution regions, and actual UI placement. Trace object continuity, anatomy where relevant, contact, perspective, reflections, material, unwanted text, and alpha boundaries. For illustrations, judge intentional style rather than forcing photorealism. Repair observed defects and recheck nearby regions and related assets. Keep production quality separate from origin: attractive output is not proof that an image is a real photograph, and an asset we generated remains generated.
+
+For prominent 2D/3D illustration, make a separate construction pass before acceptance: follow important contours and crossings, inspect repeated marks on their surfaces, and check exterior and interior alpha edges at native scale. Record specific inspected relationships and any uncertain ones. A beautiful layout, a successful decode, or passing browser tests cannot establish asset quality. Accept composition, construction/detail, alpha/export, and placement separately; unresolved material checks cannot become PASS.
 
 Use the bundled tools for measurable checks and review boards. They do not inspect design quality or establish accessibility, rights, or print readiness. See [QA tools](references/tools.md) for commands and limitations. For deeper production checks, read [Quality and production](references/quality-and-production.md).
 

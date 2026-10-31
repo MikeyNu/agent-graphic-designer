@@ -51,7 +51,7 @@ class RepositoryTests(unittest.TestCase):
                 self.assertTrue(resolved.exists(), f"Missing resource: {path.name}: {target}")
 
     def test_evaluation_definitions_have_distinct_cases(self):
-        for filename, expected_count in (("briefs.json", 12), ("ui-ux-briefs.json", 20), ("qa-briefs.json", 5), ("asset-briefs.json", 8)):
+        for filename, expected_count in (("briefs.json", 12), ("ui-ux-briefs.json", 20), ("qa-briefs.json", 5), ("asset-briefs.json", 11)):
             with self.subTest(filename=filename):
                 data = json.loads((ROOT / "evals" / filename).read_text(encoding="utf-8"))
                 cases = data if isinstance(data, list) else data["briefs"]

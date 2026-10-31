@@ -62,6 +62,7 @@ Attach the generated document with your brief. The document links back to execut
 | [Asset creation](skills/graphic-design/references/asset-creation.md) | Proactive visual opportunities, native image generation, alpha/scene decisions, actual files, responsive integration, and repair. |
 | [Iconography](skills/graphic-design/references/iconography.md) | Existing icon families, semantic mapping, optical consistency, accessible controls, and selective custom construction. |
 | [Asset quality](skills/graphic-design/references/asset-quality.md) | Whole/native/context inspection, synthetic defects, transparent edges, family consistency, and targeted remediation. |
+| [Image prompting](skills/graphic-design/references/image-prompting.md) | Concrete construction and composition, reference roles, model-aware exclusions, controlled repairs, and prompt pitfalls. |
 | [Quality and production](skills/graphic-design/references/quality-and-production.md) | Visual review, content accuracy, raster/vector/print checks, evidence, and release status. |
 | [Sourcebook](skills/graphic-design/references/sourcebook.md) | Research and primary-source references with dates, precise support, and limitations. |
 | [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata/hash/alpha preflight, cutout pixel checks, and self-contained visual review boards. |
@@ -70,11 +71,12 @@ Attach the generated document with your brief. The document links back to execut
 | [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Twenty interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, template convergence, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 | [QA exercise definitions](evals/qa-briefs.json) | Five scoped creation, repair, prototype, and handoff cases, with evaluator-only expectations. |
-| [Asset exercise definitions](evals/asset-briefs.json) | Eight proactive generation, icon repair, alpha, quality, capability, family, and layout cases. Definitions are separate from executed evidence. |
+| [Asset exercise definitions](evals/asset-briefs.json) | Eleven proactive generation, icon repair, alpha, construction, prompting, capability, family, and layout cases. Definitions are separate from executed evidence. |
 | [31 October QA and retained cases](evals/validation-2026-10-31-qa.md) | Fresh-context artifact exercises, actual defects and corrections, automated regressions, and explicit browser limits. |
 | [31 October asset integration QA](evals/validation-2026-10-31-assets.md) | Three fresh-context tasks with proactive transparent art, opaque scenes, and icon repair, tested in the local desktop browser. |
 | [Retained asset examples](evals/examples/asset-integration-2026-10-31/README.md) | Working source, actual generated assets, selected screenshots, source notices, and bounded check results. |
 | [Creative-direction validation](evals/validation-2026-10-31-creative-direction.md) | Open-brief research and two fresh-context written handoffs, with planning outcomes kept separate from visual execution. |
+| [Illustration QA and prompting validation](evals/validation-2026-10-31-illustration-quality.md) | Mera reinspection, known 2D defect/control, new native artwork, local-edit regressions, and transparent-viewer false positives. |
 
 ## How the design method works
 
@@ -88,6 +90,8 @@ Attach the generated document with your brief. The document links back to execut
 ### What “avoid AI slop” means here
 
 It includes attractive, polished work that remains interchangeable because its choices repeat a familiar formula. Evaluate specificity separately from execution quality. Inspect automatic decoration, empty concepts, repetitive composition, inaccurate copy, and synthetic defects as related risks. This does not mean banning gradients, serif fonts, vintage references, rounded shapes, minimalism, expressive illustration, or maximalism.
+
+For generated imagery, the skill also addresses visual anomalies hidden beneath a convincing finish. Its construction pass traces 2D/3D contours, joins, crossings, repeated surface marks, and cutout boundaries. Composition, construction/detail, alpha/export, and placement receive separate conclusions. Prompting defines the important relationships before generation; local repairs are compared against preserved details afterward. This improves the review procedure without pretending to prove authorship or guarantee perfect detection.
 
 The agent should judge the actual visual result and use taste as well as analysis. A crop, color relationship, ornament, or unusual proportion can belong because it is beautiful or evocative; every detail does not need a functional metaphor or measurable business benefit. Historical vocabulary can work well today through its execution and context.
 

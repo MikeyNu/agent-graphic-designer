@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Lantern: collection queue</title>
+  <style>
+    :root {
+      --canvas: #ebe5db;
+      --paper: #faf7f0;
+      --paper-light: #fffdf8;
+      --ink: #29332e;
+      --muted: #65645c;
+      --line: #d4ccbf;
+      --line-strong: #948c7e;
+      --coral: #b44735;
+      --coral-ink: #9c3b2c;
+      --coral-pale: #f4e2d9;
+      --green: #315c43;
+      --green-pale: #e9eee4;
+      --error: #9c3529;
+      --focus: #8e3528;
+      --feedback: 120ms;
+      --sheet-open: 220ms;
+      --sheet-close: 160ms;
+      --sheet-fade: 90ms;
+      --return-mark: 950ms;
+      --pending-turn: 800ms;
+      --settle: cubic-bezier(.2,.75,.25,1);
+      font-family: Arial, Helvetica, sans-serif;
+      font-synthesis: none;
+      color: var(--ink);
+      background: var(--canvas);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: auto; scrollbar-gutter: stable; }
+    body { margin: 0; font-size: 15px; line-height: 1.45; }
+    button, input, select { font: inherit; }
+    button, select { touch-action: manipulation; }
+    button { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    button[aria-disabled="true"] { cursor: wait; }
+    a { color: var(--coral); }
+    svg { display: block; width: 20px; height: 20px; flex: 0 0 auto; }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link { position: fixed; left: 16px; top: -70px; z-index: 10; padding: 12px 18px; background: var(--paper-light); font-weight: 700; }
+    .skip-link:focus { top: 12px; }
+    .topbar { border-bottom: 1px solid var(--line); background: var(--paper); }
+    .topbar-inner { max-width: 1264px; min-height: 74px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
+    .brand { display: flex; gap: 10px; align-items: center; }
+    .brand-symbol { width: 28px; height: 32px; color: var(--coral); }
+    .wordmark { font-family: Georgia, 'Times New Roman', serif; font-size: 29px; letter-spacing: -1.2px; line-height: 1; }
+    .desk-name { border-left: 1px solid var(--line); padding-left: 22px; color: var(--muted); font-size: 13px; }
+    .sample-context { margin-left: auto; display: flex; gap: 12px; align-items: center; font-size: 12px; color: var(--muted); }
+    .sample-label { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); font-weight: 700; }
+    .sample-label::before { content: ''; width: 6px; height: 6px; background: var(--coral); }
+    main { max-width: 1264px; margin: 0 auto; padding: 28px 32px 24px; }
+    .page-heading { display: grid; grid-template-columns: minmax(0,1fr) 260px; align-items: end; gap: 24px; margin-bottom: 24px; }
+    h1 { margin: 0 0 3px; font-size: 28px; font-weight: 600; letter-spacing: -.8px; line-height: 1.25; }
+    .day-line { color: var(--muted); font-size: 13px; margin: 7px 0 0; }
+    .simulation-label { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; color: var(--muted); }
+    select { width: 100%; min-width: 0; min-height: 42px; border: 1px solid var(--line-strong); border-radius: 4px; color: var(--ink); background: var(--paper-light); padding: 8px 34px 8px 11px; }
+    /* Lucide chevron; retain the native select and its keyboard behavior. */
+    select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2329332e%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%20%3Cpath%20d%3D%22m6%209%206%206%206-6%22%20%2F%3E%20%3C%2Fsvg%3E"); background-position: right 10px center; background-size: 16px 16px; background-repeat: no-repeat; }
+    .queue-board { border: 1px solid var(--line); background: var(--paper); border-radius: 6px; overflow: clip; }
+    .toolbar { padding: 20px 22px 0; }
+    .toolbar-main { display: grid; grid-template-columns: minmax(0,1fr) 190px; gap: 28px; align-items: end; }
+    .field-label { display: block; font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+    .search-box { position: relative; display: flex; align-items: center; }
+    .search-box > svg { position: absolute; left: 12px; color: var(--muted); pointer-events: none; width: 18px; height: 18px; }
+    #search { width: 100%; height: 44px; border: 1px solid var(--line-strong); border-radius: 4px; padding: 9px 70px 9px 39px; background: var(--paper-light); color: var(--ink); appearance: none; }
+    #search::-webkit-search-cancel-button { display: none; }
+    #search::placeholder { color: var(--muted); opacity: 1; }
+    .search-hint { position: absolute; right: 13px; display: grid; place-items: center; width: 22px; height: 23px; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; }
+    .icon-button { display: grid; place-items: center; width: 42px; height: 42px; border: 0; border-radius: 4px; background: transparent; }
+    .icon-button:hover { background: var(--coral-pale); }
+    #clear-search { position: absolute; right: 1px; }
+    .filters-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 15px; }
+    .filters { display: flex; gap: 4px; flex-wrap: wrap; }
+    .filter { position: relative; display: inline-flex; gap: 8px; align-items: center; min-height: 45px; padding: 8px 12px 11px; border: 0; background: transparent; color: var(--muted); border-radius: 3px 3px 0 0; font-size: 13px; font-weight: 700; }
+    .filter:hover { background: #f1eadf; color: var(--ink); }
+    .filter[aria-pressed="true"] { color: var(--ink); }
+    .filter[aria-pressed="true"]::after { content: ''; position: absolute; bottom: 0; left: 10px; right: 10px; height: 3px; background: var(--coral); }
+    .filter-count { color: var(--muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+    .results-count { margin: 0; font-size: 12px; color: var(--muted); }
+    .queue-message { min-height: 39px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; padding: 8px 22px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); background: #f4efe5; }
+    .queue-message[data-tone="error"] { color: var(--error); background: #fae9e1; }
+    .queue-message[data-tone="success"] { color: var(--green); background: var(--green-pale); }
+    .text-button { min-height: 32px; padding: 4px 0; color: var(--coral-ink); border: 0; background: transparent; text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+    .queue-message .text-button { min-height: 24px; }
+    .reservation-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    .reservation-table thead th { background: #f5f0e7; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; text-align: left; padding: 10px 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .reservation-table th:first-child, .reservation-table td:first-child { padding-left: 22px; }
+    .reservation-table th:last-child, .reservation-table td:last-child { padding-right: 22px; }
+    .reservation-table tbody tr { border-bottom: 1px solid var(--line); cursor: pointer; background: var(--paper-light); }
+    .reservation-table tbody tr:last-child { border-bottom: 0; }
+    .reservation-table tbody tr:hover { background: #f5eee3; }
+    .reservation-table tbody tr:focus-within { background: #f5eee3; }
+    .reservation-table tbody tr[data-selected="true"] { background: var(--coral-pale); box-shadow: inset 3px 0 var(--coral); }
+    .reservation-table tbody tr.just-returned { animation: return-mark var(--return-mark) var(--settle); }
+    .reservation-table tbody td, .reservation-table tbody th { padding: 12px; text-align: left; vertical-align: middle; font-weight: 400; }
+    .col-time { width: 11%; font-variant-numeric: tabular-nums; }
+    .col-borrower { width: 27%; }
+    .col-equipment { width: 39%; }
+    .col-status { width: 18%; }
+    .col-arrow { width: 5%; color: var(--muted); }
+    .col-arrow svg { width: 17px; height: 17px; }
+    .pickup-time { font-size: 14px; font-weight: 700; }
+    .reservation-link { display: inline-block; border: 0; padding: 2px 0; min-height: 40px; background: transparent; text-align: left; max-width: 100%; border-radius: 2px; color: var(--ink); }
+    .borrower-name { display: block; font-weight: 700; font-size: 14px; overflow-wrap: anywhere; }
+    .reservation-ref { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; letter-spacing: .025em; }
+    .equipment-name { font-size: 14px; display: block; overflow-wrap: anywhere; }
+    .equipment-meta { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; line-height: 1.35; }
+    .status svg { width: 14px; height: 14px; }
+    .status-ready svg { color: var(--coral); }
+    .status-collected { color: var(--green); }
+    .status-error { color: var(--error); }
+    .status-pending { color: var(--muted); }
+    .no-results { padding: 48px 24px; text-align: center; }
+    .no-results h2 { font-size: 19px; margin: 0 0 8px; }
+    .no-results p { max-width: 400px; margin: 0 auto 14px; color: var(--muted); }
+    .secondary-button, .primary-button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 10px 15px; border-radius: 4px; font-size: 14px; font-weight: 700; transition: background-color var(--feedback), color var(--feedback); }
+    .secondary-button { border: 1px solid var(--line-strong); background: var(--paper-light); color: var(--ink); }
+    .secondary-button:hover { background: #f0e9de; }
+    .primary-button { border: 1px solid var(--ink); background: var(--ink); color: var(--paper-light); }
+    .primary-button:hover { background: #3b493f; }
+    .primary-button:active:not([aria-disabled="true"]), .secondary-button:active { transform: translateY(1px); }
+    .primary-button[aria-disabled="true"] { background: #4e584f; border-color: #4e584f; }
+    .queue-footer { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-top: 15px; }
+    .queue-footer p { margin: 0; max-width: 620px; font-size: 12px; color: var(--muted); }
+    .queue-footer .text-button { flex-shrink: 0; margin-top: -4px; font-size: 12px; }
+    .keyboard-hint { margin-top: 8px !important; font-size: 11px !important; }
+    kbd { font-family: inherit; border: 1px solid var(--line-strong); border-radius: 3px; padding: 0 4px; color: var(--ink); background: var(--paper); }
+    .detail-sheet { position: fixed; inset: 0 0 0 auto; margin: 0; width: min(510px,100%); height: 100vh; height: 100dvh; max-height: 100%; max-width: 100%; padding: 0; border: 0; border-left: 1px solid var(--line-strong); background: var(--paper-light); color: var(--ink); overflow: hidden; box-shadow: -12px 0 38px #29332e18; }
+    .detail-sheet::backdrop { background: #29332e2b; }
+    .sheet-shell { height: 100%; display: flex; flex-direction: column; }
+    .sheet-topbar { min-height: 62px; padding: 9px 22px; display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid var(--line); background: var(--paper); flex-shrink: 0; }
+    .back-button { display: inline-flex; gap: 8px; align-items: center; min-height: 42px; padding: 7px 1px; border: 0; background: transparent; font-size: 13px; font-weight: 700; }
+    .back-button svg { width: 17px; height: 17px; }
+    .sheet-topbar .sample-label { font-size: 11px; }
+    .sheet-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; scroll-padding: 24px; padding: 25px 28px; }
+    .detail-kicker { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+    .detail-ref { font-variant-numeric: tabular-nums; letter-spacing: .04em; }
+    .detail-title { margin: 0; font-size: 29px; font-weight: 600; line-height: 1.2; letter-spacing: -.6px; overflow-wrap: anywhere; }
+    .detail-title:focus { outline: none; }
+    .member-line { color: var(--muted); font-size: 12px; margin: 7px 0 25px; }
+    .schedule { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 0 0 25px; padding: 17px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .schedule dt { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 5px; }
+    .schedule dd { margin: 0; font-size: 13px; font-weight: 700; }
+    .schedule dd span { display: block; margin-top: 3px; font-weight: 400; color: var(--muted); font-size: 12px; }
+    .section-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0 0 10px; font-size: 14px; font-weight: 700; }
+    .section-title span { color: var(--muted); font-size: 12px; font-weight: 400; }
+    .equipment-list { list-style: none; padding: 0; margin: 0 0 24px; border-top: 1px solid var(--line); }
+    .equipment-list li { display: grid; grid-template-columns: 32px minmax(0,1fr); gap: 11px; align-items: start; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .item-number { display: grid; place-items: center; min-height: 29px; margin-top: 1px; background: #f0eade; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; border-radius: 3px; }
+    .item-name { display: block; font-size: 13px; font-weight: 700; }
+    .item-tag { display: block; margin-top: 3px; font-size: 11px; color: var(--muted); letter-spacing: .025em; }
+    .desk-note { background: #f6efe4; border-left: 2px solid #b8a78d; padding: 12px 14px; font-size: 12px; }
+    .desk-note strong { display: block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 5px; }
+    .desk-note p { margin: 0; color: var(--muted); }
+    .sheet-actions { border-top: 1px solid var(--line); padding: 18px 28px max(20px, env(safe-area-inset-bottom)); background: var(--paper); flex-shrink: 0; }
+    .state-message { display: flex; align-items: flex-start; gap: 10px; padding: 0 0 15px; font-size: 12px; }
+    .state-mark { display: grid; place-items: center; width: 24px; height: 24px; border: 1px solid var(--line-strong); border-radius: 50%; flex-shrink: 0; color: var(--muted); }
+    .state-mark svg { width: 16px; height: 16px; }
+    .state-message strong { display: block; margin-bottom: 3px; font-size: 14px; font-weight: 700; }
+    .state-message p { margin: 0; color: var(--muted); line-height: 1.4; }
+    .state-message[data-state="error"] strong { color: var(--error); }
+    .state-message[data-state="error"] .state-mark { border-color: var(--error); color: var(--error); }
+    .state-message[data-state="success"] strong { color: var(--green); }
+    .state-message[data-state="success"] .state-mark { background: var(--green); border-color: var(--green); color: var(--paper-light); }
+    .action-stack { display: grid; grid-template-columns: 1fr; gap: 9px; }
+    #collect-button, #return-button { width: 100%; }
+    .detail-simulation { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 15px; padding-top: 13px; border-top: 1px solid var(--line); }
+    .detail-simulation label { font-size: 11px; font-weight: 700; color: var(--muted); flex: 0 0 90px; }
+    .detail-simulation select { flex: 1 1 12em; width: auto; min-height: 38px; font-size: 12px; padding-top: 7px; padding-bottom: 7px; }
+    .spinner { width: 14px; height: 14px; display: inline-block; animation: spin var(--pending-turn) linear infinite; flex-shrink: 0; }
+    .status .spinner { width: 12px; height: 12px; }
+    .noscript { margin: 20px; padding: 20px; background: var(--paper-light); border: 1px solid var(--coral); }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes return-mark { from { background: var(--coral-pale); box-shadow: inset 3px 0 var(--coral); } to { background: var(--paper-light); box-shadow: inset 0 0 transparent; } }
+    @media (max-width: 850px) {
+      .topbar-inner { padding-inline: 22px; }
+      main { padding-inline: 22px; }
+      .page-heading { grid-template-columns: minmax(0,1fr) 230px; gap: 18px; }
+      .sample-context > span:last-child { display: none; }
+      .toolbar { padding-inline: 16px; }
+      .toolbar-main { gap: 18px; grid-template-columns: minmax(0,1fr) 160px; }
+      .reservation-table th:first-child, .reservation-table td:first-child { padding-left: 16px; }
+      .reservation-table th:last-child, .reservation-table td:last-child { padding-right: 16px; }
+      .reservation-table tbody td, .reservation-table tbody th { padding: 12px 8px; }
+      .reservation-table thead th { padding-inline: 8px; }
+      .col-time { width: 12%; } .col-borrower { width: 28%; } .col-equipment { width: 35%; } .col-status { width: 20%; }
+      .queue-message { padding-inline: 16px; }
+    }
+    @media (max-width: 620px) {
+      .topbar-inner { padding: 12px 16px; min-height: 65px; gap: 12px; }
+      .wordmark { font-size: 27px; }
+      .brand-symbol { width: 24px; height: 28px; }
+      .desk-name { display: none; }
+      .sample-context { font-size: 11px; }
+      main { padding: 22px 16px; }
+      .page-heading { grid-template-columns: 1fr; gap: 18px; margin-bottom: 19px; }
+      h1 { font-size: 26px; }
+      .day-line { font-size: 12px; }
+      .simulation-control { display: flex; align-items: center; gap: 14px; }
+      .simulation-label { flex: 0 0 75px; line-height: 1.4; margin: 0; font-size: 10px; }
+      .simulation-control select { min-height: 42px; font-size: 12px; }
+      .toolbar { padding: 16px 14px 0; }
+      .toolbar-main { grid-template-columns: 1fr; gap: 13px; }
+      .sort-field { display: flex; align-items: center; gap: 12px; }
+      .sort-field label { flex-shrink: 0; font-size: 11px; margin: 0; }
+      .sort-field select { min-height: 38px; padding-block: 7px; font-size: 12px; }
+      #search { font-size: 14px; }
+      .search-hint { display: none; }
+      .filters-row { display: block; margin-top: 9px; }
+      .filters { display: flex; flex-wrap: wrap; gap: 0; }
+      .filter { flex: 1 1 5.5em; padding-inline: 5px; justify-content: center; gap: 7px; font-size: 12px; }
+      .results-count { padding: 8px 0; font-size: 11px; }
+      .queue-message { padding: 9px 14px; font-size: 11px; }
+      .reservation-table, .reservation-table tbody { display: block; }
+      .reservation-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+      .reservation-table tbody tr { position: relative; display: grid; grid-template-columns: minmax(49px,max-content) minmax(0,1fr) 16px; grid-template-rows: auto auto auto; gap: 3px 10px; padding: 13px 14px 14px; }
+      .reservation-table tbody td, .reservation-table tbody th { width: auto; padding: 0; }
+      .reservation-table th:first-child, .reservation-table td:first-child, .reservation-table th:last-child, .reservation-table td:last-child { padding: 0; }
+      .col-time { grid-column: 1; grid-row: 1 / span 3; padding-top: 3px !important; }
+      .pickup-time { font-size: 12px; }
+      .col-borrower { grid-column: 2; grid-row: 1; }
+      .col-equipment { grid-column: 2; grid-row: 2; }
+      .col-status { grid-column: 2; grid-row: 3; margin-top: 3px; }
+      .col-arrow { grid-column: 3; grid-row: 1 / span 3; align-self: center; }
+      .reservation-link { min-height: 40px; padding: 0; }
+      .borrower-name { font-size: 14px; }
+      .reservation-ref { font-size: 10px; margin-top: 1px; }
+      .equipment-name { font-size: 12px; }
+      .equipment-meta { display: none; }
+      .status { font-size: 11px; }
+      .queue-footer { display: block; margin-top: 14px; }
+      .queue-footer p { font-size: 11px; }
+      .queue-footer .text-button { margin-top: 7px; }
+      .keyboard-hint { display: none; }
+      .detail-sheet { border-left: 0; box-shadow: none; width: 100%; overflow-y: auto; }
+      .sheet-shell { height: auto; min-height: 100%; }
+      .sheet-scroll { overflow: visible; flex: none; }
+      .sheet-topbar { min-height: 59px; padding-inline: 18px; }
+      .sheet-scroll { padding: 22px 22px 24px; }
+      .detail-title { font-size: 27px; }
+      .sheet-actions { padding: 16px 22px max(18px,env(safe-area-inset-bottom)); }
+      .detail-simulation { gap: 8px; margin-top: 12px; padding-top: 12px; }
+      .detail-simulation label { flex-basis: 77px; }
+    }
+    @media (max-height: 560px) {
+      .detail-sheet { overflow-y: auto; }
+      .sheet-shell { height: auto; min-height: 100%; }
+      .sheet-scroll { overflow: visible; flex: none; }
+      .sheet-topbar { position: sticky; top: 0; z-index: 1; }
+      .sheet-actions { flex: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .spinner { animation: none; }
+      .reservation-table tbody tr.just-returned { animation: none; box-shadow: inset 3px 0 var(--coral); }
+      .primary-button, .secondary-button { transition: none; }
+      .primary-button:active, .secondary-button:active { transform: none; }
+    }
+    @media (forced-colors: active) {
+      .filter[aria-pressed="true"] { outline: 2px solid Highlight; outline-offset: -3px; }
+      .filter[aria-pressed="true"]::after { background: Highlight; }
+      .state-mark { border-color: CanvasText; }
+      .status-ready svg { color: CanvasText; }
+      select { appearance: auto; background-image: none; }
+      .reservation-table tbody tr[data-selected="true"] { outline: 2px solid Highlight; outline-offset: -2px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Operational icons: Lucide, commit a630cec77eac6568b989e87e4947a8bfe45caacd
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+  -->
+  <svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden">
+    <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34" />
+  <circle cx="11" cy="11" r="8" /></symbol>
+    <symbol id="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" /></symbol>
+    <symbol id="icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" />
+  <path d="M19 12H5" /></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></symbol>
+    <symbol id="icon-cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" />
+  <path d="m6 6 12 12" /></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+  <path d="M12 9v4" />
+  <path d="M12 17h.01" /></symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+  <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" /></symbol>
+    <symbol id="icon-retry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" /></symbol>
+    <symbol id="icon-ready" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /></symbol>
+    <symbol id="icon-loader" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56" /></symbol>
+  </svg>
+  <a href="#queue" class="skip-link">Skip to collection queue</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" aria-label="Lantern">
+        <svg class="brand-symbol" viewBox="0 0 28 32" aria-hidden="true"><path d="M10 7V5a4 4 0 0 1 8 0v2M7 9h14l2 17H5L7 9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 29h12M9 6h10M14 12v10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="m10 21 4-9 4 9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <span class="wordmark">Lantern</span>
+      </div>
+      <span class="desk-name">Equipment loan desk</span>
+      <div class="sample-context"><span class="sample-label">Sample data</span><span>Local prototype</span></div>
+    </div>
+  </header>
+  <main id="queue" tabindex="-1">
+    <div class="page-heading">
+      <div><h1>Today's collections</h1><p class="day-line">Friday, 30 October 2026 <span aria-hidden="true">·</span> <span>8 sample reservations</span></p></div>
+      <div class="simulation-control">
+        <label class="simulation-label" for="simulation">Local simulation</label>
+        <select id="simulation" aria-describedby="prototype-note">
+          <option value="success">Normal success</option>
+          <option value="delay">Delayed success · 3 sec</option>
+          <option value="failure">Fail once · then retry</option>
+        </select>
+      </div>
+    </div>
+    <section class="queue-board" aria-label="Reservation queue">
+      <div class="toolbar">
+        <div class="toolbar-main">
+          <div>
+            <label class="field-label" for="search">Find a reservation</label>
+            <div class="search-box">
+              <svg aria-hidden="true" focusable="false"><use href="#icon-search"/></svg>
+              <input id="search" type="search" placeholder="Name, reference or equipment" autocomplete="off" aria-controls="reservation-body" aria-keyshortcuts="/">
+              <span class="search-hint" aria-hidden="true">/</span>
+              <button id="clear-search" class="icon-button" type="button" aria-label="Clear search" hidden><svg aria-hidden="true" focusable="false"><use href="#icon-cross"/></svg></button>
+            </div>
+          </div>
+          <div class="sort-field"><label class="field-label" for="sort">Sort by</label><select id="sort"><option value="time">Pickup time</option><option value="name">Borrower A–Z</option></select></div>
+        </div>
+        <div class="filters-row">
+          <div class="filters" role="group" aria-label="Filter reservations by status">
+            <button type="button" class="filter" data-filter="all" aria-pressed="true">All <span class="filter-count" id="count-all">8</span></button>
+            <button type="button" class="filter" data-filter="ready" aria-pressed="false">Ready <span class="filter-count" id="count-ready">6</span></button>
+            <button type="button" class="filter" data-filter="collected" aria-pressed="false">Collected <span class="filter-count" id="count-collected">2</span></button>
+          </div>
+          <p class="results-count" id="results-count">Showing 8 reservations</p>
+        </div>
+      </div>
+      <div class="queue-message" id="queue-message"><span id="queue-message-text">Open a reservation to check its kit and record collection.</span><button type="button" class="text-button" id="queue-message-action" hidden>Open reservation</button></div>
+      <table class="reservation-table" role="table">
+        <caption class="sr-only">Sample reservations for Friday, 30 October 2026. Open a borrower's name for equipment and collection details.</caption>
+        <thead role="rowgroup"><tr role="row"><th scope="col" class="col-time" role="columnheader">Pickup</th><th scope="col" class="col-borrower" role="columnheader">Borrower</th><th scope="col" class="col-equipment" role="columnheader">Equipment</th><th scope="col" class="col-status" role="columnheader">Status</th><th scope="col" class="col-arrow" role="columnheader"><span class="sr-only">Open details</span></th></tr></thead>
+        <tbody id="reservation-body" role="rowgroup"></tbody>
+      </table>
+      <div id="no-results" class="no-results" hidden><h2>No matching reservations</h2><p id="no-results-description">Try another name, reference, or equipment item.</p><button type="button" class="secondary-button" id="reset-filters">Clear search and filters</button></div>
+    </section>
+    <footer class="queue-footer">
+      <div><p id="prototype-note">All names, reservations, and equipment are fictional sample data. Updates happen only in this page; reloading resets them. No connection or messages are sent.</p><p class="keyboard-hint"><kbd>/</kbd> Find a reservation <span aria-hidden="true">&nbsp;·&nbsp;</span> <kbd>Enter</kbd> Open focused reservation <span aria-hidden="true">&nbsp;·&nbsp;</span> <kbd>Esc</kbd> Back to queue</p></div>
+      <button id="reset-sample" class="text-button" type="button">Reset sample data</button>
+    </footer>
+  </main>
+  <dialog class="detail-sheet" id="reservation-dialog" aria-labelledby="detail-title" aria-describedby="detail-ref">
+    <div class="sheet-shell">
+      <div class="sheet-topbar"><button type="button" class="back-button" id="back-button"><svg aria-hidden="true" focusable="false"><use href="#icon-back"/></svg>Back to queue</button><span class="sample-label">Sample reservation</span></div>
+      <div class="sheet-scroll" id="sheet-scroll">
+        <div class="detail-kicker"><span class="detail-ref" id="detail-ref"></span><span id="detail-status"></span></div>
+        <h2 class="detail-title" id="detail-title" tabindex="-1"></h2>
+        <p class="member-line" id="member-line"></p>
+        <dl class="schedule"><div><dt>Collection</dt><dd id="collection-date"></dd></div><div><dt>Return by</dt><dd id="return-date"></dd></div></dl>
+        <h3 class="section-title">Equipment <span id="item-count"></span></h3>
+        <ul class="equipment-list" id="equipment-list"></ul>
+        <div class="desk-note"><strong>Desk note</strong><p id="desk-note"></p></div>
+      </div>
+      <div class="sheet-actions">
+        <div class="state-message" id="state-message" data-state="ready"><span class="state-mark" id="state-mark" aria-hidden="true"></span><div><strong id="state-title"></strong><p id="state-description"></p></div></div>
+        <div class="sr-only" id="detail-announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div class="sr-only" id="detail-error" role="alert" aria-atomic="true"></div>
+        <div class="action-stack"><button class="primary-button" id="collect-button" type="button"><span id="collect-icon" aria-hidden="true"></span><span id="collect-label">Mark equipment collected</span></button><button class="secondary-button" id="return-button" type="button" hidden><svg aria-hidden="true" focusable="false"><use href="#icon-back"/></svg><span id="return-label">Back to queue</span></button></div>
+        <div class="detail-simulation"><label for="detail-simulation">Local simulation</label><select id="detail-simulation"><option value="success">Normal success</option><option value="delay">Delayed success · 3 sec</option><option value="failure">Fail once · then retry</option></select></div>
+      </div>
+    </div>
+  </dialog>
+  <div class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p class="noscript">Turn on JavaScript to use this local interactive prototype. It does not connect to a server.</p></noscript>
+  <script id="lantern-state">
+  /* Pure state model: local fixtures and a cancellable deterministic update simulation. */
+  (() => {
+    'use strict';
+    const SEED = [
+      { id: 'LN-1042', borrower: 'Mira Ellis', member: 'M-2074', time: '09:00', minutes: 540, window: '09:00–09:30', due: 'Monday, 2 November', dueTime: '17:00', equipment: 'Canon EOS R50 kit', shelf: 'Shelf A2', status: 'ready', note: 'For the neighbourhood oral-history project. Include the charged spare battery and the camera strap.', items: [{name:'Canon EOS R50 + 18–45mm lens',tag:'CAM-014'}, {name:'Spare battery & charger',tag:'BAT-014'}, {name:'64 GB SD card',tag:'SD-032'}] },
+      { id: 'LN-1043', borrower: 'Theo Morgan', member: 'M-1921', time: '09:30', minutes: 570, window: '09:30–10:00', due: 'Monday, 2 November', dueTime: '17:00', equipment: 'Zoom H5 recorder', shelf: 'Shelf B1', status: 'ready', note: 'For a library interview. The foam windscreen is packed in the recorder case.', items: [{name:'Zoom H5 audio recorder',tag:'AUD-006'}, {name:'Headphones & windscreen',tag:'ACC-006'}] },
+      { id: 'LN-1044', borrower: 'Aisha Patel', member: 'M-2308', time: '10:00', minutes: 600, window: '10:00–10:30', due: 'Saturday, 31 October', dueTime: '16:00', equipment: 'LED panel pair', shelf: 'Lighting bay 1', status: 'collected', collectedAt: '10:04 · sample record', note: 'Two light stands and both power adapters are included in the lighting bag.', items: [{name:'LED panel, daylight',tag:'LGT-008'}, {name:'LED panel, daylight',tag:'LGT-009'}, {name:'Stand pair & adapters',tag:'STN-004'}] },
+      { id: 'LN-1045', borrower: 'Jonah Reed', member: 'M-1845', time: '10:30', minutes: 630, window: '10:30–11:00', due: 'Saturday, 31 October', dueTime: '16:00', equipment: 'Projector & portable screen', shelf: 'Shelf C1', status: 'ready', note: 'Community film night. Pack the HDMI cable and remote in the projector case.', items: [{name:'Epson portable projector',tag:'PRJ-003'}, {name:'Pull-up projection screen',tag:'SCR-002'}, {name:'HDMI cable & remote',tag:'ACC-019'}] },
+      { id: 'LN-1046', borrower: 'Sofía Chen', member: 'M-2116', time: '11:00', minutes: 660, window: '11:00–11:30', due: 'Monday, 2 November', dueTime: '17:00', equipment: 'Wireless microphone kit', shelf: 'Shelf B2', status: 'ready', note: 'Two transmitters, one receiver, and the USB charging lead are together in the pouch.', items: [{name:'RØDE Wireless GO II set',tag:'MIC-011'}, {name:'Lavalier microphone pair',tag:'MIC-012'}] },
+      { id: 'LN-1047', borrower: 'Owen Brooks', member: 'M-2039', time: '12:00', minutes: 720, window: '12:00–12:30', due: 'Tuesday, 3 November', dueTime: '17:00', equipment: 'Tripod & compact camera', shelf: 'Shelf A3', status: 'collected', collectedAt: '12:07 · sample record', note: 'The tripod quick-release plate is attached to the camera. Return them together.', items: [{name:'Sony ZV-1 compact camera',tag:'CAM-021'}, {name:'Travel tripod',tag:'TRI-008'}] },
+      { id: 'LN-1048', borrower: 'Emmeline Okafor', member: 'M-2261', time: '13:30', minutes: 810, window: '13:30–14:00', due: 'Tuesday, 3 November', dueTime: '17:00', equipment: 'Field recording kit', shelf: 'Shelf B3', status: 'ready', note: 'For an outdoor sound walk. Check that the recorder has fresh AA batteries before handover.', items: [{name:'Tascam DR-40X recorder',tag:'AUD-013'}, {name:'Stereo microphone & cable',tag:'MIC-018'}, {name:'Headphones & wind protection',tag:'ACC-023'}] },
+      { id: 'LN-1049', borrower: 'Daniel Costa', member: 'M-1758', time: '14:30', minutes: 870, window: '14:30–15:00', due: 'Monday, 2 November', dueTime: '17:00', equipment: 'Portable speaker pair', shelf: 'Audio bay 2', status: 'ready', note: 'For the community hall workshop. Each speaker has its own power lead in the side pocket.', items: [{name:'Portable PA speaker, left',tag:'SPK-005'}, {name:'Portable PA speaker, right',tag:'SPK-006'}, {name:'Audio cable & power leads',tag:'ACC-028'}] }
+    ];
+    const clone = value => JSON.parse(JSON.stringify(value));
+    const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    function visibleReservations(records, query = '', filter = 'all', sort = 'time') {
+      const terms = normalize(query).trim().split(/\s+/).filter(Boolean);
+      return records.filter(record => {
+        if (filter !== 'all' && record.status !== filter) return false;
+        const searchable = normalize([record.id, record.borrower, record.member, record.equipment, record.shelf, ...record.items.flatMap(item => [item.name,item.tag])].join(' '));
+        return terms.every(term => searchable.includes(term));
+      }).sort((a,b) => sort === 'name' ? a.borrower.localeCompare(b.borrower, 'en') || a.minutes-b.minutes : a.minutes-b.minutes || a.id.localeCompare(b.id));
+    }
+    function createStore(options = {}) {
+      const schedule = options.schedule || ((callback, delay) => setTimeout(callback, delay));
+      const cancel = options.cancel || (handle => clearTimeout(handle));
+      const now = options.now || (() => new Date().toISOString());
+      let records = clone(SEED), token = 0;
+      const listeners = new Set(), jobs = new Map();
+      const emit = event => listeners.forEach(listener => listener(event));
+      const get = id => records.find(record => record.id === id);
+      function collect(id, mode = 'success', isRetry = false) {
+        const record = get(id);
+        if (!record) return {accepted:false, reason:'missing'};
+        if (record.status === 'collected') return {accepted:false, reason:'already-collected'};
+        if (record.operation?.phase === 'pending') return {accepted:false, reason:'pending'};
+        if (isRetry && record.operation?.phase !== 'error') return {accepted:false, reason:'nothing-to-retry'};
+        const fail = !isRetry && mode === 'failure';
+        const delay = !isRetry && mode === 'delay' ? 3000 : fail ? 900 : 450;
+        const requestToken = ++token;
+        record.operation = {phase:'pending', token:requestToken, attempt:(record.operation?.attempt || 0)+1, mode:isRetry ? 'retry' : mode};
+        const handle = schedule(() => {
+          const current = get(id);
+          if (!current || current.operation?.token !== requestToken) return;
+          jobs.delete(id);
+          current.operation.phase = fail ? 'error' : 'success';
+          if (!fail) { current.status = 'collected'; current.collectedAt = 'Just now · this page only'; current.changedAt = now(); }
+          emit({type:fail?'error':'success',id,token:requestToken});
+        },delay);
+        jobs.set(id,handle);
+        emit({type:'pending',id,token:requestToken});
+        return {accepted:true, delay, token:requestToken};
+      }
+      return {
+        snapshot:() => clone(records),
+        record:id => { const record=get(id); return record ? clone(record) : null; },
+        subscribe(listener) { listeners.add(listener); return () => listeners.delete(listener); },
+        collect:(id,mode) => collect(id,mode,false),
+        retry:id => collect(id,'success',true),
+        reset() { jobs.forEach(cancel); jobs.clear(); token++; records=clone(SEED); emit({type:'reset'}); },
+        dispose() { jobs.forEach(cancel); jobs.clear(); listeners.clear(); token++; records=[]; }
+      };
+    }
+    globalThis.LanternState = Object.freeze({createStore, visibleReservations});
+  })();
+  </script>
+  <script id="lantern-interface">
+  (() => {
+    'use strict';
+    const $ = id => document.getElementById(id);
+    const store = LanternState.createStore();
+    const dialog = $('reservation-dialog');
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    const rootStyle=getComputedStyle(document.documentElement);
+    const motion={open:parseFloat(rootStyle.getPropertyValue('--sheet-open')),close:parseFloat(rootStyle.getPropertyValue('--sheet-close')),fade:parseFloat(rootStyle.getPropertyValue('--sheet-fade')),easing:rootStyle.getPropertyValue('--settle').trim()};
+    const ui = { query:'', filter:'all', sort:'time', mode:'success', selected:null, returnContext:null, visibleIds:[], notice:null };
+    let sheetAnimation = null, sheetFinishTimer = null, animationVersion = 0, routeClosing = false, returnRequested = false, announcementTimer = null, lastDetailPhase = '', bodyLock = null, pendingClose = null, deferredReturn = null;
+    const escapeHTML = text => String(text).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
+    const icon = (name, className = '') => `<svg aria-hidden="true" focusable="false"${className ? ` class="${className}"` : ''}><use href="#icon-${name}"/></svg>`;
+    const visible = () => LanternState.visibleReservations(store.snapshot(),ui.query,ui.filter,ui.sort);
+    const statusHTML = record => record.operation?.phase === 'pending' ? `<span class="status status-pending">${icon('loader','spinner')}Updating…</span>` : record.operation?.phase === 'error' ? `<span class="status status-error">${icon('alert')}Ready · retry</span>` : record.status === 'collected' ? `<span class="status status-collected">${icon('check')}Collected</span>` : `<span class="status status-ready">${icon('ready')}Ready</span>`;
+    function announce(message) { clearTimeout(announcementTimer); $('announcement').textContent=''; announcementTimer=setTimeout(() => {$('announcement').textContent=message;},60); }
+    function currentContext() { return {query:ui.query,filter:ui.filter,sort:ui.sort,scrollY:window.scrollY,ids:[...ui.visibleIds]}; }
+    function nearestVisible(originId, previousIds) {
+      if (ui.visibleIds.includes(originId)) return originId;
+      const index=previousIds.indexOf(originId);
+      const after=previousIds.slice(Math.max(index+1,0)).find(id=>ui.visibleIds.includes(id));
+      const before=previousIds.slice(0,Math.max(index,0)).reverse().find(id=>ui.visibleIds.includes(id));
+      return after || before || ui.visibleIds[0] || null;
+    }
+    function renderQueue() {
+      const focusedId=document.activeElement?.dataset?.open;
+      const priorIds=[...ui.visibleIds], scrollY=window.scrollY;
+      const records=store.snapshot(), matches=visible();
+      ui.visibleIds=matches.map(record=>record.id);
+      $('count-all').textContent=records.length;
+      $('count-ready').textContent=records.filter(record=>record.status==='ready').length;
+      $('count-collected').textContent=records.filter(record=>record.status==='collected').length;
+      document.querySelectorAll('[data-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===ui.filter)));
+      $('results-count').textContent=`Showing ${matches.length} ${matches.length===1?'reservation':'reservations'}`;
+      $('clear-search').hidden=!ui.query;
+      document.querySelector('.search-hint').hidden=!!ui.query;
+      $('reservation-body').innerHTML=matches.map(record=>`<tr role="row" data-row="${record.id}" data-selected="${record.id===ui.selected}"><td role="cell" class="col-time"><span class="pickup-time">${record.time}</span></td><th role="rowheader" scope="row" class="col-borrower"><button type="button" class="reservation-link" data-open="${record.id}" aria-controls="reservation-dialog" aria-haspopup="dialog" aria-expanded="${record.id===ui.selected}" aria-label="Open ${escapeHTML(record.borrower)}, reservation ${record.id}"><span class="borrower-name">${escapeHTML(record.borrower)}</span><span class="reservation-ref">${record.id}</span></button></th><td role="cell" class="col-equipment"><span class="equipment-name">${escapeHTML(record.equipment)}</span><span class="equipment-meta">${record.items.length} pieces <span aria-hidden="true">·</span> ${escapeHTML(record.shelf)}</span></td><td role="cell" class="col-status">${statusHTML(record)}</td><td role="cell" class="col-arrow">${icon('open')}</td></tr>`).join('');
+      $('no-results').hidden=matches.length>0;
+      $('no-results-description').textContent=ui.query ? `No matches for “${ui.query}”${ui.filter==='all'?'':` in ${ui.filter==='ready'?'Ready':'Collected'}`}. Try another name, reference, or equipment item.` : `There are no ${ui.filter==='ready'?'ready':ui.filter==='collected'?'collected':'matching'} reservations in this sample view.`;
+      const notice=ui.notice;
+      $('queue-message').dataset.tone=notice?.tone || '';
+      $('queue-message-text').textContent=notice?.text || 'Open a reservation to check its kit and record collection.';
+      $('queue-message-action').hidden=!notice?.actionId;
+      if(notice?.actionId) $('queue-message-action').dataset.open=notice.actionId;
+      else delete $('queue-message-action').dataset.open;
+      if (focusedId && !dialog.open) {
+        const targetId=nearestVisible(focusedId,priorIds);
+        (targetId ? document.querySelector(`[data-open="${targetId}"]`) : $('search'))?.focus({preventScroll:true});
+        window.scrollTo(0,scrollY);
+      }
+    }
+    function writeQueueHistory() {
+      if (!ui.selected) history.replaceState({lantern:'queue',context:currentContext()},'',location.href);
+    }
+    function filterChanged() { ui.notice=null; renderQueue(); writeQueueHistory(); announce(`${ui.visibleIds.length} ${ui.visibleIds.length===1?'reservation':'reservations'} shown.`); }
+    function setMode(mode) { ui.mode=mode; $('simulation').value=mode; $('detail-simulation').value=mode; if(ui.selected) renderDetailState(); }
+    function renderDetail(record) {
+      $('detail-ref').textContent=record.id;
+      $('detail-title').textContent=record.borrower;
+      $('member-line').textContent=`Member ${record.member} · ${record.shelf}`;
+      $('collection-date').innerHTML=`Friday, 30 October<span>${record.window}</span>`;
+      $('return-date').innerHTML=`${escapeHTML(record.due)}<span>${record.dueTime}</span>`;
+      $('item-count').textContent=`${record.items.length} pieces`;
+      $('equipment-list').innerHTML=record.items.map((item,index)=>`<li><span class="item-number" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><div><span class="item-name">${escapeHTML(item.name)}</span><span class="item-tag">Asset ${escapeHTML(item.tag)}</span></div></li>`).join('');
+      $('desk-note').textContent=record.note;
+      $('sheet-scroll').scrollTop=0;
+      lastDetailPhase='';
+      $('detail-announcement').textContent=''; $('detail-error').textContent='';
+      renderDetailState();
+    }
+    function renderDetailState() {
+      const record=store.record(ui.selected); if(!record) return;
+      const actionWasFocused=document.activeElement===$('collect-button');
+      const phase=record.operation?.phase || (record.status==='collected'?'success':'ready');
+      const pending=phase==='pending', failed=phase==='error', collected=record.status==='collected';
+      $('detail-status').innerHTML=statusHTML(record);
+      $('state-message').dataset.state=collected?'success':phase;
+      $('collect-button').hidden=collected;
+      $('collect-button').setAttribute('aria-disabled',String(pending));
+      $('collect-button').setAttribute('aria-busy',String(pending));
+      $('collect-label').textContent=pending?'Recording collection…':failed?'Retry update':'Mark equipment collected';
+      $('collect-icon').innerHTML=pending?icon('loader','spinner'):icon(failed?'retry':'check');
+      $('return-button').hidden=!collected;
+      $('return-label').textContent=ui.returnContext?.filter==='ready'?'Back to ready queue':'Back to queue';
+      $('detail-simulation').disabled=pending || collected;
+      if(pending) {
+        $('state-mark').innerHTML=icon('loader','spinner');
+        $('state-title').textContent='Recording collection';
+        $('state-description').textContent=record.operation.mode==='delay'?'Simulated 3-second delay. You can return to your queue while this finishes.':'Local simulation is running. The reservation remains Ready until the update succeeds.';
+      } else if(failed) {
+        $('state-mark').innerHTML=icon('alert');
+        $('state-title').textContent='Collection was not recorded';
+        $('state-description').textContent='Simulated failure. Nothing changed; this reservation is still Ready. Retry will succeed.';
+      } else if(collected) {
+        $('state-mark').innerHTML=icon('check');
+        $('state-title').textContent='Equipment collected';
+        $('state-description').textContent=record.operation?.phase==='success' ? `Recorded in this page only.${ui.returnContext?.filter==='ready'?' Find it in Collected. Returning restores your place in Ready.':' The queue now shows Collected.'}` : `Previously collected · ${record.collectedAt}.`;
+      } else {
+        $('state-mark').innerHTML=icon('box');
+        $('state-title').textContent='Ready for handover';
+        $('state-description').textContent='Check the asset tags and hand over all listed equipment, then record collection.';
+      }
+      if(lastDetailPhase && phase!==lastDetailPhase) {
+        const message=`${record.borrower}: ${$('state-title').textContent}. ${$('state-description').textContent}`;
+        if(failed) { $('detail-error').textContent=message; $('detail-announcement').textContent=''; }
+        else { $('detail-error').textContent=''; $('detail-announcement').textContent=message; }
+      }
+      if(collected && actionWasFocused) $('return-button').focus({preventScroll:true});
+      lastDetailPhase=phase;
+    }
+    function lockBody() {
+      if(bodyLock) return;
+      bodyLock={overflow:document.body.style.overflow};
+      document.body.style.overflow='hidden';
+    }
+    function unlockBody() { if(bodyLock) { document.body.style.overflow=bodyLock.overflow; bodyLock=null; } }
+    function animateSheet(opening, fresh, finish) {
+      const version=++animationVersion;
+      clearTimeout(sheetFinishTimer); sheetFinishTimer=null;
+      const style=getComputedStyle(dialog);
+      const spatial=!reducedMotion.matches;
+      const from={opacity:fresh?0:Number(style.opacity),transform:fresh?(spatial?'translateX(24px)':'none'):style.transform};
+      sheetAnimation?.cancel(); sheetAnimation=null;
+      if(typeof dialog.animate!=='function') { finish?.(); return; }
+      const duration=reducedMotion.matches?motion.fade:(opening?motion.open:motion.close);
+      const animation=dialog.animate([from,{opacity:opening?1:0,transform:opening?'translateX(0)':spatial?'translateX(18px)':'none'}],{duration,easing:motion.easing,fill:'forwards'});
+      sheetAnimation=animation;
+      let completed=false;
+      const complete=()=>{
+        if(completed || version!==animationVersion) return;
+        completed=true; clearTimeout(sheetFinishTimer); sheetFinishTimer=null;
+        finish?.(); animation.cancel(); sheetAnimation=null;
+      };
+      animation.finished.then(complete).catch(()=>{});
+      sheetFinishTimer=setTimeout(complete,duration+80);
+    }
+    function openPanel(id, context) {
+      const record=store.record(id); if(!record) return;
+      const changed=ui.selected!==id;
+      const wasClosing=routeClosing;
+      ui.selected=id; ui.returnContext=context || ui.returnContext || currentContext(); routeClosing=false;pendingClose=null;deferredReturn=null;
+      if(!changed && dialog.open && !wasClosing) {renderDetailState();return;}
+      if(changed) renderDetail(record); else renderDetailState();
+      renderQueue();
+      const fresh=!dialog.open;
+      if(fresh) { lockBody(); dialog.showModal(); }
+      animateSheet(true,fresh);
+      if(changed || fresh) $('detail-title').focus({preventScroll:true});
+    }
+    function restoreQueueFocus(context, originId) {
+      const targetId=nearestVisible(originId,context?.ids || []);
+      const target=targetId ? document.querySelector(`.reservation-link[data-open="${targetId}"]`) : $('search');
+      target?.focus({preventScroll:true});
+      window.scrollTo(0,context?.scrollY || 0);
+      if(targetId) document.querySelector(`[data-row="${targetId}"]`)?.classList.add('just-returned');
+      if(originId && targetId!==originId && store.record(originId)?.status==='collected') {
+        const suffix=targetId ? ` Focus returned to ${store.record(targetId).borrower}.` : ' No reservations match this view.';
+        announce(`Returned to your ${ui.filter==='ready'?'Ready ':''}queue.${suffix}`);
+      }
+    }
+    function closePanel(context) {
+      if(!dialog.open) { unlockBody(); return; }
+      if(routeClosing) return;
+      routeClosing=true;
+      const originId=ui.selected, returnContext=context || ui.returnContext;
+      ui.selected=null;
+      pendingClose={originId,context:returnContext};
+      if(returnContext) { ui.query=returnContext.query || ''; ui.filter=returnContext.filter || 'all'; ui.sort=returnContext.sort || 'time'; $('search').value=ui.query; $('sort').value=ui.sort; }
+      renderQueue();
+      animateSheet(false,false,finishPanelClose);
+    }
+    /* LIFECYCLE_CHECK_START: these actual helpers are executed by check-lifecycle.cjs. */
+    function finishPanelClose(options = {}) {
+      if(ui.selected || !pendingClose) return;
+      const closing=pendingClose;
+      if(dialog.open) dialog.close();
+      pendingClose=null;routeClosing=false;returnRequested=false;unlockBody();
+      if(options.restoreFocus===false) deferredReturn=closing;
+      else restoreQueueFocus(closing.context,closing.originId);
+    }
+    function onPageHide(event) {
+      if(!event.persisted) store.dispose();
+      clearTimeout(announcementTimer);clearTimeout(sheetFinishTimer);animationVersion++;
+      sheetAnimation?.cancel();sheetAnimation=null;
+      if(routeClosing) finishPanelClose({restoreFocus:false});
+      unlockBody();
+    }
+    function onPageShow(event) {
+      if(!event.persisted) return;
+      if(deferredReturn) {
+        const returning=deferredReturn;deferredReturn=null;
+        restoreQueueFocus(returning.context,returning.originId);
+      }
+      if(dialog.open) lockBody();
+    }
+    /* LIFECYCLE_CHECK_END */
+    function routeId() { const hash=location.hash.slice(1); try{return decodeURIComponent(hash);}catch{return '';} }
+    function applyRoute() {
+      returnRequested=false;
+      const id=routeId();
+      if(store.record(id)) openPanel(id,history.state?.context || ui.returnContext || currentContext());
+      else {
+        closePanel(history.state?.context || ui.returnContext);
+        if(id && id!=='queue') { ui.notice={tone:'error',text:'That reservation is not in this sample. Choose one from the queue.'}; renderQueue(); }
+      }
+    }
+    function openReservation(id) {
+      if(!store.record(id)) return;
+      const context=currentContext();
+      ui.returnContext=context;
+      const url=new URL(location.href); url.hash='';
+      history.replaceState({lantern:'queue',context},'',url.href);
+      url.hash=id;
+      history.pushState({lantern:'detail',id,context,fromQueue:true},'',url.href);
+      openPanel(id,context);
+    }
+    function returnToQueue() {
+      if(returnRequested || routeClosing) return;
+      returnRequested=true;
+      if(history.state?.lantern==='detail' && history.state.fromQueue) history.back();
+      else { const url=new URL(location.href); url.hash=''; history.replaceState({lantern:'queue',context:ui.returnContext},'',url.href); closePanel(ui.returnContext); returnRequested=false; }
+    }
+    $('search').addEventListener('input',event=>{ui.query=event.target.value;filterChanged();});
+    $('clear-search').addEventListener('click',()=>{ui.query='';$('search').value='';filterChanged();$('search').focus();});
+    $('sort').addEventListener('change',event=>{ui.sort=event.target.value;filterChanged();});
+    document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{ui.filter=button.dataset.filter;filterChanged();}));
+    $('reset-filters').addEventListener('click',()=>{ui.query='';ui.filter='all';$('search').value='';filterChanged();$('search').focus();});
+    $('simulation').addEventListener('change',event=>setMode(event.target.value));
+    $('detail-simulation').addEventListener('change',event=>setMode(event.target.value));
+    document.addEventListener('click',event=>{
+      const trigger=event.target.closest('[data-open]');
+      if(trigger) {openReservation(trigger.dataset.open);return;}
+      const row=event.target.closest('[data-row]');
+      if(row && !window.getSelection()?.toString() && !event.target.closest('button,a,input,select')) openReservation(row.dataset.row);
+    });
+    $('back-button').addEventListener('click',returnToQueue);
+    $('return-button').addEventListener('click',returnToQueue);
+    dialog.addEventListener('cancel',event=>{event.preventDefault();returnToQueue();});
+    $('collect-button').addEventListener('click',()=>{
+      const record=store.record(ui.selected); if(!record) return;
+      if(record.operation?.phase==='error') store.retry(record.id); else store.collect(record.id,ui.mode);
+    });
+    $('reset-sample').addEventListener('click',()=>{
+      animationVersion++; clearTimeout(sheetFinishTimer); sheetAnimation?.cancel(); sheetAnimation=null;
+      if(dialog.open) dialog.close(); unlockBody(); routeClosing=false;returnRequested=false;pendingClose=null;deferredReturn=null;
+      ui.selected=null; ui.returnContext=null; ui.query=''; ui.filter='all'; ui.sort='time'; ui.mode='success'; ui.notice=null;
+      $('search').value='';$('sort').value='time';setMode('success');
+      const url=new URL(location.href);url.hash='';history.replaceState({lantern:'queue'},'',url.href);
+      store.reset(); $('search').focus({preventScroll:true});window.scrollTo(0,0);announce('Sample data reset. Eight reservations; six ready and two collected.');
+    });
+    document.addEventListener('keydown',event=>{
+      const editing=event.target instanceof HTMLElement && (event.target.matches('input,textarea,select') || event.target.isContentEditable);
+      if(event.key==='/' && !editing && !dialog.open && !event.ctrlKey && !event.metaKey && !event.altKey) {event.preventDefault();$('search').focus();}
+    });
+    store.subscribe(event=>{
+      if(event.id) {
+        const record=store.record(event.id);
+        if(event.type==='success') ui.notice={tone:'success',text:`${record.borrower} · ${record.id} is now Collected. Saved in this page only.`};
+        if(event.type==='error') ui.notice={tone:'error',text:`${record.borrower} · ${record.id}: update failed. Still Ready.`,actionId:event.id};
+        if(event.type==='pending') ui.notice={tone:'',text:`Recording collection for ${record.borrower} · ${record.id}. Local simulation is running.`};
+      }
+      renderQueue();
+      if(ui.selected===event.id) renderDetailState();
+      else if(ui.notice) announce(ui.notice.text);
+    });
+    window.addEventListener('popstate',applyRoute);
+    window.addEventListener('hashchange',applyRoute);
+    reducedMotion.addEventListener('change',()=>{
+      animationVersion++;clearTimeout(sheetFinishTimer);sheetAnimation?.cancel();sheetAnimation=null;
+      if(routeClosing) finishPanelClose();
+    });
+    window.addEventListener('pagehide',onPageHide);
+    window.addEventListener('pageshow',onPageShow);
+    renderQueue();
+    if(store.record(routeId())) applyRoute(); else {writeQueueHistory();if(routeId() && routeId()!=='queue') applyRoute();}
+  })();
+  </script>
+</body>
+</html>

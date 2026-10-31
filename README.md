@@ -1,10 +1,12 @@
 # Agent Graphic Designer
 
-A research-informed graphic design and UI/UX skill for agents that can inspect references, create visual artifacts and interfaces, and iterate on the result. It combines art direction, typography, color, composition, coordinated UI motion, task-centered interaction design, responsive behavior, contemporary and historical design judgment, and rigorous visual, temporal, functional, and production QA.
+A research-informed graphic design and UI/UX skill for agents that can inspect references, create visual artifacts and interfaces, and iterate on the result. It combines art direction, proactive image and illustration generation, coherent iconography, typography, color, composition, coordinated UI motion, task-centered interaction design, responsive behavior, and rigorous asset, visual, temporal, functional, and production QA.
 
 **Start with [the skill](skills/graphic-design/SKILL.md).** Its supporting guides provide the depth needed for difficult decisions without loading an entire design manual for a small edit.
 
 The goal is beautiful, distinctive work suited to a particular product and audience. Beauty, atmosphere, play, and visual intuition are legitimate design goals alongside clarity and usability. The skill does not promise infallible taste, universal psychological effects, automatic audience validation, or client approval.
+
+The agent should identify and create appropriate assets without a separate image request. It chooses transparent foreground art or opaque scenes according to the composition, uses a coherent existing icon family for controls, and inspects actual pixels and integrated screens. Rich illustration can be generated 2D art; custom SVG is no longer the implied default. The generation and production-quality workflows are integrated from [Visual Asset Pipeline](https://github.com/MikeyNu/visual-asset-pipeline-plugin) and [Agent AI Detector](https://github.com/MikeyNu/agent-ai-detector), with [pinned source attribution and notices](skills/graphic-design/references/integrated-source-notices.md). No separate installation of those packages is required.
 
 ## Use it
 
@@ -54,16 +56,21 @@ Attach the generated document with your brief. The document links back to execut
 | [Typography and perception](skills/graphic-design/references/typography-and-perception.md) | Font anatomy, situated emotional associations, specimen testing, multilingual text, and microtypography. |
 | [Color and accessibility](skills/graphic-design/references/color-and-accessibility.md) | Contextual palette development, color psychology limits, contrast, and color management. |
 | [Originality and trends](skills/graphic-design/references/originality-and-trends.md) | Current-practice research, historical reinterpretation, concept experiments, and avoiding generic AI output. |
-| [Asset creation](skills/graphic-design/references/asset-creation.md) | Image generation, custom SVG, exact typesetting, factual graphics, mockups, and annotations. |
+| [Asset creation](skills/graphic-design/references/asset-creation.md) | Proactive visual opportunities, native image generation, alpha/scene decisions, actual files, responsive integration, and repair. |
+| [Iconography](skills/graphic-design/references/iconography.md) | Existing icon families, semantic mapping, optical consistency, accessible controls, and selective custom construction. |
+| [Asset quality](skills/graphic-design/references/asset-quality.md) | Whole/native/context inspection, synthetic defects, transparent edges, family consistency, and targeted remediation. |
 | [Quality and production](skills/graphic-design/references/quality-and-production.md) | Visual review, content accuracy, raster/vector/print checks, evidence, and release status. |
 | [Sourcebook](skills/graphic-design/references/sourcebook.md) | Research and primary-source references with dates, precise support, and limitations. |
-| [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata preflight, and self-contained visual review boards. |
+| [QA tools](skills/graphic-design/references/tools.md) | Contrast calculation, metadata/hash/alpha preflight, cutout pixel checks, and self-contained visual review boards. |
 | [Templates](skills/graphic-design/assets) | Brief, concept comparison, honest QA record, and handoff. |
 | [Evaluation briefs](evals/briefs.json) | Twelve realistic task definitions with expected behavior and failure signals. |
 | [UI/UX evaluation briefs](evals/ui-ux-briefs.json) | Twenty interface tasks covering composition, workflow, accessibility, preservation, SaaS operations, mobile interruptions, aesthetic judgment, owner-taste transfer, joint motion design, template convergence, and research honesty. |
 | [Executed examples](evals/examples/README.md) | Original poster, annotated flyer correction, visible concept studies, and actual QA evidence. |
 | [QA exercise definitions](evals/qa-briefs.json) | Five scoped creation, repair, prototype, and handoff cases, with evaluator-only expectations. |
+| [Asset exercise definitions](evals/asset-briefs.json) | Eight proactive generation, icon repair, alpha, quality, capability, family, and layout cases. Definitions are separate from executed evidence. |
 | [31 October QA and retained cases](evals/validation-2026-10-31-qa.md) | Fresh-context artifact exercises, actual defects and corrections, automated regressions, and explicit browser limits. |
+| [31 October asset integration QA](evals/validation-2026-10-31-assets.md) | Three fresh-context tasks with proactive transparent art, opaque scenes, and icon repair, tested in the local desktop browser. |
+| [Retained asset examples](evals/examples/asset-integration-2026-10-31/README.md) | Working source, actual generated assets, selected screenshots, source notices, and bounded check results. |
 
 ## How the design method works
 

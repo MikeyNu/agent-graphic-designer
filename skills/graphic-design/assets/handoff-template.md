@@ -32,6 +32,10 @@ Color profile and print specification, if relevant:
 
 Asset provenance and permitted handoff:
 
+Created/reused asset inventory, actual project consumers, transparent/opaque choices, and icon family:
+
+Asset inspection and repair evidence, including final-size placement and matte checks where relevant:
+
 ## Verification
 
 Checks actually completed:

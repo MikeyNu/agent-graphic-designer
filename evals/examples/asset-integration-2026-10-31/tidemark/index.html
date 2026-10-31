@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#e7e9e5">
+  <meta name="description" content="Tidemark: a collection of imagined coastal walks. Open the first field journal and follow the quieter coast.">
+  <title>Follow the quieter coast | Tidemark</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#journal">Skip to the journal</a>
+  <main>
+    <section class="cover" id="cover" aria-labelledby="cover-title">
+      <picture class="landscape" aria-hidden="true">
+        <source media="(max-width: 650px)" srcset="assets/coast-mobile.webp">
+        <img src="assets/coast-desktop.webp" width="1672" height="941" alt="" fetchpriority="high">
+      </picture>
+      <div class="cover-wash" aria-hidden="true"></div>
+      <header class="masthead">
+        <a class="wordmark" href="#cover" aria-label="Tidemark, return to the cover">tidemark<span class="wordmark-dot">.</span></a>
+        <span class="masthead-description">COASTAL WALKING JOURNALS</span>
+        <span class="edition">VOL. 01</span>
+      </header>
+      <div class="cover-copy">
+        <p class="eyebrow">FIELD JOURNAL 01</p>
+        <!-- Edit the title here: it is live HTML, independent of the landscape. -->
+        <h1 id="cover-title"><span>Follow the</span><em>quieter coast</em></h1>
+      </div>
+      <div class="entry">
+        <p>For the days that need a little more distance.</p>
+        <a class="open-journal" id="open-journal" href="#journal">Open the journal</a>
+      </div>
+      <div class="cover-caption">
+        <span>01 / THE EDGE OF QUIET</span>
+        <span class="cover-fiction">AN IMAGINED WALK</span>
+      </div>
+    </section>
+
+    <article class="journal" aria-labelledby="journal-title" id="journal" tabindex="-1">
+      <div class="page-rule"><span>FIELD JOURNAL 01</span><span>001</span></div>
+      <div class="journal-heading">
+        <p class="eyebrow">THE EDGE OF QUIET</p>
+        <h2 id="journal-title">Where the path<br>grows quiet.</h2>
+        <p class="reading-label">A SAMPLE PASSAGE <span aria-hidden="true">/</span> 2 MIN READ</p>
+      </div>
+      <div class="reading-layout">
+        <aside class="field-note" aria-label="Field note"><span class="note-label">IN THE MARGIN</span><p>Leave room<br>for getting<br>nowhere.</p><span class="note-line" aria-hidden="true"></span></aside>
+        <div class="passage">
+          <p class="opening">At first, there was only the path: a pale seam between the grass and the sea. It narrowed as the houses in my mind fell away, until there was barely room for anything but one foot in front of the other.</p>
+          <p>The tide had left a dark line on the rocks. Below it, little pools held pieces of the sky. I stopped at one and watched a cloud cross the water without disturbing it.</p>
+          <p>Further on, the grass leaned into the wind. There was no sign telling me what this place was called, no bench to suggest the best view. Just a curve in the coast, and another beyond it.</p>
+          <p>I had meant to walk until I found something worth writing down. Instead, I sat on a warm stone and let the page stay empty for a while.</p>
+          <p class="closing">The sea went on with its work.</p>
+          <div class="end-mark" aria-hidden="true">∼</div>
+          <div class="sample-end"><span>END OF THE SAMPLE</span><a class="back-link" href="#cover">Back to the coast</a></div>
+        </div>
+      </div>
+      <footer class="journal-footer"><span class="footer-wordmark">tidemark.</span><p>A collection of imagined walks.<br>Fictional journals. Room to wander.</p><span class="footer-edition">VOLUME ONE</span></footer>
+    </article>
+  </main>
+</body>
+</html>

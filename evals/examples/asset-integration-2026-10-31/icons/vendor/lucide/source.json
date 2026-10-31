@@ -1,0 +1,18 @@
+{
+  "project": "Lucide",
+  "commit": "a630cec77eac6568b989e87e4947a8bfe45caacd",
+  "source": "https://raw.githubusercontent.com/lucide-icons/lucide/a630cec77eac6568b989e87e4947a8bfe45caacd/",
+  "icons": [
+    "search",
+    "chevron-right",
+    "arrow-left",
+    "check",
+    "x",
+    "triangle-alert",
+    "package",
+    "rotate-cw",
+    "circle",
+    "loader-circle",
+    "chevron-down"
+  ]
+}

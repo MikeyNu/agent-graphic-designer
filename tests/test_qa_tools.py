@@ -272,6 +272,79 @@ class PreflightTests(AssetTestCase):
         self.assertEqual(checks_by_name(result)["pdf_metadata"]["status"], "NOT RUN")
         self.assertNotIn("pages", result["metadata"])
 
+    @unittest.skipUnless(HAS_PILLOW, "Pillow is optional")
+    def test_cutout_rejects_opaque_empty_and_checkerboard_rasters(self):
+        from PIL import Image
+        for name, alpha in (("opaque", 255), ("empty", 0), ("partial_only", 128)):
+            path = self.folder / (name + ".png")
+            image = Image.new("RGBA", (8, 8), (255, 255, 255, alpha))
+            if name == "opaque":
+                for x in range(8):
+                    for y in range(8):
+                        image.putpixel((x, y), (220 if (x+y)%2 else 255,) * 3 + (255,))
+            image.save(path)
+            with self.subTest(name=name):
+                result = preflight.inspect_file(path, require_cutout=True)
+                self.assertEqual(checks_by_name(result)["cutout_pixels"]["status"], "FAIL")
+                self.assertEqual(checks_by_name(result)["visual_review"]["status"], "NOT RUN")
+
+    @unittest.skipUnless(HAS_PILLOW, "Pillow is optional")
+    def test_cutout_counts_bounds_and_preserves_source(self):
+        from PIL import Image
+        path = self.folder / "cutout.png"
+        image = Image.new("RGBA", (4, 3), (0, 0, 0, 0))
+        image.putpixel((1, 1), (255, 255, 255, 255))
+        image.putpixel((2, 1), (255, 255, 255, 128))
+        image.save(path)
+        before = path.read_bytes()
+        result = preflight.inspect_file(path, require_cutout=True)
+        self.assertEqual(checks_by_name(result)["cutout_pixels"]["status"], "PASS")
+        self.assertEqual(result["status"], "NOT RUN")
+        self.assertEqual(result["metadata"]["alpha"]["nonzero_bounds_xywh"], [1, 1, 2, 1])
+        self.assertAlmostEqual(result["metadata"]["alpha"]["transparent_fraction"], 10/12)
+        self.assertAlmostEqual(result["metadata"]["alpha"]["partial_fraction"], 1/12)
+        self.assertEqual(result["metadata"]["sha256"], hashlib.sha256(before).hexdigest())
+        self.assertEqual(path.read_bytes(), before)
+
+    @unittest.skipUnless(HAS_PILLOW, "Pillow is optional")
+    def test_cutout_supports_palette_transparency_and_oriented_bounds(self):
+        from PIL import Image
+        palette = Image.new("P", (3, 2), 0)
+        palette.putpalette([0, 0, 0, 255, 255, 255] + [0] * 762)
+        palette.putpixel((1, 0), 1)
+        path = self.folder / "palette.png"
+        palette.save(path, transparency=0)
+        self.assertEqual(checks_by_name(preflight.inspect_file(path, require_cutout=True))["cutout_pixels"]["status"], "PASS")
+        with Image.open(path) as saved_palette:
+            rgba = saved_palette.convert("RGBA")
+        exif = Image.Exif()
+        exif[274] = 6
+        rgba.save(self.folder / "oriented.png", exif=exif)
+        result = preflight.inspect_file(self.folder / "oriented.png", require_cutout=True)
+        self.assertEqual(result["metadata"]["display_pixel_dimensions"], [2, 3])
+        self.assertEqual(result["metadata"]["alpha"]["nonzero_bounds_xywh"], [1, 1, 1, 1])
+
+    @unittest.skipUnless(HAS_PILLOW, "Pillow is optional")
+    def test_cutout_animation_is_incomplete_and_cli_failure_is_nonzero(self):
+        from PIL import Image
+        first = Image.new("RGBA", (3, 2), (0, 0, 0, 0))
+        second = Image.new("RGBA", (3, 2), "white")
+        path = self.folder / "animated.png"
+        first.save(path, save_all=True, append_images=[second], duration=100, loop=0)
+        self.assertEqual(checks_by_name(preflight.inspect_file(path, require_cutout=True))["cutout_pixels"]["status"], "NOT RUN")
+        second.save(self.folder / "opaque.png")
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(preflight.main([str(self.folder / "opaque.png"), "--require-cutout"]), 1)
+
+    def test_cutout_without_decoder_or_on_svg_is_not_a_pass(self):
+        png = self.folder / "pixel.png"
+        png.write_bytes(PIXEL_PNG)
+        with patch.dict(sys.modules, {"PIL": None}):
+            result = preflight.inspect_file(png, require_cutout=True)
+        self.assertEqual(result["status"], "NOT RUN")
+        self.assertNotIn("alpha", result["metadata"])
+        self.assertEqual(checks_by_name(preflight.inspect_file(self.svg(), require_cutout=True))["cutout_pixels"]["status"], "NOT RUN")
+
 
 class TagCollector(HTMLParser):
     def __init__(self):

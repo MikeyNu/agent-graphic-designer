@@ -84,6 +84,7 @@ The caller must determine whether the criterion applies. WCAG has exceptions, in
 ```bash
 python skills/graphic-design/scripts/preflight.py assets/mark.svg
 python skills/graphic-design/scripts/preflight.py assets/poster.png
+python skills/graphic-design/scripts/preflight.py assets/foreground.png --require-cutout
 python skills/graphic-design/scripts/preflight.py assets/photo.png --print-size-mm 50.8 25.4 --min-ppi 300
 python skills/graphic-design/scripts/preflight.py exports/brochure.pdf
 ```
@@ -103,6 +104,8 @@ For the static review-board workflow, the limited scan rejects scripts, event ha
 ### Raster
 
 With Pillow installed, supported extensions are PNG, JPEG, GIF, WebP, TIFF, and BMP. The tool verifies the container and decodes the first frame, reporting pixels, EXIF orientation, color mode, transparency, frame count, ICC-profile presence, and declared resolution. Other frames, profile accuracy, visual sharpness, compression defects, generated-image errors, and crop quality remain unverified.
+
+The report includes the source SHA-256 and measured alpha minimum/maximum, transparent/partial/opaque fractions, and nonzero-alpha bounds as `[x, y, width, height]` in EXIF-oriented first-frame coordinates. Alpha is normalized to 8-bit by Pillow. `--require-cutout` rejects a single-frame raster that is wholly opaque or wholly transparent; it requires visible pixels and some fully transparent pixels. For animated images, unsupported formats, or unavailable decoding, that check is NOT RUN. This numeric condition does not certify correct segmentation, remove a painted checkerboard inside partially transparent artwork, or inspect edge halos. View light, dark, and actual-surface composites separately. The tool does not create or modify those assets, and visual review remains NOT RUN even when cutout pixels pass.
 
 An explicit print size is required to assess effective PPI. The calculation is:
 

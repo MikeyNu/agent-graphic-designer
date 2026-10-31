@@ -1,6 +1,6 @@
 ---
 name: graphic-design
-description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts, coordinated motion, and rigorous visual, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, settings, onboarding, design systems, responsive interfaces, UI animation, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Apply alongside relevant motion, image, vector, web, document, and production tools.
+description: Research, art-direct, create, critique, and refine graphic design and modern UI/UX with original concepts, proactive image and illustration generation, coherent iconography, coordinated motion, and rigorous asset, interaction, and production QA. Use for websites, landing pages, heroes, SaaS dashboards, mobile apps, portals, navigation, forms, settings, onboarding, design systems, responsive interfaces, UI animation, UX audits, and removing repetitive AI slop, as well as brand identities, logos, posters, campaigns, social graphics, packaging, editorial layouts, infographics, presentations, and document graphics. Assess and create needed visual assets even when the user does not separately request images. Apply alongside relevant production tools.
 ---
 
 # Graphic Design
@@ -12,6 +12,9 @@ Graphic-design research baseline: 18 October 2026. UI/UX research update: 30 Oct
 Work as a designer and art director. Create the strongest communication for this particular product, audience, setting, and medium. Define what “best” means from the brief. Make the work clear, memorable, appropriate, distinctive, and well crafted. Let restraint, exuberance, precision, humor, heritage, or experimentation serve the communication.
 
 - Deliver artwork when creation is requested. Advice, mood boards, image prompts, and unrendered code do not complete an artwork request.
+- Own the asset decisions. During composition, identify where a cutout, illustration, photograph, background, or icon family would materially improve the result, then create or source and integrate it within the authorized design task. Do not wait for the user to ask for an image. Beauty, atmosphere, and delight are sufficient reasons; a dense utility surface may need only excellent iconography and typography.
+- Discover and use native image generation when available. ChatGPT can generate and edit raster imagery, including transparent assets in supported hosts; read the live tool's instructions and request actual transparency. Do not assume an API key is required for the built-in tool. Do not replace needed artwork with emoji, primitive SVG scenes, CSS blobs, prompts, or invented file paths.
+- Treat interface symbols and expressive artwork differently. Reuse an approved icon family for navigation, controls, and status. Prefer generated transparent 2D art or other suitable image-making for rich illustration. Custom SVG is a selective precision tool, not the default art medium or a test of effort.
 - For interface work, define the user task, content hierarchy, behavior, and recovery before visual polish. A screenshot is not a complete experience; distinguish static design, interactive prototype, and integrated implementation.
 - Compose UI and motion together. Design transitions, reveals, hover/focus, scroll relationships, and state feedback while arranging the relevant elements. Read the [motion co-design guide](references/interface-motion.md) for substantial interface work; coordinate with an available motion skill through one shared brief. Do not finish a static design and add identical entrance effects everywhere.
 - Preserve approved copy, facts, identity assets, and explicit preferences. Distinguish deliberate visual decisions from accidental defects before changing existing work.
@@ -55,20 +58,23 @@ Open guides before the relevant substantive decisions. Follow links for needed d
 | Font selection, personality, microtypography, language, or perception | [Typography and perception](references/typography-and-perception.md) |
 | Palette, emotional associations, contrast, or output color | [Color and accessibility](references/color-and-accessibility.md) |
 | Current practice, historical reuse, distinctiveness, or generic AI output | [Originality and trends](references/originality-and-trends.md) |
-| Image generation, custom SVG, mockups, precise diagrams, or annotation | [Asset creation and tool direction](references/asset-creation.md) |
+| Any new visual composition, missing imagery, cutouts, backgrounds, illustrations, mockups, or asset integration | [Proactive asset creation](references/asset-creation.md) |
+| Navigation/action/status icons, pictograms, or an inconsistent symbol family | [Iconography](references/iconography.md) |
+| Generated, edited, or supplied imagery; alpha edges, realism, series consistency, or synthetic defects | [Asset quality and repair](references/asset-quality.md) |
 | Final critique, export, print, multi-format delivery, or release status | [Quality and production](references/quality-and-production.md) |
 | Running measurable checks or making a review board | [QA tools](references/tools.md) |
 | Checking research support or refreshing evidence | [Sourcebook](references/sourcebook.md) |
 
-Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [shared UI and motion brief](assets/interface-motion-brief.md), [QA record](assets/qa-report-template.json), [interface review](assets/interface-review-template.md), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
+Use the [brief template](assets/brief-template.md), [concept review](assets/concept-review-template.md), [shared UI and motion brief](assets/interface-motion-brief.md), [asset record](assets/asset-record-template.md), [QA record](assets/qa-report-template.json), [interface review](assets/interface-review-template.md), and [handoff template](assets/handoff-template.md) when they reduce effort. They are working aids, not paperwork requirements for every job.
 
 ## Interface workflow and composition constraints
 
-For substantive UI/UX work, read the UI/UX, interaction, interface-originality, and interface-motion guides before designing. Apply the core art-direction workflow with these additional gates:
+For substantive UI/UX work, read the UI/UX, interaction, interface-originality, interface-motion, and asset-creation guides before designing. Load iconography when controls need symbols and asset-quality before accepting imagery. Apply the core art-direction workflow with these additional gates:
 
 1. Identify the surface, primary task, entry point, completion, and highest-impact failure. Distinguish marketing, a working product, and a presentation demo. Inspect existing routes, components, and design tokens before adding new ones. Load the SaaS or mobile guide when applicable; develop visual character alongside data scope, authority, interruption, and return context.
 2. Study relevant screens and flows with the reference-study method and owner's taste profile. Inspect the whole composition, important detail crops, and actual-size readability. Record what is visually compelling and what should survive adaptation. Distinguish visual observation from recorded notes, text-only descriptions, inaccessible content, and unverified promotional claims.
 3. Before selecting a style or components, map the particular content and visitor questions to suitable relationships. For substantial new compositions, create three genuinely different visible roughs with comparable content. Change the organizing relationship, not only colors or typography. Explore spatial and temporal possibilities together; an intuitive formal experiment is a valid starting point. Prototype a principal motion sequence early when implementing an interactive result, then revise the composition and motion together. Static deliverables may specify the sequence but must not claim playback.
+   Map visual opportunities at the same time: what should be illustrated, what needs an isolated silhouette, what needs a full environment, and what should remain quiet. Generate the highest-impact asset early enough to shape the composition. A rough can be provisional; the selected design cannot remain an empty asset slot or a decorative code substitute when suitable generation is available.
 4. **Do not place pills, badges, or rounded announcements above hero titles. Do not use the stock left-copy/right-graphic hero.** Mirroring or recoloring that split is not a new concept. These are the owner's explicit defaults, not universal usability claims. Only an explicit user direction or faithful preservation of approved work overrides them. Do not redesign a whole page during an unrelated small fix.
 5. Preserve readable left-aligned prose, useful status/filter chips, familiar controls, and consistent navigation. Avoid replacing one formula with compulsory centered heroes, bento grids, giant type, or random asymmetry.
 6. Specify meaningful loading, empty, error, success, interruption, and return states. Give principal motion sequences a trigger, stable anchor, choreography, timing or scroll range, interruption policy, and responsive/reduced-motion alternatives. Distinguish recording time, animation time, user progress, and application state; specify when content is readable and usable separately from decorative settlement. Beauty and enjoyment can guide an expressive sequence; keep repeated work responsive. Recompose for mobile; verify keyboard, focus, contrast, target sizes, and zoom/reflow as applicable.
@@ -152,16 +158,20 @@ Use named styles as vocabulary, not finished concepts. Compare content hierarchy
 
 ## 7. Use the full visual toolset
 
-Select the medium that serves the idea and preserves required precision:
+Use [asset creation](references/asset-creation.md) to execute **assess → select medium → generate/reuse → inspect → integrate → inspect in context → repair**. Do this proactively as part of the design, not only after an explicit asset request. Preserve approved originals and existing project conventions.
 
-- Use available image generation and editing for raster imagery, illustration, material, or atmosphere. Inspect supplied references first and describe composition, subject, light, perspective, crop, and material concretely.
-- Use vector tools, custom SVG, or layout software for exact typography, identities, icons, diagrams, and designed geometry. Verify rendered results. Do not reduce every creative idea to primitive shapes because they are easy to code.
+- Use native image generation/editing for expressive illustration, transparent 2D artwork, isolated objects, photographic scenes, material, and atmosphere. Inspect references and make a concrete brief. Create separate assets when their placement or motion must be independent.
+- Request true alpha for foreground artwork that should blend with page surfaces, overlap a panel, or move independently. Use an opaque scene for a full background or photographic field. Verify actual alpha and edges; a white or checkerboard background is not transparency. Test the result on the intended surface as well as light and dark mattes.
+- Use an existing coherent icon family for operational symbols, with verified meaning, optical weight, size, states, and accessible labels. Do not hand-draw a poorer replacement merely to claim originality. Read [iconography](references/iconography.md).
+- Use vector/layout tools for exact type, approved identities, diagrams, masks, and controlled geometry. Use custom SVG only when it serves the medium and the rendered result is good. If a rich drawn idea looks crude, change medium to generated illustration or a suitable existing asset rather than adding more paths. A bitmap inside SVG is not an editable vector.
 - Combine generated imagery with controlled typesetting when exact text matters. Preserve the geometry and identity of supplied products and logos.
 - Use deterministic charting and verified data for factual graphics. Never generate invented chart values or use image generation for precise informational diagrams.
 - Use relevant document, slide, web, mockup, or packaging tools and format skills. Preserve editable sources when required.
 - Use annotation overlays, numbered callouts, crop studies, and before/after comparisons when they explain a visual issue better than prose. Preserve the source, keep evidence visible, and connect each annotation to an observed issue, consequence, and correction. Distinguish proposals from implemented changes.
 
-If a required capability is absent, use an appropriate alternative and state the precise limitation. Never silently replace required editable vectors with a bitmap or claim an unseen export was inspected. Do not fabricate documentary authenticity for synthetic images.
+Obtain the real output, inspect it, place it in the project, and update actual consumers. A displayed preview is not proof of installed bytes. Check composition, crop, edge quality, and interactions at the final sizes, then edit the asset or its placement according to the actual defect. Continue targeted revision while it makes progress within the authorized budget; never accept a visibly poor asset just because a first attempt finished. After repeated failure, change approach or disclose the specific blocker instead of silently omitting imagery. Do not introduce a fixed two-revision stopping rule that overrides quality requirements.
+
+If a required capability is absent, complete unaffected work and state the precise limitation. Never silently replace required editable vectors with a bitmap or claim an unseen export was inspected. Do not fabricate documentary authenticity for synthetic images.
 
 ## 8. Critique and verify the actual artifact
 
@@ -170,6 +180,8 @@ Run two passes: design critique and technical preflight. First look at the compo
 Inspect a flat export as well as a mockup, the full composition, actual delivery size, smallest important use, and detail crops. Check every final variant and every document page. Test relevant cropping, compression, display, distance, and print conditions. Record what was actually checked.
 
 Verify approved copy, names, figures, dates, units, links, and claims. Use extraction or OCR as assistance followed by visual inspection. Decode actual exported QR codes or barcodes and verify the encoded information. Inspect fonts, glyphs, clipping, overlaps, image details, transparency, and output dimensions. Inspect image-generation defects at delivery size and detail.
+
+Apply the [asset-quality inspection](references/asset-quality.md): whole composition, native-resolution regions, and actual UI placement. Trace object continuity, anatomy where relevant, contact, perspective, reflections, material, unwanted text, and alpha boundaries. For illustrations, judge intentional style rather than forcing photorealism. Repair observed defects and recheck nearby regions and related assets. Keep production quality separate from origin: attractive output is not proof that an image is a real photograph, and an asset we generated remains generated.
 
 Use the bundled tools for measurable checks and review boards. They do not inspect design quality or establish accessibility, rights, or print readiness. See [QA tools](references/tools.md) for commands and limitations. For deeper production checks, read [Quality and production](references/quality-and-production.md).
 
@@ -191,4 +203,4 @@ For a reusable system, identify fixed assets, permitted variations, and content 
 
 ## Package license
 
-The authored skill and helper code use the included [MIT license](LICENSE). Retain that notice when redistributing the package. Referenced artwork, studies, and fonts keep their own terms; the package license does not grant rights to those materials.
+The authored skill and helper code use the included [MIT license](LICENSE). Retain that notice and the [integrated-source notices](references/integrated-source-notices.md) when redistributing the package. Referenced artwork, studies, and fonts keep their own terms; the package license does not grant rights to those materials.

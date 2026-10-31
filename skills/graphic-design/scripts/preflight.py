@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import io
 import json
 import math
@@ -191,9 +192,9 @@ def inspect_svg(data: bytes, path: Path, result: dict) -> None:
     metadata["safe_for_static_image_embedding"] = not any(item["status"] == "FAIL" for item in result["checks"])
 
 
-def inspect_raster(data: bytes, result: dict, print_size_mm: tuple[float, float] | None, min_ppi: float) -> None:
+def inspect_raster(data: bytes, result: dict, print_size_mm: tuple[float, float] | None, min_ppi: float, require_cutout: bool = False) -> None:
     try:
-        from PIL import Image
+        from PIL import Image, ImageOps
     except ImportError:
         add_check(result, "raster_metadata", "NOT RUN", "Pillow is not installed. No raster decoding or PPI assessment was performed.")
         return
@@ -223,6 +224,28 @@ def inspect_raster(data: bytes, result: dict, print_size_mm: tuple[float, float]
                     "declared_dpi": list(picture.info["dpi"]) if "dpi" in picture.info else None,
                 })
                 add_check(result, "raster_decode", "PASS", "The first raster frame decoded successfully; appearance was not inspected.")
+                oriented = ImageOps.exif_transpose(picture)
+                alpha = oriented.convert("RGBA").getchannel("A")
+                histogram = alpha.histogram()
+                total = width * height
+                transparent, opaque = histogram[0], histogram[255]
+                partial = total - transparent - opaque
+                bounds = alpha.getbbox()
+                metadata["alpha"] = {
+                    "sample_range_8bit": list(alpha.getextrema()),
+                    "transparent_fraction": transparent / total,
+                    "partial_fraction": partial / total,
+                    "opaque_fraction": opaque / total,
+                    "nonzero_bounds_xywh": [bounds[0], bounds[1], bounds[2] - bounds[0], bounds[3] - bounds[1]] if bounds else None,
+                    "coordinate_space": "EXIF-oriented first frame; alpha normalized to 8-bit by Pillow",
+                }
+                add_check(result, "alpha_measurement", "PASS", "Measured first-frame alpha coverage and visible bounds; segmentation and edge quality require visual inspection.")
+                if require_cutout:
+                    if metadata["frames"] > 1:
+                        add_check(result, "cutout_pixels", "NOT RUN", "Cutout requirement is limited to a single-frame raster; additional frames need independent inspection.")
+                    else:
+                        numeric_cutout = transparent > 0 and transparent < total
+                        add_check(result, "cutout_pixels", "PASS" if numeric_cutout else "FAIL", "Requires some fully transparent pixels and some visible pixels. This cannot detect a painted checkerboard inside a partly transparent image or certify a correct silhouette.")
                 add_check(result, "other_frames", "NOT RUN" if metadata["frames"] > 1 else "N/A", "Additional frames were not decoded or visually inspected." if metadata["frames"] > 1 else "Single-frame image.")
                 add_check(result, "color_profile", "NOT RUN", "ICC presence is reported; profile correctness and output suitability are not validated.")
                 if print_size_mm:
@@ -339,7 +362,7 @@ def inspect_pdf(data: bytes, result: dict, print_size_mm: tuple[float, float] | 
         add_check(result, "pdf_parse", "FAIL", f"PDF could not be inspected: {type(error).__name__}: {error}")
 
 
-def inspect_file(path: str | Path, print_size_mm: tuple[float, float] | None = None, min_ppi: float = 300.0) -> dict:
+def inspect_file(path: str | Path, print_size_mm: tuple[float, float] | None = None, min_ppi: float = 300.0, require_cutout: bool = False) -> dict:
     if print_size_mm is not None and (len(print_size_mm) != 2 or any(not math.isfinite(value) or value <= 0 for value in print_size_mm)):
         raise ValueError("Print width and height must be finite positive millimeters.")
     if not math.isfinite(min_ppi) or min_ppi <= 0:
@@ -362,11 +385,14 @@ def inspect_file(path: str | Path, print_size_mm: tuple[float, float] | None = N
         if not data:
             raise ValueError("File is empty.")
         result["metadata"]["file_bytes"] = len(data)
+        result["metadata"]["sha256"] = hashlib.sha256(data).hexdigest()
         add_check(result, "file_read", "PASS", "Read the supplied local file without changing it.")
     except (OSError, ValueError, RuntimeError) as error:
         add_check(result, "file_read", "FAIL", str(error))
         return finish(result)
     suffix = path.suffix.lower()
+    if require_cutout and suffix not in RASTER_SUFFIXES:
+        add_check(result, "cutout_pixels", "NOT RUN", "Cutout pixel inspection requires a supported raster; vector transparency is not inspected by this check.")
     if suffix == ".svg":
         result["kind"] = "svg"
         try:
@@ -377,7 +403,7 @@ def inspect_file(path: str | Path, print_size_mm: tuple[float, float] | None = N
             add_check(result, "effective_ppi", "NOT RUN", "SVG may contain raster imagery. Raster placement PPI and print fitting were not calculated.")
     elif suffix in RASTER_SUFFIXES:
         result["kind"] = "raster"
-        inspect_raster(data, result, print_size_mm, min_ppi)
+        inspect_raster(data, result, print_size_mm, min_ppi, require_cutout)
     elif suffix == ".pdf":
         result["kind"] = "pdf"
         inspect_pdf(data, result, print_size_mm)
@@ -397,11 +423,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("file", type=Path)
     parser.add_argument("--print-size-mm", type=float, nargs=2, metavar=("WIDTH", "HEIGHT"))
     parser.add_argument("--min-ppi", type=float, help="Required PPI for an explicit print size. Default with a print size: 300.")
+    parser.add_argument("--require-cutout", action="store_true", help="Require a single-frame raster with some fully transparent and some visible pixels. Does not certify edge or visual quality.")
     args = parser.parse_args(argv)
     if args.min_ppi is not None and args.print_size_mm is None:
         parser.error("--min-ppi requires --print-size-mm.")
     try:
-        result = inspect_file(args.file, tuple(args.print_size_mm) if args.print_size_mm else None, args.min_ppi if args.min_ppi is not None else 300.0)
+        result = inspect_file(args.file, tuple(args.print_size_mm) if args.print_size_mm else None, args.min_ppi if args.min_ppi is not None else 300.0, args.require_cutout)
         print(json.dumps(result, indent=2, allow_nan=False))
     except (ValueError, OSError) as error:
         print(json.dumps({"status": "FAIL", "error": str(error), "scope": SCOPE}))

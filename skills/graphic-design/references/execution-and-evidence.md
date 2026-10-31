@@ -35,6 +35,8 @@ For each material check record `artifact/version | condition | method | expected
 
 Validate the test harness as well as the product. A token pair does not establish the actual background behind a control. A zero-overflow result does not establish readable labels or reachable content inside a fixed panel. Record whether a screenshot shows the visible viewport or a full-page composite. For text-size tests, capture all original computed sizes before applying changes so inherited values are not multiplied repeatedly. When keyboard focus leaves the document for browser controls, distinguish that from focus escaping a modal into the background page. Diagnose unexpected results before changing product behavior or relaxing an assertion.
 
+For a native modal dialog, do not add a custom Tab trap solely to satisfy an assertion that every active element must stay inside the DOM dialog. Record the active element and whether the document has focus, check the next Tab, and verify that background-page controls remain inert. Browser chrome receiving focus is different from a background control receiving focus. Preserve native behavior unless a reproduced product requirement justifies changing it.
+
 ## Missing capabilities and failure
 
 Inspect available tools before committing to a format or verification claim. Use an appropriate permitted alternative when it preserves the requested deliverable. Do not silently replace editable vectors with a raster or a working application with prose. If a capability is blocked by host policy, respect the boundary; do not route around it through another browser, tunnel, hidden runtime, or deployment.

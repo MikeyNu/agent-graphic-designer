@@ -65,7 +65,7 @@ Use the applicable platform standard and semantic elements. For web interfaces, 
 | --- | --- |
 | Meaning and structure | Real text, meaningful headings, landmarks, labels, appropriate alternative text, and coherent reading order. Prefer native links, buttons, and inputs. |
 | Keyboard | Reach and operate every function, follow a logical order, show focus, and avoid traps. Add shortcuts as optional acceleration. |
-| Focus and overlays | Set initial focus appropriately, contain it in a modal, make the background inert, support dismissal, and restore focus to a sensible place. Follow the APG pattern and verify the actual component. |
+| Focus and overlays | Set initial focus appropriately, keep background-page controls inert during a modal, support dismissal, and restore focus sensibly. Follow the APG pattern and verify the component. For a native dialog, distinguish focus entering browser chrome from background-page escape; do not add a custom trap just to satisfy a DOM-only assertion. See [harness checks](execution-and-evidence.md#choose-checks-by-what-they-can-establish). |
 | Sticky UI | Prevent headers, bottom navigation, banners, and sheets from hiding the focused control. SC 2.4.11 AA requires it not be entirely obscured by author-created content; aim for full visibility. |
 | Pointer targets | SC 2.5.8 AA specifies at least 24 by 24 CSS px or an applicable exception, including defined spacing. Favor comfortably larger touch targets where practical; do not call 44 or 48 CSS px the universal AA minimum or equate px, pt, and dp. |
 | Color and contrast | Verify actual text and essential non-text contrast, all meaningful states, and non-color information cues. Apply the dedicated color guide, not palette-only checks. |

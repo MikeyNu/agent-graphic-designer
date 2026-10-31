@@ -1,0 +1,628 @@
+{
+  "date": "2026-10-31",
+  "environment": {
+    "browser": "Microsoft Edge 156.0.4314.50",
+    "mode": "Headed, local Windows desktop, isolated task profiles",
+    "browser_execution": "Desktop Commander",
+    "package_tests": "50 passed in executor; not Windows Python",
+    "github_ci": "Not used"
+  },
+  "evidence_scope": "Curated final implementations, selected rendered views, actual asset metadata, and check-name/status extracts. Full reports and additional captures remain in the task folders on the authorized desktop. Initial defects and harness corrections are recorded in ../../validation-2026-10-31-assets.md. These extracts are evidence of executed checks, not runnable test harnesses.",
+  "cases": [
+    {
+      "id": "fieldnote",
+      "brief_summary": "Create a polished family nature-journal welcome and first-entry experience with required copy, Start a journal and Explore a sample, and local interactions. The brief did not request image generation.",
+      "asset_choice": "Native-generated transparent bird-and-branch illustration, prepared as WebP and used in the actual interface.",
+      "reports": [
+        {
+          "scope": "Main final run: 24 checks",
+          "source_report": "evidence/qa-results.json",
+          "source_report_sha256": "8a9bf976701e730df01611b99b8c3f06eb747095875571fa0bcc5c1cde2f1445",
+          "checks": [
+            {
+              "name": "Required welcome copy",
+              "status": "PASS"
+            },
+            {
+              "name": "Image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "Sample is clearly labeled",
+              "status": "PASS"
+            },
+            {
+              "name": "Sample dialog opens",
+              "status": "PASS"
+            },
+            {
+              "name": "Dialog initial focus",
+              "status": "PASS"
+            },
+            {
+              "name": "Native dialog focus stays in dialog or browser chrome",
+              "status": "PASS"
+            },
+            {
+              "name": "Native dialog focus returns after chrome",
+              "status": "PASS"
+            },
+            {
+              "name": "Escape closes dialog",
+              "status": "PASS"
+            },
+            {
+              "name": "Focus restored",
+              "status": "PASS"
+            },
+            {
+              "name": "Required-field validation",
+              "status": "PASS"
+            },
+            {
+              "name": "Draft survives Back",
+              "status": "PASS"
+            },
+            {
+              "name": "Draft survives refresh",
+              "status": "PASS"
+            },
+            {
+              "name": "Saved entry visible",
+              "status": "PASS"
+            },
+            {
+              "name": "Saved entry persists after refresh",
+              "status": "PASS"
+            },
+            {
+              "name": "One entry saved",
+              "status": "PASS"
+            },
+            {
+              "name": "Next entry blank; journal retained",
+              "status": "PASS"
+            },
+            {
+              "name": "Welcome reflow 768",
+              "status": "PASS"
+            },
+            {
+              "name": "Welcome reflow 390",
+              "status": "PASS"
+            },
+            {
+              "name": "Mobile form reflow",
+              "status": "PASS"
+            },
+            {
+              "name": "Welcome reflow 320",
+              "status": "PASS"
+            },
+            {
+              "name": "Reduced motion applied",
+              "status": "PASS"
+            },
+            {
+              "name": "Long content reflow at 320px",
+              "status": "PASS"
+            },
+            {
+              "name": "Storage failure preserves draft and reports error",
+              "status": "PASS"
+            },
+            {
+              "name": "No page errors",
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "additional_checks": [
+        {
+          "width": 1440,
+          "view": "entry",
+          "overflow": false,
+          "title": "What did\nyou notice?"
+        },
+        {
+          "width": 390,
+          "view": "entry",
+          "overflow": false,
+          "title": "What did you notice?"
+        },
+        {
+          "textSpacingOverflow": false
+        },
+        {
+          "width": 320,
+          "view": "entry",
+          "overflow": false,
+          "title": "What did you notice?"
+        },
+        {
+          "width": 768,
+          "view": "entry",
+          "overflow": false,
+          "title": "What did\nyou notice?"
+        },
+        {
+          "directFileSaveReload": true
+        }
+      ],
+      "desktop_folder": "Skill-Asset-QA-Fieldnote"
+    },
+    {
+      "id": "tidemark",
+      "brief_summary": "Create an immersive coastal-journal cover with the required title and a functioning local chapter transition. The brief did not request image generation.",
+      "asset_choice": "Native-generated opaque portrait and companion wide environments, selected responsively.",
+      "reports": [
+        {
+          "scope": "Main run: 29 checks",
+          "source_report": "qa/report.json",
+          "source_report_sha256": "6bee9f20a4d800e68e1c8b1309f9e4b07b2c5364512ece38f1ff27059ca3fb50",
+          "checks": [
+            {
+              "name": "desktop-cover no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "desktop-cover image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "desktop-cover primary target size",
+              "status": "PASS"
+            },
+            {
+              "name": "chapter navigation and focus",
+              "status": "PASS"
+            },
+            {
+              "name": "return to cover and focus",
+              "status": "PASS"
+            },
+            {
+              "name": "browser history restores chapter",
+              "status": "PASS"
+            },
+            {
+              "name": "direct chapter refresh",
+              "status": "PASS"
+            },
+            {
+              "name": "phone-cover no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "phone-cover image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "phone-cover primary target size",
+              "status": "PASS"
+            },
+            {
+              "name": "phone passage readable",
+              "status": "PASS"
+            },
+            {
+              "name": "narrow-cover no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "narrow-cover image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "narrow-cover primary target size",
+              "status": "PASS"
+            },
+            {
+              "name": "tablet-cover no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "tablet-cover image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "tablet-cover primary target size",
+              "status": "PASS"
+            },
+            {
+              "name": "short-cover no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "short-cover image decoded",
+              "status": "PASS"
+            },
+            {
+              "name": "short-cover primary target size",
+              "status": "PASS"
+            },
+            {
+              "name": "keyboard first focus is skip link",
+              "status": "PASS"
+            },
+            {
+              "name": "keyboard skip reaches journal",
+              "status": "PASS"
+            },
+            {
+              "name": "keyboard reading return reachable",
+              "status": "PASS"
+            },
+            {
+              "name": "keyboard return restores primary action",
+              "status": "PASS"
+            },
+            {
+              "name": "reduced motion is immediate",
+              "status": "PASS"
+            },
+            {
+              "name": "repeated reversible navigation settles correctly",
+              "status": "PASS"
+            },
+            {
+              "name": "200 percent zoom no horizontal overflow",
+              "status": "PASS"
+            },
+            {
+              "name": "missing image retains title and entry",
+              "status": "PASS"
+            },
+            {
+              "name": "no browser JavaScript errors",
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "scope": "Final copy-only correction: 3 focused checks",
+          "source_report": "qa/punctuation-report.json",
+          "source_report_sha256": "949e746a15bfb1d4b9fd89244e695d96bbaca5425490b06862c74248874bb5fb",
+          "checks": [
+            {
+              "name": "desktop-cover",
+              "status": "PASS"
+            },
+            {
+              "name": "phone-cover",
+              "status": "PASS"
+            },
+            {
+              "name": "short-cover",
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "method_notes": [
+        "The 200 percent zoom check used CSS zoom, not native browser zoom.",
+        "The final punctuation-only revision was checked at desktop, phone, and short-window sizes. The earlier broader run was not rerun wholesale."
+      ],
+      "desktop_folder": "Skill-Asset-QA-Tidemark"
+    },
+    {
+      "id": "icons",
+      "brief_summary": "Repair iconography in the existing approved Lantern queue while preserving layout, identity, copy, and behavior.",
+      "asset_choice": "Verified Lucide source family; no unrelated generated artwork.",
+      "reports": [
+        {
+          "scope": "Main run: 14 checks",
+          "source_report": "qa/edge-report.json",
+          "source_report_sha256": "3d36d6397e24d6078708ae8bfd9543fdeef8d49f98300f570f4c961f3ce38df5",
+          "checks": [
+            {
+              "name": "Desktop layout bounds match original exactly",
+              "status": "PASS"
+            },
+            {
+              "name": "All rendered icon references resolve and are decorative",
+              "status": "PASS"
+            },
+            {
+              "name": "Search, clear accessible name/keyboard, no-results recovery",
+              "status": "PASS"
+            },
+            {
+              "name": "Native select and sorting",
+              "status": "PASS"
+            },
+            {
+              "name": "Native modal focus entry, background inertness, and unchanged browser-chrome Tab cycle",
+              "status": "PASS"
+            },
+            {
+              "name": "Escape restores origin focus",
+              "status": "PASS"
+            },
+            {
+              "name": "Failure keeps Ready; retry succeeds; filtered return updates counts and next focus",
+              "status": "PASS"
+            },
+            {
+              "name": "Delayed progress, duplicate-action guard, completion after closing",
+              "status": "PASS"
+            },
+            {
+              "name": "Reduced-motion spinner remains visible without rotation",
+              "status": "PASS"
+            },
+            {
+              "name": "Forced-colors preserves native select indicator",
+              "status": "PASS"
+            },
+            {
+              "name": "No horizontal overflow at 768px; queue and detail captured",
+              "status": "PASS"
+            },
+            {
+              "name": "No horizontal overflow at 390px; queue and detail captured",
+              "status": "PASS"
+            },
+            {
+              "name": "No horizontal overflow at 320px; queue and detail captured",
+              "status": "PASS"
+            },
+            {
+              "name": "No page errors or external network requests",
+              "status": "PASS"
+            }
+          ]
+        },
+        {
+          "scope": "Final targeted run: 6 checks",
+          "source_report": "qa/viewport-report.json",
+          "source_report_sha256": "fdab2091d321954b10cc9753abbd3552f5a125cd94409b59e727b9dca110c1b1",
+          "checks": [
+            {
+              "name": "Ready ring follows CanvasText in forced colors light",
+              "status": "PASS"
+            },
+            {
+              "name": "Ready ring follows CanvasText in forced colors dark",
+              "status": "PASS"
+            },
+            {
+              "name": "Viewport dialog top and bottom 768",
+              "status": "PASS"
+            },
+            {
+              "name": "Viewport dialog top and bottom 390",
+              "status": "PASS"
+            },
+            {
+              "name": "Viewport dialog top and bottom 320",
+              "status": "PASS"
+            },
+            {
+              "name": "320px failure retry and success",
+              "status": "PASS"
+            }
+          ]
+        }
+      ],
+      "desktop_folder": "Skill-Asset-QA-Icons"
+    }
+  ],
+  "limits": [
+    "Three fresh agent tasks ran; the eight evaluation definitions are not eight completed agent runs.",
+    "Visual judgments are scoped to the inspected assets, sizes, and states.",
+    "No physical-phone, screen-reader, representative-user, cross-engine, or complete accessibility-conformance validation.",
+    "Temporal samples and stills do not establish continuously watched motion quality.",
+    "Generated imagery remains generated; this is quality review, not origin certification."
+  ],
+  "runtime_assets": [
+    {
+      "path": "fieldnote/assets/robin.webp",
+      "width": 1008,
+      "height": 672,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "fully_transparent_fraction": 0.7235080664210128,
+      "partial_alpha_fraction": 0.27624539399092973,
+      "fully_opaque_fraction": 0.0002465395880574452,
+      "sha256": "e64e38dabd5b5a075bd6dd1705e07cf6992082d3fcff8d7b2382ced59a6115eb",
+      "bytes": 136150
+    },
+    {
+      "path": "tidemark/assets/coast-mobile.webp",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "fully_transparent_fraction": 0.0,
+      "partial_alpha_fraction": 0.0,
+      "fully_opaque_fraction": 1.0,
+      "sha256": "d3795043e78c358108a19f8705e8963b13da099914a083ab4c6a20646dc7b397",
+      "bytes": 292858
+    },
+    {
+      "path": "tidemark/assets/coast-desktop.webp",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "fully_transparent_fraction": 0.0,
+      "partial_alpha_fraction": 0.0,
+      "fully_opaque_fraction": 1.0,
+      "sha256": "527178b6b056c75a3291a2ccb39a34a9e93b9d5167326716962c46d22597d771",
+      "bytes": 233838
+    }
+  ],
+  "retained_files": [
+    {
+      "path": "fieldnote/ASSET-RECORD.md",
+      "bytes": 3245,
+      "sha256": "d768afa33623c8817a175492c4a2eecf10d5cff16c986922aa47d47c257acd45"
+    },
+    {
+      "path": "fieldnote/app.js",
+      "bytes": 5301,
+      "sha256": "afa423c51ce5a54ec324b6fa502da803545471a3cd09986c8b2eaf239b448edc"
+    },
+    {
+      "path": "fieldnote/assets/robin.webp",
+      "bytes": 136150,
+      "sha256": "e64e38dabd5b5a075bd6dd1705e07cf6992082d3fcff8d7b2382ced59a6115eb"
+    },
+    {
+      "path": "fieldnote/desktop.png",
+      "bytes": 166690,
+      "sha256": "5e89b3825991a923b0a11275e4046e534dc096079864e02191066f5356c1a011"
+    },
+    {
+      "path": "fieldnote/evidence/asset-inspection.png",
+      "bytes": 991771,
+      "sha256": "f57805e113470feed4ad9023bf0ac1d88ec962394df27ef83ea63bfb2794319f"
+    },
+    {
+      "path": "fieldnote/index.html",
+      "bytes": 6801,
+      "sha256": "651625f530e4d9a0629e2d58aec7c9f30d18968ff48a36073d4f3955e7ce5feb"
+    },
+    {
+      "path": "fieldnote/phone.png",
+      "bytes": 90117,
+      "sha256": "2577cd1716f919ac7d719d1ea93c6bcb1cdba3956efbd661239145bc333e09fd"
+    },
+    {
+      "path": "fieldnote/styles.css",
+      "bytes": 16940,
+      "sha256": "9c1539e0bbc8cc1b8c1cfe28160222421f6a68d71c60ce98362cd232c988aa6c"
+    },
+    {
+      "path": "icons/desktop.png",
+      "bytes": 81399,
+      "sha256": "6796b9a9dbf4b0f49bfbae77d4eb31ee8eab8729aefd29a9600f51ef9ee1d6ee"
+    },
+    {
+      "path": "icons/index.html",
+      "bytes": 62696,
+      "sha256": "3167430dc0306780f5c106ce6a275b27fa9b7890ac6b8bfd362d4a0c3cdb913a"
+    },
+    {
+      "path": "icons/phone-retry.png",
+      "bytes": 33143,
+      "sha256": "bf173a1859ddf72e389f4f63fd0f8531bc66b8e3207e2f6b4be82c4fdf5ced48"
+    },
+    {
+      "path": "icons/vendor/lucide/LICENSE",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "icons/vendor/lucide/arrow-left.svg",
+      "bytes": 262,
+      "sha256": "c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933"
+    },
+    {
+      "path": "icons/vendor/lucide/check.svg",
+      "bytes": 239,
+      "sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0"
+    },
+    {
+      "path": "icons/vendor/lucide/chevron-down.svg",
+      "bytes": 236,
+      "sha256": "66ea878e72ed3488bb3b464c39dfdccee8d1f78e560dccea40e5e12da0e87e87"
+    },
+    {
+      "path": "icons/vendor/lucide/chevron-right.svg",
+      "bytes": 237,
+      "sha256": "2758143d7b2434e4aa7307dfd34405c87909ff4052f21b5f3f40d45224b4f19b"
+    },
+    {
+      "path": "icons/vendor/lucide/circle.svg",
+      "bytes": 244,
+      "sha256": "3a991bd47beaf9874fba6fdf87bbba442970a89b5e6aa391558bc8b0a00a0513"
+    },
+    {
+      "path": "icons/vendor/lucide/loader-circle.svg",
+      "bytes": 251,
+      "sha256": "043021bb903919668804bdb6fee0342072e4ffea5f03fbd857774c440179ad3b"
+    },
+    {
+      "path": "icons/vendor/lucide/package.svg",
+      "bytes": 446,
+      "sha256": "69d6bc7650d26c4d24dd55eb22791607b982ce7637073944c256f1f61575509d"
+    },
+    {
+      "path": "icons/vendor/lucide/rotate-cw.svg",
+      "bytes": 299,
+      "sha256": "ddcfe6d87240475946935e77411cd4d15a06f3d28a9b921bafed224ebe953668"
+    },
+    {
+      "path": "icons/vendor/lucide/search.svg",
+      "bytes": 275,
+      "sha256": "283d371c2e433817bb9c0c8310caa6c77fa4177c0f4f1168d9c83b97af7389dc"
+    },
+    {
+      "path": "icons/vendor/lucide/source.json",
+      "bytes": 394,
+      "sha256": "37a988e7f7fa0b5cd52028c460773738d7e5a8d209633c6d32d7de9a9f36c43f"
+    },
+    {
+      "path": "icons/vendor/lucide/triangle-alert.svg",
+      "bytes": 345,
+      "sha256": "4866f38b8560d410f21e3226413e0b77997b6dfbb6931fadfe0a0d5aef9ffeb4"
+    },
+    {
+      "path": "icons/vendor/lucide/x.svg",
+      "bytes": 260,
+      "sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117"
+    },
+    {
+      "path": "tidemark/ASSET-PROMPTS.md",
+      "bytes": 2584,
+      "sha256": "6763d7da297379e765d539d71c22cff3e2b8e269a54e8a25023223e64ad77c3d"
+    },
+    {
+      "path": "tidemark/assets/coast-desktop.webp",
+      "bytes": 233838,
+      "sha256": "527178b6b056c75a3291a2ccb39a34a9e93b9d5167326716962c46d22597d771"
+    },
+    {
+      "path": "tidemark/assets/coast-mobile.webp",
+      "bytes": 292858,
+      "sha256": "d3795043e78c358108a19f8705e8963b13da099914a083ab4c6a20646dc7b397"
+    },
+    {
+      "path": "tidemark/desktop.png",
+      "bytes": 1410018,
+      "sha256": "aa1a401743cfc723eebc99fa0c07aaa0bec00da54a9e8662413373d7fae10b08"
+    },
+    {
+      "path": "tidemark/index.html",
+      "bytes": 3857,
+      "sha256": "95c7275472896eb32bf501f4acada9bb76e038929f32f54aa8f586f6c30f4cc1"
+    },
+    {
+      "path": "tidemark/phone.png",
+      "bytes": 427556,
+      "sha256": "a3423a11afeaca2c05e23fe5cfbdd60dd00594c2a8b9cddda4f41476de6f4774"
+    },
+    {
+      "path": "tidemark/script.js",
+      "bytes": 518,
+      "sha256": "98834e63683a22703e0b78d26e6faa2165f3ca01a05323f4ee485ec4bd0eb650"
+    },
+    {
+      "path": "tidemark/style.css",
+      "bytes": 7909,
+      "sha256": "8627f189d66453f5434471a121d28b2f038e7b049f7ab3b222d0b53d6703dc7c"
+    }
+  ]
+}

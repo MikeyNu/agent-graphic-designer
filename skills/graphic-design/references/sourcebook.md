@@ -179,6 +179,19 @@ U24. The [Playwright Page API](https://playwright.dev/python/docs/api/class-page
 
 The execution guide's instruction to settle transient closing state after cancellation is original engineering synthesis, prompted by a reproduced source/isolated-logic defect in the 31 October queue exercise. Actual browser restoration remains untested in that exercise. This refresh does not revalidate every historical source in this register.
 
+### Proactive asset creation and iconography integration
+
+Consulted 31 October 2026. The [integration notice](integrated-source-notices.md) pins the inspected Visual Asset Pipeline and Agent AI Detector revisions and records the material adapted. Their workflows are engineering/design prescriptions, not empirical proof of image quality or detection accuracy. We read their core instructions plus relevant art-direction, host, prompt, transfer, frontend, optical, continuity, and remediation guidance. Native generation capability is checked through the current host's actual image-tool schema and image-generation skill, not inferred from a subscription or hard-coded API model.
+
+| Source | Support | Limits |
+| --- | --- | --- |
+| A1. [W3C PNG specification, alpha representation](https://www.w3.org/TR/png/#6AlphaRepresentation) | Transparency can use an alpha channel or palette/color transparency; fully transparent, partial, and opaque pixels are distinct. | Encoding semantics, not proof of a correct cutout or good-looking edges. Our numerical gate and visual matte checks are implementation/design synthesis. |
+| A2. [Carbon icons, guidelines](https://www.carbondesignsystem.com/building-blocks/foundations/icons/guidelines) | Size-specific family use, apparent alignment, and a distinction between symbol and target sizes. | Official design-system guidance, not a universal size, monochrome mandate, contrast threshold, or required aesthetic. Text inspected; no product comprehension study performed. |
+| A3. [Lucide, React overview](https://lucide.dev/guide/react/) and [stroke width](https://lucide.dev/guide/react/basics/stroke-width) | Library components expose sizing/stroke controls; scaling behavior requires deliberate handling. | Verify the installed version and exports. No API prop is prescribed here for every project. |
+| A4. [Lucide, accessibility guidance source](https://github.com/lucide-icons/lucide/blob/main/docs/how-to/accessibility.md) | Consistent meanings, visible labels, semantic interactive wrappers, and naming the control rather than a decorative glyph. | Useful library guidance; apply WCAG criteria and exceptions from the primary standard rather than promoting every library recommendation to a universal requirement. |
+
+The proactive opportunity map, separation of operational icons from expressive 2D art, and progress-based repair loop are original design synthesis responding to the owner's observed shortcomings. The update does not certify that all generated assets are defect-free or that an agent will make perfect aesthetic judgments.
+
 ## Refresh procedure
 
 Before a substantial claim about current design practice, inspect dated independent applications and their actual images. Record category, region, audience, original project date, observed device, rationale, and limits. Keep a historical reference when it clarifies how a device is being reinterpreted.

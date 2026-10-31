@@ -16,6 +16,8 @@ Use only the fields that improve this task. Preserve facts from the supplied mat
 | Expressive choices worth preserving | |
 | Tone and qualities to avoid | |
 | Approved identity assets | |
+| Proactive visual opportunities: needed/helpful/unnecessary imagery and icon roles | |
+| Asset medium, transparent/opaque choice, family anchor, and smallest use | |
 | Dimensions and applications | |
 | Most difficult viewing condition | |
 | Lifespan | |

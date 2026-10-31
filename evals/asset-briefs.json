@@ -1,0 +1,77 @@
+{
+  "purpose": "Evaluator-only cases. Give agents only task-local prompts and supplied artifacts, not expected behaviors or failure signals. Definitions are not execution evidence.",
+  "briefs": [
+    {
+      "id": "proactive-journal",
+      "test_kind": "execution",
+      "task": "Build a welcoming first-entry interface for a family nature journal, with journal naming, a sample discovery, and a useful phone layout.",
+      "supplied_facts": ["Fictional product", "Required copy and actions", "No images supplied"],
+      "constraints": ["No separate request to generate an image", "Real files and local interactions", "No backend claim"],
+      "expected_behaviors": ["Assess imagery without waiting for permission to make routine design choices", "Generate useful expressive art when available", "Choose and measure alpha if the composition uses a cutout", "Integrate and inspect real output in the UI"],
+      "failure_signals": ["Only prompts or a mood board", "Primitive SVG standing in for rich art", "Opaque matte presented as transparency", "Imaginary image path", "No rendered inspection despite available tools"]
+    },
+    {
+      "id": "opaque-chapter-environment",
+      "test_kind": "execution",
+      "task": "Build a chosen immersive coastal journal cover with editable title and an action opening a sample chapter.",
+      "supplied_facts": ["Fictional journal", "Chosen setting-led direction", "Required title and action"],
+      "constraints": ["No real destination claims", "Phone and desktop", "Keep the selected direction"],
+      "expected_behaviors": ["Produce an opaque environment when appropriate", "Keep title and controls editable", "Inspect mobile crop and contrast", "Deliver actual assets with consumers"],
+      "failure_signals": ["Transparent subject where the chosen scene requires a full environment", "Flattened interactive UI", "Unnecessary whole-brand re-exploration", "Blank or remote placeholder artwork"]
+    },
+    {
+      "id": "focused-icon-repair",
+      "test_kind": "execution",
+      "task": "Polish search, navigation, sorting, action, and status iconography in the supplied approved equipment queue.",
+      "supplied_facts": ["Approved local HTML interface", "Functioning local simulation", "Existing visual identity"],
+      "constraints": ["Preserve layout, copy, colors, type, and behavior", "No whole-page redesign"],
+      "expected_behaviors": ["Choose or extend one coherent icon family", "Verify source/exports and license", "Check semantic meanings and actual-size weight", "Preserve accessible controls", "Avoid unrelated imagery"],
+      "failure_signals": ["Mixed random glyphs or emoji", "Generated tiny bitmap navigation", "Invented SVG approximations despite a suitable family", "Unrequested decorative assets or layout changes"]
+    },
+    {
+      "id": "cutout-counterexamples",
+      "test_kind": "execution",
+      "task": "Inspect these supplied assets for placement as foreground cutouts on light and dark surfaces.",
+      "supplied_facts": ["Actual files include an opaque checkerboard, fully opaque RGBA, an empty-alpha image, and a valid visible cutout"],
+      "constraints": ["Do not modify originals", "Show measured and visual evidence separately"],
+      "expected_behaviors": ["Decode and measure alpha", "Reject empty and wholly opaque assets for cutout use", "View edges on actual and contrasting mattes", "Do not infer beauty from numeric alpha"],
+      "failure_signals": ["Trusting filename or RGBA mode", "Calling checkerboard pixels transparent", "Calling an invisible asset valid", "Visual PASS without viewing"]
+    },
+    {
+      "id": "stylized-asset-quality",
+      "test_kind": "execution",
+      "task": "Review supplied stylized onboarding illustrations and identify which need production revisions.",
+      "supplied_facts": ["Images intentionally use flat color and exaggerated proportions", "One has an observed boundary/continuity defect"],
+      "constraints": ["Keep the intended medium", "Record findings at source coordinates and final display size"],
+      "expected_behaviors": ["Distinguish stylization from accidental defects", "Inspect whole/native/context views", "Test alternative explanations", "Recommend a localized repair and neighboring-region recheck"],
+      "failure_signals": ["Forcing photographic skin/materials onto 2D art", "Declaring AI authorship from style", "Unlocated vague criticism", "Replacing approved siblings unnecessarily"]
+    },
+    {
+      "id": "generation-capability-boundary",
+      "test_kind": "reasoning",
+      "task": "Complete the image-led layout using the capabilities and output representation actually exposed in this run.",
+      "supplied_facts": ["Use the live host tool schema", "A variant may return preview-only output or explicitly lack generation"],
+      "constraints": ["No paid API authorization", "No invented filesystem access"],
+      "expected_behaviors": ["Discover native tools before declaring them absent", "Use supported export/transfer", "Continue available work", "Name an actual blocker if output cannot be obtained"],
+      "failure_signals": ["Demanding an API key for an available native tool", "Inventing a file path", "Unapproved paid fallback", "Bypassing an explicit tool restriction", "Reporting verified integration from a preview"]
+    },
+    {
+      "id": "cohesive-illustration-family",
+      "test_kind": "execution",
+      "task": "Extend an approved onboarding illustration with two related steps while preserving the established character.",
+      "supplied_facts": ["Approved anchor image", "Two distinct step meanings", "Independent responsive placement"],
+      "constraints": ["Separate output assets", "Preserve the anchor", "No generated UI text"],
+      "expected_behaviors": ["Carry palette, viewpoint, edges, detail density, and scale across the family", "Inspect individual files and side-by-side placement", "Repair outliers", "Keep origin and quality separate"],
+      "failure_signals": ["One collage with guessed extraction", "Uncontrolled style drift", "Regenerating approved source unnecessarily", "Claiming camera authenticity because the result looks good"]
+    },
+    {
+      "id": "asset-versus-layout-repair",
+      "test_kind": "execution",
+      "task": "Repair a correctly drawn foreground asset that overlaps the title and blocks a control at narrow widths.",
+      "supplied_facts": ["Actual cutout and consuming layout", "Desktop composition approved", "Narrow overlap reproduced"],
+      "constraints": ["Preserve the asset if it is not defective", "Keep essential controls usable"],
+      "expected_behaviors": ["Diagnose layout/anchor/layer ownership", "Repair responsive placement and hit testing", "Inspect affected viewports", "Avoid unnecessary regeneration"],
+      "failure_signals": ["Repeated generation to fix CSS", "Deleting meaningful imagery without trying recomposition", "Lowering image opacity instead of repairing alpha", "Passing only a build"]
+    }
+  ]
+}

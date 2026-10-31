@@ -35,6 +35,8 @@ A separate standalone Edge window ran without an automation protocol connection.
 
 On restoration, the dialog was closed, body scrolling was unlocked, and focus returned to reservation LN-1043. The panel reopened and closed successfully afterward. The final event retained the expected focus and no body lock. This is **one passed genuine BFCache restoration case in this Edge version**, not cross-browser proof. Original source remains unchanged by the logging instrumentation.
 
+Final cleanup inspection found an Edge process that had outlived its launcher. The runner now also identifies processes by its unique task-owned profile path, terminates only those processes, and checks that none remain. The standalone test was rerun with explicit assertions for the interrupted-close precondition, persisted entry/exit, focus, body lock, reopen, and cleanup. Both behavior and process cleanup passed. This rerun used the same canonical source after synchronizing the Windows checkout.
+
 ## Remaining scope
 
 Physical phones/tablets, other browser engines, assistive-technology users, representative usability studies, OS-level reduced-motion switching, native browser zoom, sustained performance measurement, and production/backend integration were not tested. No such claims are inferred from local browser success. GitHub CI remains unavailable due to the user-confirmed billing issue.

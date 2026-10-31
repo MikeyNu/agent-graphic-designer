@@ -673,6 +673,8 @@
   "bfcache": {
     "method": "Standalone headed Edge without an automation protocol connection; native history.back from an away document; instrumented fixture copy.",
     "status": "PASS",
+    "behavior": "PASS",
+    "cleanup": "PASS",
     "events": [
       {
         "stage": "pageshow",

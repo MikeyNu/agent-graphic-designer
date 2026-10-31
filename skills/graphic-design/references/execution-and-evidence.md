@@ -33,6 +33,8 @@ Use one shared UI/motion contract. A narrow feature can inherit an approved visu
 
 For each material check record `artifact/version | condition | method | expected result | observed result | status`. Use PASS, FAIL, NOT RUN, or N/A, with a reason for N/A. Keep implementation stage separate from verification status: a prototype may have tested local behavior while service integration remains outside scope.
 
+Validate the test harness as well as the product. A token pair does not establish the actual background behind a control. A zero-overflow result does not establish readable labels or reachable content inside a fixed panel. Record whether a screenshot shows the visible viewport or a full-page composite. For text-size tests, capture all original computed sizes before applying changes so inherited values are not multiplied repeatedly. When keyboard focus leaves the document for browser controls, distinguish that from focus escaping a modal into the background page. Diagnose unexpected results before changing product behavior or relaxing an assertion.
+
 ## Missing capabilities and failure
 
 Inspect available tools before committing to a format or verification claim. Use an appropriate permitted alternative when it preserves the requested deliverable. Do not silently replace editable vectors with a raster or a working application with prose. If a capability is blocked by host policy, respect the boundary; do not route around it through another browser, tunnel, hidden runtime, or deployment.

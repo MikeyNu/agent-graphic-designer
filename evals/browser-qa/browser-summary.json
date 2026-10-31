@@ -1,0 +1,761 @@
+{
+  "date": "2026-10-31T05:34:48.297Z",
+  "checks": [
+    {
+      "name": "desktop queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop-reduced queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop-reduced dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "desktop-reduced disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet-reduced queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet-reduced dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "tablet-reduced disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "phone queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "phone dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "phone disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "phone-reduced queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "phone-reduced dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "phone-reduced disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow-reduced queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow-reduced dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "narrow-reduced disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape-reduced queue layout/semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape-reduced dialog layout, focus containment and dismissal",
+      "status": "PASS"
+    },
+    {
+      "name": "landscape-reduced disclosure keyboard/reflow",
+      "status": "PASS"
+    },
+    {
+      "name": "search, sort, empty recovery, query and scroll return",
+      "status": "PASS"
+    },
+    {
+      "name": "pending duplicate, leave, another record, late success",
+      "status": "PASS"
+    },
+    {
+      "name": "failure, retry, Ready-filter reconciliation and focus fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "direct entry, browser Back/Forward and invalid route",
+      "status": "PASS"
+    },
+    {
+      "name": "queue interruption, live preference, resize and temporal samples",
+      "status": "PASS"
+    },
+    {
+      "name": "disclosure rapid real pointer input, reversal and reduced motion",
+      "status": "PASS"
+    },
+    {
+      "name": "combined 200 percent text and text-spacing stress",
+      "status": "PASS"
+    },
+    {
+      "name": "no JavaScript disclosure fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "no browser runtime or console errors",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "axe": [
+    {
+      "label": "desktop queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "desktop detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "desktop disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "desktop-reduced queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "desktop-reduced detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "desktop-reduced disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet-reduced queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet-reduced detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "tablet-reduced disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone-reduced queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone-reduced detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "phone-reduced disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow-reduced queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow-reduced detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "narrow-reduced disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape-reduced queue",
+      "violations": [],
+      "incomplete": [
+        "aria-prohibited-attr",
+        "aria-valid-attr-value",
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape-reduced detail",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "label": "landscape-reduced disclosure",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "label": "queue open normal",
+      "frameCount": 74,
+      "samples": [
+        {
+          "ms": 0.30000001192092896,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false,
+          "open": false
+        },
+        {
+          "ms": 122,
+          "opacity": "0.884379",
+          "transform": "matrix(1, 0, 0, 1, 2.7749, 0)",
+          "x": 2.7749009132385254,
+          "y": 0,
+          "width": 375.20001220703125,
+          "height": 844,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 254.19999998807907,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 375.20001220703125,
+          "height": 844,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 378.89999997615814,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 375.20001220703125,
+          "height": 844,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 504.19999998807907,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 375.20001220703125,
+          "height": 844,
+          "hidden": false,
+          "open": true
+        }
+      ]
+    },
+    {
+      "label": "queue open reduced",
+      "frameCount": 73,
+      "samples": [
+        {
+          "ms": 2.600000023841858,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": false,
+          "open": false
+        },
+        {
+          "ms": 128,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 304.8000183105469,
+          "height": 568,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 253.19999998807907,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 304.8000183105469,
+          "height": 568,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 378.60000002384186,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 304.8000183105469,
+          "height": 568,
+          "hidden": false,
+          "open": true
+        },
+        {
+          "ms": 503.80000001192093,
+          "opacity": "1",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 304.8000183105469,
+          "height": 568,
+          "hidden": false,
+          "open": true
+        }
+      ]
+    },
+    {
+      "label": "disclosure open normal",
+      "frameCount": 73,
+      "samples": [
+        {
+          "ms": 1,
+          "opacity": "0",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        {
+          "ms": 126.39999997615814,
+          "opacity": "0.879599",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.963211)",
+          "x": 32,
+          "y": 331.1882019042969,
+          "width": 240.8000030517578,
+          "height": 281.1999816894531,
+          "hidden": false
+        },
+        {
+          "ms": 251.69999998807907,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        },
+        {
+          "ms": 377.10000002384186,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        },
+        {
+          "ms": 502.19999998807907,
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "label": "disclosure open reduced",
+      "frameCount": 73,
+      "samples": [
+        {
+          "ms": 2.800000011920929,
+          "opacity": "0",
+          "transform": "none",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "hidden": true
+        },
+        {
+          "ms": 126.60000002384186,
+          "opacity": "1",
+          "transform": "none",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        },
+        {
+          "ms": 251.69999998807907,
+          "opacity": "1",
+          "transform": "none",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        },
+        {
+          "ms": 377.4000000357628,
+          "opacity": "1",
+          "transform": "none",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        },
+        {
+          "ms": 502.10000002384186,
+          "opacity": "1",
+          "transform": "none",
+          "x": 32,
+          "y": 330.2250061035156,
+          "width": 240.8000030517578,
+          "height": 281.20001220703125,
+          "hidden": false
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "desktop-queue.png",
+    "desktop-detail.png",
+    "desktop-disclosure.png",
+    "desktop-reduced-queue.png",
+    "desktop-reduced-detail.png",
+    "desktop-reduced-disclosure.png",
+    "tablet-queue.png",
+    "tablet-detail.png",
+    "tablet-disclosure.png",
+    "tablet-reduced-queue.png",
+    "tablet-reduced-detail.png",
+    "tablet-reduced-disclosure.png",
+    "phone-queue.png",
+    "phone-detail.png",
+    "phone-disclosure.png",
+    "phone-reduced-queue.png",
+    "phone-reduced-detail.png",
+    "phone-reduced-disclosure.png",
+    "narrow-queue.png",
+    "narrow-detail.png",
+    "narrow-disclosure.png",
+    "narrow-reduced-queue.png",
+    "narrow-reduced-detail.png",
+    "narrow-reduced-disclosure.png",
+    "landscape-queue.png",
+    "landscape-detail.png",
+    "landscape-disclosure.png",
+    "landscape-reduced-queue.png",
+    "landscape-reduced-detail.png",
+    "landscape-reduced-disclosure.png",
+    "large-text-queue.png",
+    "large-text-disclosure.png"
+  ],
+  "browser": "156.0.4314.50",
+  "playwright": "1.64.1",
+  "artifacts": {
+    "queue": "65c48ae2b41e26c59e96797270ce3f82d93f826b6fa6a6abb38ed9db3733cdf5",
+    "disclosure": "c0011e0d8defce600f2e90024eda32817812e1ec47d6ba4eaad1c17f7142cfc6"
+  },
+  "node": "v26.9.0",
+  "platform": "win32",
+  "axeVersion": "4.14.0",
+  "bfcache": {
+    "method": "Standalone headed Edge without an automation protocol connection; native history.back from an away document; instrumented fixture copy.",
+    "status": "PASS",
+    "events": [
+      {
+        "stage": "pageshow",
+        "persisted": false,
+        "dialog": false,
+        "overflow": "",
+        "focus": ""
+      },
+      {
+        "stage": "leaving-during-close",
+        "persisted": false,
+        "dialog": true,
+        "overflow": "hidden",
+        "focus": "detail-title"
+      },
+      {
+        "stage": "pagehide",
+        "persisted": true,
+        "dialog": false,
+        "overflow": "",
+        "focus": "detail-title"
+      },
+      {
+        "stage": "pageshow",
+        "persisted": true,
+        "dialog": false,
+        "overflow": "",
+        "focus": "LN-1043"
+      },
+      {
+        "stage": "reopen",
+        "persisted": false,
+        "dialog": true,
+        "overflow": "hidden",
+        "focus": "detail-title"
+      },
+      {
+        "stage": "finished",
+        "persisted": false,
+        "dialog": false,
+        "overflow": "",
+        "focus": "LN-1043"
+      }
+    ]
+  },
+  "evidenceHashes": {
+    "browser-report.json": "c991a4dcdffbdb297952dfc5e7c72237861566c54a5a06ceb5213c6909ce39c3",
+    "desktop-detail.png": "238ae7b2df1c2d7172446b2612bb19453f93afab9cb81a967454af986e05ec72",
+    "desktop-disclosure.png": "76e6dd0c793e72a16d808594c38a5344b39917f18de5b9a54c620c46e50769e8",
+    "desktop-queue.png": "1003ba3716ec5fbdc258f3859f9ad4159b2517b91a6ed5ecdd5983b0479daa64",
+    "desktop-reduced-detail.png": "238ae7b2df1c2d7172446b2612bb19453f93afab9cb81a967454af986e05ec72",
+    "desktop-reduced-disclosure.png": "9bfba8a532656c4ebdddb67f83b959bf7a71b4bbc2771c206742390f4c223afa",
+    "desktop-reduced-queue.png": "1003ba3716ec5fbdc258f3859f9ad4159b2517b91a6ed5ecdd5983b0479daa64",
+    "landscape-detail.png": "49fab3049f9c16c8c790cdf14d5cc564e3754b4aebd72aad41cb91e5bce5e916",
+    "landscape-disclosure.png": "e34c767d8471a3c46afc8368a18e7c40b00ec22f1de39b121143c618fbfa063c",
+    "landscape-queue.png": "c6d8a7e8264619653a2a3ce8d656c7458bd9b4427f9d7d67bcb17470abf185da",
+    "landscape-reduced-detail.png": "c00b9f2af18876e2141dbc1cd63b369aeb2570860cb58ef1fe196d803ad91282",
+    "landscape-reduced-disclosure.png": "e34c767d8471a3c46afc8368a18e7c40b00ec22f1de39b121143c618fbfa063c",
+    "landscape-reduced-queue.png": "c6d8a7e8264619653a2a3ce8d656c7458bd9b4427f9d7d67bcb17470abf185da",
+    "large-text-disclosure.png": "c5ea5de8cccdcf170371e9864c92f4cb584a508305f5bee597cabbb5ede0933e",
+    "large-text-queue.png": "ab00047c9b7c656edccf0b601042f4b36e271a48dfb6cc6672703bd5edaac632",
+    "narrow-detail.png": "ff61eb08c6a9558946f5343a8da3344274fe2b031b8ba221ba4bd45261150967",
+    "narrow-disclosure.png": "c201543fe2ea94a97c48ca2642c1d113cf244df09a362b9cb3f4a27ffaab078e",
+    "narrow-queue.png": "1f9f40ba50357eb3425c67408dd24cb79d4ff126d3a00bf34626c2688b502aa0",
+    "narrow-reduced-detail.png": "ff61eb08c6a9558946f5343a8da3344274fe2b031b8ba221ba4bd45261150967",
+    "narrow-reduced-disclosure.png": "c201543fe2ea94a97c48ca2642c1d113cf244df09a362b9cb3f4a27ffaab078e",
+    "narrow-reduced-queue.png": "1f9f40ba50357eb3425c67408dd24cb79d4ff126d3a00bf34626c2688b502aa0",
+    "phone-detail.png": "43e6f73660a0411d89182dfb76441f145ff4bbf093c040f0e1b3b9c624878293",
+    "phone-disclosure.png": "490a117e43413507feb1da6bb502afd6c5334d49ea070a6f2dda2c2ff135a5c7",
+    "phone-queue.png": "56f34e8b8a0fdb227265ace265db41b13a9334ff9c0d4587c0e5db85131e8533",
+    "phone-reduced-detail.png": "43e6f73660a0411d89182dfb76441f145ff4bbf093c040f0e1b3b9c624878293",
+    "phone-reduced-disclosure.png": "490a117e43413507feb1da6bb502afd6c5334d49ea070a6f2dda2c2ff135a5c7",
+    "phone-reduced-queue.png": "56f34e8b8a0fdb227265ace265db41b13a9334ff9c0d4587c0e5db85131e8533",
+    "tablet-detail.png": "e04c5a4ffc2cd770760e3ff0ddc82002994c1903dac9b939ce4b752666efc6a0",
+    "tablet-disclosure.png": "cf7d66716b3d25420de88396bda597108b698bc35d1362524c55573b8ca30eb7",
+    "tablet-queue.png": "df5e9290500170a07be9716839a8a90cebafcc86baa2539175d67781932fc602",
+    "tablet-reduced-detail.png": "e04c5a4ffc2cd770760e3ff0ddc82002994c1903dac9b939ce4b752666efc6a0",
+    "tablet-reduced-disclosure.png": "cf7d66716b3d25420de88396bda597108b698bc35d1362524c55573b8ca30eb7",
+    "tablet-reduced-queue.png": "df5e9290500170a07be9716839a8a90cebafcc86baa2539175d67781932fc602"
+  },
+  "lineEndings": "Windows Git checkout may use CRLF; canonical hashes normalize CRLF to LF. Queue transferred as LF.",
+  "canonicalArtifacts": {
+    "queue": "65c48ae2b41e26c59e96797270ce3f82d93f826b6fa6a6abb38ed9db3733cdf5",
+    "disclosure": "2860c33e1aa2daff9f595b9295e3c2fb4b4d675491da7b2f13c64cc63d761fc3"
+  }
+}

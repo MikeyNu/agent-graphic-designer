@@ -1,5 +1,7 @@
 # Scoped QA examples, 31 October 2026
 
+The subsequent [local desktop run](../../validation-2026-10-31-desktop.md) adds actual browser evidence and repairs the queue's footer contrast and large-text layout. Statements below about unexecuted browser checks describe the initial run. The current queue and hash manifest include those later fixes; the original version remains in Git history.
+
 These are curated original fixtures and outputs from fresh-context exercises. They are evidence for specific checks, not design templates, production applications, or a claim of reliable performance on every brief. Read the [evaluation record](../../validation-2026-10-31-qa.md) for defects, corrections, and limits. [Artifact hashes](artifact-hashes.json) identify the retained versions. Third-party reference images, font binaries, raw scratch reports, and browser recordings are not included.
 
 Keep this folder and evaluator expectations out of an agent's context when rerunning a brief. Supply only the task, required fixture, actual capabilities, and relevant skill. Compare its resulting artifacts afterward.

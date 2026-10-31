@@ -1,5 +1,7 @@
 # QA and execution review, 31 October 2026
 
+**Follow-up:** the user authorized the local desktop browser and confirmed that GitHub CI is unavailable due to billing. The [desktop browser record](validation-2026-10-31-desktop.md) supersedes the runtime NOT RUN and unconfirmed CI-cause statements below for its explicitly tested conditions. The earlier record remains intact as evidence of what was known then.
+
 This review improves execution reliability without claiming that an agent will produce correct results on every future task. It covers Graphic Design and coordinated Web Motion Director. Source review, rendered artwork, isolated logic, browser behavior, and human response are separate kinds of evidence.
 
 ## Audit scope and changes

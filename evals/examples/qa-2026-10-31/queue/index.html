@@ -15,6 +15,7 @@
       --line: #d4ccbf;
       --line-strong: #948c7e;
       --coral: #b44735;
+      --coral-ink: #9c3b2c;
       --coral-pale: #f4e2d9;
       --green: #315c43;
       --green-pale: #e9eee4;
@@ -49,7 +50,7 @@
     .skip-link { position: fixed; left: 16px; top: -70px; z-index: 10; padding: 12px 18px; background: var(--paper-light); font-weight: 700; }
     .skip-link:focus { top: 12px; }
     .topbar { border-bottom: 1px solid var(--line); background: var(--paper); }
-    .topbar-inner { max-width: 1264px; min-height: 74px; margin: 0 auto; padding: 12px 32px; display: flex; align-items: center; gap: 22px; }
+    .topbar-inner { max-width: 1264px; min-height: 74px; margin: 0 auto; padding: 12px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
     .brand { display: flex; gap: 10px; align-items: center; }
     .brand-symbol { width: 28px; height: 32px; color: var(--coral); }
     .wordmark { font-family: Georgia, 'Times New Roman', serif; font-size: 29px; letter-spacing: -1.2px; line-height: 1; }
@@ -87,7 +88,7 @@
     .queue-message { min-height: 39px; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 10px; padding: 8px 22px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); background: #f4efe5; }
     .queue-message[data-tone="error"] { color: var(--error); background: #fae9e1; }
     .queue-message[data-tone="success"] { color: var(--green); background: var(--green-pale); }
-    .text-button { min-height: 32px; padding: 4px 0; color: var(--coral); border: 0; background: transparent; text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
+    .text-button { min-height: 32px; padding: 4px 0; color: var(--coral-ink); border: 0; background: transparent; text-decoration: underline; text-underline-offset: 3px; font-weight: 700; }
     .queue-message .text-button { min-height: 24px; }
     .reservation-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
     .reservation-table thead th { background: #f5f0e7; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .065em; text-transform: uppercase; text-align: left; padding: 10px 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -172,9 +173,9 @@
     .state-message[data-state="success"] .state-mark { background: var(--green); border-color: var(--green); color: var(--paper-light); }
     .action-stack { display: grid; grid-template-columns: 1fr; gap: 9px; }
     #collect-button, #return-button { width: 100%; }
-    .detail-simulation { display: flex; align-items: center; gap: 12px; margin-top: 15px; padding-top: 13px; border-top: 1px solid var(--line); }
+    .detail-simulation { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 15px; padding-top: 13px; border-top: 1px solid var(--line); }
     .detail-simulation label { font-size: 11px; font-weight: 700; color: var(--muted); flex: 0 0 90px; }
-    .detail-simulation select { min-height: 38px; font-size: 12px; padding-top: 7px; padding-bottom: 7px; }
+    .detail-simulation select { flex: 1 1 12em; width: auto; min-height: 38px; font-size: 12px; padding-top: 7px; padding-bottom: 7px; }
     .spinner { width: 14px; height: 14px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; display: inline-block; animation: spin var(--pending-turn) linear infinite; flex-shrink: 0; }
     .status .spinner { width: 12px; height: 12px; }
     .noscript { margin: 20px; padding: 20px; background: var(--paper-light); border: 1px solid var(--coral); }
@@ -215,13 +216,13 @@
       #search { font-size: 14px; }
       .search-hint { display: none; }
       .filters-row { display: block; margin-top: 9px; }
-      .filters { display: grid; grid-template-columns: .8fr 1fr 1.25fr; gap: 0; }
-      .filter { padding-inline: 5px; justify-content: center; gap: 7px; font-size: 12px; }
+      .filters { display: flex; flex-wrap: wrap; gap: 0; }
+      .filter { flex: 1 1 5.5em; padding-inline: 5px; justify-content: center; gap: 7px; font-size: 12px; }
       .results-count { padding: 8px 0; font-size: 11px; }
       .queue-message { padding: 9px 14px; font-size: 11px; }
       .reservation-table, .reservation-table tbody { display: block; }
       .reservation-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
-      .reservation-table tbody tr { position: relative; display: grid; grid-template-columns: 49px minmax(0,1fr) 16px; grid-template-rows: auto auto auto; gap: 3px 10px; padding: 13px 14px 14px; }
+      .reservation-table tbody tr { position: relative; display: grid; grid-template-columns: minmax(49px,max-content) minmax(0,1fr) 16px; grid-template-rows: auto auto auto; gap: 3px 10px; padding: 13px 14px 14px; }
       .reservation-table tbody td, .reservation-table tbody th { width: auto; padding: 0; }
       .reservation-table th:first-child, .reservation-table td:first-child, .reservation-table th:last-child, .reservation-table td:last-child { padding: 0; }
       .col-time { grid-column: 1; grid-row: 1 / span 3; padding-top: 3px !important; }
@@ -240,7 +241,9 @@
       .queue-footer p { font-size: 11px; }
       .queue-footer .text-button { margin-top: 7px; }
       .keyboard-hint { display: none; }
-      .detail-sheet { border-left: 0; box-shadow: none; width: 100%; }
+      .detail-sheet { border-left: 0; box-shadow: none; width: 100%; overflow-y: auto; }
+      .sheet-shell { height: auto; min-height: 100%; }
+      .sheet-scroll { overflow: visible; flex: none; }
       .sheet-topbar { min-height: 59px; padding-inline: 18px; }
       .sheet-scroll { padding: 22px 22px 24px; }
       .detail-title { font-size: 27px; }

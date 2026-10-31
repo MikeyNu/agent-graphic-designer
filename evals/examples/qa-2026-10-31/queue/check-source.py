@@ -71,6 +71,7 @@ pairs=[
  ('Muted / paper','#65645c','#faf7f0',4.5),
  ('Muted / selected row','#65645c','#f4e2d9',4.5),
  ('Coral / paper','#b44735','#faf7f0',4.5),
+ ('Coral text / canvas','#9c3b2c','#ebe5db',4.5),
  ('Success / green surface','#315c43','#e9eee4',4.5),
  ('Error / error surface','#9c3529','#fae9e1',4.5),
  ('Button text / ink','#fffdf8','#29332e',4.5),
